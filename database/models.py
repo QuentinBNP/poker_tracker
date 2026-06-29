@@ -1,0 +1,50 @@
+from __future__ import annotations
+
+from dataclasses import dataclass
+from datetime import datetime
+
+
+@dataclass(slots=True)
+class Tournament:
+    tournament_id: str
+    name: str
+    buy_in: float
+    prize_pool: float
+    players_count: int
+    started_at: datetime | None
+    finished_at: datetime | None
+    position: int | None
+
+
+@dataclass(slots=True)
+class Hand:
+    hand_id: str
+    tournament_id: str | None
+    played_at: datetime | None
+    table_name: str
+    hero: str
+    hero_cards: str
+    board: str
+    pot: float
+    result: float
+
+
+@dataclass(slots=True)
+class Player:
+    name: str
+
+
+@dataclass(slots=True)
+class Action:
+    hand_id: str
+    player: str
+    street: str
+    action: str
+    amount: float | None
+
+
+@dataclass(slots=True)
+class ImportRecord:
+    filename: str
+    imported_at: datetime
+    status: str
