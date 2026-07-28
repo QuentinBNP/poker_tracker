@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 from logging_system import get_logger
-from main import bootstrap_application
+from bootstrap import bootstrap_application
 
 
 def test_bootstrap_application_configures_log_files(tmp_path: Path) -> None:

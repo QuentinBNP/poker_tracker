@@ -4,7 +4,7 @@ import json
 import sqlite3
 from pathlib import Path
 
-from main import bootstrap_application, load_config
+from bootstrap import bootstrap_application, load_config
 
 
 def test_load_config_reads_json(tmp_path: Path) -> None:

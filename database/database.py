@@ -230,6 +230,104 @@ class Database:
 
         return row is not None
 
+    def get_hero_summary(self, hero_name: str) -> dict[str, float | int]:
+        with self._connect() as connection:
+            hands_played = connection.execute(
+                "SELECT COUNT(*) FROM hands WHERE hero = ?",
+                (hero_name,),
+            ).fetchone()[0]
+            tournaments_played = connection.execute(
+                "SELECT COUNT(DISTINCT tournament_id) FROM hands WHERE hero = ? AND tournament_id IS NOT NULL",
+                (hero_name,),
+            ).fetchone()[0]
+            total_result = connection.execute(
+                "SELECT COALESCE(SUM(result), 0) FROM hands WHERE hero = ?",
+                (hero_name,),
+            ).fetchone()[0]
+
+        return {
+            "hands_played": int(hands_played),
+            "tournaments_played": int(tournaments_played),
+            "total_result": float(total_result),
+        }
+
+    def list_recent_hands(self, hero_name: str, limit: int = 10) -> list[dict[str, object]]:
+        with self._connect() as connection:
+            rows = connection.execute(
+                """
+                SELECT hand_id, tournament_id, played_at, table_name, hero_cards, board, pot, result
+                FROM hands
+                WHERE hero = ?
+                ORDER BY played_at DESC, id DESC
+                LIMIT ?
+                """,
+                (hero_name, limit),
+            ).fetchall()
+
+        return [
+            {
+                "hand_id": row["hand_id"],
+                "tournament_id": row["tournament_id"],
+                "played_at": self._parse_datetime(row["played_at"]),
+                "table_name": row["table_name"],
+                "hero_cards": row["hero_cards"] or "",
+                "board": row["board"] or "",
+                "pot": float(row["pot"]),
+                "result": float(row["result"]),
+            }
+            for row in rows
+        ]
+
+    def list_recent_tournaments(self, limit: int = 10) -> list[dict[str, object]]:
+        with self._connect() as connection:
+            rows = connection.execute(
+                """
+                SELECT tournament_id, name, buy_in, prize_pool, players_count, started_at, finished_at, position
+                FROM tournaments
+                ORDER BY started_at DESC, id DESC
+                LIMIT ?
+                """,
+                (limit,),
+            ).fetchall()
+
+        return [
+            {
+                "tournament_id": row["tournament_id"],
+                "name": row["name"],
+                "buy_in": float(row["buy_in"]),
+                "prize_pool": float(row["prize_pool"]),
+                "players_count": int(row["players_count"]),
+                "started_at": self._parse_datetime(row["started_at"]),
+                "finished_at": self._parse_datetime(row["finished_at"]),
+                "position": row["position"],
+            }
+            for row in rows
+        ]
+
+    def list_hero_actions(self, hero_name: str) -> list[dict[str, object]]:
+        with self._connect() as connection:
+            rows = connection.execute(
+                """
+                SELECT a.hand_id, a.street, a.action, a.amount, h.result
+                FROM actions a
+                INNER JOIN hands h ON h.hand_id = a.hand_id
+                WHERE h.hero = ? AND a.player = ?
+                ORDER BY h.played_at ASC, a.id ASC
+                """,
+                (hero_name, hero_name),
+            ).fetchall()
+
+        return [
+            {
+                "hand_id": row["hand_id"],
+                "street": row["street"],
+                "action": row["action"],
+                "amount": row["amount"],
+                "result": float(row["result"]),
+            }
+            for row in rows
+        ]
+
     def _connect(self) -> sqlite3.Connection:
         connection = sqlite3.connect(self.database_path)
         connection.execute("PRAGMA foreign_keys = ON")
