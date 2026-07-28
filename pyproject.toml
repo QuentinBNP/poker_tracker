@@ -2,7 +2,7 @@
 name = "poker-tracker"
 version = "0.1.0"
 description = "Personal Winamax poker tracker desktop application"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 dependencies = [
     "watchdog>=6.0.0",
 ]
@@ -10,11 +10,40 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest>=8.4.0",
+    "pytest-cov>=6.0.0",
+    "ruff>=0.12.0",
+    "mypy>=1.17.0",
 ]
 
 [build-system]
 requires = ["setuptools>=69.0"]
 build-backend = "setuptools.build_meta"
 
+[tool.setuptools]
+py-modules = ["bootstrap", "logging_system", "main"]
+
+[tool.setuptools.packages.find]
+include = ["database", "database.*", "parser", "parser.*", "statistics", "statistics.*", "ui", "ui.*", "watcher", "watcher.*"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+addopts = "--cov=bootstrap --cov=logging_system --cov=main --cov=database --cov=parser --cov=statistics --cov=ui --cov=watcher --cov-branch --cov-report=term-missing --cov-report=xml --cov-report=html"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+
+[tool.mypy]
+python_version = "3.11"
+files = ["bootstrap.py", "logging_system.py", "main.py", "database", "parser", "statistics", "ui", "watcher"]
+ignore_missing_imports = true
+check_untyped_defs = true
+disallow_incomplete_defs = true
+no_implicit_optional = true
+pretty = true
+show_error_codes = true
+warn_redundant_casts = true
+warn_unused_ignores = true
