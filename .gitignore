@@ -6,3 +6,6 @@ venv/
 
 # Samples for parsing
 samples/
+
+# Runtime logs
+logs/
