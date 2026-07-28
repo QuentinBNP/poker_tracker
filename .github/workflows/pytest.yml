@@ -1,0 +1,58 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - '**'
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install system packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-tk xvfb
+
+      - name: Install project
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev]
+
+      - name: Run pytest
+        run: pytest
+
+      - name: Smoke test Tk app initialization
+        run: |
+          xvfb-run -a python - <<'PY'
+          from bootstrap import bootstrap_application, load_config
+          from ui import create_main_window
+
+          config = load_config()
+          database = bootstrap_application()
+          root = create_main_window(database, config["player_name"])
+          root.update_idletasks()
+          root.update()
+          root.destroy()
+          print("Tk app initialized successfully")
+          PY
+
+      - name: Run main.py briefly
+        run: |
+          set +e
+          xvfb-run -a timeout 10s python main.py
+          status=$?
+          if [ "$status" -ne 0 ] && [ "$status" -ne 124 ]; then
+            exit "$status"
+          fi
+          echo "main.py started successfully"
