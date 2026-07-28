@@ -170,6 +170,17 @@ class Database:
                 payload,
             )
 
+    def replace_actions_for_hand(self, hand_id: str, actions: list[Action]) -> None:
+        with self._connect() as connection:
+            connection.execute("DELETE FROM actions WHERE hand_id = ?", (hand_id,))
+            connection.executemany(
+                """
+                INSERT INTO actions (hand_id, player, street, action, amount)
+                VALUES (:hand_id, :player, :street, :action, :amount)
+                """,
+                [asdict(action) for action in actions],
+            )
+
     def list_actions_for_hand(self, hand_id: str) -> list[Action]:
         with self._connect() as connection:
             rows = connection.execute(
