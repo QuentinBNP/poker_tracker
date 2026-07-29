@@ -1,0 +1,5508 @@
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-1-1782675010 - Holdem no limit (25/100/200) - 2026/06/28 19:30:10 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #4 is the button
+Seat 1: Ato97 (20000, 0.11€ bounty)
+Seat 2: caroline39 (20000, 0.11€ bounty)
+Seat 3: K and co (20000, 0.11€ bounty)
+Seat 4: Memepasmal (20000, 0.11€ bounty)
+Seat 5: MyPseudo (20000, 0.11€ bounty)
+Seat 6: Je m en Fish (20000, 0.11€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 25
+Je m en Fish posts ante 25
+Ato97 posts ante 25
+caroline39 posts ante 25
+K and co posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts small blind 100
+Je m en Fish posts big blind 200
+Dealt to MyPseudo [4h 5d]
+*** PRE-FLOP *** 
+Ato97 folds
+caroline39 calls 200
+K and co calls 200
+Memepasmal calls 200
+MyPseudo calls 100
+Je m en Fish checks
+*** FLOP *** [Kc 9c 2c]
+MyPseudo checks
+Je m en Fish checks
+caroline39 bets 1150
+K and co folds
+Memepasmal folds
+MyPseudo folds
+Je m en Fish folds
+caroline39 collected 2300 from pot
+*** SUMMARY ***
+Total pot 2300 | No rake
+Board: [Kc 9c 2c]
+Seat 2: caroline39 won 2300
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-2-1782675162 - Holdem no limit (25/100/200) - 2026/06/28 19:32:42 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #5 is the button
+Seat 1: Ato97 (19975, 0.11€ bounty)
+Seat 3: K and co (19775, 0.11€ bounty)
+Seat 4: Memepasmal (19775, 0.11€ bounty)
+Seat 5: MyPseudo (19775, 0.11€ bounty)
+Seat 6: Je m en Fish (19775, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Je m en Fish posts ante 25
+Ato97 posts ante 25
+K and co posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts ante 25
+Je m en Fish posts small blind 100
+Ato97 posts big blind 200
+Dealt to MyPseudo [Qs 3d]
+*** PRE-FLOP *** 
+K and co calls 200
+Memepasmal folds
+MyPseudo raises 200 to 400
+Je m en Fish calls 300
+Ato97 folds
+K and co calls 200
+*** FLOP *** [Th 4d 5h]
+Je m en Fish checks
+K and co bets 200
+MyPseudo folds
+Je m en Fish calls 200
+*** TURN *** [Th 4d 5h][Qd]
+Je m en Fish checks
+K and co bets 200
+Je m en Fish folds
+K and co collected 2125 from pot
+*** SUMMARY ***
+Total pot 2125 | No rake
+Board: [Th 4d 5h Qd]
+Seat 3: K and co won 2125
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-3-1782675256 - Holdem no limit (25/100/200) - 2026/06/28 19:34:16 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #6 is the button
+Seat 1: Ato97 (19750, 0.11€ bounty)
+Seat 2: TCCrack5426 (20000, 0.11€ bounty)
+Seat 4: Memepasmal (19750, 0.11€ bounty)
+Seat 5: MyPseudo (19350, 0.11€ bounty)
+Seat 6: Je m en Fish (19150, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Ato97 posts ante 25
+TCCrack5426 posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts ante 25
+Je m en Fish posts ante 25
+Ato97 posts small blind 100
+TCCrack5426 posts big blind 200
+Dealt to MyPseudo [8s Jh]
+*** PRE-FLOP *** 
+Memepasmal raises 400 to 600
+MyPseudo folds
+Je m en Fish folds
+Ato97 folds
+TCCrack5426 calls 400
+*** FLOP *** [3h 5h 4d]
+TCCrack5426 checks
+Memepasmal checks
+*** TURN *** [3h 5h 4d][Qd]
+TCCrack5426 checks
+Memepasmal bets 1140
+TCCrack5426 calls 1140
+*** RIVER *** [3h 5h 4d Qd][As]
+TCCrack5426 checks
+Memepasmal checks
+*** SHOW DOWN ***
+TCCrack5426 shows [8h 4h] (One pair : 4)
+Memepasmal shows [Ad Kd] (One pair : Aces)
+Memepasmal collected 3705 from pot
+*** SUMMARY ***
+Total pot 3705 | No rake
+Board: [3h 5h 4d Qd As]
+Seat 2: TCCrack5426 (big blind) showed [8h 4h] and lost with One pair : 4
+Seat 4: Memepasmal showed [Ad Kd] and won 3705 with One pair : Aces
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-4-1782675312 - Holdem no limit (25/100/200) - 2026/06/28 19:35:12 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #1 is the button
+Seat 1: Ato97 (19625, 0.11€ bounty)
+Seat 2: TCCrack5426 (18235, 0.11€ bounty)
+Seat 3: catweb41 (20000, 0.11€ bounty)
+Seat 4: Memepasmal (21690, 0.11€ bounty)
+Seat 5: MyPseudo (19325, 0.11€ bounty)
+Seat 6: Je m en Fish (19125, 0.11€ bounty)
+*** ANTE/BLINDS ***
+TCCrack5426 posts ante 25
+catweb41 posts ante 25
+Ato97 posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts ante 25
+Je m en Fish posts ante 25
+TCCrack5426 posts small blind 100
+catweb41 posts big blind 200
+Dealt to MyPseudo [Ad 5d]
+*** PRE-FLOP *** 
+Memepasmal calls 200
+MyPseudo raises 200 to 400
+Je m en Fish folds
+Ato97 folds
+TCCrack5426 folds
+catweb41 calls 200
+Memepasmal calls 200
+*** FLOP *** [Td 3s Qs]
+catweb41 bets 1450
+Memepasmal folds
+MyPseudo calls 1450
+*** TURN *** [Td 3s Qs][Ks]
+catweb41 bets 4350
+MyPseudo folds
+catweb41 collected 8700 from pot
+*** SUMMARY ***
+Total pot 8700 | No rake
+Board: [Td 3s Qs Ks]
+Seat 3: catweb41 (big blind) won 8700
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-5-1782675399 - Holdem no limit (25/100/200) - 2026/06/28 19:36:39 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #2 is the button
+Seat 1: Ato97 (19600, 0.11€ bounty)
+Seat 2: TCCrack5426 (18110, 0.11€ bounty)
+Seat 3: catweb41 (22475, 0.11€ bounty)
+Seat 4: Memepasmal (21265, 0.11€ bounty)
+Seat 5: MyPseudo (17450, 0.11€ bounty)
+Seat 6: Je m en Fish (19100, 0.11€ bounty)
+*** ANTE/BLINDS ***
+catweb41 posts ante 25
+Memepasmal posts ante 25
+Ato97 posts ante 25
+TCCrack5426 posts ante 25
+MyPseudo posts ante 25
+Je m en Fish posts ante 25
+catweb41 posts small blind 100
+Memepasmal posts big blind 200
+Dealt to MyPseudo [Jc 5s]
+*** PRE-FLOP *** 
+MyPseudo folds
+Je m en Fish raises 200 to 400
+Ato97 folds
+TCCrack5426 folds
+catweb41 calls 300
+Memepasmal calls 200
+*** FLOP *** [Qc Jd 2d]
+catweb41 checks
+Memepasmal checks
+Je m en Fish checks
+*** TURN *** [Qc Jd 2d][7d]
+catweb41 bets 200
+Memepasmal calls 200
+Je m en Fish calls 200
+*** RIVER *** [Qc Jd 2d 7d][4s]
+catweb41 checks
+Memepasmal checks
+Je m en Fish checks
+*** SHOW DOWN ***
+Memepasmal shows [8d Ah] (High card : Ace)
+Je m en Fish shows [5h 5c] (One pair : 5)
+catweb41 shows [Jh 6h] (One pair : Jacks)
+catweb41 collected 1950 from pot
+*** SUMMARY ***
+Total pot 1950 | No rake
+Board: [Qc Jd 2d 7d 4s]
+Seat 3: catweb41 (small blind) showed [Jh 6h] and won 1950 with One pair : Jacks
+Seat 4: Memepasmal (big blind) showed [8d Ah] and lost with High card : Ace
+Seat 6: Je m en Fish showed [5h 5c] and lost with One pair : 5
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-6-1782675503 - Holdem no limit (25/100/200) - 2026/06/28 19:38:23 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #3 is the button
+Seat 1: Ato97 (19575, 0.11€ bounty)
+Seat 2: TCCrack5426 (18085, 0.11€ bounty)
+Seat 3: catweb41 (23800, 0.11€ bounty)
+Seat 4: Memepasmal (20640, 0.11€ bounty)
+Seat 5: MyPseudo (17425, 0.11€ bounty)
+Seat 6: Je m en Fish (18475, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Memepasmal posts ante 25
+MyPseudo posts ante 25
+Ato97 posts ante 25
+TCCrack5426 posts ante 25
+catweb41 posts ante 25
+Je m en Fish posts ante 25
+Memepasmal posts small blind 100
+MyPseudo posts big blind 200
+Dealt to MyPseudo [Jd 4s]
+*** PRE-FLOP *** 
+Je m en Fish folds
+Ato97 folds
+TCCrack5426 calls 200
+catweb41 folds
+Memepasmal calls 100
+MyPseudo checks
+*** FLOP *** [6h Qs 2d]
+Memepasmal checks
+MyPseudo checks
+TCCrack5426 checks
+*** TURN *** [6h Qs 2d][6d]
+Memepasmal bets 488
+MyPseudo folds
+TCCrack5426 folds
+Memepasmal collected 1238 from pot
+*** SUMMARY ***
+Total pot 1238 | No rake
+Board: [6h Qs 2d 6d]
+Seat 4: Memepasmal (small blind) won 1238
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-7-1782675544 - Holdem no limit (25/100/200) - 2026/06/28 19:39:04 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #4 is the button
+Seat 1: Ato97 (19550, 0.11€ bounty)
+Seat 2: TCCrack5426 (17860, 0.11€ bounty)
+Seat 3: catweb41 (23775, 0.11€ bounty)
+Seat 4: Memepasmal (21165, 0.11€ bounty)
+Seat 5: MyPseudo (17200, 0.11€ bounty)
+Seat 6: Je m en Fish (18450, 0.11€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 25
+Je m en Fish posts ante 25
+Ato97 posts ante 25
+TCCrack5426 posts ante 25
+catweb41 posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts small blind 100
+Je m en Fish posts big blind 200
+Dealt to MyPseudo [8s Kc]
+*** PRE-FLOP *** 
+Ato97 folds
+TCCrack5426 calls 200
+catweb41 calls 200
+Memepasmal folds
+MyPseudo calls 100
+Je m en Fish checks
+*** FLOP *** [Ts 6h Kd]
+MyPseudo checks
+Je m en Fish checks
+TCCrack5426 checks
+catweb41 checks
+*** TURN *** [Ts 6h Kd][7c]
+MyPseudo bets 475
+Je m en Fish calls 475
+TCCrack5426 calls 475
+catweb41 folds
+*** RIVER *** [Ts 6h Kd 7c][7h]
+MyPseudo checks
+Je m en Fish checks
+TCCrack5426 checks
+*** SHOW DOWN ***
+TCCrack5426 shows [Jc Qd] (One pair : 7)
+Je m en Fish shows [4c 8d] (One pair : 7)
+MyPseudo shows [8s Kc] (Two pairs : Kings and 7)
+MyPseudo collected 2375 from pot
+*** SUMMARY ***
+Total pot 2375 | No rake
+Board: [Ts 6h Kd 7c 7h]
+Seat 2: TCCrack5426 showed [Jc Qd] and lost with One pair : 7
+Seat 5: MyPseudo (small blind) showed [8s Kc] and won 2375 with Two pairs : Kings and 7
+Seat 6: Je m en Fish (big blind) showed [4c 8d] and lost with One pair : 7
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-8-1782675622 - Holdem no limit (25/100/200) - 2026/06/28 19:40:22 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #5 is the button
+Seat 1: Ato97 (19525, 0.11€ bounty)
+Seat 3: catweb41 (23550, 0.11€ bounty)
+Seat 4: Memepasmal (21140, 0.11€ bounty)
+Seat 5: MyPseudo (18875, 0.11€ bounty)
+Seat 6: Je m en Fish (17750, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Je m en Fish posts ante 25
+Ato97 posts ante 25
+catweb41 posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts ante 25
+Je m en Fish posts small blind 100
+Ato97 posts big blind 200
+Dealt to MyPseudo [5d Qc]
+*** PRE-FLOP *** 
+catweb41 raises 400 to 600
+Memepasmal calls 600
+MyPseudo folds
+Je m en Fish calls 500
+Ato97 folds
+*** FLOP *** [8c 7c 5h]
+Je m en Fish bets 200
+catweb41 calls 200
+Memepasmal calls 200
+*** TURN *** [8c 7c 5h][3s]
+Je m en Fish checks
+catweb41 checks
+Memepasmal bets 2725
+Je m en Fish calls 2725
+catweb41 folds
+*** RIVER *** [8c 7c 5h 3s][Ks]
+Je m en Fish checks
+Memepasmal bets 2861
+Je m en Fish calls 2861
+*** SHOW DOWN ***
+Je m en Fish shows [6h 6c] (One pair : 6)
+Memepasmal shows [Ts 7s] (One pair : 7)
+Memepasmal collected 13897 from pot
+*** SUMMARY ***
+Total pot 13897 | No rake
+Board: [8c 7c 5h 3s Ks]
+Seat 4: Memepasmal showed [Ts 7s] and won 13897 with One pair : 7
+Seat 6: Je m en Fish (small blind) showed [6h 6c] and lost with One pair : 6
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-9-1782675687 - Holdem no limit (25/100/200) - 2026/06/28 19:41:27 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #6 is the button
+Seat 1: Ato97 (19300, 0.11€ bounty)
+Seat 2: Glynis (20000, 0.11€ bounty)
+Seat 4: Memepasmal (28626, 0.11€ bounty)
+Seat 5: MyPseudo (18850, 0.11€ bounty)
+Seat 6: Je m en Fish (11339, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Ato97 posts ante 25
+Glynis posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts ante 25
+Je m en Fish posts ante 25
+Ato97 posts small blind 100
+Glynis posts big blind 200
+Dealt to MyPseudo [Js 4h]
+*** PRE-FLOP *** 
+Memepasmal folds
+MyPseudo folds
+Je m en Fish calls 200
+Ato97 folds
+Glynis checks
+*** FLOP *** [8d Kh 9d]
+Glynis checks
+Je m en Fish checks
+*** TURN *** [8d Kh 9d][4s]
+Glynis checks
+Je m en Fish checks
+*** RIVER *** [8d Kh 9d 4s][7h]
+Glynis checks
+Je m en Fish bets 625
+Glynis folds
+Je m en Fish collected 1250 from pot
+*** SUMMARY ***
+Total pot 1250 | No rake
+Board: [8d Kh 9d 4s 7h]
+Seat 6: Je m en Fish (button) won 1250
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-10-1782675726 - Holdem no limit (25/100/200) - 2026/06/28 19:42:06 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #1 is the button
+Seat 1: Ato97 (19175, 0.11€ bounty)
+Seat 2: Glynis (19775, 0.11€ bounty)
+Seat 3: Corsaires78 (20000, 0.11€ bounty)
+Seat 4: Memepasmal (28601, 0.11€ bounty)
+Seat 5: MyPseudo (18825, 0.11€ bounty)
+Seat 6: Je m en Fish (11739, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Glynis posts ante 25
+Corsaires78 posts ante 25
+Ato97 posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts ante 25
+Je m en Fish posts ante 25
+Glynis posts small blind 100
+Corsaires78 posts big blind 200
+Dealt to MyPseudo [4h 9h]
+*** PRE-FLOP *** 
+Memepasmal folds
+MyPseudo raises 250 to 450
+Je m en Fish calls 450
+Ato97 folds
+Glynis calls 350
+Corsaires78 raises 1110 to 1560
+MyPseudo folds
+Je m en Fish calls 1110
+Glynis folds
+*** FLOP *** [9d 5h 4d]
+Corsaires78 bets 200
+Je m en Fish raises 9954 to 10154 and is all-in
+Corsaires78 folds
+Je m en Fish collected 14524 from pot
+*** SUMMARY ***
+Total pot 14524 | No rake
+Board: [9d 5h 4d]
+Seat 6: Je m en Fish won 14524
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-11-1782675810 - Holdem no limit (25/100/200) - 2026/06/28 19:43:30 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #2 is the button
+Seat 1: Ato97 (19150, 0.11€ bounty)
+Seat 2: Glynis (19300, 0.11€ bounty)
+Seat 3: Corsaires78 (18215, 0.11€ bounty)
+Seat 4: Memepasmal (28576, 0.11€ bounty)
+Seat 5: MyPseudo (18350, 0.11€ bounty)
+Seat 6: Je m en Fish (14524, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Corsaires78 posts ante 25
+Memepasmal posts ante 25
+Ato97 posts ante 25
+Glynis posts ante 25
+MyPseudo posts ante 25
+Je m en Fish posts ante 25
+Corsaires78 posts small blind 100
+Memepasmal posts big blind 200
+Dealt to MyPseudo [Th Ad]
+*** PRE-FLOP *** 
+MyPseudo raises 200 to 400
+Je m en Fish folds
+Ato97 folds
+Glynis folds
+Corsaires78 raises 17790 to 18190 and is all-in
+Memepasmal folds
+MyPseudo folds
+Corsaires78 collected 18940 from pot
+*** SUMMARY ***
+Total pot 18940 | No rake
+Seat 3: Corsaires78 (small blind) won 18940
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-12-1782675846 - Holdem no limit (25/100/200) - 2026/06/28 19:44:06 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #3 is the button
+Seat 1: Ato97 (19125, 0.11€ bounty)
+Seat 2: Glynis (19275, 0.11€ bounty)
+Seat 3: Corsaires78 (18940, 0.11€ bounty)
+Seat 4: Memepasmal (28351, 0.11€ bounty)
+Seat 5: MyPseudo (17925, 0.11€ bounty)
+Seat 6: Je m en Fish (14499, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Memepasmal posts ante 25
+MyPseudo posts ante 25
+Ato97 posts ante 25
+Glynis posts ante 25
+Corsaires78 posts ante 25
+Je m en Fish posts ante 25
+Memepasmal posts small blind 100
+MyPseudo posts big blind 200
+Dealt to MyPseudo [2d 5d]
+*** PRE-FLOP *** 
+Je m en Fish folds
+Ato97 folds
+Glynis folds
+Corsaires78 raises 200 to 400
+Memepasmal folds
+MyPseudo folds
+Corsaires78 collected 850 from pot
+*** SUMMARY ***
+Total pot 850 | No rake
+Seat 3: Corsaires78 (button) won 850
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-13-1782675885 - Holdem no limit (25/100/200) - 2026/06/28 19:44:45 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #4 is the button
+Seat 1: Ato97 (19100, 0.11€ bounty)
+Seat 2: Glynis (19250, 0.11€ bounty)
+Seat 3: Corsaires78 (19365, 0.11€ bounty)
+Seat 4: Memepasmal (28226, 0.11€ bounty)
+Seat 5: MyPseudo (17700, 0.11€ bounty)
+Seat 6: Je m en Fish (14474, 0.11€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 25
+Je m en Fish posts ante 25
+Ato97 posts ante 25
+Glynis posts ante 25
+Corsaires78 posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts small blind 100
+Je m en Fish posts big blind 200
+Dealt to MyPseudo [5s Qh]
+*** PRE-FLOP *** 
+Ato97 folds
+Glynis folds
+Corsaires78 folds
+Memepasmal raises 650 to 850
+MyPseudo folds
+Je m en Fish folds
+Memepasmal collected 1300 from pot
+*** SUMMARY ***
+Total pot 1300 | No rake
+Seat 4: Memepasmal (button) won 1300
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-14-1782675934 - Holdem no limit (25/100/200) - 2026/06/28 19:45:34 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #5 is the button
+Seat 1: Ato97 (19075, 0.11€ bounty)
+Seat 2: Glynis (19225, 0.11€ bounty)
+Seat 3: Corsaires78 (19340, 0.11€ bounty)
+Seat 4: Memepasmal (28651, 0.11€ bounty)
+Seat 5: MyPseudo (17575, 0.11€ bounty)
+Seat 6: Je m en Fish (14249, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Je m en Fish posts ante 25
+Ato97 posts ante 25
+Glynis posts ante 25
+Corsaires78 posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts ante 25
+Je m en Fish posts small blind 100
+Ato97 posts big blind 200
+Dealt to MyPseudo [5s As]
+*** PRE-FLOP *** 
+Glynis folds
+Corsaires78 folds
+Memepasmal raises 650 to 850
+MyPseudo calls 850
+Je m en Fish calls 750
+Ato97 folds
+*** FLOP *** [9d 3s 8s]
+Je m en Fish bets 1885
+Memepasmal calls 1885
+MyPseudo calls 1885
+*** TURN *** [9d 3s 8s][4h]
+Je m en Fish bets 11489 and is all-in
+Memepasmal folds
+MyPseudo calls 11489
+*** RIVER *** [9d 3s 8s 4h][Js]
+*** SHOW DOWN ***
+Je m en Fish shows [9h Qh] (One pair : 9)
+MyPseudo shows [5s As] (Flush Ace high)
+MyPseudo collected 31533 from pot
+*** SUMMARY ***
+Total pot 31533 | No rake
+Board: [9d 3s 8s 4h Js]
+Seat 5: MyPseudo (button) showed [5s As] and won 31533 with Flush Ace high
+Seat 6: Je m en Fish (small blind) showed [9h Qh] and lost with One pair : 9
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-15-1782675993 - Holdem no limit (25/100/200) - 2026/06/28 19:46:33 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #6 is the button
+Seat 1: Ato97 (18850, 0.11€ bounty)
+Seat 2: Glynis (19200, 0.11€ bounty)
+Seat 3: Corsaires78 (19315, 0.11€ bounty)
+Seat 4: Memepasmal (25891, 0.11€ bounty)
+Seat 5: MyPseudo (34859, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Ato97 posts ante 25
+Glynis posts ante 25
+Corsaires78 posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts ante 25
+Ato97 posts small blind 100
+Glynis posts big blind 200
+Dealt to MyPseudo [5s 3c]
+*** PRE-FLOP *** 
+Corsaires78 folds
+Memepasmal calls 200
+MyPseudo folds
+Ato97 folds
+Glynis checks
+*** FLOP *** [Th Ks Js]
+Glynis checks
+Memepasmal bets 625
+Glynis folds
+Memepasmal collected 1250 from pot
+*** SUMMARY ***
+Total pot 1250 | No rake
+Board: [Th Ks Js]
+Seat 4: Memepasmal won 1250
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-16-1782676025 - Holdem no limit (25/100/200) - 2026/06/28 19:47:05 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #1 is the button
+Seat 1: Ato97 (18725, 0.11€ bounty)
+Seat 2: Glynis (18975, 0.11€ bounty)
+Seat 3: Corsaires78 (19290, 0.11€ bounty)
+Seat 4: Memepasmal (26291, 0.11€ bounty)
+Seat 5: MyPseudo (34834, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Glynis posts ante 25
+Corsaires78 posts ante 25
+Ato97 posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts ante 25
+Glynis posts small blind 100
+Corsaires78 posts big blind 200
+Dealt to MyPseudo [7s 5d]
+*** PRE-FLOP *** 
+Memepasmal raises 350 to 550
+MyPseudo folds
+Ato97 folds
+Glynis calls 450
+Corsaires78 folds
+*** FLOP *** [8d 2h Th]
+Glynis checks
+Memepasmal bets 1140
+Glynis calls 1140
+*** TURN *** [8d 2h Th][4h]
+Glynis checks
+Memepasmal bets 24576 and is all-in
+Glynis folds
+Memepasmal collected 28281 from pot
+*** SUMMARY ***
+Total pot 28281 | No rake
+Board: [8d 2h Th 4h]
+Seat 4: Memepasmal won 28281
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-17-1782676053 - Holdem no limit (25/100/200) - 2026/06/28 19:47:33 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #2 is the button
+Seat 1: Ato97 (18700, 0.11€ bounty)
+Seat 2: Glynis (17260, 0.11€ bounty)
+Seat 3: Corsaires78 (19065, 0.11€ bounty)
+Seat 4: Memepasmal (28281, 0.11€ bounty)
+Seat 5: MyPseudo (34809, 0.16€ bounty)
+Seat 6: Jayzi_fr (20000, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Corsaires78 posts ante 25
+Memepasmal posts ante 25
+Ato97 posts ante 25
+Glynis posts ante 25
+MyPseudo posts ante 25
+Jayzi_fr posts ante 25
+Corsaires78 posts small blind 100
+Memepasmal posts big blind 200
+Dealt to MyPseudo [7h Ks]
+*** PRE-FLOP *** 
+MyPseudo folds
+Jayzi_fr folds
+Ato97 folds
+Glynis raises 200 to 400
+Corsaires78 raises 608 to 1008
+Memepasmal calls 808
+Glynis folds
+*** FLOP *** [7c 2s 4s]
+Corsaires78 bets 200
+Memepasmal calls 200
+*** TURN *** [7c 2s 4s][Jh]
+Corsaires78 bets 200
+Memepasmal calls 200
+*** RIVER *** [7c 2s 4s Jh][Kh]
+Corsaires78 bets 3366
+Memepasmal folds
+Corsaires78 collected 6732 from pot
+*** SUMMARY ***
+Total pot 6732 | No rake
+Board: [7c 2s 4s Jh Kh]
+Seat 3: Corsaires78 (small blind) won 6732
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-18-1782676114 - Holdem no limit (25/100/200) - 2026/06/28 19:48:34 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #3 is the button
+Seat 1: Ato97 (18675, 0.11€ bounty)
+Seat 2: Glynis (16835, 0.11€ bounty)
+Seat 3: Corsaires78 (20998, 0.11€ bounty)
+Seat 4: Memepasmal (26848, 0.11€ bounty)
+Seat 5: MyPseudo (34784, 0.16€ bounty)
+Seat 6: Jayzi_fr (19975, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Memepasmal posts ante 25
+MyPseudo posts ante 25
+Ato97 posts ante 25
+Glynis posts ante 25
+Corsaires78 posts ante 25
+Jayzi_fr posts ante 25
+Memepasmal posts small blind 100
+MyPseudo posts big blind 200
+Dealt to MyPseudo [9d Jd]
+*** PRE-FLOP *** 
+Jayzi_fr folds
+Ato97 folds
+Glynis raises 200 to 400
+Corsaires78 calls 400
+Memepasmal calls 300
+MyPseudo calls 200
+*** FLOP *** [7s 7d 5c]
+Memepasmal checks
+MyPseudo checks
+Glynis checks
+Corsaires78 checks
+*** TURN *** [7s 7d 5c][8d]
+Memepasmal checks
+MyPseudo checks
+Glynis checks
+Corsaires78 bets 613
+Memepasmal calls 613
+MyPseudo calls 613
+Glynis folds
+*** RIVER *** [7s 7d 5c 8d][3d]
+Memepasmal checks
+MyPseudo bets 1795
+Corsaires78 raises 4038 to 5833
+Memepasmal folds
+MyPseudo raises 27913 to 33746 and is all-in
+Corsaires78 calls 14127 and is all-in
+*** SHOW DOWN ***
+Corsaires78 shows [7h 7c] (Quads of 7)
+MyPseudo shows [9d Jd] (Flush Jack high)
+MyPseudo collected 13786 from side pot 1
+Corsaires78 collected 43509 from main pot
+*** SUMMARY ***
+Total pot 57295 | No rake
+Board: [7s 7d 5c 8d 3d]
+Seat 3: Corsaires78 (button) showed [7h 7c] and won 43509 with Quads of 7
+Seat 5: MyPseudo (big blind) showed [9d Jd] and won 13786 with Flush Jack high
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-19-1782676216 - Holdem no limit (25/100/200) - 2026/06/28 19:50:16 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #4 is the button
+Seat 1: Ato97 (18650, 0.11€ bounty)
+Seat 2: Glynis (16410, 0.11€ bounty)
+Seat 3: Corsaires78 (43509, 0.11€ bounty)
+Seat 4: Memepasmal (25810, 0.11€ bounty)
+Seat 5: MyPseudo (13786, 0.16€ bounty)
+Seat 6: Jayzi_fr (19950, 0.11€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 25
+Jayzi_fr posts ante 25
+Ato97 posts ante 25
+Glynis posts ante 25
+Corsaires78 posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts small blind 100
+Jayzi_fr posts big blind 200
+Dealt to MyPseudo [5h Qd]
+*** PRE-FLOP *** 
+Ato97 folds
+Glynis calls 200
+Corsaires78 folds
+Memepasmal folds
+MyPseudo calls 100
+Jayzi_fr checks
+*** FLOP *** [6h 7h 8h]
+MyPseudo checks
+Jayzi_fr checks
+Glynis checks
+*** TURN *** [6h 7h 8h][2h]
+MyPseudo checks
+Jayzi_fr checks
+Glynis checks
+*** RIVER *** [6h 7h 8h 2h][4d]
+MyPseudo bets 600
+Jayzi_fr folds
+Glynis folds
+MyPseudo collected 1350 from pot
+*** SUMMARY ***
+Total pot 1350 | No rake
+Board: [6h 7h 8h 2h 4d]
+Seat 5: MyPseudo (small blind) won 1350
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-20-1782676284 - Holdem no limit (25/100/200) - 2026/06/28 19:51:24 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #5 is the button
+Seat 1: Ato97 (18625, 0.11€ bounty)
+Seat 2: Glynis (16185, 0.11€ bounty)
+Seat 3: Corsaires78 (43484, 0.11€ bounty)
+Seat 4: Memepasmal (25785, 0.11€ bounty)
+Seat 5: MyPseudo (14311, 0.16€ bounty)
+Seat 6: Jayzi_fr (19725, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Jayzi_fr posts ante 25
+Ato97 posts ante 25
+Glynis posts ante 25
+Corsaires78 posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts ante 25
+Jayzi_fr posts small blind 100
+Ato97 posts big blind 200
+Dealt to MyPseudo [3d 9c]
+*** PRE-FLOP *** 
+Glynis folds
+Corsaires78 folds
+Memepasmal raises 350 to 550
+MyPseudo folds
+Jayzi_fr calls 450
+Ato97 folds
+*** FLOP *** [4h Jh 5h]
+Jayzi_fr checks
+Memepasmal bets 943
+Jayzi_fr calls 943
+*** TURN *** [4h Jh 5h][3h]
+Jayzi_fr checks
+Memepasmal bets 2168
+Jayzi_fr folds
+Memepasmal collected 5504 from pot
+*** SUMMARY ***
+Total pot 5504 | No rake
+Board: [4h Jh 5h 3h]
+Seat 4: Memepasmal won 5504
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-21-1782676353 - Holdem no limit (25/100/200) - 2026/06/28 19:52:33 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #6 is the button
+Seat 1: Ato97 (18400, 0.11€ bounty)
+Seat 2: Glynis (16160, 0.11€ bounty)
+Seat 3: Corsaires78 (43459, 0.11€ bounty)
+Seat 4: Memepasmal (27603, 0.11€ bounty)
+Seat 5: MyPseudo (14286, 0.16€ bounty)
+Seat 6: Jayzi_fr (18207, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Ato97 posts ante 25
+Glynis posts ante 25
+Corsaires78 posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts ante 25
+Jayzi_fr posts ante 25
+Ato97 posts small blind 100
+Glynis posts big blind 200
+Dealt to MyPseudo [Jd 3s]
+*** PRE-FLOP *** 
+Corsaires78 folds
+Memepasmal folds
+MyPseudo folds
+Jayzi_fr folds
+Ato97 folds
+Glynis collected 450 from pot
+*** SUMMARY ***
+Total pot 450 | No rake
+Seat 2: Glynis (big blind) won 450
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-22-1782676381 - Holdem no limit (25/100/200) - 2026/06/28 19:53:01 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #1 is the button
+Seat 1: Ato97 (18275, 0.11€ bounty)
+Seat 2: Glynis (16385, 0.11€ bounty)
+Seat 3: Corsaires78 (43434, 0.11€ bounty)
+Seat 4: Memepasmal (27578, 0.11€ bounty)
+Seat 5: MyPseudo (14261, 0.16€ bounty)
+Seat 6: Jayzi_fr (18182, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Glynis posts ante 25
+Corsaires78 posts ante 25
+Ato97 posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts ante 25
+Jayzi_fr posts ante 25
+Glynis posts small blind 100
+Corsaires78 posts big blind 200
+Dealt to MyPseudo [5s 4s]
+*** PRE-FLOP *** 
+Memepasmal calls 200
+MyPseudo folds
+Jayzi_fr raises 400 to 600
+Ato97 folds
+Glynis calls 500
+Corsaires78 raises 400 to 1000
+Memepasmal calls 800
+Jayzi_fr calls 400
+Glynis calls 400
+*** FLOP *** [Jc Qc 6c]
+Glynis checks
+Corsaires78 checks
+Memepasmal checks
+Jayzi_fr checks
+*** TURN *** [Jc Qc 6c][Ks]
+Glynis checks
+Corsaires78 checks
+Memepasmal bets 1453
+Jayzi_fr folds
+Glynis calls 1453
+Corsaires78 folds
+*** RIVER *** [Jc Qc 6c Ks][9s]
+Glynis checks
+Memepasmal bets 7056
+Glynis folds
+Memepasmal collected 14112 from pot
+*** SUMMARY ***
+Total pot 14112 | No rake
+Board: [Jc Qc 6c Ks 9s]
+Seat 4: Memepasmal won 14112
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-23-1782676459 - Holdem no limit (25/100/200) - 2026/06/28 19:54:19 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #2 is the button
+Seat 1: Ato97 (18250, 0.11€ bounty)
+Seat 2: Glynis (13907, 0.11€ bounty)
+Seat 3: Corsaires78 (42409, 0.11€ bounty)
+Seat 4: Memepasmal (32156, 0.11€ bounty)
+Seat 5: MyPseudo (14236, 0.16€ bounty)
+Seat 6: Jayzi_fr (17157, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Corsaires78 posts ante 25
+Memepasmal posts ante 25
+Ato97 posts ante 25
+Glynis posts ante 25
+MyPseudo posts ante 25
+Jayzi_fr posts ante 25
+Corsaires78 posts small blind 100
+Memepasmal posts big blind 200
+Dealt to MyPseudo [Qc 9h]
+*** PRE-FLOP *** 
+MyPseudo folds
+Jayzi_fr folds
+Ato97 folds
+Glynis raises 200 to 400
+Corsaires78 folds
+Memepasmal raises 31731 to 32131 and is all-in
+Glynis folds
+Memepasmal collected 32781 from pot
+*** SUMMARY ***
+Total pot 32781 | No rake
+Seat 4: Memepasmal (big blind) won 32781
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-24-1782676487 - Holdem no limit (25/100/200) - 2026/06/28 19:54:47 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #3 is the button
+Seat 1: Ato97 (18225, 0.11€ bounty)
+Seat 2: Glynis (13482, 0.11€ bounty)
+Seat 3: Corsaires78 (42284, 0.11€ bounty)
+Seat 4: Memepasmal (32781, 0.11€ bounty)
+Seat 5: MyPseudo (14211, 0.16€ bounty)
+Seat 6: Jayzi_fr (17132, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Memepasmal posts ante 25
+MyPseudo posts ante 25
+Ato97 posts ante 25
+Glynis posts ante 25
+Corsaires78 posts ante 25
+Jayzi_fr posts ante 25
+Memepasmal posts small blind 100
+MyPseudo posts big blind 200
+Dealt to MyPseudo [4d 6h]
+*** PRE-FLOP *** 
+Jayzi_fr calls 200
+Ato97 folds
+Glynis calls 200
+Corsaires78 raises 238 to 438
+Memepasmal calls 338
+MyPseudo folds
+Jayzi_fr raises 16669 to 17107 and is all-in
+Glynis folds
+Corsaires78 folds
+Memepasmal folds
+Jayzi_fr collected 18533 from pot
+*** SUMMARY ***
+Total pot 18533 | No rake
+Seat 6: Jayzi_fr won 18533
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 1 - HandId: #4806216885538390028-25-1782676860 - Holdem no limit (25/100/200) - 2026/06/28 20:01:00 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #4 is the button
+Seat 1: Ato97 (18200, 0.11€ bounty)
+Seat 2: Glynis (13257, 0.11€ bounty)
+Seat 3: Corsaires78 (41821, 0.11€ bounty)
+Seat 4: Memepasmal (32318, 0.11€ bounty)
+Seat 5: MyPseudo (13986, 0.16€ bounty)
+Seat 6: Jayzi_fr (18533, 0.11€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 25
+Jayzi_fr posts ante 25
+Ato97 posts ante 25
+Glynis posts ante 25
+Corsaires78 posts ante 25
+Memepasmal posts ante 25
+MyPseudo posts small blind 100
+Jayzi_fr posts big blind 200
+Dealt to MyPseudo [5s 2d]
+*** PRE-FLOP *** 
+Ato97 folds
+Glynis folds
+Corsaires78 folds
+Memepasmal calls 200
+MyPseudo folds
+Jayzi_fr checks
+*** FLOP *** [Ks 3c 7s]
+Jayzi_fr checks
+Memepasmal bets 520
+Jayzi_fr calls 520
+*** TURN *** [Ks 3c 7s][Qh]
+Jayzi_fr checks
+Memepasmal bets 1690
+Jayzi_fr calls 1690
+*** RIVER *** [Ks 3c 7s Qh][4h]
+Jayzi_fr checks
+Memepasmal bets 5070
+Jayzi_fr calls 5070
+*** SHOW DOWN ***
+Jayzi_fr shows [9d Ac] (High card : Ace)
+Memepasmal shows [2c Kh] (One pair : Kings)
+Memepasmal collected 15210 from pot
+*** SUMMARY ***
+Total pot 15210 | No rake
+Board: [Ks 3c 7s Qh 4h]
+Seat 4: Memepasmal (button) showed [2c Kh] and won 15210 with One pair : Kings
+Seat 6: Jayzi_fr (big blind) showed [9d Ac] and lost with High card : Ace
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 2 - HandId: #4806216885538390028-26-1782676958 - Holdem no limit (30/125/250) - 2026/06/28 20:02:38 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #5 is the button
+Seat 1: Ato97 (18175, 0.11€ bounty)
+Seat 2: Glynis (13232, 0.11€ bounty)
+Seat 3: Corsaires78 (41796, 0.11€ bounty)
+Seat 4: Memepasmal (40023, 0.11€ bounty)
+Seat 5: MyPseudo (13861, 0.16€ bounty)
+Seat 6: Jayzi_fr (11028, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Jayzi_fr posts ante 30
+Ato97 posts ante 30
+Glynis posts ante 30
+Corsaires78 posts ante 30
+Memepasmal posts ante 30
+MyPseudo posts ante 30
+Jayzi_fr posts small blind 125
+Ato97 posts big blind 250
+Dealt to MyPseudo [5s Js]
+*** PRE-FLOP *** 
+Glynis folds
+Corsaires78 raises 250 to 500
+Memepasmal calls 500
+MyPseudo folds
+Jayzi_fr calls 375
+Ato97 folds
+*** FLOP *** [Jd 4h Td]
+Jayzi_fr bets 10498 and is all-in
+Corsaires78 folds
+Memepasmal folds
+Jayzi_fr collected 12428 from pot
+*** SUMMARY ***
+Total pot 12428 | No rake
+Board: [Jd 4h Td]
+Seat 6: Jayzi_fr (small blind) won 12428
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 2 - HandId: #4806216885538390028-27-1782676999 - Holdem no limit (30/125/250) - 2026/06/28 20:03:19 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #6 is the button
+Seat 1: Ato97 (17895, 0.11€ bounty)
+Seat 2: Glynis (13202, 0.11€ bounty)
+Seat 3: Corsaires78 (41266, 0.11€ bounty)
+Seat 4: Memepasmal (39493, 0.11€ bounty)
+Seat 5: MyPseudo (13831, 0.16€ bounty)
+Seat 6: Jayzi_fr (12428, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Ato97 posts ante 30
+Glynis posts ante 30
+Corsaires78 posts ante 30
+Memepasmal posts ante 30
+MyPseudo posts ante 30
+Jayzi_fr posts ante 30
+Ato97 posts small blind 125
+Glynis posts big blind 250
+Dealt to MyPseudo [As 6d]
+*** PRE-FLOP *** 
+Corsaires78 raises 250 to 500
+Memepasmal folds
+MyPseudo folds
+Jayzi_fr calls 500
+Ato97 folds
+Glynis calls 250
+*** FLOP *** [Ah Ac 7d]
+Glynis checks
+Corsaires78 bets 250
+Jayzi_fr folds
+Glynis folds
+Corsaires78 collected 2055 from pot
+*** SUMMARY ***
+Total pot 2055 | No rake
+Board: [Ah Ac 7d]
+Seat 3: Corsaires78 won 2055
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 2 - HandId: #4806216885538390028-28-1782677040 - Holdem no limit (30/125/250) - 2026/06/28 20:04:00 UTC
+Table: 'Kill The Fish(1119034571)#011' 6-max (real money) Seat #1 is the button
+Seat 1: Ato97 (17740, 0.11€ bounty)
+Seat 2: Glynis (12672, 0.11€ bounty)
+Seat 3: Corsaires78 (42541, 0.11€ bounty)
+Seat 4: Memepasmal (39463, 0.11€ bounty)
+Seat 5: MyPseudo (13801, 0.16€ bounty)
+Seat 6: Jayzi_fr (11898, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Glynis posts ante 30
+Corsaires78 posts ante 30
+Ato97 posts ante 30
+Memepasmal posts ante 30
+MyPseudo posts ante 30
+Jayzi_fr posts ante 30
+Glynis posts small blind 125
+Corsaires78 posts big blind 250
+Dealt to MyPseudo [7s 3c]
+*** PRE-FLOP *** 
+Memepasmal folds
+MyPseudo folds
+Jayzi_fr calls 250
+Ato97 folds
+Glynis calls 125
+Corsaires78 checks
+*** FLOP *** [5d Ad 4s]
+Glynis checks
+Corsaires78 checks
+Jayzi_fr checks
+*** TURN *** [5d Ad 4s][6h]
+Glynis checks
+Corsaires78 bets 930
+Jayzi_fr calls 930
+Glynis folds
+*** RIVER *** [5d Ad 4s 6h][2h]
+Corsaires78 bets 2790
+Jayzi_fr calls 2790
+*** SHOW DOWN ***
+Jayzi_fr shows [As 8s] (One pair : Aces)
+Corsaires78 shows [3s 7h] (Straight 7 high)
+Corsaires78 collected 8370 from pot
+*** SUMMARY ***
+Total pot 8370 | No rake
+Board: [5d Ad 4s 6h 2h]
+Seat 3: Corsaires78 (big blind) showed [3s 7h] and won 8370 with Straight 7 high
+Seat 6: Jayzi_fr showed [As 8s] and lost with One pair : Aces
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 2 - HandId: #4806216885538390071-1-1782677096 - Holdem no limit (30/125/250) - 2026/06/28 20:04:56 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #5 is the button
+Seat 1: cool_Okapi66 (11775, 0.11€ bounty)
+Seat 2: Beni Bedivec (40351, 0.16€ bounty)
+Seat 3: MyPseudo (13771, 0.16€ bounty)
+Seat 5: davidofff21 (20000, 0.11€ bounty)
+Seat 6: schirou (23669, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Beni Bedivec posts ante 30
+MyPseudo posts ante 30
+davidofff21 posts ante 30
+Beni Bedivec posts small blind 125
+MyPseudo posts big blind 250
+Dealt to MyPseudo [3s Ts]
+*** PRE-FLOP *** 
+davidofff21 folds
+Beni Bedivec calls 125
+MyPseudo checks
+*** FLOP *** [6s 6c Jh]
+Beni Bedivec checks
+MyPseudo checks
+*** TURN *** [6s 6c Jh][Th]
+Beni Bedivec bets 384
+MyPseudo calls 384
+*** RIVER *** [6s 6c Jh Th][Js]
+Beni Bedivec bets 883
+MyPseudo calls 883
+*** SHOW DOWN ***
+Beni Bedivec shows [5d 8d] (Two pairs : Jacks and 6)
+MyPseudo shows [3s Ts] (Two pairs : Jacks and Tens)
+MyPseudo collected 3124 from pot
+*** SUMMARY ***
+Total pot 3124 | No rake
+Board: [6s 6c Jh Th Js]
+Seat 2: Beni Bedivec (small blind) showed [5d 8d] and lost with Two pairs : Jacks and 6
+Seat 3: MyPseudo (big blind) showed [3s Ts] and won 3124 with Two pairs : Jacks and Tens
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 3 - HandId: #4806216885538390071-2-1782677161 - Holdem no limit (35/150/300) - 2026/06/28 20:06:01 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #2 is the button
+Seat 1: cool_Okapi66 (11775, 0.11€ bounty)
+Seat 2: Beni Bedivec (38804, 0.16€ bounty)
+Seat 3: MyPseudo (15348, 0.16€ bounty)
+Seat 5: davidofff21 (19970, 0.11€ bounty)
+Seat 6: schirou (23669, 0.11€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 35
+davidofff21 posts ante 35
+cool_Okapi66 posts ante 35
+Beni Bedivec posts ante 35
+schirou posts ante 35
+MyPseudo posts small blind 150
+davidofff21 posts big blind 300
+Dealt to MyPseudo [6c 8h]
+*** PRE-FLOP *** 
+schirou raises 925 to 1225
+cool_Okapi66 calls 1225
+Beni Bedivec folds
+MyPseudo folds
+davidofff21 folds
+*** FLOP *** [5s 5d 7h]
+schirou bets 3075
+cool_Okapi66 folds
+schirou collected 6150 from pot
+*** SUMMARY ***
+Total pot 6150 | No rake
+Board: [5s 5d 7h]
+Seat 6: schirou won 6150
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 3 - HandId: #4806216885538390071-3-1782677210 - Holdem no limit (35/150/300) - 2026/06/28 20:06:50 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #3 is the button
+Seat 1: cool_Okapi66 (10515, 0.11€ bounty)
+Seat 2: Beni Bedivec (38769, 0.16€ bounty)
+Seat 3: MyPseudo (15163, 0.16€ bounty)
+Seat 5: davidofff21 (19635, 0.11€ bounty)
+Seat 6: schirou (25484, 0.11€ bounty)
+*** ANTE/BLINDS ***
+davidofff21 posts ante 35
+schirou posts ante 35
+cool_Okapi66 posts ante 35
+Beni Bedivec posts ante 35
+MyPseudo posts ante 35
+davidofff21 posts small blind 150
+schirou posts big blind 300
+Dealt to MyPseudo [Qs 4s]
+*** PRE-FLOP *** 
+cool_Okapi66 folds
+Beni Bedivec folds
+MyPseudo raises 300 to 600
+davidofff21 calls 450
+schirou calls 300
+*** FLOP *** [9d 7d 5d]
+davidofff21 checks
+schirou checks
+MyPseudo checks
+*** TURN *** [9d 7d 5d][Td]
+davidofff21 checks
+schirou bets 691
+MyPseudo folds
+davidofff21 folds
+schirou collected 2666 from pot
+*** SUMMARY ***
+Total pot 2666 | No rake
+Board: [9d 7d 5d Td]
+Seat 6: schirou (big blind) won 2666
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 3 - HandId: #4806216885538390071-4-1782677279 - Holdem no limit (35/150/300) - 2026/06/28 20:07:59 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #5 is the button
+Seat 1: cool_Okapi66 (10480, 0.11€ bounty)
+Seat 2: Beni Bedivec (38734, 0.16€ bounty)
+Seat 3: MyPseudo (14528, 0.16€ bounty)
+Seat 5: davidofff21 (19000, 0.11€ bounty)
+Seat 6: schirou (26824, 0.11€ bounty)
+*** ANTE/BLINDS ***
+schirou posts ante 35
+cool_Okapi66 posts ante 35
+Beni Bedivec posts ante 35
+MyPseudo posts ante 35
+davidofff21 posts ante 35
+schirou posts small blind 150
+cool_Okapi66 posts big blind 300
+Dealt to MyPseudo [4d 4s]
+*** PRE-FLOP *** 
+Beni Bedivec raises 496 to 796
+MyPseudo raises 13697 to 14493 and is all-in
+davidofff21 folds
+schirou folds
+cool_Okapi66 folds
+Beni Bedivec folds
+MyPseudo collected 15914 from pot
+*** SUMMARY ***
+Total pot 15914 | No rake
+Seat 3: MyPseudo won 15914
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 3 - HandId: #4806216885538390071-5-1782677314 - Holdem no limit (35/150/300) - 2026/06/28 20:08:34 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #6 is the button
+Seat 1: cool_Okapi66 (10145, 0.11€ bounty)
+Seat 2: Beni Bedivec (37903, 0.16€ bounty)
+Seat 3: MyPseudo (15914, 0.16€ bounty)
+Seat 4: Blasphemos (20000, 0.11€ bounty)
+Seat 5: davidofff21 (18965, 0.11€ bounty)
+Seat 6: schirou (26639, 0.11€ bounty)
+*** ANTE/BLINDS ***
+cool_Okapi66 posts ante 35
+Beni Bedivec posts ante 35
+MyPseudo posts ante 35
+Blasphemos posts ante 35
+davidofff21 posts ante 35
+schirou posts ante 35
+cool_Okapi66 posts small blind 150
+Beni Bedivec posts big blind 300
+Dealt to MyPseudo [Kc Jc]
+*** PRE-FLOP *** 
+MyPseudo raises 450 to 750
+Blasphemos folds
+davidofff21 folds
+schirou folds
+cool_Okapi66 calls 600
+Beni Bedivec calls 450
+*** FLOP *** [Ac 5c 2d]
+cool_Okapi66 checks
+Beni Bedivec checks
+MyPseudo bets 861
+cool_Okapi66 folds
+Beni Bedivec calls 861
+*** TURN *** [Ac 5c 2d][Tc]
+Beni Bedivec checks
+MyPseudo checks
+*** RIVER *** [Ac 5c 2d Tc][Qc]
+Beni Bedivec bets 2718
+MyPseudo raises 11550 to 14268 and is all-in
+Beni Bedivec folds
+MyPseudo shows [Kc Jc] (Straight flush Ace)
+MyPseudo collected 21168 from pot
+*** SUMMARY ***
+Total pot 21168 | No rake
+Board: [Ac 5c 2d Tc Qc]
+Seat 3: MyPseudo showed [Kc Jc] and won 21168 with Straight flush Ace
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 3 - HandId: #4806216885538390071-6-1782677403 - Holdem no limit (35/150/300) - 2026/06/28 20:10:03 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #1 is the button
+Seat 1: cool_Okapi66 (9360, 0.11€ bounty)
+Seat 2: Beni Bedivec (33539, 0.16€ bounty)
+Seat 3: MyPseudo (21168, 0.16€ bounty)
+Seat 4: Blasphemos (19965, 0.11€ bounty)
+Seat 5: davidofff21 (18930, 0.11€ bounty)
+Seat 6: schirou (26604, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Beni Bedivec posts ante 35
+MyPseudo posts ante 35
+cool_Okapi66 posts ante 35
+Blasphemos posts ante 35
+davidofff21 posts ante 35
+schirou posts ante 35
+Beni Bedivec posts small blind 150
+MyPseudo posts big blind 300
+Dealt to MyPseudo [Ts Ks]
+*** PRE-FLOP *** 
+Blasphemos raises 375 to 675
+davidofff21 calls 675
+schirou folds
+cool_Okapi66 folds
+Beni Bedivec calls 525
+MyPseudo calls 375
+*** FLOP *** [Tc Qd 7s]
+Beni Bedivec bets 1892
+MyPseudo calls 1892
+Blasphemos folds
+davidofff21 calls 1892
+*** TURN *** [Tc Qd 7s][Kd]
+Beni Bedivec checks
+MyPseudo bets 4293
+davidofff21 calls 4293
+Beni Bedivec calls 4293
+*** RIVER *** [Tc Qd 7s Kd][2c]
+Beni Bedivec checks
+MyPseudo bets 14273 and is all-in
+davidofff21 folds
+Beni Bedivec folds
+MyPseudo collected 35738 from pot
+*** SUMMARY ***
+Total pot 35738 | No rake
+Board: [Tc Qd 7s Kd 2c]
+Seat 3: MyPseudo (big blind) won 35738
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 4 - HandId: #4806216885538390071-7-1782677506 - Holdem no limit (40/175/350) - 2026/06/28 20:11:46 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #2 is the button
+Seat 1: cool_Okapi66 (9325, 0.11€ bounty)
+Seat 2: Beni Bedivec (26644, 0.16€ bounty)
+Seat 3: MyPseudo (35738, 0.16€ bounty)
+Seat 4: Blasphemos (19255, 0.11€ bounty)
+Seat 5: davidofff21 (12035, 0.11€ bounty)
+Seat 6: schirou (26569, 0.11€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 40
+Blasphemos posts ante 40
+cool_Okapi66 posts ante 40
+Beni Bedivec posts ante 40
+davidofff21 posts ante 40
+schirou posts ante 40
+MyPseudo posts small blind 175
+Blasphemos posts big blind 350
+Dealt to MyPseudo [6c Jh]
+*** PRE-FLOP *** 
+davidofff21 folds
+schirou folds
+cool_Okapi66 folds
+Beni Bedivec folds
+MyPseudo calls 175
+Blasphemos checks
+*** FLOP *** [7h 5s 3h]
+MyPseudo checks
+Blasphemos checks
+*** TURN *** [7h 5s 3h][8s]
+MyPseudo checks
+Blasphemos checks
+*** RIVER *** [7h 5s 3h 8s][Ah]
+MyPseudo bets 470
+Blasphemos folds
+MyPseudo collected 1410 from pot
+*** SUMMARY ***
+Total pot 1410 | No rake
+Board: [7h 5s 3h 8s Ah]
+Seat 3: MyPseudo (small blind) won 1410
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 4 - HandId: #4806216885538390071-8-1782677588 - Holdem no limit (40/175/350) - 2026/06/28 20:13:08 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #3 is the button
+Seat 1: cool_Okapi66 (9285, 0.11€ bounty)
+Seat 2: Beni Bedivec (26604, 0.16€ bounty)
+Seat 3: MyPseudo (36288, 0.16€ bounty)
+Seat 4: Blasphemos (18865, 0.11€ bounty)
+Seat 5: davidofff21 (11995, 0.11€ bounty)
+Seat 6: schirou (26529, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Blasphemos posts ante 40
+davidofff21 posts ante 40
+cool_Okapi66 posts ante 40
+Beni Bedivec posts ante 40
+MyPseudo posts ante 40
+schirou posts ante 40
+Blasphemos posts small blind 175
+davidofff21 posts big blind 350
+Dealt to MyPseudo [8h 5h]
+*** PRE-FLOP *** 
+schirou folds
+cool_Okapi66 folds
+Beni Bedivec folds
+MyPseudo folds
+Blasphemos folds
+davidofff21 collected 765 from pot
+*** SUMMARY ***
+Total pot 765 | No rake
+Seat 5: davidofff21 (big blind) won 765
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 4 - HandId: #4806216885538390071-9-1782677610 - Holdem no limit (40/175/350) - 2026/06/28 20:13:30 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #4 is the button
+Seat 1: cool_Okapi66 (9245, 0.11€ bounty)
+Seat 2: Beni Bedivec (26564, 0.16€ bounty)
+Seat 3: MyPseudo (36248, 0.16€ bounty)
+Seat 4: Blasphemos (18650, 0.11€ bounty)
+Seat 5: davidofff21 (12370, 0.11€ bounty)
+Seat 6: schirou (26489, 0.11€ bounty)
+*** ANTE/BLINDS ***
+davidofff21 posts ante 40
+schirou posts ante 40
+cool_Okapi66 posts ante 40
+Beni Bedivec posts ante 40
+MyPseudo posts ante 40
+Blasphemos posts ante 40
+davidofff21 posts small blind 175
+schirou posts big blind 350
+Dealt to MyPseudo [Kh 6h]
+*** PRE-FLOP *** 
+cool_Okapi66 raises 1115 to 1465
+Beni Bedivec folds
+MyPseudo folds
+Blasphemos folds
+davidofff21 raises 1335 to 2800
+schirou folds
+cool_Okapi66 raises 6405 to 9205 and is all-in
+davidofff21 calls 6405
+*** FLOP *** [Ac 3c Js]
+*** TURN *** [Ac 3c Js][Jd]
+*** RIVER *** [Ac 3c Js Jd][6c]
+*** SHOW DOWN ***
+cool_Okapi66 shows [2c 2h] (Two pairs : Jacks and 2)
+davidofff21 shows [Ks As] (Two pairs : Aces and Jacks)
+davidofff21 collected 19000 from pot
+*** SUMMARY ***
+Total pot 19000 | No rake
+Board: [Ac 3c Js Jd 6c]
+Seat 1: cool_Okapi66 showed [2c 2h] and lost with Two pairs : Jacks and 2
+Seat 5: davidofff21 (small blind) showed [Ks As] and won 19000 with Two pairs : Aces and Jacks
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 4 - HandId: #4806216885538390071-10-1782677672 - Holdem no limit (40/175/350) - 2026/06/28 20:14:32 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #5 is the button
+Seat 2: Beni Bedivec (26524, 0.16€ bounty)
+Seat 3: MyPseudo (36208, 0.16€ bounty)
+Seat 4: Blasphemos (18610, 0.11€ bounty)
+Seat 5: davidofff21 (22125, 0.16€ bounty)
+Seat 6: schirou (26099, 0.11€ bounty)
+*** ANTE/BLINDS ***
+schirou posts ante 40
+Beni Bedivec posts ante 40
+MyPseudo posts ante 40
+Blasphemos posts ante 40
+davidofff21 posts ante 40
+schirou posts small blind 175
+Beni Bedivec posts big blind 350
+Dealt to MyPseudo [Ad 6c]
+*** PRE-FLOP *** 
+MyPseudo calls 350
+Blasphemos folds
+davidofff21 raises 525 to 875
+schirou folds
+Beni Bedivec calls 525
+MyPseudo folds
+*** FLOP *** [Ks 4d 5d]
+Beni Bedivec checks
+davidofff21 checks
+*** TURN *** [Ks 4d 5d][7h]
+Beni Bedivec bets 1609
+davidofff21 folds
+Beni Bedivec collected 4084 from pot
+*** SUMMARY ***
+Total pot 4084 | No rake
+Board: [Ks 4d 5d 7h]
+Seat 2: Beni Bedivec (big blind) won 4084
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 4 - HandId: #4806216885538390071-11-1782677730 - Holdem no limit (40/175/350) - 2026/06/28 20:15:30 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #6 is the button
+Seat 1: Magicpok (20000, 0.11€ bounty)
+Seat 2: Beni Bedivec (28084, 0.16€ bounty)
+Seat 3: MyPseudo (35818, 0.16€ bounty)
+Seat 4: Blasphemos (18570, 0.11€ bounty)
+Seat 5: davidofff21 (21210, 0.16€ bounty)
+Seat 6: schirou (25884, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Beni Bedivec posts ante 40
+MyPseudo posts ante 40
+Blasphemos posts ante 40
+davidofff21 posts ante 40
+schirou posts ante 40
+Beni Bedivec posts small blind 175
+MyPseudo posts big blind 350
+Dealt to MyPseudo [4h 2c]
+*** PRE-FLOP *** 
+Blasphemos folds
+davidofff21 folds
+schirou raises 576 to 926
+Beni Bedivec folds
+MyPseudo folds
+schirou collected 1651 from pot
+*** SUMMARY ***
+Total pot 1651 | No rake
+Seat 6: schirou (button) won 1651
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 4 - HandId: #4806216885538390071-12-1782677758 - Holdem no limit (40/175/350) - 2026/06/28 20:15:58 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #2 is the button
+Seat 1: Magicpok (20000, 0.11€ bounty)
+Seat 2: Beni Bedivec (27869, 0.16€ bounty)
+Seat 3: MyPseudo (35428, 0.16€ bounty)
+Seat 4: Blasphemos (18530, 0.11€ bounty)
+Seat 5: davidofff21 (21170, 0.16€ bounty)
+Seat 6: schirou (26569, 0.11€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 40
+Blasphemos posts ante 40
+Magicpok posts ante 40
+Beni Bedivec posts ante 40
+davidofff21 posts ante 40
+schirou posts ante 40
+MyPseudo posts small blind 175
+Blasphemos posts big blind 350
+Dealt to MyPseudo [2c 8c]
+*** PRE-FLOP *** 
+davidofff21 folds
+schirou folds
+Magicpok folds
+Beni Bedivec raises 602 to 952
+MyPseudo folds
+Blasphemos calls 602
+*** FLOP *** [5c 4s 2s]
+Blasphemos checks
+Beni Bedivec bets 1507
+Blasphemos calls 1507
+*** TURN *** [5c 4s 2s][6h]
+Blasphemos checks
+Beni Bedivec checks
+*** RIVER *** [5c 4s 2s 6h][Th]
+Blasphemos bets 4550
+Beni Bedivec folds
+Blasphemos collected 9883 from pot
+*** SUMMARY ***
+Total pot 9883 | No rake
+Board: [5c 4s 2s 6h Th]
+Seat 4: Blasphemos (big blind) won 9883
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 5 - HandId: #4806216885538390071-13-1782677801 - Holdem no limit (50/200/400) - 2026/06/28 20:16:41 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #3 is the button
+Seat 1: Magicpok (19960, 0.11€ bounty)
+Seat 2: Beni Bedivec (25370, 0.16€ bounty)
+Seat 3: MyPseudo (35213, 0.16€ bounty)
+Seat 4: Blasphemos (21364, 0.11€ bounty)
+Seat 5: davidofff21 (21130, 0.16€ bounty)
+Seat 6: schirou (26529, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Blasphemos posts ante 50
+davidofff21 posts ante 50
+Magicpok posts ante 50
+Beni Bedivec posts ante 50
+MyPseudo posts ante 50
+schirou posts ante 50
+Blasphemos posts small blind 200
+davidofff21 posts big blind 400
+Dealt to MyPseudo [Qs 5c]
+*** PRE-FLOP *** 
+schirou folds
+Magicpok folds
+Beni Bedivec raises 705 to 1105
+MyPseudo folds
+Blasphemos folds
+davidofff21 raises 2495 to 3600
+Beni Bedivec calls 2495
+*** FLOP *** [5d 4d 6h]
+davidofff21 bets 2695
+Beni Bedivec raises 7565 to 10260
+davidofff21 calls 7565
+*** TURN *** [5d 4d 6h][Jc]
+davidofff21 checks
+Beni Bedivec bets 11460 and is all-in
+davidofff21 calls 7220 and is all-in
+*** RIVER *** [5d 4d 6h Jc][Ad]
+*** SHOW DOWN ***
+Beni Bedivec shows [As 3d] (One pair : Aces)
+davidofff21 shows [Kh Ah] (One pair : Aces)
+davidofff21 collected 42660 from main pot
+Beni Bedivec collected 4240 from side pot 1
+*** SUMMARY ***
+Total pot 46900 | No rake
+Board: [5d 4d 6h Jc Ad]
+Seat 2: Beni Bedivec showed [As 3d] and won 4240 with One pair : Aces
+Seat 5: davidofff21 (big blind) showed [Kh Ah] and won 42660 with One pair : Aces
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 5 - HandId: #4806216885538390071-14-1782677845 - Holdem no limit (50/200/400) - 2026/06/28 20:17:25 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #4 is the button
+Seat 1: Magicpok (19910, 0.11€ bounty)
+Seat 2: Beni Bedivec (4240, 0.16€ bounty)
+Seat 3: MyPseudo (35163, 0.16€ bounty)
+Seat 4: Blasphemos (21114, 0.11€ bounty)
+Seat 5: davidofff21 (42660, 0.16€ bounty)
+Seat 6: schirou (26479, 0.11€ bounty)
+*** ANTE/BLINDS ***
+davidofff21 posts ante 50
+schirou posts ante 50
+Magicpok posts ante 50
+Beni Bedivec posts ante 50
+MyPseudo posts ante 50
+Blasphemos posts ante 50
+davidofff21 posts small blind 200
+schirou posts big blind 400
+Dealt to MyPseudo [Js 3s]
+*** PRE-FLOP *** 
+Magicpok folds
+Beni Bedivec raises 3790 to 4190 and is all-in
+MyPseudo folds
+Blasphemos calls 4190
+davidofff21 folds
+schirou folds
+*** FLOP *** [Th 4d 7s]
+*** TURN *** [Th 4d 7s][8c]
+*** RIVER *** [Th 4d 7s 8c][Td]
+*** SHOW DOWN ***
+Beni Bedivec shows [Ks Jc] (One pair : Tens)
+Blasphemos shows [Ac 4c] (Two pairs : Tens and 4)
+Blasphemos collected 9280 from pot
+*** SUMMARY ***
+Total pot 9280 | No rake
+Board: [Th 4d 7s 8c Td]
+Seat 2: Beni Bedivec showed [Ks Jc] and lost with One pair : Tens
+Seat 4: Blasphemos (button) showed [Ac 4c] and won 9280 with Two pairs : Tens and 4
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 5 - HandId: #4806216885538390071-15-1782677902 - Holdem no limit (50/200/400) - 2026/06/28 20:18:22 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #5 is the button
+Seat 1: Magicpok (19860, 0.11€ bounty)
+Seat 3: MyPseudo (35113, 0.16€ bounty)
+Seat 4: Blasphemos (26154, 0.19€ bounty)
+Seat 5: davidofff21 (42410, 0.16€ bounty)
+Seat 6: schirou (26029, 0.11€ bounty)
+*** ANTE/BLINDS ***
+schirou posts ante 50
+Magicpok posts ante 50
+MyPseudo posts ante 50
+Blasphemos posts ante 50
+davidofff21 posts ante 50
+schirou posts small blind 200
+Magicpok posts big blind 400
+Dealt to MyPseudo [3d Ks]
+*** PRE-FLOP *** 
+MyPseudo folds
+Blasphemos raises 500 to 900
+davidofff21 folds
+schirou folds
+Magicpok calls 500
+*** FLOP *** [6s 3s Jc]
+Magicpok checks
+Blasphemos checks
+*** TURN *** [6s 3s Jc][5d]
+Magicpok checks
+Blasphemos checks
+*** RIVER *** [6s 3s Jc 5d][3c]
+Magicpok bets 1463
+Blasphemos folds
+Magicpok collected 3713 from pot
+*** SUMMARY ***
+Total pot 3713 | No rake
+Board: [6s 3s Jc 5d 3c]
+Seat 1: Magicpok (big blind) won 3713
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 5 - HandId: #4806216885538390071-16-1782677948 - Holdem no limit (50/200/400) - 2026/06/28 20:19:08 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #6 is the button
+Seat 1: Magicpok (21160, 0.11€ bounty)
+Seat 2: Gusteru (20000, 0.11€ bounty)
+Seat 3: MyPseudo (35063, 0.16€ bounty)
+Seat 4: Blasphemos (25204, 0.19€ bounty)
+Seat 5: davidofff21 (42360, 0.16€ bounty)
+Seat 6: schirou (25779, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Magicpok posts ante 50
+Gusteru posts ante 50
+MyPseudo posts ante 50
+Blasphemos posts ante 50
+davidofff21 posts ante 50
+schirou posts ante 50
+Magicpok posts small blind 200
+Gusteru posts big blind 400
+Dealt to MyPseudo [3c 2s]
+*** PRE-FLOP *** 
+MyPseudo folds
+Blasphemos raises 600 to 1000
+davidofff21 calls 1000
+schirou folds
+Magicpok calls 800
+Gusteru calls 600
+*** FLOP *** [9d Qd 5h]
+Magicpok checks
+Gusteru checks
+Blasphemos bets 2600
+davidofff21 folds
+Magicpok folds
+Gusteru folds
+Blasphemos collected 6900 from pot
+*** SUMMARY ***
+Total pot 6900 | No rake
+Board: [9d Qd 5h]
+Seat 4: Blasphemos won 6900
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 5 - HandId: #4806216885538390071-17-1782677987 - Holdem no limit (50/200/400) - 2026/06/28 20:19:47 UTC
+Table: 'Kill The Fish(1119034571)#054' 6-max (real money) Seat #1 is the button
+Seat 1: Magicpok (20110, 0.11€ bounty)
+Seat 2: Gusteru (18950, 0.11€ bounty)
+Seat 3: MyPseudo (35013, 0.16€ bounty)
+Seat 4: Blasphemos (28454, 0.19€ bounty)
+Seat 5: davidofff21 (41310, 0.16€ bounty)
+Seat 6: schirou (25729, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Gusteru posts ante 50
+MyPseudo posts ante 50
+Magicpok posts ante 50
+Blasphemos posts ante 50
+davidofff21 posts ante 50
+schirou posts ante 50
+Gusteru posts small blind 200
+MyPseudo posts big blind 400
+Dealt to MyPseudo [Ah 5d]
+*** PRE-FLOP *** 
+Blasphemos raises 600 to 1000
+davidofff21 folds
+schirou raises 1535 to 2535
+Magicpok calls 2535
+Gusteru folds
+MyPseudo calls 2135
+Blasphemos calls 1535
+*** FLOP *** [4c 9d 4d]
+MyPseudo checks
+Blasphemos checks
+schirou bets 3724
+Magicpok folds
+MyPseudo folds
+Blasphemos raises 18088 to 21812
+schirou calls 18088
+*** TURN *** [4c 9d 4d][Ks]
+Blasphemos bets 1400
+schirou calls 1332 and is all-in
+*** RIVER *** [4c 9d 4d Ks][7s]
+*** SHOW DOWN ***
+Blasphemos shows [3s 3d] (Two pairs : 4 and 3)
+schirou shows [Kh As] (Two pairs : Kings and 4)
+schirou collected 56928 from main pot
+Blasphemos collected 68 from side pot 1
+*** SUMMARY ***
+Total pot 56996 | No rake
+Board: [4c 9d 4d Ks 7s]
+Seat 4: Blasphemos showed [3s 3d] and won 68 with Two pairs : 4 and 3
+Seat 6: schirou showed [Kh As] and won 56928 with Two pairs : Kings and 4
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 6 - HandId: #4806216885538390018-53-1782678106 - Holdem no limit (60/250/500) - 2026/06/28 20:21:46 UTC
+Table: 'Kill The Fish(1119034571)#001' 6-max (real money) Seat #5 is the button
+Seat 1: lokiluki (29750, 0.11€ bounty)
+Seat 2: Kiwi.maso40 (9342, 0.26€ bounty)
+Seat 3: Mendesito766 (75283, 0.26€ bounty)
+Seat 4: MyPseudo (32428, 0.16€ bounty)
+Seat 5: O Fishtre (79070, 0.16€ bounty)
+Seat 6: NeOFireKiLL (15456, 0.11€ bounty)
+*** ANTE/BLINDS ***
+NeOFireKiLL posts ante 60
+lokiluki posts ante 60
+Kiwi.maso40 posts ante 60
+Mendesito766 posts ante 60
+MyPseudo posts ante 60
+O Fishtre posts ante 60
+NeOFireKiLL posts small blind 250
+lokiluki posts big blind 500
+Dealt to MyPseudo [3c Kc]
+*** PRE-FLOP *** 
+Kiwi.maso40 raises 8782 to 9282 and is all-in
+Mendesito766 folds
+MyPseudo folds
+O Fishtre folds
+NeOFireKiLL folds
+lokiluki folds
+Kiwi.maso40 collected 10392 from pot
+*** SUMMARY ***
+Total pot 10392 | No rake
+Seat 2: Kiwi.maso40 won 10392
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 6 - HandId: #4806216885538390018-54-1782678127 - Holdem no limit (60/250/500) - 2026/06/28 20:22:07 UTC
+Table: 'Kill The Fish(1119034571)#001' 6-max (real money) Seat #6 is the button
+Seat 1: lokiluki (29190, 0.11€ bounty)
+Seat 2: Kiwi.maso40 (10392, 0.26€ bounty)
+Seat 3: Mendesito766 (75223, 0.26€ bounty)
+Seat 4: MyPseudo (32368, 0.16€ bounty)
+Seat 5: O Fishtre (79010, 0.16€ bounty)
+Seat 6: NeOFireKiLL (15146, 0.11€ bounty)
+*** ANTE/BLINDS ***
+lokiluki posts ante 60
+Kiwi.maso40 posts ante 60
+Mendesito766 posts ante 60
+MyPseudo posts ante 60
+O Fishtre posts ante 60
+NeOFireKiLL posts ante 60
+lokiluki posts small blind 250
+Kiwi.maso40 posts big blind 500
+Dealt to MyPseudo [9h 8c]
+*** PRE-FLOP *** 
+Mendesito766 folds
+MyPseudo folds
+O Fishtre folds
+NeOFireKiLL raises 500 to 1000
+lokiluki folds
+Kiwi.maso40 raises 9332 to 10332 and is all-in
+NeOFireKiLL raises 4754 to 15086 and is all-in
+*** FLOP *** [9d Jh Kd]
+*** TURN *** [9d Jh Kd][4h]
+*** RIVER *** [9d Jh Kd 4h][9c]
+*** SHOW DOWN ***
+Kiwi.maso40 shows [Qd Ah] (One pair : 9)
+NeOFireKiLL shows [As 5h] (One pair : 9)
+NeOFireKiLL collected 4754 from side pot 1
+Kiwi.maso40 collected 21274 from main pot
+*** SUMMARY ***
+Total pot 26028 | No rake
+Board: [9d Jh Kd 4h 9c]
+Seat 2: Kiwi.maso40 (big blind) showed [Qd Ah] and won 21274 with One pair : 9
+Seat 6: NeOFireKiLL (button) showed [As 5h] and won 4754 with One pair : 9
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 6 - HandId: #4806216885538390018-55-1782678189 - Holdem no limit (60/250/500) - 2026/06/28 20:23:09 UTC
+Table: 'Kill The Fish(1119034571)#001' 6-max (real money) Seat #1 is the button
+Seat 1: lokiluki (28880, 0.11€ bounty)
+Seat 2: Kiwi.maso40 (21274, 0.26€ bounty)
+Seat 3: Mendesito766 (75163, 0.26€ bounty)
+Seat 4: MyPseudo (32308, 0.16€ bounty)
+Seat 5: O Fishtre (78950, 0.16€ bounty)
+Seat 6: NeOFireKiLL (4754, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Kiwi.maso40 posts ante 60
+Mendesito766 posts ante 60
+lokiluki posts ante 60
+MyPseudo posts ante 60
+O Fishtre posts ante 60
+NeOFireKiLL posts ante 60
+Kiwi.maso40 posts small blind 250
+Mendesito766 posts big blind 500
+Dealt to MyPseudo [7h 4c]
+*** PRE-FLOP *** 
+MyPseudo folds
+O Fishtre folds
+NeOFireKiLL raises 4194 to 4694 and is all-in
+lokiluki calls 4694
+Kiwi.maso40 calls 4444
+Mendesito766 folds
+*** FLOP *** [Qd 5s Ac]
+Kiwi.maso40 checks
+lokiluki checks
+*** TURN *** [Qd 5s Ac][Qh]
+Kiwi.maso40 bets 500
+lokiluki calls 500
+*** RIVER *** [Qd 5s Ac Qh][Td]
+Kiwi.maso40 bets 500
+lokiluki folds
+*** SHOW DOWN ***
+Kiwi.maso40 shows [5c 3c] (Two pairs : Queens and 5)
+NeOFireKiLL shows [Ah Ad] (Full of Aces and Queens)
+NeOFireKiLL collected 14942 from main pot
+Kiwi.maso40 collected 1500 from side pot 1
+*** SUMMARY ***
+Total pot 16442 | No rake
+Board: [Qd 5s Ac Qh Td]
+Seat 2: Kiwi.maso40 (small blind) showed [5c 3c] and won 1500 with Two pairs : Queens and 5
+Seat 6: NeOFireKiLL showed [Ah Ad] and won 14942 with Full of Aces and Queens
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 6 - HandId: #4806216885538390018-56-1782678218 - Holdem no limit (60/250/500) - 2026/06/28 20:23:38 UTC
+Table: 'Kill The Fish(1119034571)#001' 6-max (real money) Seat #2 is the button
+Seat 1: lokiluki (23626, 0.11€ bounty)
+Seat 2: Kiwi.maso40 (17020, 0.26€ bounty)
+Seat 3: Mendesito766 (74603, 0.26€ bounty)
+Seat 4: MyPseudo (32248, 0.16€ bounty)
+Seat 5: O Fishtre (78890, 0.16€ bounty)
+Seat 6: NeOFireKiLL (14942, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Mendesito766 posts ante 60
+MyPseudo posts ante 60
+lokiluki posts ante 60
+Kiwi.maso40 posts ante 60
+O Fishtre posts ante 60
+NeOFireKiLL posts ante 60
+Mendesito766 posts small blind 250
+MyPseudo posts big blind 500
+Dealt to MyPseudo [8s 5c]
+*** PRE-FLOP *** 
+O Fishtre folds
+NeOFireKiLL raises 500 to 1000
+lokiluki calls 1000
+Kiwi.maso40 folds
+Mendesito766 folds
+MyPseudo folds
+*** FLOP *** [2h Th 6s]
+NeOFireKiLL bets 2000
+lokiluki folds
+NeOFireKiLL collected 5110 from pot
+*** SUMMARY ***
+Total pot 5110 | No rake
+Board: [2h Th 6s]
+Seat 6: NeOFireKiLL won 5110
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 6 - HandId: #4806216885538390018-57-1782678265 - Holdem no limit (60/250/500) - 2026/06/28 20:24:25 UTC
+Table: 'Kill The Fish(1119034571)#001' 6-max (real money) Seat #3 is the button
+Seat 1: lokiluki (22566, 0.11€ bounty)
+Seat 2: Kiwi.maso40 (16960, 0.26€ bounty)
+Seat 3: Mendesito766 (74293, 0.26€ bounty)
+Seat 4: MyPseudo (31688, 0.16€ bounty)
+Seat 5: O Fishtre (78830, 0.16€ bounty)
+Seat 6: NeOFireKiLL (16992, 0.11€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 60
+O Fishtre posts ante 60
+lokiluki posts ante 60
+Kiwi.maso40 posts ante 60
+Mendesito766 posts ante 60
+NeOFireKiLL posts ante 60
+MyPseudo posts small blind 250
+O Fishtre posts big blind 500
+Dealt to MyPseudo [9d Ad]
+*** PRE-FLOP *** 
+NeOFireKiLL folds
+lokiluki folds
+Kiwi.maso40 calls 500
+Mendesito766 raises 750 to 1250
+MyPseudo raises 750 to 2000
+O Fishtre folds
+Kiwi.maso40 calls 1500
+Mendesito766 calls 750
+*** FLOP *** [Qd 7c Jd]
+MyPseudo checks
+Kiwi.maso40 checks
+Mendesito766 checks
+*** TURN *** [Qd 7c Jd][Th]
+MyPseudo checks
+Kiwi.maso40 checks
+Mendesito766 checks
+*** RIVER *** [Qd 7c Jd Th][6s]
+MyPseudo checks
+Kiwi.maso40 checks
+Mendesito766 checks
+*** SHOW DOWN ***
+Kiwi.maso40 shows [4s Ah] (High card : Ace)
+MyPseudo shows [9d Ad] (High card : Ace)
+Mendesito766 shows [As Js] (One pair : Jacks)
+Mendesito766 collected 6860 from pot
+*** SUMMARY ***
+Total pot 6860 | No rake
+Board: [Qd 7c Jd Th 6s]
+Seat 2: Kiwi.maso40 showed [4s Ah] and lost with High card : Ace
+Seat 3: Mendesito766 (button) showed [As Js] and won 6860 with One pair : Jacks
+Seat 4: MyPseudo (small blind) showed [9d Ad] and lost with High card : Ace
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 6 - HandId: #4806216885538390018-58-1782678341 - Holdem no limit (60/250/500) - 2026/06/28 20:25:41 UTC
+Table: 'Kill The Fish(1119034571)#001' 6-max (real money) Seat #4 is the button
+Seat 1: lokiluki (22506, 0.11€ bounty)
+Seat 2: Kiwi.maso40 (14900, 0.26€ bounty)
+Seat 3: Mendesito766 (79093, 0.26€ bounty)
+Seat 4: MyPseudo (29628, 0.16€ bounty)
+Seat 5: O Fishtre (78270, 0.16€ bounty)
+Seat 6: NeOFireKiLL (16932, 0.11€ bounty)
+*** ANTE/BLINDS ***
+O Fishtre posts ante 60
+NeOFireKiLL posts ante 60
+lokiluki posts ante 60
+Kiwi.maso40 posts ante 60
+Mendesito766 posts ante 60
+MyPseudo posts ante 60
+O Fishtre posts small blind 250
+NeOFireKiLL posts big blind 500
+Dealt to MyPseudo [Kc 9h]
+*** PRE-FLOP *** 
+lokiluki calls 500
+Kiwi.maso40 calls 500
+Mendesito766 folds
+MyPseudo raises 500 to 1000
+O Fishtre folds
+NeOFireKiLL folds
+lokiluki calls 500
+Kiwi.maso40 calls 500
+*** FLOP *** [8d Ad 6h]
+lokiluki checks
+Kiwi.maso40 checks
+MyPseudo bets 1028
+lokiluki folds
+Kiwi.maso40 calls 1028
+*** TURN *** [8d Ad 6h][As]
+Kiwi.maso40 checks
+MyPseudo checks
+*** RIVER *** [8d Ad 6h As][Td]
+Kiwi.maso40 checks
+MyPseudo checks
+*** SHOW DOWN ***
+MyPseudo shows [Kc 9h] (One pair : Aces)
+Kiwi.maso40 shows [3d 8c] (Two pairs : Aces and 8)
+Kiwi.maso40 collected 6166 from pot
+*** SUMMARY ***
+Total pot 6166 | No rake
+Board: [8d Ad 6h As Td]
+Seat 2: Kiwi.maso40 showed [3d 8c] and won 6166 with Two pairs : Aces and 8
+Seat 4: MyPseudo (button) showed [Kc 9h] and lost with One pair : Aces
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 7 - HandId: #4806216885538390018-59-1782678406 - Holdem no limit (70/300/600) - 2026/06/28 20:26:46 UTC
+Table: 'Kill The Fish(1119034571)#001' 6-max (real money) Seat #5 is the button
+Seat 1: lokiluki (21446, 0.11€ bounty)
+Seat 2: Kiwi.maso40 (18978, 0.26€ bounty)
+Seat 3: Mendesito766 (79033, 0.26€ bounty)
+Seat 4: MyPseudo (27540, 0.16€ bounty)
+Seat 5: O Fishtre (77960, 0.16€ bounty)
+Seat 6: NeOFireKiLL (16372, 0.11€ bounty)
+*** ANTE/BLINDS ***
+NeOFireKiLL posts ante 70
+lokiluki posts ante 70
+Kiwi.maso40 posts ante 70
+Mendesito766 posts ante 70
+MyPseudo posts ante 70
+O Fishtre posts ante 70
+NeOFireKiLL posts small blind 300
+lokiluki posts big blind 600
+Dealt to MyPseudo [4d Td]
+*** PRE-FLOP *** 
+Kiwi.maso40 calls 600
+Mendesito766 folds
+MyPseudo folds
+O Fishtre folds
+NeOFireKiLL raises 600 to 1200
+lokiluki calls 600
+Kiwi.maso40 calls 600
+*** FLOP *** [7d 8d 4c]
+NeOFireKiLL bets 2010
+lokiluki raises 18166 to 20176 and is all-in
+Kiwi.maso40 calls 17708 and is all-in
+NeOFireKiLL calls 13092 and is all-in
+*** TURN *** [7d 8d 4c][6h]
+*** RIVER *** [7d 8d 4c 6h][9s]
+*** SHOW DOWN ***
+NeOFireKiLL shows [6d Ad] (One pair : 6)
+lokiluki shows [4s Js] (One pair : 4)
+Kiwi.maso40 shows [7s 8s] (Two pairs : 8 and 7)
+Kiwi.maso40 collected 54538 from main pot
+lokiluki collected 2468 from side pot 1
+*** SUMMARY ***
+Total pot 57006 | No rake
+Board: [7d 8d 4c 6h 9s]
+Seat 1: lokiluki (big blind) showed [4s Js] and won 2468 with One pair : 4
+Seat 2: Kiwi.maso40 showed [7s 8s] and won 54538 with Two pairs : 8 and 7
+Seat 6: NeOFireKiLL (small blind) showed [6d Ad] and lost with One pair : 6
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 7 - HandId: #4806216885538390018-60-1782678469 - Holdem no limit (70/300/600) - 2026/06/28 20:27:49 UTC
+Table: 'Kill The Fish(1119034571)#001' 6-max (real money) Seat #6 is the button
+Seat 1: lokiluki (2468, 0.11€ bounty)
+Seat 2: Kiwi.maso40 (54538, 0.31€ bounty)
+Seat 3: Mendesito766 (78963, 0.26€ bounty)
+Seat 4: MyPseudo (27470, 0.16€ bounty)
+Seat 5: O Fishtre (77890, 0.16€ bounty)
+*** ANTE/BLINDS ***
+lokiluki posts ante 70
+Kiwi.maso40 posts ante 70
+Mendesito766 posts ante 70
+MyPseudo posts ante 70
+O Fishtre posts ante 70
+lokiluki posts small blind 300
+Kiwi.maso40 posts big blind 600
+Dealt to MyPseudo [Td 5c]
+*** PRE-FLOP *** 
+Mendesito766 folds
+MyPseudo folds
+O Fishtre folds
+lokiluki calls 300
+Kiwi.maso40 checks
+*** FLOP *** [6s 9d Qh]
+lokiluki bets 1798 and is all-in
+Kiwi.maso40 calls 1798
+*** TURN *** [6s 9d Qh][Jd]
+*** RIVER *** [6s 9d Qh Jd][As]
+*** SHOW DOWN ***
+Kiwi.maso40 shows [3c 6c] (One pair : 6)
+lokiluki shows [9s 2d] (One pair : 9)
+lokiluki collected 5146 from pot
+*** SUMMARY ***
+Total pot 5146 | No rake
+Board: [6s 9d Qh Jd As]
+Seat 1: lokiluki (small blind) showed [9s 2d] and won 5146 with One pair : 9
+Seat 2: Kiwi.maso40 (big blind) showed [3c 6c] and lost with One pair : 6
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 7 - HandId: #4806216885538390018-61-1782678495 - Holdem no limit (70/300/600) - 2026/06/28 20:28:15 UTC
+Table: 'Kill The Fish(1119034571)#001' 6-max (real money) Seat #1 is the button
+Seat 1: lokiluki (5146, 0.11€ bounty)
+Seat 2: Kiwi.maso40 (52070, 0.31€ bounty)
+Seat 3: Mendesito766 (78893, 0.26€ bounty)
+Seat 4: MyPseudo (27400, 0.16€ bounty)
+Seat 5: O Fishtre (77820, 0.16€ bounty)
+Seat 6: benjitheflop (20000, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Kiwi.maso40 posts ante 70
+Mendesito766 posts ante 70
+lokiluki posts ante 70
+MyPseudo posts ante 70
+O Fishtre posts ante 70
+benjitheflop posts ante 70
+Kiwi.maso40 posts small blind 300
+Mendesito766 posts big blind 600
+Dealt to MyPseudo [Qs 4h]
+*** PRE-FLOP *** 
+MyPseudo folds
+O Fishtre folds
+benjitheflop folds
+lokiluki raises 4476 to 5076 and is all-in
+Kiwi.maso40 calls 4776
+Mendesito766 folds
+*** FLOP *** [5s Tc 8d]
+*** TURN *** [5s Tc 8d][4c]
+*** RIVER *** [5s Tc 8d 4c][6h]
+*** SHOW DOWN ***
+lokiluki shows [2h 2s] (One pair : 2)
+Kiwi.maso40 shows [5c As] (One pair : 5)
+Kiwi.maso40 collected 11172 from pot
+*** SUMMARY ***
+Total pot 11172 | No rake
+Board: [5s Tc 8d 4c 6h]
+Seat 1: lokiluki (button) showed [2h 2s] and lost with One pair : 2
+Seat 2: Kiwi.maso40 (small blind) showed [5c As] and won 11172 with One pair : 5
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 7 - HandId: #4806216885538390018-62-1782678522 - Holdem no limit (70/300/600) - 2026/06/28 20:28:42 UTC
+Table: 'Kill The Fish(1119034571)#001' 6-max (real money) Seat #2 is the button
+Seat 2: Kiwi.maso40 (58096, 0.36€ bounty)
+Seat 3: Mendesito766 (78223, 0.26€ bounty)
+Seat 4: MyPseudo (27330, 0.16€ bounty)
+Seat 5: O Fishtre (77750, 0.16€ bounty)
+Seat 6: benjitheflop (19930, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Mendesito766 posts ante 70
+MyPseudo posts ante 70
+Kiwi.maso40 posts ante 70
+O Fishtre posts ante 70
+benjitheflop posts ante 70
+Mendesito766 posts small blind 300
+MyPseudo posts big blind 600
+Dealt to MyPseudo [5h Jd]
+*** PRE-FLOP *** 
+O Fishtre folds
+benjitheflop folds
+Kiwi.maso40 calls 600
+Mendesito766 folds
+MyPseudo checks
+*** FLOP *** [3d 7h Th]
+MyPseudo checks
+Kiwi.maso40 bets 648
+MyPseudo folds
+Kiwi.maso40 collected 2498 from pot
+*** SUMMARY ***
+Total pot 2498 | No rake
+Board: [3d 7h Th]
+Seat 2: Kiwi.maso40 (button) won 2498
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 7 - HandId: #4806216885538390018-63-1782678555 - Holdem no limit (70/300/600) - 2026/06/28 20:29:15 UTC
+Table: 'Kill The Fish(1119034571)#001' 6-max (real money) Seat #3 is the button
+Seat 2: Kiwi.maso40 (59276, 0.36€ bounty)
+Seat 3: Mendesito766 (77853, 0.26€ bounty)
+Seat 4: MyPseudo (26660, 0.16€ bounty)
+Seat 5: O Fishtre (77680, 0.16€ bounty)
+Seat 6: benjitheflop (19860, 0.11€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 70
+O Fishtre posts ante 70
+Kiwi.maso40 posts ante 70
+Mendesito766 posts ante 70
+benjitheflop posts ante 70
+MyPseudo posts small blind 300
+O Fishtre posts big blind 600
+Dealt to MyPseudo [7c 2c]
+*** PRE-FLOP *** 
+benjitheflop folds
+Kiwi.maso40 calls 600
+Mendesito766 folds
+MyPseudo folds
+O Fishtre checks
+*** FLOP *** [7h Kd 7d]
+O Fishtre checks
+Kiwi.maso40 checks
+*** TURN *** [7h Kd 7d][8d]
+O Fishtre checks
+Kiwi.maso40 checks
+*** RIVER *** [7h Kd 7d 8d][2h]
+O Fishtre checks
+Kiwi.maso40 checks
+*** SHOW DOWN ***
+O Fishtre shows [Qc 5c] (One pair : 7)
+Kiwi.maso40 shows [Ad Qh] (One pair : 7)
+Kiwi.maso40 collected 1850 from pot
+*** SUMMARY ***
+Total pot 1850 | No rake
+Board: [7h Kd 7d 8d 2h]
+Seat 2: Kiwi.maso40 showed [Ad Qh] and won 1850 with One pair : 7
+Seat 5: O Fishtre (big blind) showed [Qc 5c] and lost with One pair : 7
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 7 - HandId: #4806216885538390018-64-1782678626 - Holdem no limit (70/300/600) - 2026/06/28 20:30:26 UTC
+Table: 'Kill The Fish(1119034571)#001' 6-max (real money) Seat #4 is the button
+Seat 2: Kiwi.maso40 (60456, 0.36€ bounty)
+Seat 3: Mendesito766 (77783, 0.26€ bounty)
+Seat 4: MyPseudo (26290, 0.16€ bounty)
+Seat 5: O Fishtre (77010, 0.16€ bounty)
+Seat 6: benjitheflop (19790, 0.11€ bounty)
+*** ANTE/BLINDS ***
+O Fishtre posts ante 70
+benjitheflop posts ante 70
+Kiwi.maso40 posts ante 70
+Mendesito766 posts ante 70
+MyPseudo posts ante 70
+O Fishtre posts small blind 300
+benjitheflop posts big blind 600
+Dealt to MyPseudo [7h 4c]
+*** PRE-FLOP *** 
+Kiwi.maso40 calls 600
+Mendesito766 folds
+MyPseudo folds
+O Fishtre calls 300
+benjitheflop checks
+*** FLOP *** [6h Js 9c]
+O Fishtre checks
+benjitheflop checks
+Kiwi.maso40 bets 753
+O Fishtre folds
+benjitheflop folds
+Kiwi.maso40 collected 2903 from pot
+*** SUMMARY ***
+Total pot 2903 | No rake
+Board: [6h Js 9c]
+Seat 2: Kiwi.maso40 won 2903
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 7 - HandId: #4806216885538390018-65-1782678660 - Holdem no limit (70/300/600) - 2026/06/28 20:31:00 UTC
+Table: 'Kill The Fish(1119034571)#001' 6-max (real money) Seat #5 is the button
+Seat 2: Kiwi.maso40 (61936, 0.36€ bounty)
+Seat 3: Mendesito766 (77713, 0.26€ bounty)
+Seat 4: MyPseudo (26220, 0.16€ bounty)
+Seat 5: O Fishtre (76340, 0.16€ bounty)
+Seat 6: benjitheflop (19120, 0.11€ bounty)
+*** ANTE/BLINDS ***
+benjitheflop posts ante 70
+Kiwi.maso40 posts ante 70
+Mendesito766 posts ante 70
+MyPseudo posts ante 70
+O Fishtre posts ante 70
+benjitheflop posts small blind 300
+Kiwi.maso40 posts big blind 600
+Dealt to MyPseudo [4s 2s]
+*** PRE-FLOP *** 
+Mendesito766 raises 1200 to 1800
+MyPseudo folds
+O Fishtre folds
+benjitheflop calls 1500
+Kiwi.maso40 folds
+*** FLOP *** [Ad 7s 8h]
+benjitheflop checks
+Mendesito766 bets 1593
+benjitheflop folds
+Mendesito766 collected 6143 from pot
+*** SUMMARY ***
+Total pot 6143 | No rake
+Board: [Ad 7s 8h]
+Seat 3: Mendesito766 won 6143
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 8 - HandId: #4806216885538390018-66-1782678696 - Holdem no limit (80/350/700) - 2026/06/28 20:31:36 UTC
+Table: 'Kill The Fish(1119034571)#001' 6-max (real money) Seat #6 is the button
+Seat 1: Big Ben 3450 (20000, 0.11€ bounty)
+Seat 2: Kiwi.maso40 (61266, 0.36€ bounty)
+Seat 3: Mendesito766 (80393, 0.26€ bounty)
+Seat 4: MyPseudo (26150, 0.16€ bounty)
+Seat 5: O Fishtre (76270, 0.16€ bounty)
+Seat 6: benjitheflop (17250, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Kiwi.maso40 posts ante 80
+Mendesito766 posts ante 80
+MyPseudo posts ante 80
+O Fishtre posts ante 80
+benjitheflop posts ante 80
+Kiwi.maso40 posts small blind 350
+Mendesito766 posts big blind 700
+Dealt to MyPseudo [Td Ah]
+*** PRE-FLOP *** 
+MyPseudo folds
+O Fishtre folds
+benjitheflop folds
+Kiwi.maso40 calls 350
+Mendesito766 checks
+*** FLOP *** [7c Js 3h]
+Kiwi.maso40 checks
+Mendesito766 checks
+*** TURN *** [7c Js 3h][4s]
+Kiwi.maso40 checks
+Mendesito766 checks
+*** RIVER *** [7c Js 3h 4s][4c]
+Kiwi.maso40 checks
+Mendesito766 checks
+*** SHOW DOWN ***
+Kiwi.maso40 shows [8h 2d] (One pair : 4)
+Mendesito766 shows [9c Qd] (One pair : 4)
+Mendesito766 collected 1800 from pot
+*** SUMMARY ***
+Total pot 1800 | No rake
+Board: [7c Js 3h 4s 4c]
+Seat 2: Kiwi.maso40 (small blind) showed [8h 2d] and lost with One pair : 4
+Seat 3: Mendesito766 (big blind) showed [9c Qd] and won 1800 with One pair : 4
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 8 - HandId: #4806216885538390073-1-1782678741 - Holdem no limit (80/350/700) - 2026/06/28 20:32:21 UTC
+Table: 'Kill The Fish(1119034571)#056' 6-max (real money) Seat #1 is the button
+Seat 1: kungfubenji5 (88714, 0.21€ bounty)
+Seat 2: MyPseudo (26070, 0.16€ bounty)
+Seat 4: zinodan1506 (20000, 0.11€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 80
+zinodan1506 posts ante 80
+kungfubenji5 posts ante 80
+MyPseudo posts small blind 350
+zinodan1506 posts big blind 700
+Dealt to MyPseudo [8s 6d]
+*** PRE-FLOP *** 
+kungfubenji5 raises 1050 to 1750
+MyPseudo folds
+zinodan1506 calls 1050
+*** FLOP *** [Td Ks Kh]
+zinodan1506 bets 700
+kungfubenji5 raises 5490 to 6190
+zinodan1506 calls 5490
+*** TURN *** [Td Ks Kh][5d]
+zinodan1506 checks
+kungfubenji5 checks
+*** RIVER *** [Td Ks Kh 5d][7d]
+zinodan1506 checks
+kungfubenji5 checks
+*** SHOW DOWN ***
+kungfubenji5 shows [8c Ac] (One pair : Kings)
+zinodan1506 shows [Qc Th] (Two pairs : Kings and Tens)
+zinodan1506 collected 16470 from pot
+*** SUMMARY ***
+Total pot 16470 | No rake
+Board: [Td Ks Kh 5d 7d]
+Seat 1: kungfubenji5 (button) showed [8c Ac] and lost with One pair : Kings
+Seat 4: zinodan1506 (big blind) showed [Qc Th] and won 16470 with Two pairs : Kings and Tens
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 8 - HandId: #4806216885538390059-38-1782678790 - Holdem no limit (80/350/700) - 2026/06/28 20:33:10 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #4 is the button
+Seat 1: Gege le full (150905, 0.36€ bounty)
+Seat 2: Megmeg0909 (13265, 0.11€ bounty)
+Seat 3: MyPseudo (25640, 0.16€ bounty)
+Seat 4: Poker neuf65 (74140, 0.26€ bounty)
+Seat 5: PapsMan (39272, 0.16€ bounty)
+Seat 6: Bet2shov (34562, 0.16€ bounty)
+*** ANTE/BLINDS ***
+PapsMan posts ante 80
+Bet2shov posts ante 80
+Gege le full posts ante 80
+Megmeg0909 posts ante 80
+MyPseudo posts ante 80
+PapsMan posts small blind 350
+Bet2shov posts big blind 700
+Dealt to MyPseudo [Kc Tc]
+*** PRE-FLOP *** 
+Gege le full folds
+Megmeg0909 folds
+MyPseudo raises 875 to 1575
+PapsMan folds
+Bet2shov folds
+MyPseudo collected 3025 from pot
+*** SUMMARY ***
+Total pot 3025 | No rake
+Seat 3: MyPseudo won 3025
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 8 - HandId: #4806216885538390059-39-1782678810 - Holdem no limit (80/350/700) - 2026/06/28 20:33:30 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #5 is the button
+Seat 1: Gege le full (150825, 0.36€ bounty)
+Seat 2: Megmeg0909 (13185, 0.11€ bounty)
+Seat 3: MyPseudo (27010, 0.16€ bounty)
+Seat 4: Poker neuf65 (74140, 0.26€ bounty)
+Seat 5: PapsMan (38842, 0.16€ bounty)
+Seat 6: Bet2shov (33782, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Bet2shov posts ante 80
+Gege le full posts ante 80
+Megmeg0909 posts ante 80
+MyPseudo posts ante 80
+Poker neuf65 posts ante 80
+PapsMan posts ante 80
+Bet2shov posts small blind 350
+Gege le full posts big blind 700
+Dealt to MyPseudo [5h 6h]
+*** PRE-FLOP *** 
+Megmeg0909 folds
+MyPseudo folds
+Poker neuf65 raises 700 to 1400
+PapsMan calls 1400
+Bet2shov calls 1050
+Gege le full calls 700
+*** FLOP *** [5c 3c Ts]
+Bet2shov checks
+Gege le full checks
+Poker neuf65 checks
+PapsMan bets 1520
+Bet2shov folds
+Gege le full folds
+Poker neuf65 calls 1520
+*** TURN *** [5c 3c Ts][Tc]
+Poker neuf65 checks
+PapsMan checks
+*** RIVER *** [5c 3c Ts Tc][7c]
+Poker neuf65 bets 1050
+PapsMan calls 1050
+*** SHOW DOWN ***
+PapsMan shows [7s As] (Two pairs : Tens and 7)
+Poker neuf65 shows [Qd 9c] (Flush Ten high)
+Poker neuf65 collected 11220 from pot
+*** SUMMARY ***
+Total pot 11220 | No rake
+Board: [5c 3c Ts Tc 7c]
+Seat 4: Poker neuf65 showed [Qd 9c] and won 11220 with Flush Ten high
+Seat 5: PapsMan (button) showed [7s As] and lost with Two pairs : Tens and 7
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 8 - HandId: #4806216885538390059-40-1782678904 - Holdem no limit (80/350/700) - 2026/06/28 20:35:04 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #6 is the button
+Seat 1: Gege le full (149345, 0.36€ bounty)
+Seat 2: Megmeg0909 (13105, 0.11€ bounty)
+Seat 3: MyPseudo (26930, 0.16€ bounty)
+Seat 4: Poker neuf65 (81310, 0.26€ bounty)
+Seat 5: PapsMan (34792, 0.16€ bounty)
+Seat 6: Bet2shov (32302, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Gege le full posts ante 80
+Megmeg0909 posts ante 80
+MyPseudo posts ante 80
+Poker neuf65 posts ante 80
+PapsMan posts ante 80
+Bet2shov posts ante 80
+Gege le full posts small blind 350
+Megmeg0909 posts big blind 700
+Dealt to MyPseudo [Kd 9c]
+*** PRE-FLOP *** 
+MyPseudo folds
+Poker neuf65 folds
+PapsMan raises 1050 to 1750
+Bet2shov folds
+Gege le full folds
+Megmeg0909 folds
+PapsMan collected 3280 from pot
+*** SUMMARY ***
+Total pot 3280 | No rake
+Seat 5: PapsMan won 3280
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 8 - HandId: #4806216885538390059-41-1782678956 - Holdem no limit (80/350/700) - 2026/06/28 20:35:56 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #1 is the button
+Seat 1: Gege le full (148915, 0.36€ bounty)
+Seat 2: Megmeg0909 (12325, 0.11€ bounty)
+Seat 3: MyPseudo (26850, 0.16€ bounty)
+Seat 4: Poker neuf65 (81230, 0.26€ bounty)
+Seat 5: PapsMan (36242, 0.16€ bounty)
+Seat 6: Bet2shov (32222, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Megmeg0909 posts ante 80
+MyPseudo posts ante 80
+Gege le full posts ante 80
+Poker neuf65 posts ante 80
+PapsMan posts ante 80
+Bet2shov posts ante 80
+Megmeg0909 posts small blind 350
+MyPseudo posts big blind 700
+Dealt to MyPseudo [As Tc]
+*** PRE-FLOP *** 
+Poker neuf65 folds
+PapsMan folds
+Bet2shov calls 700
+Gege le full folds
+Megmeg0909 folds
+MyPseudo checks
+*** FLOP *** [Qh 6s Js]
+MyPseudo checks
+Bet2shov bets 2230
+MyPseudo calls 2230
+*** TURN *** [Qh 6s Js][Ac]
+MyPseudo checks
+Bet2shov bets 4349
+MyPseudo calls 4349
+*** RIVER *** [Qh 6s Js Ac][4d]
+MyPseudo checks
+Bet2shov checks
+*** SHOW DOWN ***
+Bet2shov shows [Qs Ts] (One pair : Queens)
+MyPseudo shows [As Tc] (One pair : Aces)
+MyPseudo collected 15388 from pot
+*** SUMMARY ***
+Total pot 15388 | No rake
+Board: [Qh 6s Js Ac 4d]
+Seat 3: MyPseudo (big blind) showed [As Tc] and won 15388 with One pair : Aces
+Seat 6: Bet2shov showed [Qs Ts] and lost with One pair : Queens
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 9 - HandId: #4806216885538390059-42-1782679007 - Holdem no limit (100/400/800) - 2026/06/28 20:36:47 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #2 is the button
+Seat 1: Gege le full (148835, 0.36€ bounty)
+Seat 2: Megmeg0909 (11895, 0.11€ bounty)
+Seat 3: MyPseudo (34879, 0.16€ bounty)
+Seat 4: Poker neuf65 (81150, 0.26€ bounty)
+Seat 5: PapsMan (36162, 0.16€ bounty)
+Seat 6: Bet2shov (24863, 0.16€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 100
+Poker neuf65 posts ante 100
+Gege le full posts ante 100
+Megmeg0909 posts ante 100
+PapsMan posts ante 100
+Bet2shov posts ante 100
+MyPseudo posts small blind 400
+Poker neuf65 posts big blind 800
+Dealt to MyPseudo [3h 2c]
+*** PRE-FLOP *** 
+PapsMan raises 1600 to 2400
+Bet2shov raises 22363 to 24763 and is all-in
+Gege le full folds
+Megmeg0909 folds
+MyPseudo folds
+Poker neuf65 folds
+PapsMan raises 11299 to 36062 and is all-in
+*** FLOP *** [Ac 5d Ts]
+*** TURN *** [Ac 5d Ts][4h]
+*** RIVER *** [Ac 5d Ts 4h][Qc]
+*** SHOW DOWN ***
+PapsMan shows [Td Kh] (One pair : Tens)
+Bet2shov shows [Th Tc] (Trips of Tens)
+Bet2shov collected 51326 from main pot
+PapsMan collected 11299 from side pot 1
+*** SUMMARY ***
+Total pot 62625 | No rake
+Board: [Ac 5d Ts 4h Qc]
+Seat 5: PapsMan showed [Td Kh] and won 11299 with One pair : Tens
+Seat 6: Bet2shov showed [Th Tc] and won 51326 with Trips of Tens
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 9 - HandId: #4806216885538390059-43-1782679036 - Holdem no limit (100/400/800) - 2026/06/28 20:37:16 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #3 is the button
+Seat 1: Gege le full (148735, 0.36€ bounty)
+Seat 2: Megmeg0909 (11795, 0.11€ bounty)
+Seat 3: MyPseudo (34379, 0.16€ bounty)
+Seat 4: Poker neuf65 (80250, 0.26€ bounty)
+Seat 5: PapsMan (11299, 0.16€ bounty)
+Seat 6: Bet2shov (51326, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Poker neuf65 posts ante 100
+PapsMan posts ante 100
+Gege le full posts ante 100
+Megmeg0909 posts ante 100
+MyPseudo posts ante 100
+Bet2shov posts ante 100
+Poker neuf65 posts small blind 400
+PapsMan posts big blind 800
+Dealt to MyPseudo [6d Ah]
+*** PRE-FLOP *** 
+Bet2shov folds
+Gege le full raises 800 to 1600
+Megmeg0909 folds
+MyPseudo calls 1600
+Poker neuf65 calls 1200
+PapsMan raises 9599 to 11199 and is all-in
+Gege le full raises 137436 to 148635 and is all-in
+MyPseudo folds
+Poker neuf65 folds
+*** FLOP *** [Ad 6c 9c]
+*** TURN *** [Ad 6c 9c][4c]
+*** RIVER *** [Ad 6c 9c 4c][4s]
+*** SHOW DOWN ***
+Gege le full shows [Tc Td] (Two pairs : Tens and 4)
+PapsMan shows [5c 2c] (Flush 9 high)
+PapsMan collected 26198 from main pot
+Gege le full collected 137436 from side pot 1
+*** SUMMARY ***
+Total pot 163634 | No rake
+Board: [Ad 6c 9c 4c 4s]
+Seat 1: Gege le full showed [Tc Td] and won 137436 with Two pairs : Tens and 4
+Seat 5: PapsMan (big blind) showed [5c 2c] and won 26198 with Flush 9 high
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 9 - HandId: #4806216885538390059-44-1782679077 - Holdem no limit (100/400/800) - 2026/06/28 20:37:57 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #4 is the button
+Seat 1: Gege le full (137436, 0.36€ bounty)
+Seat 2: Megmeg0909 (11695, 0.11€ bounty)
+Seat 3: MyPseudo (32679, 0.16€ bounty)
+Seat 4: Poker neuf65 (78550, 0.26€ bounty)
+Seat 5: PapsMan (26198, 0.16€ bounty)
+Seat 6: Bet2shov (51226, 0.16€ bounty)
+*** ANTE/BLINDS ***
+PapsMan posts ante 100
+Bet2shov posts ante 100
+Gege le full posts ante 100
+Megmeg0909 posts ante 100
+MyPseudo posts ante 100
+Poker neuf65 posts ante 100
+PapsMan posts small blind 400
+Bet2shov posts big blind 800
+Dealt to MyPseudo [Kh 2h]
+*** PRE-FLOP *** 
+Gege le full folds
+Megmeg0909 folds
+MyPseudo folds
+Poker neuf65 raises 2600 to 3400
+PapsMan folds
+Bet2shov folds
+Poker neuf65 collected 5200 from pot
+*** SUMMARY ***
+Total pot 5200 | No rake
+Seat 4: Poker neuf65 (button) won 5200
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 9 - HandId: #4806216885538390059-45-1782679099 - Holdem no limit (100/400/800) - 2026/06/28 20:38:19 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #5 is the button
+Seat 1: Gege le full (137336, 0.36€ bounty)
+Seat 2: Megmeg0909 (11595, 0.11€ bounty)
+Seat 3: MyPseudo (32579, 0.16€ bounty)
+Seat 4: Poker neuf65 (80250, 0.26€ bounty)
+Seat 5: PapsMan (25698, 0.16€ bounty)
+Seat 6: Bet2shov (50326, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Bet2shov posts ante 100
+Gege le full posts ante 100
+Megmeg0909 posts ante 100
+MyPseudo posts ante 100
+Poker neuf65 posts ante 100
+PapsMan posts ante 100
+Bet2shov posts small blind 400
+Gege le full posts big blind 800
+Dealt to MyPseudo [9h Td]
+*** PRE-FLOP *** 
+Megmeg0909 folds
+MyPseudo folds
+Poker neuf65 calls 800
+PapsMan calls 800
+Bet2shov folds
+Gege le full checks
+*** FLOP *** [3d 5h 4d]
+Gege le full checks
+Poker neuf65 bets 850
+PapsMan calls 850
+Gege le full calls 850
+*** TURN *** [3d 5h 4d][6d]
+Gege le full checks
+Poker neuf65 bets 2288
+PapsMan folds
+Gege le full calls 2288
+*** RIVER *** [3d 5h 4d 6d][2c]
+Gege le full checks
+Poker neuf65 bets 5263
+Gege le full calls 5263
+*** SHOW DOWN ***
+Gege le full shows [Jh 8d] (Straight 6 high)
+Poker neuf65 shows [7h 9d] (Straight 7 high)
+Poker neuf65 collected 21052 from pot
+*** SUMMARY ***
+Total pot 21052 | No rake
+Board: [3d 5h 4d 6d 2c]
+Seat 1: Gege le full (big blind) showed [Jh 8d] and lost with Straight 6 high
+Seat 4: Poker neuf65 showed [7h 9d] and won 21052 with Straight 7 high
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 9 - HandId: #4806216885538390059-46-1782679182 - Holdem no limit (100/400/800) - 2026/06/28 20:39:42 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #6 is the button
+Seat 1: Gege le full (128035, 0.36€ bounty)
+Seat 2: Megmeg0909 (11495, 0.11€ bounty)
+Seat 3: MyPseudo (32479, 0.16€ bounty)
+Seat 4: Poker neuf65 (92001, 0.26€ bounty)
+Seat 5: PapsMan (23948, 0.16€ bounty)
+Seat 6: Bet2shov (49826, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Gege le full posts ante 100
+Megmeg0909 posts ante 100
+MyPseudo posts ante 100
+Poker neuf65 posts ante 100
+PapsMan posts ante 100
+Bet2shov posts ante 100
+Gege le full posts small blind 400
+Megmeg0909 posts big blind 800
+Dealt to MyPseudo [2s As]
+*** PRE-FLOP *** 
+MyPseudo folds
+Poker neuf65 folds
+PapsMan raises 800 to 1600
+Bet2shov folds
+Gege le full calls 1200
+Megmeg0909 folds
+*** FLOP *** [Qh Ac Qd]
+Gege le full checks
+PapsMan bets 2990
+Gege le full calls 2990
+*** TURN *** [Qh Ac Qd][7c]
+Gege le full checks
+PapsMan bets 19258 and is all-in
+Gege le full calls 19258
+*** RIVER *** [Qh Ac Qd 7c][Jh]
+*** SHOW DOWN ***
+Gege le full shows [Ah 9c] (Two pairs : Aces and Queens)
+PapsMan shows [4h Ad] (Two pairs : Aces and Queens)
+PapsMan collected 24548 from pot
+Gege le full collected 24548 from pot
+*** SUMMARY ***
+Total pot 49096 | No rake
+Board: [Qh Ac Qd 7c Jh]
+Seat 1: Gege le full (small blind) showed [Ah 9c] and won 24548 with Two pairs : Aces and Queens
+Seat 5: PapsMan showed [4h Ad] and won 24548 with Two pairs : Aces and Queens
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 9 - HandId: #4806216885538390059-47-1782679247 - Holdem no limit (100/400/800) - 2026/06/28 20:40:47 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #1 is the button
+Seat 1: Gege le full (128635, 0.36€ bounty)
+Seat 2: Megmeg0909 (10595, 0.11€ bounty)
+Seat 3: MyPseudo (32379, 0.16€ bounty)
+Seat 4: Poker neuf65 (91901, 0.26€ bounty)
+Seat 5: PapsMan (24548, 0.16€ bounty)
+Seat 6: Bet2shov (49726, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Megmeg0909 posts ante 100
+MyPseudo posts ante 100
+Gege le full posts ante 100
+Poker neuf65 posts ante 100
+PapsMan posts ante 100
+Bet2shov posts ante 100
+Megmeg0909 posts small blind 400
+MyPseudo posts big blind 800
+Dealt to MyPseudo [6d 9s]
+*** PRE-FLOP *** 
+Poker neuf65 raises 800 to 1600
+PapsMan folds
+Bet2shov folds
+Gege le full folds
+Megmeg0909 folds
+MyPseudo calls 800
+*** FLOP *** [Ah 7s 6c]
+MyPseudo checks
+Poker neuf65 bets 1470
+MyPseudo folds
+Poker neuf65 shows [9c 8d] (High card : Ace)
+Poker neuf65 collected 5670 from pot
+*** SUMMARY ***
+Total pot 5670 | No rake
+Board: [Ah 7s 6c]
+Seat 4: Poker neuf65 showed [9c 8d] and won 5670 with High card : Ace
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 10 - HandId: #4806216885538390059-48-1782679309 - Holdem no limit (120/500/1000) - 2026/06/28 20:41:49 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #2 is the button
+Seat 1: Gege le full (128535, 0.36€ bounty)
+Seat 2: Megmeg0909 (10095, 0.11€ bounty)
+Seat 3: MyPseudo (30679, 0.16€ bounty)
+Seat 4: Poker neuf65 (94401, 0.26€ bounty)
+Seat 5: PapsMan (24448, 0.16€ bounty)
+Seat 6: Bet2shov (49626, 0.16€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 120
+Poker neuf65 posts ante 120
+Gege le full posts ante 120
+Megmeg0909 posts ante 120
+PapsMan posts ante 120
+Bet2shov posts ante 120
+MyPseudo posts small blind 500
+Poker neuf65 posts big blind 1000
+Dealt to MyPseudo [Qh 7s]
+*** PRE-FLOP *** 
+PapsMan folds
+Bet2shov raises 1500 to 2500
+Gege le full calls 2500
+Megmeg0909 folds
+MyPseudo folds
+Poker neuf65 raises 1500 to 4000
+Bet2shov raises 45506 to 49506 and is all-in
+Gege le full folds
+Poker neuf65 folds
+Bet2shov collected 57226 from pot
+*** SUMMARY ***
+Total pot 57226 | No rake
+Seat 6: Bet2shov won 57226
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 10 - HandId: #4806216885538390059-49-1782679351 - Holdem no limit (120/500/1000) - 2026/06/28 20:42:31 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #3 is the button
+Seat 1: Gege le full (125915, 0.36€ bounty)
+Seat 2: Megmeg0909 (9975, 0.11€ bounty)
+Seat 3: MyPseudo (30059, 0.16€ bounty)
+Seat 4: Poker neuf65 (90281, 0.26€ bounty)
+Seat 5: PapsMan (24328, 0.16€ bounty)
+Seat 6: Bet2shov (57226, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Poker neuf65 posts ante 120
+PapsMan posts ante 120
+Gege le full posts ante 120
+Megmeg0909 posts ante 120
+MyPseudo posts ante 120
+Bet2shov posts ante 120
+Poker neuf65 posts small blind 500
+PapsMan posts big blind 1000
+Dealt to MyPseudo [2c 9s]
+*** PRE-FLOP *** 
+Bet2shov folds
+Gege le full folds
+Megmeg0909 folds
+MyPseudo raises 1000 to 2000
+Poker neuf65 calls 1500
+PapsMan folds
+*** FLOP *** [4c 8s 6s]
+Poker neuf65 checks
+MyPseudo checks
+*** TURN *** [4c 8s 6s][As]
+Poker neuf65 bets 1000
+MyPseudo raises 3360 to 4360
+Poker neuf65 calls 3360
+*** RIVER *** [4c 8s 6s As][Kc]
+Poker neuf65 checks
+MyPseudo checks
+*** SHOW DOWN ***
+MyPseudo shows [2c 9s] (High card : Ace)
+Poker neuf65 shows [7s Th] (High card : Ace)
+Poker neuf65 collected 14440 from pot
+*** SUMMARY ***
+Total pot 14440 | No rake
+Board: [4c 8s 6s As Kc]
+Seat 3: MyPseudo (button) showed [2c 9s] and lost with High card : Ace
+Seat 4: Poker neuf65 (small blind) showed [7s Th] and won 14440 with High card : Ace
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 10 - HandId: #4806216885538390059-50-1782679412 - Holdem no limit (120/500/1000) - 2026/06/28 20:43:32 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #4 is the button
+Seat 1: Gege le full (125795, 0.36€ bounty)
+Seat 2: Megmeg0909 (9855, 0.11€ bounty)
+Seat 3: MyPseudo (23579, 0.16€ bounty)
+Seat 4: Poker neuf65 (98241, 0.26€ bounty)
+Seat 5: PapsMan (23208, 0.16€ bounty)
+Seat 6: Bet2shov (57106, 0.16€ bounty)
+*** ANTE/BLINDS ***
+PapsMan posts ante 120
+Bet2shov posts ante 120
+Gege le full posts ante 120
+Megmeg0909 posts ante 120
+MyPseudo posts ante 120
+Poker neuf65 posts ante 120
+PapsMan posts small blind 500
+Bet2shov posts big blind 1000
+Dealt to MyPseudo [7h 6h]
+*** PRE-FLOP *** 
+Gege le full folds
+Megmeg0909 folds
+MyPseudo folds
+Poker neuf65 raises 1000 to 2000
+PapsMan folds
+Bet2shov calls 1000
+*** FLOP *** [9s Qh 4c]
+Bet2shov bets 5220
+Poker neuf65 calls 5220
+*** TURN *** [9s Qh 4c][8h]
+Bet2shov bets 49766 and is all-in
+Poker neuf65 calls 49766
+*** RIVER *** [9s Qh 4c 8h][2h]
+*** SHOW DOWN ***
+Bet2shov shows [Jh Qc] (One pair : Queens)
+Poker neuf65 shows [Tc Jd] (Straight Queen high)
+Poker neuf65 collected 115192 from pot
+*** SUMMARY ***
+Total pot 115192 | No rake
+Board: [9s Qh 4c 8h 2h]
+Seat 4: Poker neuf65 (button) showed [Tc Jd] and won 115192 with Straight Queen high
+Seat 6: Bet2shov (big blind) showed [Jh Qc] and lost with One pair : Queens
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 10 - HandId: #4806216885538390059-51-1782679437 - Holdem no limit (120/500/1000) - 2026/06/28 20:43:57 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #5 is the button
+Seat 1: Gege le full (125675, 0.36€ bounty)
+Seat 2: Megmeg0909 (9735, 0.11€ bounty)
+Seat 3: MyPseudo (23459, 0.16€ bounty)
+Seat 4: Poker neuf65 (156327, 0.34€ bounty)
+Seat 5: PapsMan (22588, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Gege le full posts ante 120
+Megmeg0909 posts ante 120
+MyPseudo posts ante 120
+Poker neuf65 posts ante 120
+PapsMan posts ante 120
+Gege le full posts big blind 1000
+Dealt to MyPseudo [9h 6d]
+*** PRE-FLOP *** 
+Megmeg0909 folds
+MyPseudo folds
+Poker neuf65 raises 2600 to 3600
+PapsMan folds
+Gege le full calls 2600
+*** FLOP *** [Td 4d 4h]
+Gege le full bets 2730
+Poker neuf65 folds
+Gege le full collected 10530 from pot
+*** SUMMARY ***
+Total pot 10530 | No rake
+Board: [Td 4d 4h]
+Seat 1: Gege le full (big blind) won 10530
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 10 - HandId: #4806216885538390059-52-1782679462 - Holdem no limit (120/500/1000) - 2026/06/28 20:44:22 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #6 is the button
+Seat 1: Gege le full (129755, 0.36€ bounty)
+Seat 2: Megmeg0909 (9615, 0.11€ bounty)
+Seat 3: MyPseudo (23339, 0.16€ bounty)
+Seat 4: Poker neuf65 (152607, 0.34€ bounty)
+Seat 5: PapsMan (22468, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Gege le full posts ante 120
+Megmeg0909 posts ante 120
+MyPseudo posts ante 120
+Poker neuf65 posts ante 120
+PapsMan posts ante 120
+Gege le full posts small blind 500
+Megmeg0909 posts big blind 1000
+Dealt to MyPseudo [Ks 2c]
+*** PRE-FLOP *** 
+MyPseudo folds
+Poker neuf65 raises 1500 to 2500
+PapsMan raises 19848 to 22348 and is all-in
+Gege le full folds
+Megmeg0909 folds
+Poker neuf65 calls 19848
+*** FLOP *** [Th 8d 2d]
+*** TURN *** [Th 8d 2d][6s]
+*** RIVER *** [Th 8d 2d 6s][Td]
+*** SHOW DOWN ***
+PapsMan shows [Ad Kd] (Flush Ace high)
+Poker neuf65 shows [6h 6c] (Full of 6 and Tens)
+Poker neuf65 collected 46796 from pot
+*** SUMMARY ***
+Total pot 46796 | No rake
+Board: [Th 8d 2d 6s Td]
+Seat 4: Poker neuf65 showed [6h 6c] and won 46796 with Full of 6 and Tens
+Seat 5: PapsMan showed [Ad Kd] and lost with Flush Ace high
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 10 - HandId: #4806216885538390059-53-1782679491 - Holdem no limit (120/500/1000) - 2026/06/28 20:44:51 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #1 is the button
+Seat 1: Gege le full (129135, 0.36€ bounty)
+Seat 2: Megmeg0909 (8495, 0.11€ bounty)
+Seat 3: MyPseudo (23219, 0.16€ bounty)
+Seat 4: Poker neuf65 (176935, 0.42€ bounty)
+*** ANTE/BLINDS ***
+Megmeg0909 posts ante 120
+MyPseudo posts ante 120
+Gege le full posts ante 120
+Poker neuf65 posts ante 120
+Megmeg0909 posts small blind 500
+MyPseudo posts big blind 1000
+Dealt to MyPseudo [7d 3s]
+*** PRE-FLOP *** 
+Poker neuf65 raises 1000 to 2000
+Gege le full calls 2000
+Megmeg0909 folds
+MyPseudo folds
+*** FLOP *** [5d Ah 6d]
+Poker neuf65 checks
+Gege le full checks
+*** TURN *** [5d Ah 6d][2c]
+Poker neuf65 bets 1000
+Gege le full folds
+Poker neuf65 collected 6980 from pot
+*** SUMMARY ***
+Total pot 6980 | No rake
+Board: [5d Ah 6d 2c]
+Seat 4: Poker neuf65 won 6980
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 10 - HandId: #4806216885538390059-54-1782679517 - Holdem no limit (120/500/1000) - 2026/06/28 20:45:17 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #2 is the button
+Seat 1: Gege le full (127015, 0.36€ bounty)
+Seat 2: Megmeg0909 (7875, 0.11€ bounty)
+Seat 3: MyPseudo (22099, 0.16€ bounty)
+Seat 4: Poker neuf65 (180795, 0.42€ bounty)
+Seat 6: Stop tanger (24780, 0.26€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 120
+Poker neuf65 posts ante 120
+Gege le full posts ante 120
+Megmeg0909 posts ante 120
+Stop tanger posts ante 120
+MyPseudo posts small blind 500
+Poker neuf65 posts big blind 1000
+Dealt to MyPseudo [Jd Jh]
+*** PRE-FLOP *** 
+Stop tanger calls 1000
+Gege le full folds
+Megmeg0909 folds
+MyPseudo raises 20979 to 21979 and is all-in
+Poker neuf65 raises 20979 to 42958
+Stop tanger folds
+*** FLOP *** [Ts 3c Jc]
+*** TURN *** [Ts 3c Jc][3d]
+*** RIVER *** [Ts 3c Jc 3d][6h]
+*** SHOW DOWN ***
+MyPseudo shows [Jd Jh] (Full of Jacks and 3)
+Poker neuf65 shows [8c Ac] (One pair : 3)
+Poker neuf65 collected 20979 from side pot 1
+MyPseudo collected 45558 from main pot
+*** SUMMARY ***
+Total pot 66537 | No rake
+Board: [Ts 3c Jc 3d 6h]
+Seat 3: MyPseudo (small blind) showed [Jd Jh] and won 45558 with Full of Jacks and 3
+Seat 4: Poker neuf65 (big blind) showed [8c Ac] and won 20979 with One pair : 3
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 10 - HandId: #4806216885538390059-55-1782679539 - Holdem no limit (120/500/1000) - 2026/06/28 20:45:39 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #3 is the button
+Seat 1: Gege le full (126895, 0.36€ bounty)
+Seat 2: Megmeg0909 (7755, 0.11€ bounty)
+Seat 3: MyPseudo (45558, 0.16€ bounty)
+Seat 4: Poker neuf65 (158696, 0.42€ bounty)
+Seat 6: Stop tanger (23660, 0.26€ bounty)
+*** ANTE/BLINDS ***
+Poker neuf65 posts ante 120
+Stop tanger posts ante 120
+Gege le full posts ante 120
+Megmeg0909 posts ante 120
+MyPseudo posts ante 120
+Poker neuf65 posts small blind 500
+Stop tanger posts big blind 1000
+Dealt to MyPseudo [Ah 8c]
+*** PRE-FLOP *** 
+Gege le full calls 1000
+Megmeg0909 folds
+MyPseudo raises 2000 to 3000
+Poker neuf65 calls 2500
+Stop tanger folds
+Gege le full calls 2000
+*** FLOP *** [8s 4d Ac]
+Poker neuf65 checks
+Gege le full checks
+MyPseudo bets 5300
+Poker neuf65 folds
+Gege le full folds
+MyPseudo collected 15900 from pot
+*** SUMMARY ***
+Total pot 15900 | No rake
+Board: [8s 4d Ac]
+Seat 3: MyPseudo (button) won 15900
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 11 - HandId: #4806216885538390059-56-1782679573 - Holdem no limit (140/600/1200) - 2026/06/28 20:46:13 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #4 is the button
+Seat 1: Gege le full (123775, 0.36€ bounty)
+Seat 2: Megmeg0909 (7635, 0.11€ bounty)
+Seat 3: MyPseudo (53038, 0.16€ bounty)
+Seat 4: Poker neuf65 (155576, 0.42€ bounty)
+Seat 5: TeAm Y (20000, 0.11€ bounty)
+Seat 6: Stop tanger (22540, 0.26€ bounty)
+*** ANTE/BLINDS ***
+Stop tanger posts ante 140
+Gege le full posts ante 140
+Megmeg0909 posts ante 140
+MyPseudo posts ante 140
+Poker neuf65 posts ante 140
+Stop tanger posts small blind 600
+Gege le full posts big blind 1200
+Dealt to MyPseudo [As Qc]
+*** PRE-FLOP *** 
+Megmeg0909 folds
+MyPseudo raises 1800 to 3000
+Poker neuf65 calls 3000
+Stop tanger folds
+Gege le full calls 1800
+*** FLOP *** [9h 7h 5c]
+Gege le full bets 6695
+MyPseudo folds
+Poker neuf65 folds
+Gege le full collected 16995 from pot
+*** SUMMARY ***
+Total pot 16995 | No rake
+Board: [9h 7h 5c]
+Seat 1: Gege le full (big blind) won 16995
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 11 - HandId: #4806216885538390059-57-1782679625 - Holdem no limit (140/600/1200) - 2026/06/28 20:47:05 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #6 is the button
+Seat 1: Gege le full (130935, 0.36€ bounty)
+Seat 2: Megmeg0909 (7495, 0.11€ bounty)
+Seat 3: MyPseudo (49898, 0.16€ bounty)
+Seat 4: Poker neuf65 (152436, 0.42€ bounty)
+Seat 5: TeAm Y (20000, 0.11€ bounty)
+Seat 6: Stop tanger (21800, 0.26€ bounty)
+*** ANTE/BLINDS ***
+Gege le full posts ante 140
+Megmeg0909 posts ante 140
+MyPseudo posts ante 140
+Poker neuf65 posts ante 140
+TeAm Y posts ante 140
+Stop tanger posts ante 140
+Gege le full posts small blind 600
+Megmeg0909 posts big blind 1200
+Dealt to MyPseudo [3d Js]
+*** PRE-FLOP *** 
+MyPseudo folds
+Poker neuf65 calls 1200
+TeAm Y folds
+Stop tanger raises 20460 to 21660 and is all-in
+Gege le full folds
+Megmeg0909 folds
+Poker neuf65 folds
+Stop tanger collected 25500 from pot
+*** SUMMARY ***
+Total pot 25500 | No rake
+Seat 6: Stop tanger (button) won 25500
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 11 - HandId: #4806216885538390059-58-1782679641 - Holdem no limit (140/600/1200) - 2026/06/28 20:47:21 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #1 is the button
+Seat 1: Gege le full (130195, 0.36€ bounty)
+Seat 2: Megmeg0909 (6155, 0.11€ bounty)
+Seat 3: MyPseudo (49758, 0.16€ bounty)
+Seat 4: Poker neuf65 (151096, 0.42€ bounty)
+Seat 5: TeAm Y (19860, 0.11€ bounty)
+Seat 6: Stop tanger (25500, 0.26€ bounty)
+*** ANTE/BLINDS ***
+Megmeg0909 posts ante 140
+MyPseudo posts ante 140
+Gege le full posts ante 140
+Poker neuf65 posts ante 140
+TeAm Y posts ante 140
+Stop tanger posts ante 140
+Megmeg0909 posts small blind 600
+MyPseudo posts big blind 1200
+Dealt to MyPseudo [2h 6h]
+*** PRE-FLOP *** 
+Poker neuf65 folds
+TeAm Y folds
+Stop tanger folds
+Gege le full raises 2076 to 3276
+Megmeg0909 folds
+MyPseudo folds
+Gege le full collected 5916 from pot
+*** SUMMARY ***
+Total pot 5916 | No rake
+Seat 1: Gege le full (button) won 5916
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 11 - HandId: #4806216885538390059-59-1782679674 - Holdem no limit (140/600/1200) - 2026/06/28 20:47:54 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #2 is the button
+Seat 1: Gege le full (132695, 0.36€ bounty)
+Seat 2: Megmeg0909 (5415, 0.11€ bounty)
+Seat 3: MyPseudo (48418, 0.16€ bounty)
+Seat 4: Poker neuf65 (150956, 0.42€ bounty)
+Seat 5: TeAm Y (19720, 0.11€ bounty)
+Seat 6: Stop tanger (25360, 0.26€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 140
+Poker neuf65 posts ante 140
+Gege le full posts ante 140
+Megmeg0909 posts ante 140
+TeAm Y posts ante 140
+Stop tanger posts ante 140
+MyPseudo posts small blind 600
+Poker neuf65 posts big blind 1200
+Dealt to MyPseudo [Qs 4h]
+*** PRE-FLOP *** 
+TeAm Y folds
+Stop tanger calls 1200
+Gege le full folds
+Megmeg0909 folds
+MyPseudo calls 600
+Poker neuf65 raises 149616 to 150816 and is all-in
+Stop tanger folds
+MyPseudo folds
+Poker neuf65 collected 154056 from pot
+*** SUMMARY ***
+Total pot 154056 | No rake
+Seat 4: Poker neuf65 (big blind) won 154056
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 11 - HandId: #4806216885538390059-60-1782679710 - Holdem no limit (140/600/1200) - 2026/06/28 20:48:30 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #3 is the button
+Seat 1: Gege le full (132555, 0.36€ bounty)
+Seat 2: Megmeg0909 (5275, 0.11€ bounty)
+Seat 3: MyPseudo (47078, 0.16€ bounty)
+Seat 4: Poker neuf65 (154056, 0.42€ bounty)
+Seat 5: TeAm Y (19580, 0.11€ bounty)
+Seat 6: Stop tanger (24020, 0.26€ bounty)
+*** ANTE/BLINDS ***
+Poker neuf65 posts ante 140
+TeAm Y posts ante 140
+Gege le full posts ante 140
+Megmeg0909 posts ante 140
+MyPseudo posts ante 140
+Stop tanger posts ante 140
+Poker neuf65 posts small blind 600
+TeAm Y posts big blind 1200
+Dealt to MyPseudo [4c As]
+*** PRE-FLOP *** 
+Stop tanger folds
+Gege le full folds
+Megmeg0909 folds
+MyPseudo raises 1200 to 2400
+Poker neuf65 calls 1800
+TeAm Y calls 1200
+*** FLOP *** [6c Jc Ah]
+Poker neuf65 checks
+TeAm Y checks
+MyPseudo bets 2814
+Poker neuf65 calls 2814
+TeAm Y calls 2814
+*** TURN *** [6c Jc Ah][7h]
+Poker neuf65 bets 16482
+TeAm Y folds
+MyPseudo raises 25242 to 41724 and is all-in
+Poker neuf65 raises 25242 to 66966
+*** RIVER *** [6c Jc Ah 7h][Jd]
+*** SHOW DOWN ***
+MyPseudo shows [4c As] (Two pairs : Aces and Jacks)
+Poker neuf65 shows [7c 6h] (Two pairs : Jacks and 7)
+Poker neuf65 collected 25242 from side pot 1
+MyPseudo collected 99930 from main pot
+*** SUMMARY ***
+Total pot 125172 | No rake
+Board: [6c Jc Ah 7h Jd]
+Seat 3: MyPseudo (button) showed [4c As] and won 99930 with Two pairs : Aces and Jacks
+Seat 4: Poker neuf65 (small blind) showed [7c 6h] and won 25242 with Two pairs : Jacks and 7
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 11 - HandId: #4806216885538390059-61-1782679745 - Holdem no limit (140/600/1200) - 2026/06/28 20:49:05 UTC
+Table: 'Kill The Fish(1119034571)#042' 6-max (real money) Seat #4 is the button
+Seat 1: Gege le full (132415, 0.36€ bounty)
+Seat 2: Megmeg0909 (5135, 0.11€ bounty)
+Seat 3: MyPseudo (99930, 0.16€ bounty)
+Seat 4: Poker neuf65 (106978, 0.42€ bounty)
+Seat 5: TeAm Y (14226, 0.11€ bounty)
+Seat 6: Stop tanger (23880, 0.26€ bounty)
+*** ANTE/BLINDS ***
+TeAm Y posts ante 140
+Stop tanger posts ante 140
+Gege le full posts ante 140
+Megmeg0909 posts ante 140
+MyPseudo posts ante 140
+Poker neuf65 posts ante 140
+TeAm Y posts small blind 600
+Stop tanger posts big blind 1200
+Dealt to MyPseudo [6s 6h]
+*** PRE-FLOP *** 
+Gege le full raises 1200 to 2400
+Megmeg0909 folds
+MyPseudo raises 2400 to 4800
+Poker neuf65 calls 4800
+TeAm Y folds
+Stop tanger folds
+Gege le full calls 2400
+*** FLOP *** [8c 3h 9s]
+Gege le full checks
+MyPseudo checks
+Poker neuf65 bets 11076
+Gege le full folds
+MyPseudo calls 11076
+*** TURN *** [8c 3h 9s][6d]
+MyPseudo checks
+Poker neuf65 bets 13717
+MyPseudo raises 70197 to 83914 and is all-in
+Poker neuf65 calls 70197
+*** RIVER *** [8c 3h 9s 6d][5h]
+*** SHOW DOWN ***
+Poker neuf65 shows [9h Ah] (One pair : 9)
+MyPseudo shows [6s 6h] (Trips of 6)
+MyPseudo collected 207020 from pot
+*** SUMMARY ***
+Total pot 207020 | No rake
+Board: [8c 3h 9s 6d 5h]
+Seat 3: MyPseudo showed [6s 6h] and won 207020 with Trips of 6
+Seat 4: Poker neuf65 (button) showed [9h Ah] and lost with One pair : 9
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 11 - HandId: #4806216885538390045-92-1782679841 - Holdem no limit (140/600/1200) - 2026/06/28 20:50:41 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #2 is the button
+Seat 1: Peche 575466 (32034, 0.11€ bounty)
+Seat 2: user404 (156040, 0.45€ bounty)
+Seat 3: - WB - (43164, 0.11€ bounty)
+Seat 4: Zlaatan_King (63668, 0.21€ bounty)
+Seat 5: MyPseudo (207020, 0.16€ bounty)
+Seat 6: nicodc5 (54629, 0.21€ bounty)
+*** ANTE/BLINDS ***
+- WB - posts ante 140
+Zlaatan_King posts ante 140
+Peche 575466 posts ante 140
+user404 posts ante 140
+MyPseudo posts ante 140
+nicodc5 posts ante 140
+- WB - posts small blind 600
+Zlaatan_King posts big blind 1200
+Dealt to MyPseudo [3h 8h]
+*** PRE-FLOP *** 
+MyPseudo folds
+nicodc5 calls 1200
+Peche 575466 calls 1200
+user404 raises 1440 to 2640
+- WB - folds
+Zlaatan_King folds
+nicodc5 calls 1440
+Peche 575466 calls 1440
+*** FLOP *** [2h 7c 2c]
+nicodc5 checks
+Peche 575466 checks
+user404 bets 5280
+nicodc5 folds
+Peche 575466 folds
+user404 collected 15840 from pot
+*** SUMMARY ***
+Total pot 15840 | No rake
+Board: [2h 7c 2c]
+Seat 2: user404 (button) won 15840
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 12 - HandId: #4806216885538390045-93-1782679924 - Holdem no limit (160/700/1400) - 2026/06/28 20:52:04 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #3 is the button
+Seat 1: Peche 575466 (29254, 0.11€ bounty)
+Seat 2: user404 (163820, 0.45€ bounty)
+Seat 3: - WB - (42424, 0.11€ bounty)
+Seat 4: Zlaatan_King (62328, 0.21€ bounty)
+Seat 5: MyPseudo (206880, 0.16€ bounty)
+Seat 6: nicodc5 (51849, 0.21€ bounty)
+*** ANTE/BLINDS ***
+Zlaatan_King posts ante 160
+MyPseudo posts ante 160
+Peche 575466 posts ante 160
+user404 posts ante 160
+- WB - posts ante 160
+nicodc5 posts ante 160
+Zlaatan_King posts small blind 700
+MyPseudo posts big blind 1400
+Dealt to MyPseudo [7s Qs]
+*** PRE-FLOP *** 
+nicodc5 calls 1400
+Peche 575466 raises 1750 to 3150
+user404 folds
+- WB - folds
+Zlaatan_King folds
+MyPseudo calls 1750
+nicodc5 calls 1750
+*** FLOP *** [Ac Th 2s]
+MyPseudo checks
+nicodc5 checks
+Peche 575466 bets 3889
+MyPseudo folds
+nicodc5 folds
+Peche 575466 collected 14999 from pot
+*** SUMMARY ***
+Total pot 14999 | No rake
+Board: [Ac Th 2s]
+Seat 1: Peche 575466 won 14999
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 12 - HandId: #4806216885538390045-94-1782679976 - Holdem no limit (160/700/1400) - 2026/06/28 20:52:56 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #4 is the button
+Seat 1: Peche 575466 (37054, 0.11€ bounty)
+Seat 2: user404 (163660, 0.45€ bounty)
+Seat 3: - WB - (42264, 0.11€ bounty)
+Seat 4: Zlaatan_King (61468, 0.21€ bounty)
+Seat 5: MyPseudo (203570, 0.16€ bounty)
+Seat 6: nicodc5 (48539, 0.21€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 160
+nicodc5 posts ante 160
+Peche 575466 posts ante 160
+user404 posts ante 160
+- WB - posts ante 160
+Zlaatan_King posts ante 160
+MyPseudo posts small blind 700
+nicodc5 posts big blind 1400
+Dealt to MyPseudo [9h 2s]
+*** PRE-FLOP *** 
+Peche 575466 folds
+user404 raises 1400 to 2800
+- WB - calls 2800
+Zlaatan_King folds
+MyPseudo folds
+nicodc5 calls 1400
+*** FLOP *** [4s 2c 2d]
+nicodc5 checks
+user404 bets 5600
+- WB - folds
+nicodc5 calls 5600
+*** TURN *** [4s 2c 2d][6d]
+nicodc5 checks
+user404 bets 17008
+nicodc5 folds
+user404 collected 38268 from pot
+*** SUMMARY ***
+Total pot 38268 | No rake
+Board: [4s 2c 2d 6d]
+Seat 2: user404 won 38268
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 12 - HandId: #4806216885538390045-95-1782680012 - Holdem no limit (160/700/1400) - 2026/06/28 20:53:32 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #5 is the button
+Seat 1: Peche 575466 (36894, 0.11€ bounty)
+Seat 2: user404 (176360, 0.45€ bounty)
+Seat 3: - WB - (39304, 0.11€ bounty)
+Seat 4: Zlaatan_King (61308, 0.21€ bounty)
+Seat 5: MyPseudo (202710, 0.16€ bounty)
+Seat 6: nicodc5 (39979, 0.21€ bounty)
+*** ANTE/BLINDS ***
+nicodc5 posts ante 160
+Peche 575466 posts ante 160
+user404 posts ante 160
+- WB - posts ante 160
+Zlaatan_King posts ante 160
+MyPseudo posts ante 160
+nicodc5 posts small blind 700
+Peche 575466 posts big blind 1400
+Dealt to MyPseudo [3h 6s]
+*** PRE-FLOP *** 
+user404 folds
+- WB - folds
+Zlaatan_King raises 1400 to 2800
+MyPseudo folds
+nicodc5 calls 2100
+Peche 575466 calls 1400
+*** FLOP *** [5h 4s Ah]
+nicodc5 checks
+Peche 575466 checks
+Zlaatan_King bets 3276
+nicodc5 calls 3276
+Peche 575466 folds
+*** TURN *** [5h 4s Ah][As]
+nicodc5 checks
+Zlaatan_King bets 7956
+nicodc5 folds
+Zlaatan_King collected 23868 from pot
+*** SUMMARY ***
+Total pot 23868 | No rake
+Board: [5h 4s Ah As]
+Seat 4: Zlaatan_King won 23868
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 12 - HandId: #4806216885538390045-96-1782680046 - Holdem no limit (160/700/1400) - 2026/06/28 20:54:06 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #6 is the button
+Seat 1: Peche 575466 (33934, 0.11€ bounty)
+Seat 2: user404 (176200, 0.45€ bounty)
+Seat 3: - WB - (39144, 0.11€ bounty)
+Seat 4: Zlaatan_King (70984, 0.21€ bounty)
+Seat 5: MyPseudo (202550, 0.16€ bounty)
+Seat 6: nicodc5 (33743, 0.21€ bounty)
+*** ANTE/BLINDS ***
+Peche 575466 posts ante 160
+user404 posts ante 160
+- WB - posts ante 160
+Zlaatan_King posts ante 160
+MyPseudo posts ante 160
+nicodc5 posts ante 160
+Peche 575466 posts small blind 700
+user404 posts big blind 1400
+Dealt to MyPseudo [9h 2c]
+*** PRE-FLOP *** 
+- WB - folds
+Zlaatan_King folds
+MyPseudo folds
+nicodc5 calls 1400
+Peche 575466 calls 700
+user404 checks
+*** FLOP *** [5s Ah 7s]
+Peche 575466 checks
+user404 bets 2100
+nicodc5 raises 30083 to 32183 and is all-in
+Peche 575466 folds
+user404 raises 30083 to 62266
+*** TURN *** [5s Ah 7s][7d]
+*** RIVER *** [5s Ah 7s 7d][3c]
+*** SHOW DOWN ***
+user404 shows [4s 3s] (Two pairs : 7 and 3)
+nicodc5 shows [Ad Tc] (Two pairs : Aces and 7)
+nicodc5 collected 69526 from main pot
+user404 collected 30083 from side pot 1
+*** SUMMARY ***
+Total pot 99609 | No rake
+Board: [5s Ah 7s 7d 3c]
+Seat 2: user404 (big blind) showed [4s 3s] and won 30083 with Two pairs : 7 and 3
+Seat 6: nicodc5 (button) showed [Ad Tc] and won 69526 with Two pairs : Aces and 7
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 12 - HandId: #4806216885538390045-97-1782680093 - Holdem no limit (160/700/1400) - 2026/06/28 20:54:53 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #1 is the button
+Seat 1: Peche 575466 (32374, 0.11€ bounty)
+Seat 2: user404 (142457, 0.45€ bounty)
+Seat 3: - WB - (38984, 0.11€ bounty)
+Seat 4: Zlaatan_King (70824, 0.21€ bounty)
+Seat 5: MyPseudo (202390, 0.16€ bounty)
+Seat 6: nicodc5 (69526, 0.21€ bounty)
+*** ANTE/BLINDS ***
+user404 posts ante 160
+- WB - posts ante 160
+Peche 575466 posts ante 160
+Zlaatan_King posts ante 160
+MyPseudo posts ante 160
+nicodc5 posts ante 160
+user404 posts small blind 700
+- WB - posts big blind 1400
+Dealt to MyPseudo [2c 5h]
+*** PRE-FLOP *** 
+Zlaatan_King calls 1400
+MyPseudo folds
+nicodc5 calls 1400
+Peche 575466 folds
+user404 raises 6560 to 7960
+- WB - folds
+Zlaatan_King calls 6560
+nicodc5 calls 6560
+*** FLOP *** [6h Ac 2h]
+user404 bets 17056
+Zlaatan_King folds
+nicodc5 folds
+user404 collected 43296 from pot
+*** SUMMARY ***
+Total pot 43296 | No rake
+Board: [6h Ac 2h]
+Seat 2: user404 (small blind) won 43296
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 12 - HandId: #4806216885538390045-98-1782680460 - Holdem no limit (160/700/1400) - 2026/06/28 21:01:00 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #2 is the button
+Seat 1: Peche 575466 (32214, 0.11€ bounty)
+Seat 2: user404 (160577, 0.45€ bounty)
+Seat 3: - WB - (37424, 0.11€ bounty)
+Seat 4: Zlaatan_King (62704, 0.21€ bounty)
+Seat 5: MyPseudo (202230, 0.16€ bounty)
+Seat 6: nicodc5 (61406, 0.21€ bounty)
+*** ANTE/BLINDS ***
+- WB - posts ante 160
+Zlaatan_King posts ante 160
+Peche 575466 posts ante 160
+user404 posts ante 160
+MyPseudo posts ante 160
+nicodc5 posts ante 160
+- WB - posts small blind 700
+Zlaatan_King posts big blind 1400
+Dealt to MyPseudo [9s Jd]
+*** PRE-FLOP *** 
+MyPseudo folds
+nicodc5 calls 1400
+Peche 575466 folds
+user404 folds
+- WB - calls 700
+Zlaatan_King checks
+*** FLOP *** [6h 7d 4h]
+- WB - checks
+Zlaatan_King checks
+nicodc5 bets 3354
+- WB - calls 3354
+Zlaatan_King calls 3354
+*** TURN *** [6h 7d 4h][Th]
+- WB - checks
+Zlaatan_King checks
+nicodc5 checks
+*** RIVER *** [6h 7d 4h Th][Kd]
+- WB - checks
+Zlaatan_King checks
+nicodc5 checks
+*** SHOW DOWN ***
+Zlaatan_King shows [2d 6d] (One pair : 6)
+nicodc5 shows [7h 3c] (One pair : 7)
+- WB - shows [Jh Js] (One pair : Jacks)
+- WB - collected 15222 from pot
+*** SUMMARY ***
+Total pot 15222 | No rake
+Board: [6h 7d 4h Th Kd]
+Seat 3: - WB - (small blind) showed [Jh Js] and won 15222 with One pair : Jacks
+Seat 4: Zlaatan_King (big blind) showed [2d 6d] and lost with One pair : 6
+Seat 6: nicodc5 showed [7h 3c] and lost with One pair : 7
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 13 - HandId: #4806216885538390045-99-1782680530 - Holdem no limit (200/800/1600) - 2026/06/28 21:02:10 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #3 is the button
+Seat 1: Peche 575466 (32054, 0.11€ bounty)
+Seat 2: user404 (160417, 0.45€ bounty)
+Seat 3: - WB - (47732, 0.11€ bounty)
+Seat 4: Zlaatan_King (57790, 0.21€ bounty)
+Seat 5: MyPseudo (202070, 0.16€ bounty)
+Seat 6: nicodc5 (56492, 0.21€ bounty)
+*** ANTE/BLINDS ***
+Zlaatan_King posts ante 200
+MyPseudo posts ante 200
+Peche 575466 posts ante 200
+user404 posts ante 200
+- WB - posts ante 200
+nicodc5 posts ante 200
+Zlaatan_King posts small blind 800
+MyPseudo posts big blind 1600
+Dealt to MyPseudo [Tc Jd]
+*** PRE-FLOP *** 
+nicodc5 calls 1600
+Peche 575466 raises 1600 to 3200
+user404 folds
+- WB - folds
+Zlaatan_King calls 2400
+MyPseudo calls 1600
+nicodc5 calls 1600
+*** FLOP *** [4c 2d 5c]
+Zlaatan_King checks
+MyPseudo checks
+nicodc5 checks
+Peche 575466 checks
+*** TURN *** [4c 2d 5c][Kc]
+Zlaatan_King checks
+MyPseudo checks
+nicodc5 checks
+Peche 575466 checks
+*** RIVER *** [4c 2d 5c Kc][Qh]
+Zlaatan_King checks
+MyPseudo checks
+nicodc5 bets 14000
+Peche 575466 folds
+Zlaatan_King folds
+MyPseudo calls 14000
+*** SHOW DOWN ***
+nicodc5 shows [8d 6c] (High card : King)
+MyPseudo shows [Tc Jd] (High card : King)
+MyPseudo collected 42000 from pot
+*** SUMMARY ***
+Total pot 42000 | No rake
+Board: [4c 2d 5c Kc Qh]
+Seat 5: MyPseudo (big blind) showed [Tc Jd] and won 42000 with High card : King
+Seat 6: nicodc5 showed [8d 6c] and lost with High card : King
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 13 - HandId: #4806216885538390045-100-1782680624 - Holdem no limit (200/800/1600) - 2026/06/28 21:03:44 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #4 is the button
+Seat 1: Peche 575466 (28654, 0.11€ bounty)
+Seat 2: user404 (160217, 0.45€ bounty)
+Seat 3: - WB - (47532, 0.11€ bounty)
+Seat 4: Zlaatan_King (54390, 0.21€ bounty)
+Seat 5: MyPseudo (226670, 0.16€ bounty)
+Seat 6: nicodc5 (39092, 0.21€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 200
+nicodc5 posts ante 200
+Peche 575466 posts ante 200
+user404 posts ante 200
+- WB - posts ante 200
+Zlaatan_King posts ante 200
+MyPseudo posts small blind 800
+nicodc5 posts big blind 1600
+Dealt to MyPseudo [2h 8s]
+*** PRE-FLOP *** 
+Peche 575466 raises 1600 to 3200
+user404 folds
+- WB - folds
+Zlaatan_King calls 3200
+MyPseudo folds
+nicodc5 calls 1600
+*** FLOP *** [7c Td 6d]
+nicodc5 checks
+Peche 575466 bets 7540
+Zlaatan_King folds
+nicodc5 raises 28152 to 35692 and is all-in
+Peche 575466 calls 17714 and is all-in
+*** TURN *** [7c Td 6d][2s]
+*** RIVER *** [7c Td 6d 2s][8d]
+*** SHOW DOWN ***
+Peche 575466 shows [4c 4d] (One pair : 4)
+nicodc5 shows [2d Tc] (Two pairs : Tens and 2)
+nicodc5 collected 72546 from pot
+*** SUMMARY ***
+Total pot 72546 | No rake
+Board: [7c Td 6d 2s 8d]
+Seat 1: Peche 575466 showed [4c 4d] and lost with One pair : 4
+Seat 6: nicodc5 (big blind) showed [2d Tc] and won 72546 with Two pairs : Tens and 2
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 13 - HandId: #4806216885538390045-101-1782680660 - Holdem no limit (200/800/1600) - 2026/06/28 21:04:20 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #5 is the button
+Seat 2: user404 (160017, 0.45€ bounty)
+Seat 3: - WB - (47332, 0.11€ bounty)
+Seat 4: Zlaatan_King (50990, 0.21€ bounty)
+Seat 5: MyPseudo (225670, 0.16€ bounty)
+Seat 6: nicodc5 (72546, 0.26€ bounty)
+*** ANTE/BLINDS ***
+nicodc5 posts ante 200
+user404 posts ante 200
+- WB - posts ante 200
+Zlaatan_King posts ante 200
+MyPseudo posts ante 200
+nicodc5 posts small blind 800
+user404 posts big blind 1600
+Dealt to MyPseudo [5s Jd]
+*** PRE-FLOP *** 
+- WB - raises 2400 to 4000
+Zlaatan_King calls 4000
+MyPseudo folds
+nicodc5 calls 3200
+user404 calls 2400
+*** FLOP *** [3h 4h 2d]
+nicodc5 checks
+user404 checks
+- WB - bets 2400
+Zlaatan_King calls 2400
+nicodc5 folds
+user404 folds
+*** TURN *** [3h 4h 2d][7c]
+- WB - checks
+Zlaatan_King bets 7630
+- WB - folds
+Zlaatan_King collected 29430 from pot
+*** SUMMARY ***
+Total pot 29430 | No rake
+Board: [3h 4h 2d 7c]
+Seat 4: Zlaatan_King won 29430
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 13 - HandId: #4806216885538390045-102-1782680751 - Holdem no limit (200/800/1600) - 2026/06/28 21:05:51 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #6 is the button
+Seat 1: ADAD93 (56088, 0.21€ bounty)
+Seat 2: user404 (155817, 0.45€ bounty)
+Seat 3: - WB - (40732, 0.11€ bounty)
+Seat 4: Zlaatan_King (66190, 0.21€ bounty)
+Seat 5: MyPseudo (225470, 0.16€ bounty)
+Seat 6: nicodc5 (68346, 0.26€ bounty)
+*** ANTE/BLINDS ***
+user404 posts ante 200
+- WB - posts ante 200
+Zlaatan_King posts ante 200
+MyPseudo posts ante 200
+nicodc5 posts ante 200
+user404 posts small blind 800
+- WB - posts big blind 1600
+Dealt to MyPseudo [Qs 6s]
+*** PRE-FLOP *** 
+Zlaatan_King calls 1600
+MyPseudo folds
+nicodc5 calls 1600
+user404 folds
+- WB - checks
+*** FLOP *** [Ah 4s Th]
+- WB - checks
+Zlaatan_King checks
+nicodc5 bets 4290
+- WB - folds
+Zlaatan_King folds
+nicodc5 collected 10890 from pot
+*** SUMMARY ***
+Total pot 10890 | No rake
+Board: [Ah 4s Th]
+Seat 6: nicodc5 (button) won 10890
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 13 - HandId: #4806216885538390045-103-1782680788 - Holdem no limit (200/800/1600) - 2026/06/28 21:06:28 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #2 is the button
+Seat 1: ADAD93 (56088, 0.21€ bounty)
+Seat 2: user404 (154817, 0.45€ bounty)
+Seat 3: - WB - (38932, 0.11€ bounty)
+Seat 4: Zlaatan_King (64390, 0.21€ bounty)
+Seat 5: MyPseudo (225270, 0.16€ bounty)
+Seat 6: nicodc5 (73146, 0.26€ bounty)
+*** ANTE/BLINDS ***
+- WB - posts ante 200
+Zlaatan_King posts ante 200
+ADAD93 posts ante 200
+user404 posts ante 200
+MyPseudo posts ante 200
+nicodc5 posts ante 200
+- WB - posts small blind 800
+Zlaatan_King posts big blind 1600
+Dealt to MyPseudo [3h Js]
+*** PRE-FLOP *** 
+MyPseudo folds
+nicodc5 calls 1600
+ADAD93 calls 1600
+user404 folds
+- WB - folds
+Zlaatan_King checks
+*** FLOP *** [3d 5h 6d]
+Zlaatan_King checks
+nicodc5 checks
+ADAD93 checks
+*** TURN *** [3d 5h 6d][9h]
+Zlaatan_King checks
+nicodc5 checks
+ADAD93 bets 2380
+Zlaatan_King folds
+nicodc5 calls 2380
+*** RIVER *** [3d 5h 6d 9h][8h]
+nicodc5 checks
+ADAD93 checks
+*** SHOW DOWN ***
+nicodc5 shows [4s Kh] (High card : King)
+ADAD93 shows [Kc 9s] (One pair : 9)
+ADAD93 collected 11560 from pot
+*** SUMMARY ***
+Total pot 11560 | No rake
+Board: [3d 5h 6d 9h 8h]
+Seat 1: ADAD93 showed [Kc 9s] and won 11560 with One pair : 9
+Seat 6: nicodc5 showed [4s Kh] and lost with High card : King
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 14 - HandId: #4806216885538390045-104-1782680831 - Holdem no limit (250/1000/2000) - 2026/06/28 21:07:11 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #3 is the button
+Seat 1: ADAD93 (63468, 0.21€ bounty)
+Seat 2: user404 (154617, 0.45€ bounty)
+Seat 3: - WB - (37932, 0.11€ bounty)
+Seat 4: Zlaatan_King (62590, 0.21€ bounty)
+Seat 5: MyPseudo (225070, 0.16€ bounty)
+Seat 6: nicodc5 (68966, 0.26€ bounty)
+*** ANTE/BLINDS ***
+Zlaatan_King posts ante 250
+MyPseudo posts ante 250
+ADAD93 posts ante 250
+user404 posts ante 250
+- WB - posts ante 250
+nicodc5 posts ante 250
+Zlaatan_King posts small blind 1000
+MyPseudo posts big blind 2000
+Dealt to MyPseudo [3d Js]
+*** PRE-FLOP *** 
+nicodc5 calls 2000
+ADAD93 folds
+user404 raises 2000 to 4000
+- WB - folds
+Zlaatan_King folds
+MyPseudo calls 2000
+nicodc5 calls 2000
+*** FLOP *** [Qc Ad 5s]
+MyPseudo checks
+nicodc5 checks
+user404 bets 5075
+MyPseudo folds
+nicodc5 folds
+user404 collected 19575 from pot
+*** SUMMARY ***
+Total pot 19575 | No rake
+Board: [Qc Ad 5s]
+Seat 2: user404 won 19575
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 14 - HandId: #4806216885538390045-105-1782680924 - Holdem no limit (250/1000/2000) - 2026/06/28 21:08:44 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #4 is the button
+Seat 1: ADAD93 (63218, 0.21€ bounty)
+Seat 2: user404 (164867, 0.45€ bounty)
+Seat 3: - WB - (37682, 0.11€ bounty)
+Seat 4: Zlaatan_King (61340, 0.21€ bounty)
+Seat 5: MyPseudo (220820, 0.16€ bounty)
+Seat 6: nicodc5 (64716, 0.26€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 250
+nicodc5 posts ante 250
+ADAD93 posts ante 250
+user404 posts ante 250
+- WB - posts ante 250
+Zlaatan_King posts ante 250
+MyPseudo posts small blind 1000
+nicodc5 posts big blind 2000
+Dealt to MyPseudo [4h Qs]
+*** PRE-FLOP *** 
+ADAD93 folds
+user404 raises 2000 to 4000
+- WB - folds
+Zlaatan_King calls 4000
+MyPseudo folds
+nicodc5 calls 2000
+*** FLOP *** [8c 4d 5d]
+nicodc5 checks
+user404 bets 5075
+Zlaatan_King calls 5075
+nicodc5 calls 5075
+*** TURN *** [8c 4d 5d][Jd]
+nicodc5 checks
+user404 checks
+Zlaatan_King checks
+*** RIVER *** [8c 4d 5d Jd][Js]
+nicodc5 checks
+user404 checks
+Zlaatan_King checks
+*** SHOW DOWN ***
+Zlaatan_King shows [2c 6c] (One pair : Jacks)
+nicodc5 shows [2h 7h] (One pair : Jacks)
+user404 shows [4s As] (Two pairs : Jacks and 4)
+user404 collected 29725 from pot
+*** SUMMARY ***
+Total pot 29725 | No rake
+Board: [8c 4d 5d Jd Js]
+Seat 2: user404 showed [4s As] and won 29725 with Two pairs : Jacks and 4
+Seat 4: Zlaatan_King (button) showed [2c 6c] and lost with One pair : Jacks
+Seat 6: nicodc5 (big blind) showed [2h 7h] and lost with One pair : Jacks
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 14 - HandId: #4806216885538390045-106-1782680971 - Holdem no limit (250/1000/2000) - 2026/06/28 21:09:31 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #5 is the button
+Seat 1: ADAD93 (62968, 0.21€ bounty)
+Seat 2: user404 (185267, 0.45€ bounty)
+Seat 3: - WB - (37432, 0.11€ bounty)
+Seat 4: Zlaatan_King (52015, 0.21€ bounty)
+Seat 5: MyPseudo (219570, 0.16€ bounty)
+Seat 6: nicodc5 (55391, 0.26€ bounty)
+*** ANTE/BLINDS ***
+nicodc5 posts ante 250
+ADAD93 posts ante 250
+user404 posts ante 250
+- WB - posts ante 250
+Zlaatan_King posts ante 250
+MyPseudo posts ante 250
+nicodc5 posts small blind 1000
+ADAD93 posts big blind 2000
+Dealt to MyPseudo [9d 2c]
+*** PRE-FLOP *** 
+user404 raises 2000 to 4000
+- WB - folds
+Zlaatan_King calls 4000
+MyPseudo folds
+nicodc5 calls 3000
+ADAD93 calls 2000
+*** FLOP *** [6s 8h Th]
+nicodc5 checks
+ADAD93 bets 2000
+user404 raises 8000 to 10000
+Zlaatan_King folds
+nicodc5 folds
+ADAD93 folds
+user404 collected 29500 from pot
+*** SUMMARY ***
+Total pot 29500 | No rake
+Board: [6s 8h Th]
+Seat 2: user404 won 29500
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 14 - HandId: #4806216885538390045-107-1782681003 - Holdem no limit (250/1000/2000) - 2026/06/28 21:10:03 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #6 is the button
+Seat 1: ADAD93 (56718, 0.21€ bounty)
+Seat 2: user404 (200517, 0.45€ bounty)
+Seat 3: - WB - (37182, 0.11€ bounty)
+Seat 4: Zlaatan_King (47765, 0.21€ bounty)
+Seat 5: MyPseudo (219320, 0.16€ bounty)
+Seat 6: nicodc5 (51141, 0.26€ bounty)
+*** ANTE/BLINDS ***
+ADAD93 posts ante 250
+user404 posts ante 250
+- WB - posts ante 250
+Zlaatan_King posts ante 250
+MyPseudo posts ante 250
+nicodc5 posts ante 250
+ADAD93 posts small blind 1000
+user404 posts big blind 2000
+Dealt to MyPseudo [4d Th]
+*** PRE-FLOP *** 
+- WB - folds
+Zlaatan_King folds
+MyPseudo folds
+nicodc5 calls 2000
+ADAD93 folds
+user404 raises 2400 to 4400
+nicodc5 calls 2400
+*** FLOP *** [9h Td Qd]
+user404 checks
+nicodc5 checks
+*** TURN *** [9h Td Qd][9c]
+user404 checks
+nicodc5 checks
+*** RIVER *** [9h Td Qd 9c][5c]
+user404 checks
+nicodc5 checks
+*** SHOW DOWN ***
+nicodc5 shows [8d 3d] (One pair : 9)
+user404 shows [2d 2c] (Two pairs : 9 and 2)
+user404 collected 11300 from pot
+*** SUMMARY ***
+Total pot 11300 | No rake
+Board: [9h Td Qd 9c 5c]
+Seat 2: user404 (big blind) showed [2d 2c] and won 11300 with Two pairs : 9 and 2
+Seat 6: nicodc5 (button) showed [8d 3d] and lost with One pair : 9
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 14 - HandId: #4806216885538390045-108-1782681042 - Holdem no limit (250/1000/2000) - 2026/06/28 21:10:42 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #1 is the button
+Seat 1: ADAD93 (55468, 0.21€ bounty)
+Seat 2: user404 (207167, 0.45€ bounty)
+Seat 3: - WB - (36932, 0.11€ bounty)
+Seat 4: Zlaatan_King (47515, 0.21€ bounty)
+Seat 5: MyPseudo (219070, 0.16€ bounty)
+Seat 6: nicodc5 (46491, 0.26€ bounty)
+*** ANTE/BLINDS ***
+user404 posts ante 250
+- WB - posts ante 250
+ADAD93 posts ante 250
+Zlaatan_King posts ante 250
+MyPseudo posts ante 250
+nicodc5 posts ante 250
+user404 posts small blind 1000
+- WB - posts big blind 2000
+Dealt to MyPseudo [2c 4c]
+*** PRE-FLOP *** 
+Zlaatan_King folds
+MyPseudo folds
+nicodc5 calls 2000
+ADAD93 calls 2000
+user404 calls 1000
+- WB - raises 3000 to 5000
+nicodc5 calls 3000
+ADAD93 raises 7500 to 12500
+user404 folds
+- WB - raises 24182 to 36682 and is all-in
+nicodc5 folds
+ADAD93 calls 24182
+*** FLOP *** [2s 9d 7c]
+*** TURN *** [2s 9d 7c][5c]
+*** RIVER *** [2s 9d 7c 5c][Ac]
+*** SHOW DOWN ***
+- WB - shows [Td Tc] (One pair : Tens)
+ADAD93 shows [Ks As] (One pair : Aces)
+ADAD93 collected 81864 from pot
+*** SUMMARY ***
+Total pot 81864 | No rake
+Board: [2s 9d 7c 5c Ac]
+Seat 1: ADAD93 (button) showed [Ks As] and won 81864 with One pair : Aces
+Seat 3: - WB - (big blind) showed [Td Tc] and lost with One pair : Tens
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 14 - HandId: #4806216885538390045-109-1782681085 - Holdem no limit (250/1000/2000) - 2026/06/28 21:11:25 UTC
+Table: 'Kill The Fish(1119034571)#028' 6-max (real money) Seat #2 is the button
+Seat 1: ADAD93 (100400, 0.26€ bounty)
+Seat 2: user404 (204917, 0.45€ bounty)
+Seat 4: Zlaatan_King (47265, 0.21€ bounty)
+Seat 5: MyPseudo (218820, 0.16€ bounty)
+Seat 6: nicodc5 (41241, 0.26€ bounty)
+*** ANTE/BLINDS ***
+Zlaatan_King posts ante 250
+ADAD93 posts ante 250
+user404 posts ante 250
+MyPseudo posts ante 250
+nicodc5 posts ante 250
+Zlaatan_King posts big blind 2000
+Dealt to MyPseudo [7c 6s]
+*** PRE-FLOP *** 
+MyPseudo folds
+nicodc5 calls 2000
+ADAD93 calls 2000
+user404 folds
+Zlaatan_King checks
+*** FLOP *** [2c Ac Ah]
+Zlaatan_King checks
+nicodc5 checks
+ADAD93 checks
+*** TURN *** [2c Ac Ah][3s]
+Zlaatan_King checks
+nicodc5 bets 7250
+ADAD93 folds
+Zlaatan_King folds
+nicodc5 collected 14500 from pot
+*** SUMMARY ***
+Total pot 14500 | No rake
+Board: [2c Ac Ah 3s]
+Seat 6: nicodc5 won 14500
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 15 - HandId: #4806216885538390024-111-1782681121 - Holdem no limit (300/1250/2500) - 2026/06/28 21:12:01 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #6 is the button
+Seat 1: Dinde.640520 (100206, 0.21€ bounty)
+Seat 2: Lugh-Dagr (95154, 0.16€ bounty)
+Seat 3: Hotvoltige (368112, 0.68€ bounty)
+Seat 4: MyPseudo (218570, 0.16€ bounty)
+Seat 5: Winavole1Max (17844, 0.16€ bounty)
+Seat 6: JGFM56 (36328, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Dinde.640520 posts ante 300
+Lugh-Dagr posts ante 300
+Hotvoltige posts ante 300
+MyPseudo posts ante 300
+Winavole1Max posts ante 300
+JGFM56 posts ante 300
+Dinde.640520 posts small blind 1250
+Lugh-Dagr posts big blind 2500
+Dealt to MyPseudo [Kd 3d]
+*** PRE-FLOP *** 
+Hotvoltige folds
+MyPseudo folds
+Winavole1Max folds
+JGFM56 folds
+Dinde.640520 folds
+Lugh-Dagr collected 5550 from pot
+*** SUMMARY ***
+Total pot 5550 | No rake
+Seat 2: Lugh-Dagr (big blind) won 5550
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 15 - HandId: #4806216885538390024-112-1782681150 - Holdem no limit (300/1250/2500) - 2026/06/28 21:12:30 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #1 is the button
+Seat 1: Dinde.640520 (98656, 0.21€ bounty)
+Seat 2: Lugh-Dagr (97904, 0.16€ bounty)
+Seat 3: Hotvoltige (367812, 0.68€ bounty)
+Seat 4: MyPseudo (218270, 0.16€ bounty)
+Seat 5: Winavole1Max (17544, 0.16€ bounty)
+Seat 6: JGFM56 (36028, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Lugh-Dagr posts ante 300
+Hotvoltige posts ante 300
+Dinde.640520 posts ante 300
+MyPseudo posts ante 300
+Winavole1Max posts ante 300
+JGFM56 posts ante 300
+Lugh-Dagr posts small blind 1250
+Hotvoltige posts big blind 2500
+Dealt to MyPseudo [7h 4s]
+*** PRE-FLOP *** 
+MyPseudo folds
+Winavole1Max folds
+JGFM56 calls 2500
+Dinde.640520 folds
+Lugh-Dagr calls 1250
+Hotvoltige checks
+*** FLOP *** [2d 2h 9h]
+Lugh-Dagr checks
+Hotvoltige checks
+JGFM56 checks
+*** TURN *** [2d 2h 9h][7s]
+Lugh-Dagr checks
+Hotvoltige checks
+JGFM56 checks
+*** RIVER *** [2d 2h 9h 7s][Qc]
+Lugh-Dagr checks
+Hotvoltige checks
+JGFM56 checks
+*** SHOW DOWN ***
+Hotvoltige shows [Tc Jd] (One pair : 2)
+Lugh-Dagr shows [Ah 3d] (One pair : 2)
+JGFM56 shows [As 3s] (One pair : 2)
+JGFM56 collected 4650 from pot
+Lugh-Dagr collected 4650 from pot
+*** SUMMARY ***
+Total pot 9300 | No rake
+Board: [2d 2h 9h 7s Qc]
+Seat 2: Lugh-Dagr (small blind) showed [Ah 3d] and won 4650 with One pair : 2
+Seat 3: Hotvoltige (big blind) showed [Tc Jd] and lost with One pair : 2
+Seat 6: JGFM56 showed [As 3s] and won 4650 with One pair : 2
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 15 - HandId: #4806216885538390024-113-1782681205 - Holdem no limit (300/1250/2500) - 2026/06/28 21:13:25 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #2 is the button
+Seat 1: Dinde.640520 (98356, 0.21€ bounty)
+Seat 2: Lugh-Dagr (99754, 0.16€ bounty)
+Seat 3: Hotvoltige (365012, 0.68€ bounty)
+Seat 4: MyPseudo (217970, 0.16€ bounty)
+Seat 5: Winavole1Max (17244, 0.16€ bounty)
+Seat 6: JGFM56 (37878, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Hotvoltige posts ante 300
+MyPseudo posts ante 300
+Dinde.640520 posts ante 300
+Lugh-Dagr posts ante 300
+Winavole1Max posts ante 300
+JGFM56 posts ante 300
+Hotvoltige posts small blind 1250
+MyPseudo posts big blind 2500
+Dealt to MyPseudo [7s Ah]
+*** PRE-FLOP *** 
+Winavole1Max folds
+JGFM56 calls 2500
+Dinde.640520 folds
+Lugh-Dagr folds
+Hotvoltige calls 1250
+MyPseudo checks
+*** FLOP *** [5s Qc As]
+Hotvoltige checks
+MyPseudo bets 4650
+JGFM56 folds
+Hotvoltige folds
+MyPseudo collected 13950 from pot
+*** SUMMARY ***
+Total pot 13950 | No rake
+Board: [5s Qc As]
+Seat 4: MyPseudo (big blind) won 13950
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 15 - HandId: #4806216885538390024-114-1782681263 - Holdem no limit (300/1250/2500) - 2026/06/28 21:14:23 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #3 is the button
+Seat 1: Dinde.640520 (98056, 0.21€ bounty)
+Seat 2: Lugh-Dagr (99454, 0.16€ bounty)
+Seat 3: Hotvoltige (362212, 0.68€ bounty)
+Seat 4: MyPseudo (224470, 0.16€ bounty)
+Seat 5: Winavole1Max (16944, 0.16€ bounty)
+Seat 6: JGFM56 (35078, 0.11€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 300
+Winavole1Max posts ante 300
+Dinde.640520 posts ante 300
+Lugh-Dagr posts ante 300
+Hotvoltige posts ante 300
+JGFM56 posts ante 300
+MyPseudo posts small blind 1250
+Winavole1Max posts big blind 2500
+Dealt to MyPseudo [Qs 3d]
+*** PRE-FLOP *** 
+JGFM56 calls 2500
+Dinde.640520 folds
+Lugh-Dagr folds
+Hotvoltige raises 10550 to 13050
+MyPseudo folds
+Winavole1Max raises 3594 to 16644 and is all-in
+JGFM56 calls 14144
+Hotvoltige calls 3594
+*** FLOP *** [4h 6h 8h]
+JGFM56 checks
+Hotvoltige bets 52982
+JGFM56 folds
+*** TURN *** [4h 6h 8h][9c]
+*** RIVER *** [4h 6h 8h 9c][9h]
+*** SHOW DOWN ***
+Hotvoltige shows [Kh Ks] (Flush King high)
+Winavole1Max shows [Ac Ah] (Flush Ace high)
+Winavole1Max collected 52982 from main pot
+Hotvoltige collected 52982 from side pot 1
+*** SUMMARY ***
+Total pot 105964 | No rake
+Board: [4h 6h 8h 9c 9h]
+Seat 3: Hotvoltige (button) showed [Kh Ks] and won 52982 with Flush King high
+Seat 5: Winavole1Max (big blind) showed [Ac Ah] and won 52982 with Flush Ace high
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 15 - HandId: #4806216885538390024-115-1782681305 - Holdem no limit (300/1250/2500) - 2026/06/28 21:15:05 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #4 is the button
+Seat 1: Dinde.640520 (97756, 0.21€ bounty)
+Seat 2: Lugh-Dagr (99154, 0.16€ bounty)
+Seat 3: Hotvoltige (345268, 0.68€ bounty)
+Seat 4: MyPseudo (222920, 0.16€ bounty)
+Seat 5: Winavole1Max (52982, 0.16€ bounty)
+Seat 6: JGFM56 (18134, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Winavole1Max posts ante 300
+JGFM56 posts ante 300
+Dinde.640520 posts ante 300
+Lugh-Dagr posts ante 300
+Hotvoltige posts ante 300
+MyPseudo posts ante 300
+Winavole1Max posts small blind 1250
+JGFM56 posts big blind 2500
+Dealt to MyPseudo [Kh Jh]
+*** PRE-FLOP *** 
+Dinde.640520 folds
+Lugh-Dagr calls 2500
+Hotvoltige folds
+MyPseudo raises 220120 to 222620 and is all-in
+Winavole1Max folds
+JGFM56 calls 15334 and is all-in
+Lugh-Dagr folds
+*** FLOP *** [Qh Jd 7h]
+*** TURN *** [Qh Jd 7h][4s]
+*** RIVER *** [Qh Jd 7h 4s][3d]
+*** SHOW DOWN ***
+JGFM56 shows [9c As] (High card : Ace)
+MyPseudo shows [Kh Jh] (One pair : Jacks)
+MyPseudo collected 246004 from pot
+*** SUMMARY ***
+Total pot 246004 | No rake
+Board: [Qh Jd 7h 4s 3d]
+Seat 4: MyPseudo (button) showed [Kh Jh] and won 246004 with One pair : Jacks
+Seat 6: JGFM56 (big blind) showed [9c As] and lost with High card : Ace
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 15 - HandId: #4806216885538390024-116-1782681354 - Holdem no limit (300/1250/2500) - 2026/06/28 21:15:54 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #5 is the button
+Seat 1: Dinde.640520 (97456, 0.21€ bounty)
+Seat 2: Lugh-Dagr (96354, 0.16€ bounty)
+Seat 3: Hotvoltige (344968, 0.68€ bounty)
+Seat 4: MyPseudo (246004, 0.21€ bounty)
+Seat 5: Winavole1Max (51432, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Dinde.640520 posts ante 300
+Lugh-Dagr posts ante 300
+Hotvoltige posts ante 300
+MyPseudo posts ante 300
+Winavole1Max posts ante 300
+Dinde.640520 posts big blind 2500
+Dealt to MyPseudo [Js Qs]
+*** PRE-FLOP *** 
+Lugh-Dagr folds
+Hotvoltige calls 2500
+MyPseudo raises 3125 to 5625
+Winavole1Max folds
+Dinde.640520 calls 3125
+Hotvoltige calls 3125
+*** FLOP *** [Th 2h Ah]
+Dinde.640520 checks
+Hotvoltige checks
+MyPseudo bets 9188
+Dinde.640520 raises 82343 to 91531 and is all-in
+Hotvoltige folds
+MyPseudo folds
+Dinde.640520 collected 119094 from pot
+*** SUMMARY ***
+Total pot 119094 | No rake
+Board: [Th 2h Ah]
+Seat 1: Dinde.640520 (big blind) won 119094
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 16 - HandId: #4806216885538390024-117-1782681441 - Holdem no limit (350/1500/3000) - 2026/06/28 21:17:21 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #6 is the button
+Seat 1: Dinde.640520 (119094, 0.21€ bounty)
+Seat 2: Lugh-Dagr (96054, 0.16€ bounty)
+Seat 3: Hotvoltige (339043, 0.68€ bounty)
+Seat 4: MyPseudo (230891, 0.21€ bounty)
+Seat 5: Winavole1Max (51132, 0.16€ bounty)
+Seat 6: Tino-10 wnm (21048, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Dinde.640520 posts ante 350
+Lugh-Dagr posts ante 350
+Hotvoltige posts ante 350
+MyPseudo posts ante 350
+Winavole1Max posts ante 350
+Dinde.640520 posts small blind 1500
+Lugh-Dagr posts big blind 3000
+Dealt to MyPseudo [2s Tc]
+*** PRE-FLOP *** 
+Hotvoltige folds
+MyPseudo folds
+Winavole1Max folds
+Dinde.640520 calls 1500
+Lugh-Dagr checks
+*** FLOP *** [Ks 4s 7s]
+Dinde.640520 checks
+Lugh-Dagr checks
+*** TURN *** [Ks 4s 7s][2c]
+Dinde.640520 checks
+Lugh-Dagr checks
+*** RIVER *** [Ks 4s 7s 2c][Qh]
+Dinde.640520 checks
+Lugh-Dagr checks
+*** SHOW DOWN ***
+Lugh-Dagr shows [Jh 8d] (High card : King)
+Dinde.640520 shows [4h 5h] (One pair : 4)
+Dinde.640520 collected 7750 from pot
+*** SUMMARY ***
+Total pot 7750 | No rake
+Board: [Ks 4s 7s 2c Qh]
+Seat 1: Dinde.640520 (small blind) showed [4h 5h] and won 7750 with One pair : 4
+Seat 2: Lugh-Dagr (big blind) showed [Jh 8d] and lost with High card : King
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 16 - HandId: #4806216885538390024-118-1782681493 - Holdem no limit (350/1500/3000) - 2026/06/28 21:18:13 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #1 is the button
+Seat 1: Dinde.640520 (123494, 0.21€ bounty)
+Seat 2: Lugh-Dagr (92704, 0.16€ bounty)
+Seat 3: Hotvoltige (338693, 0.68€ bounty)
+Seat 4: MyPseudo (230541, 0.21€ bounty)
+Seat 5: Winavole1Max (50782, 0.16€ bounty)
+Seat 6: Tino-10 wnm (21048, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Lugh-Dagr posts ante 350
+Hotvoltige posts ante 350
+Dinde.640520 posts ante 350
+MyPseudo posts ante 350
+Winavole1Max posts ante 350
+Tino-10 wnm posts ante 350
+Lugh-Dagr posts small blind 1500
+Hotvoltige posts big blind 3000
+Dealt to MyPseudo [2c 4d]
+*** PRE-FLOP *** 
+MyPseudo folds
+Winavole1Max folds
+Tino-10 wnm raises 17698 to 20698 and is all-in
+Dinde.640520 folds
+Lugh-Dagr folds
+Hotvoltige calls 17698
+*** FLOP *** [5h 8d Ks]
+*** TURN *** [5h 8d Ks][Qh]
+*** RIVER *** [5h 8d Ks Qh][6h]
+*** SHOW DOWN ***
+Hotvoltige shows [3c Kh] (One pair : Kings)
+Tino-10 wnm shows [Qc Qs] (Trips of Queens)
+Tino-10 wnm collected 44996 from pot
+*** SUMMARY ***
+Total pot 44996 | No rake
+Board: [5h 8d Ks Qh 6h]
+Seat 3: Hotvoltige (big blind) showed [3c Kh] and lost with One pair : Kings
+Seat 6: Tino-10 wnm showed [Qc Qs] and won 44996 with Trips of Queens
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 16 - HandId: #4806216885538390024-119-1782681560 - Holdem no limit (350/1500/3000) - 2026/06/28 21:19:20 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #2 is the button
+Seat 1: Dinde.640520 (123144, 0.21€ bounty)
+Seat 2: Lugh-Dagr (90854, 0.16€ bounty)
+Seat 3: Hotvoltige (317645, 0.68€ bounty)
+Seat 4: MyPseudo (230191, 0.21€ bounty)
+Seat 5: Winavole1Max (50432, 0.16€ bounty)
+Seat 6: Tino-10 wnm (44996, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Hotvoltige posts ante 350
+MyPseudo posts ante 350
+Dinde.640520 posts ante 350
+Lugh-Dagr posts ante 350
+Winavole1Max posts ante 350
+Tino-10 wnm posts ante 350
+Hotvoltige posts small blind 1500
+MyPseudo posts big blind 3000
+Dealt to MyPseudo [2s 8d]
+*** PRE-FLOP *** 
+Winavole1Max folds
+Tino-10 wnm calls 3000
+Dinde.640520 folds
+Lugh-Dagr folds
+Hotvoltige folds
+MyPseudo checks
+*** FLOP *** [4d 7d 3s]
+MyPseudo checks
+Tino-10 wnm checks
+*** TURN *** [4d 7d 3s][Jc]
+MyPseudo bets 4800
+Tino-10 wnm folds
+MyPseudo collected 14400 from pot
+*** SUMMARY ***
+Total pot 14400 | No rake
+Board: [4d 7d 3s Jc]
+Seat 4: MyPseudo (big blind) won 14400
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 16 - HandId: #4806216885538390024-120-1782681667 - Holdem no limit (350/1500/3000) - 2026/06/28 21:21:07 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #3 is the button
+Seat 1: Dinde.640520 (122794, 0.21€ bounty)
+Seat 2: Lugh-Dagr (90504, 0.16€ bounty)
+Seat 3: Hotvoltige (315795, 0.68€ bounty)
+Seat 4: MyPseudo (236441, 0.21€ bounty)
+Seat 5: Winavole1Max (50082, 0.16€ bounty)
+Seat 6: Tino-10 wnm (41646, 0.16€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 350
+Winavole1Max posts ante 350
+Dinde.640520 posts ante 350
+Lugh-Dagr posts ante 350
+Hotvoltige posts ante 350
+Tino-10 wnm posts ante 350
+MyPseudo posts small blind 1500
+Winavole1Max posts big blind 3000
+Dealt to MyPseudo [8h 2s]
+*** PRE-FLOP *** 
+Tino-10 wnm calls 3000
+Dinde.640520 folds
+Lugh-Dagr calls 3000
+Hotvoltige folds
+MyPseudo folds
+Winavole1Max checks
+*** FLOP *** [Js 5c Qs]
+Winavole1Max bets 4410
+Tino-10 wnm folds
+Lugh-Dagr folds
+Winavole1Max collected 17010 from pot
+*** SUMMARY ***
+Total pot 17010 | No rake
+Board: [Js 5c Qs]
+Seat 5: Winavole1Max (big blind) won 17010
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 16 - HandId: #4806216885538390024-121-1782681720 - Holdem no limit (350/1500/3000) - 2026/06/28 21:22:00 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #4 is the button
+Seat 1: Dinde.640520 (122444, 0.21€ bounty)
+Seat 2: Lugh-Dagr (87154, 0.16€ bounty)
+Seat 3: Hotvoltige (315445, 0.68€ bounty)
+Seat 4: MyPseudo (234591, 0.21€ bounty)
+Seat 5: Winavole1Max (59332, 0.16€ bounty)
+Seat 6: Tino-10 wnm (38296, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Winavole1Max posts ante 350
+Tino-10 wnm posts ante 350
+Dinde.640520 posts ante 350
+Lugh-Dagr posts ante 350
+Hotvoltige posts ante 350
+MyPseudo posts ante 350
+Winavole1Max posts small blind 1500
+Tino-10 wnm posts big blind 3000
+Dealt to MyPseudo [3s 4h]
+*** PRE-FLOP *** 
+Dinde.640520 folds
+Lugh-Dagr folds
+Hotvoltige calls 3000
+MyPseudo folds
+Winavole1Max calls 1500
+Tino-10 wnm checks
+*** FLOP *** [2h As Kd]
+Winavole1Max checks
+Tino-10 wnm checks
+Hotvoltige checks
+*** TURN *** [2h As Kd][9h]
+Winavole1Max checks
+Tino-10 wnm checks
+Hotvoltige bets 11100
+Winavole1Max folds
+Tino-10 wnm calls 11100
+*** RIVER *** [2h As Kd 9h][4c]
+Tino-10 wnm checks
+Hotvoltige bets 28931
+Tino-10 wnm folds
+Hotvoltige collected 62231 from pot
+*** SUMMARY ***
+Total pot 62231 | No rake
+Board: [2h As Kd 9h 4c]
+Seat 3: Hotvoltige won 62231
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 17 - HandId: #4806216885538390024-122-1782681812 - Holdem no limit (400/1750/3500) - 2026/06/28 21:23:32 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #5 is the button
+Seat 1: Dinde.640520 (122094, 0.21€ bounty)
+Seat 2: Lugh-Dagr (86804, 0.16€ bounty)
+Seat 3: Hotvoltige (334295, 0.68€ bounty)
+Seat 4: MyPseudo (234241, 0.21€ bounty)
+Seat 5: Winavole1Max (55982, 0.16€ bounty)
+Seat 6: Tino-10 wnm (23846, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Tino-10 wnm posts ante 400
+Dinde.640520 posts ante 400
+Lugh-Dagr posts ante 400
+Hotvoltige posts ante 400
+MyPseudo posts ante 400
+Winavole1Max posts ante 400
+Tino-10 wnm posts small blind 1750
+Dinde.640520 posts big blind 3500
+Dealt to MyPseudo [Ks 3h]
+*** PRE-FLOP *** 
+Lugh-Dagr folds
+Hotvoltige folds
+MyPseudo folds
+Winavole1Max folds
+Tino-10 wnm folds
+Dinde.640520 collected 7650 from pot
+*** SUMMARY ***
+Total pot 7650 | No rake
+Seat 1: Dinde.640520 (big blind) won 7650
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 17 - HandId: #4806216885538390024-123-1782681860 - Holdem no limit (400/1750/3500) - 2026/06/28 21:24:20 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #6 is the button
+Seat 1: Dinde.640520 (125844, 0.21€ bounty)
+Seat 2: Lugh-Dagr (86404, 0.16€ bounty)
+Seat 3: Hotvoltige (333895, 0.68€ bounty)
+Seat 4: MyPseudo (233841, 0.21€ bounty)
+Seat 5: Winavole1Max (55582, 0.16€ bounty)
+Seat 6: Tino-10 wnm (21696, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Dinde.640520 posts ante 400
+Lugh-Dagr posts ante 400
+Hotvoltige posts ante 400
+MyPseudo posts ante 400
+Winavole1Max posts ante 400
+Tino-10 wnm posts ante 400
+Dinde.640520 posts small blind 1750
+Lugh-Dagr posts big blind 3500
+Dealt to MyPseudo [5c Ad]
+*** PRE-FLOP *** 
+Hotvoltige folds
+MyPseudo raises 4375 to 7875
+Winavole1Max calls 7875
+Tino-10 wnm calls 7875
+Dinde.640520 folds
+Lugh-Dagr folds
+*** FLOP *** [Ts Qd Td]
+MyPseudo checks
+Winavole1Max checks
+Tino-10 wnm checks
+*** TURN *** [Ts Qd Td][Tc]
+MyPseudo checks
+Winavole1Max checks
+Tino-10 wnm checks
+*** RIVER *** [Ts Qd Td Tc][Ac]
+MyPseudo bets 47250
+Winavole1Max calls 47250
+Tino-10 wnm calls 13421 and is all-in
+*** SHOW DOWN ***
+MyPseudo shows [5c Ad] (Full of Tens and Aces)
+Winavole1Max shows [6h As] (Full of Tens and Aces)
+Tino-10 wnm shows [4h Ah] (Full of Tens and Aces)
+Tino-10 wnm collected 23846 from main pot
+Winavole1Max collected 57675 from side pot 1
+MyPseudo collected 57675 from side pot 1
+*** SUMMARY ***
+Total pot 139196 | No rake
+Board: [Ts Qd Td Tc Ac]
+Seat 4: MyPseudo showed [5c Ad] and won 57675 with Full of Tens and Aces
+Seat 5: Winavole1Max showed [6h As] and won 57675 with Full of Tens and Aces
+Seat 6: Tino-10 wnm (button) showed [4h Ah] and won 23846 with Full of Tens and Aces
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 17 - HandId: #4806216885538390024-124-1782681971 - Holdem no limit (400/1750/3500) - 2026/06/28 21:26:11 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #1 is the button
+Seat 1: Dinde.640520 (123694, 0.21€ bounty)
+Seat 2: Lugh-Dagr (82504, 0.16€ bounty)
+Seat 3: Hotvoltige (333495, 0.68€ bounty)
+Seat 4: MyPseudo (235991, 0.21€ bounty)
+Seat 5: Winavole1Max (57732, 0.16€ bounty)
+Seat 6: Tino-10 wnm (23846, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Lugh-Dagr posts ante 400
+Hotvoltige posts ante 400
+Dinde.640520 posts ante 400
+MyPseudo posts ante 400
+Winavole1Max posts ante 400
+Tino-10 wnm posts ante 400
+Lugh-Dagr posts small blind 1750
+Hotvoltige posts big blind 3500
+Dealt to MyPseudo [7d Ac]
+*** PRE-FLOP *** 
+MyPseudo folds
+Winavole1Max folds
+Tino-10 wnm folds
+Dinde.640520 folds
+Lugh-Dagr folds
+Hotvoltige collected 7650 from pot
+*** SUMMARY ***
+Total pot 7650 | No rake
+Seat 3: Hotvoltige (big blind) won 7650
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 17 - HandId: #4806216885538390024-125-1782682013 - Holdem no limit (400/1750/3500) - 2026/06/28 21:26:53 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #2 is the button
+Seat 1: Dinde.640520 (123294, 0.21€ bounty)
+Seat 2: Lugh-Dagr (80354, 0.16€ bounty)
+Seat 3: Hotvoltige (337245, 0.68€ bounty)
+Seat 4: MyPseudo (235591, 0.21€ bounty)
+Seat 5: Winavole1Max (57332, 0.16€ bounty)
+Seat 6: Tino-10 wnm (23446, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Hotvoltige posts ante 400
+MyPseudo posts ante 400
+Dinde.640520 posts ante 400
+Lugh-Dagr posts ante 400
+Winavole1Max posts ante 400
+Tino-10 wnm posts ante 400
+Hotvoltige posts small blind 1750
+MyPseudo posts big blind 3500
+Dealt to MyPseudo [Kd Jd]
+*** PRE-FLOP *** 
+Winavole1Max folds
+Tino-10 wnm folds
+Dinde.640520 folds
+Lugh-Dagr calls 3500
+Hotvoltige calls 1750
+MyPseudo checks
+*** FLOP *** [5c 7d 5d]
+Hotvoltige checks
+MyPseudo checks
+Lugh-Dagr checks
+*** TURN *** [5c 7d 5d][Kc]
+Hotvoltige checks
+MyPseudo bets 8385
+Lugh-Dagr calls 8385
+Hotvoltige folds
+*** RIVER *** [5c 7d 5d Kc][Ac]
+MyPseudo checks
+Lugh-Dagr checks
+*** SHOW DOWN ***
+Lugh-Dagr shows [4c Kh] (Two pairs : Kings and 5)
+MyPseudo shows [Kd Jd] (Two pairs : Kings and 5)
+MyPseudo collected 14835 from pot
+Lugh-Dagr collected 14835 from pot
+*** SUMMARY ***
+Total pot 29670 | No rake
+Board: [5c 7d 5d Kc Ac]
+Seat 2: Lugh-Dagr (button) showed [4c Kh] and won 14835 with Two pairs : Kings and 5
+Seat 4: MyPseudo (big blind) showed [Kd Jd] and won 14835 with Two pairs : Kings and 5
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 18 - HandId: #4806216885538390024-126-1782682120 - Holdem no limit (500/2000/4000) - 2026/06/28 21:28:40 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #3 is the button
+Seat 1: Dinde.640520 (122894, 0.21€ bounty)
+Seat 2: Lugh-Dagr (82904, 0.16€ bounty)
+Seat 3: Hotvoltige (333345, 0.68€ bounty)
+Seat 4: MyPseudo (238141, 0.21€ bounty)
+Seat 5: Winavole1Max (56932, 0.16€ bounty)
+Seat 6: Tino-10 wnm (23046, 0.16€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 500
+Winavole1Max posts ante 500
+Dinde.640520 posts ante 500
+Lugh-Dagr posts ante 500
+Hotvoltige posts ante 500
+Tino-10 wnm posts ante 500
+MyPseudo posts small blind 2000
+Winavole1Max posts big blind 4000
+Dealt to MyPseudo [Kc 5s]
+*** PRE-FLOP *** 
+Tino-10 wnm folds
+Dinde.640520 folds
+Lugh-Dagr calls 4000
+Hotvoltige folds
+MyPseudo calls 2000
+Winavole1Max checks
+*** FLOP *** [Qh 7s 3h]
+MyPseudo checks
+Winavole1Max bets 5250
+Lugh-Dagr folds
+MyPseudo calls 5250
+*** TURN *** [Qh 7s 3h][6s]
+MyPseudo checks
+Winavole1Max bets 19125
+MyPseudo folds
+Winavole1Max collected 44625 from pot
+*** SUMMARY ***
+Total pot 44625 | No rake
+Board: [Qh 7s 3h 6s]
+Seat 5: Winavole1Max (big blind) won 44625
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 18 - HandId: #4806216885538390024-127-1782682219 - Holdem no limit (500/2000/4000) - 2026/06/28 21:30:19 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #4 is the button
+Seat 1: Dinde.640520 (122394, 0.21€ bounty)
+Seat 2: Lugh-Dagr (78404, 0.16€ bounty)
+Seat 3: Hotvoltige (332845, 0.68€ bounty)
+Seat 4: MyPseudo (228391, 0.21€ bounty)
+Seat 5: Winavole1Max (72682, 0.16€ bounty)
+Seat 6: Tino-10 wnm (22546, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Winavole1Max posts ante 500
+Tino-10 wnm posts ante 500
+Dinde.640520 posts ante 500
+Lugh-Dagr posts ante 500
+Hotvoltige posts ante 500
+MyPseudo posts ante 500
+Winavole1Max posts small blind 2000
+Tino-10 wnm posts big blind 4000
+Dealt to MyPseudo [Ks 9s]
+*** PRE-FLOP *** 
+Dinde.640520 folds
+Lugh-Dagr calls 4000
+Hotvoltige calls 4000
+MyPseudo raises 4000 to 8000
+Winavole1Max folds
+Tino-10 wnm folds
+Lugh-Dagr calls 4000
+Hotvoltige calls 4000
+*** FLOP *** [Qc 8h 3h]
+Lugh-Dagr bets 8250
+Hotvoltige calls 8250
+MyPseudo folds
+*** TURN *** [Qc 8h 3h][8s]
+Lugh-Dagr bets 12375
+Hotvoltige folds
+Lugh-Dagr collected 61875 from pot
+*** SUMMARY ***
+Total pot 61875 | No rake
+Board: [Qc 8h 3h 8s]
+Seat 2: Lugh-Dagr won 61875
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 18 - HandId: #4806216885538390024-128-1782682312 - Holdem no limit (500/2000/4000) - 2026/06/28 21:31:52 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #5 is the button
+Seat 1: Dinde.640520 (121894, 0.21€ bounty)
+Seat 2: Lugh-Dagr (111154, 0.16€ bounty)
+Seat 3: Hotvoltige (316095, 0.68€ bounty)
+Seat 4: MyPseudo (219891, 0.21€ bounty)
+Seat 5: Winavole1Max (70182, 0.16€ bounty)
+Seat 6: Tino-10 wnm (18046, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Tino-10 wnm posts ante 500
+Dinde.640520 posts ante 500
+Lugh-Dagr posts ante 500
+Hotvoltige posts ante 500
+MyPseudo posts ante 500
+Winavole1Max posts ante 500
+Tino-10 wnm posts small blind 2000
+Dinde.640520 posts big blind 4000
+Dealt to MyPseudo [7d As]
+*** PRE-FLOP *** 
+Lugh-Dagr folds
+Hotvoltige folds
+MyPseudo raises 5000 to 9000
+Winavole1Max folds
+Tino-10 wnm folds
+Dinde.640520 folds
+MyPseudo collected 18000 from pot
+*** SUMMARY ***
+Total pot 18000 | No rake
+Seat 4: MyPseudo won 18000
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 19 - HandId: #4806216885538390024-129-1782682341 - Holdem no limit (600/2500/5000) - 2026/06/28 21:32:21 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #6 is the button
+Seat 1: Dinde.640520 (117394, 0.21€ bounty)
+Seat 2: Lugh-Dagr (110654, 0.16€ bounty)
+Seat 3: Hotvoltige (315595, 0.68€ bounty)
+Seat 4: MyPseudo (228391, 0.21€ bounty)
+Seat 5: Winavole1Max (69682, 0.16€ bounty)
+Seat 6: Tino-10 wnm (15546, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Dinde.640520 posts ante 600
+Lugh-Dagr posts ante 600
+Hotvoltige posts ante 600
+MyPseudo posts ante 600
+Winavole1Max posts ante 600
+Tino-10 wnm posts ante 600
+Dinde.640520 posts small blind 2500
+Lugh-Dagr posts big blind 5000
+Dealt to MyPseudo [Kd 7c]
+*** PRE-FLOP *** 
+Hotvoltige calls 5000
+MyPseudo folds
+Winavole1Max raises 14575 to 19575
+Tino-10 wnm folds
+Dinde.640520 folds
+Lugh-Dagr folds
+Hotvoltige calls 14575
+*** FLOP *** [8d 3s 2h]
+Hotvoltige checks
+Winavole1Max bets 17588
+Hotvoltige folds
+Winavole1Max collected 67838 from pot
+*** SUMMARY ***
+Total pot 67838 | No rake
+Board: [8d 3s 2h]
+Seat 5: Winavole1Max won 67838
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 19 - HandId: #4806216885538390024-130-1782682395 - Holdem no limit (600/2500/5000) - 2026/06/28 21:33:15 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #1 is the button
+Seat 1: Dinde.640520 (114294, 0.21€ bounty)
+Seat 2: Lugh-Dagr (105054, 0.16€ bounty)
+Seat 3: Hotvoltige (295420, 0.68€ bounty)
+Seat 4: MyPseudo (227791, 0.21€ bounty)
+Seat 5: Winavole1Max (99757, 0.16€ bounty)
+Seat 6: Tino-10 wnm (14946, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Lugh-Dagr posts ante 600
+Hotvoltige posts ante 600
+Dinde.640520 posts ante 600
+MyPseudo posts ante 600
+Winavole1Max posts ante 600
+Tino-10 wnm posts ante 600
+Lugh-Dagr posts small blind 2500
+Hotvoltige posts big blind 5000
+Dealt to MyPseudo [8d 7h]
+*** PRE-FLOP *** 
+MyPseudo folds
+Winavole1Max calls 5000
+Tino-10 wnm folds
+Dinde.640520 calls 5000
+Lugh-Dagr folds
+Hotvoltige checks
+*** FLOP *** [8h 7c 2h]
+Hotvoltige bets 21100
+Winavole1Max folds
+Dinde.640520 folds
+Hotvoltige collected 42200 from pot
+*** SUMMARY ***
+Total pot 42200 | No rake
+Board: [8h 7c 2h]
+Seat 3: Hotvoltige (big blind) won 42200
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 19 - HandId: #4806216885538390024-131-1782682420 - Holdem no limit (600/2500/5000) - 2026/06/28 21:33:40 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #2 is the button
+Seat 1: Dinde.640520 (108694, 0.21€ bounty)
+Seat 2: Lugh-Dagr (101954, 0.16€ bounty)
+Seat 3: Hotvoltige (310920, 0.68€ bounty)
+Seat 4: MyPseudo (227191, 0.21€ bounty)
+Seat 5: Winavole1Max (94157, 0.16€ bounty)
+Seat 6: Tino-10 wnm (14346, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Hotvoltige posts ante 600
+MyPseudo posts ante 600
+Dinde.640520 posts ante 600
+Lugh-Dagr posts ante 600
+Winavole1Max posts ante 600
+Tino-10 wnm posts ante 600
+Hotvoltige posts small blind 2500
+MyPseudo posts big blind 5000
+Dealt to MyPseudo [Jh Ah]
+*** PRE-FLOP *** 
+Winavole1Max folds
+Tino-10 wnm folds
+Dinde.640520 raises 8715 to 13715
+Lugh-Dagr folds
+Hotvoltige folds
+MyPseudo raises 27430 to 41145
+Dinde.640520 raises 66949 to 108094 and is all-in
+MyPseudo raises 66949 to 175043
+*** FLOP *** [Jc Qs 5d]
+*** TURN *** [Jc Qs 5d][7d]
+*** RIVER *** [Jc Qs 5d 7d][Tc]
+*** SHOW DOWN ***
+Dinde.640520 shows [Qh Qd] (Trips of Queens)
+MyPseudo shows [Jh Ah] (One pair : Jacks)
+MyPseudo collected 66949 from side pot 1
+Dinde.640520 collected 222288 from main pot
+*** SUMMARY ***
+Total pot 289237 | No rake
+Board: [Jc Qs 5d 7d Tc]
+Seat 1: Dinde.640520 showed [Qh Qd] and won 222288 with Trips of Queens
+Seat 4: MyPseudo (big blind) showed [Jh Ah] and won 66949 with One pair : Jacks
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 19 - HandId: #4806216885538390024-132-1782682453 - Holdem no limit (600/2500/5000) - 2026/06/28 21:34:13 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #3 is the button
+Seat 1: Dinde.640520 (222288, 0.21€ bounty)
+Seat 2: Lugh-Dagr (101354, 0.16€ bounty)
+Seat 3: Hotvoltige (307820, 0.68€ bounty)
+Seat 4: MyPseudo (118497, 0.21€ bounty)
+Seat 5: Winavole1Max (93557, 0.16€ bounty)
+Seat 6: Tino-10 wnm (13746, 0.16€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 600
+Winavole1Max posts ante 600
+Dinde.640520 posts ante 600
+Lugh-Dagr posts ante 600
+Hotvoltige posts ante 600
+Tino-10 wnm posts ante 600
+MyPseudo posts small blind 2500
+Winavole1Max posts big blind 5000
+Dealt to MyPseudo [5s Td]
+*** PRE-FLOP *** 
+Tino-10 wnm folds
+Dinde.640520 folds
+Lugh-Dagr folds
+Hotvoltige calls 5000
+MyPseudo folds
+Winavole1Max checks
+*** FLOP *** [2c Jh Qd]
+Winavole1Max checks
+Hotvoltige checks
+*** TURN *** [2c Jh Qd][7d]
+Winavole1Max checks
+Hotvoltige checks
+*** RIVER *** [2c Jh Qd 7d][Qh]
+Winavole1Max checks
+Hotvoltige checks
+*** SHOW DOWN ***
+Winavole1Max shows [3c Kh] (One pair : Queens)
+Hotvoltige shows [9d Ah] (One pair : Queens)
+Hotvoltige collected 16100 from pot
+*** SUMMARY ***
+Total pot 16100 | No rake
+Board: [2c Jh Qd 7d Qh]
+Seat 3: Hotvoltige (button) showed [9d Ah] and won 16100 with One pair : Queens
+Seat 5: Winavole1Max (big blind) showed [3c Kh] and lost with One pair : Queens
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 19 - HandId: #4806216885538390024-133-1782682501 - Holdem no limit (600/2500/5000) - 2026/06/28 21:35:01 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #4 is the button
+Seat 1: Dinde.640520 (221688, 0.21€ bounty)
+Seat 2: Lugh-Dagr (100754, 0.16€ bounty)
+Seat 3: Hotvoltige (318320, 0.68€ bounty)
+Seat 4: MyPseudo (115397, 0.21€ bounty)
+Seat 5: Winavole1Max (87957, 0.16€ bounty)
+Seat 6: Tino-10 wnm (13146, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Winavole1Max posts ante 600
+Tino-10 wnm posts ante 600
+Dinde.640520 posts ante 600
+Lugh-Dagr posts ante 600
+Hotvoltige posts ante 600
+MyPseudo posts ante 600
+Winavole1Max posts small blind 2500
+Tino-10 wnm posts big blind 5000
+Dealt to MyPseudo [4s 8h]
+*** PRE-FLOP *** 
+Dinde.640520 folds
+Lugh-Dagr calls 5000
+Hotvoltige folds
+MyPseudo raises 7500 to 12500
+Winavole1Max folds
+Tino-10 wnm folds
+Lugh-Dagr calls 7500
+*** FLOP *** [2c 6h 2s]
+Lugh-Dagr checks
+MyPseudo bets 102297 and is all-in
+Lugh-Dagr calls 87654 and is all-in
+*** TURN *** [2c 6h 2s][8c]
+*** RIVER *** [2c 6h 2s 8c][7s]
+*** SHOW DOWN ***
+Lugh-Dagr shows [Qd Ah] (One pair : 2)
+MyPseudo shows [4s 8h] (Two pairs : 8 and 2)
+MyPseudo collected 226051 from pot
+*** SUMMARY ***
+Total pot 226051 | No rake
+Board: [2c 6h 2s 8c 7s]
+Seat 2: Lugh-Dagr showed [Qd Ah] and lost with One pair : 2
+Seat 4: MyPseudo (button) showed [4s 8h] and won 226051 with Two pairs : 8 and 2
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 20 - HandId: #4806216885538390024-134-1782682640 - Holdem no limit (700/3000/6000) - 2026/06/28 21:37:20 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #5 is the button
+Seat 1: Dinde.640520 (221088, 0.21€ bounty)
+Seat 3: Hotvoltige (317720, 0.68€ bounty)
+Seat 4: MyPseudo (226051, 0.29€ bounty)
+Seat 5: Winavole1Max (84857, 0.16€ bounty)
+Seat 6: Tino-10 wnm (7546, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Tino-10 wnm posts ante 700
+Dinde.640520 posts ante 700
+Hotvoltige posts ante 700
+MyPseudo posts ante 700
+Winavole1Max posts ante 700
+Tino-10 wnm posts small blind 3000
+Dinde.640520 posts big blind 6000
+Dealt to MyPseudo [3h 3c]
+*** PRE-FLOP *** 
+Hotvoltige folds
+MyPseudo raises 9000 to 15000
+Winavole1Max folds
+Tino-10 wnm folds
+Dinde.640520 folds
+MyPseudo collected 27500 from pot
+*** SUMMARY ***
+Total pot 27500 | No rake
+Seat 4: MyPseudo won 27500
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 20 - HandId: #4806216885538390024-135-1782682732 - Holdem no limit (700/3000/6000) - 2026/06/28 21:38:52 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #6 is the button
+Seat 1: Dinde.640520 (214388, 0.21€ bounty)
+Seat 3: Hotvoltige (317020, 0.68€ bounty)
+Seat 4: MyPseudo (237851, 0.29€ bounty)
+Seat 5: Winavole1Max (84157, 0.16€ bounty)
+Seat 6: Tino-10 wnm (3846, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Dinde.640520 posts ante 700
+Hotvoltige posts ante 700
+MyPseudo posts ante 700
+Winavole1Max posts ante 700
+Tino-10 wnm posts ante 700
+Dinde.640520 posts small blind 3000
+Hotvoltige posts big blind 6000
+Dealt to MyPseudo [2s 7h]
+*** PRE-FLOP *** 
+MyPseudo folds
+Winavole1Max calls 6000
+Tino-10 wnm folds
+Dinde.640520 folds
+Hotvoltige checks
+*** FLOP *** [Jh Ah 6h]
+Hotvoltige bets 18500
+Winavole1Max calls 18500
+*** TURN *** [Jh Ah 6h][8h]
+Hotvoltige bets 55500
+Winavole1Max raises 3457 to 58957 and is all-in
+Hotvoltige calls 3457
+*** RIVER *** [Jh Ah 6h 8h][4c]
+*** SHOW DOWN ***
+Hotvoltige shows [4h 6d] (Flush Ace high)
+Winavole1Max shows [Kc Kh] (Flush Ace high)
+Winavole1Max collected 173414 from pot
+*** SUMMARY ***
+Total pot 173414 | No rake
+Board: [Jh Ah 6h 8h 4c]
+Seat 3: Hotvoltige (big blind) showed [4h 6d] and lost with Flush Ace high
+Seat 5: Winavole1Max showed [Kc Kh] and won 173414 with Flush Ace high
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 20 - HandId: #4806216885538390024-136-1782682844 - Holdem no limit (700/3000/6000) - 2026/06/28 21:40:44 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #1 is the button
+Seat 1: Dinde.640520 (210688, 0.21€ bounty)
+Seat 2: Wessizer (25137, 0.24€ bounty)
+Seat 3: Hotvoltige (232863, 0.68€ bounty)
+Seat 4: MyPseudo (237151, 0.29€ bounty)
+Seat 5: Winavole1Max (173414, 0.16€ bounty)
+Seat 6: Tino-10 wnm (3146, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Hotvoltige posts ante 700
+MyPseudo posts ante 700
+Dinde.640520 posts ante 700
+Winavole1Max posts ante 700
+Tino-10 wnm posts ante 700
+Hotvoltige posts small blind 3000
+MyPseudo posts big blind 6000
+Dealt to MyPseudo [Jc 2h]
+*** PRE-FLOP *** 
+Winavole1Max folds
+Tino-10 wnm calls 2446 and is all-in
+Dinde.640520 folds
+Hotvoltige folds
+*** FLOP *** [Ah As 8c]
+*** TURN *** [Ah As 8c][6s]
+*** RIVER *** [Ah As 8c 6s][7s]
+*** SHOW DOWN ***
+MyPseudo shows [Jc 2h] (One pair : Aces)
+Tino-10 wnm shows [Qh 9h] (One pair : Aces)
+Tino-10 wnm collected 10838 from main pot
+MyPseudo collected 4108 from side pot 1
+*** SUMMARY ***
+Total pot 14946 | No rake
+Board: [Ah As 8c 6s 7s]
+Seat 4: MyPseudo (big blind) showed [Jc 2h] and won 4108 with One pair : Aces
+Seat 6: Tino-10 wnm showed [Qh 9h] and won 10838 with One pair : Aces
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 20 - HandId: #4806216885538390024-137-1782682868 - Holdem no limit (700/3000/6000) - 2026/06/28 21:41:08 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #3 is the button
+Seat 1: Dinde.640520 (209988, 0.21€ bounty)
+Seat 2: Wessizer (25137, 0.24€ bounty)
+Seat 3: Hotvoltige (229163, 0.68€ bounty)
+Seat 4: MyPseudo (234559, 0.29€ bounty)
+Seat 5: Winavole1Max (172714, 0.16€ bounty)
+Seat 6: Tino-10 wnm (10838, 0.16€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 700
+Winavole1Max posts ante 700
+Dinde.640520 posts ante 700
+Wessizer posts ante 700
+Hotvoltige posts ante 700
+Tino-10 wnm posts ante 700
+MyPseudo posts small blind 3000
+Winavole1Max posts big blind 6000
+Dealt to MyPseudo [2d Tc]
+*** PRE-FLOP *** 
+Tino-10 wnm raises 4138 to 10138 and is all-in
+Dinde.640520 folds
+Wessizer folds
+Hotvoltige raises 33476 to 43614
+MyPseudo folds
+Winavole1Max folds
+*** FLOP *** [7h 8s 6h]
+*** TURN *** [7h 8s 6h][Qs]
+*** RIVER *** [7h 8s 6h Qs][5s]
+*** SHOW DOWN ***
+Tino-10 wnm shows [3h Kh] (High card : King)
+Hotvoltige shows [Ad 5c] (One pair : 5)
+Hotvoltige collected 66952 from pot
+*** SUMMARY ***
+Total pot 66952 | No rake
+Board: [7h 8s 6h Qs 5s]
+Seat 3: Hotvoltige (button) showed [Ad 5c] and won 66952 with One pair : 5
+Seat 6: Tino-10 wnm showed [3h Kh] and lost with High card : King
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 20 - HandId: #4806216885538390024-138-1782682899 - Holdem no limit (700/3000/6000) - 2026/06/28 21:41:39 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #4 is the button
+Seat 1: Dinde.640520 (209288, 0.21€ bounty)
+Seat 2: Wessizer (24437, 0.24€ bounty)
+Seat 3: Hotvoltige (251801, 0.76€ bounty)
+Seat 4: MyPseudo (230859, 0.29€ bounty)
+Seat 5: Winavole1Max (166014, 0.16€ bounty)
+*** ANTE/BLINDS ***
+Winavole1Max posts ante 700
+Dinde.640520 posts ante 700
+Wessizer posts ante 700
+Hotvoltige posts ante 700
+MyPseudo posts ante 700
+Winavole1Max posts small blind 3000
+Dinde.640520 posts big blind 6000
+Dealt to MyPseudo [4s 8d]
+*** PRE-FLOP *** 
+Wessizer calls 6000
+Hotvoltige calls 6000
+MyPseudo folds
+Winavole1Max calls 3000
+Dinde.640520 checks
+*** FLOP *** [Tc 3h Qh]
+Winavole1Max checks
+Dinde.640520 checks
+Wessizer bets 6000
+Hotvoltige calls 6000
+Winavole1Max folds
+Dinde.640520 folds
+*** TURN *** [Tc 3h Qh][7c]
+Wessizer bets 6000
+Hotvoltige calls 6000
+*** RIVER *** [Tc 3h Qh 7c][3c]
+Wessizer bets 5737 and is all-in
+Hotvoltige calls 5737
+*** SHOW DOWN ***
+Wessizer shows [Qd Js] (Two pairs : Queens and 3)
+Hotvoltige shows [Jc 9c] (Flush Jack high)
+Hotvoltige collected 62974 from pot
+*** SUMMARY ***
+Total pot 62974 | No rake
+Board: [Tc 3h Qh 7c 3c]
+Seat 2: Wessizer showed [Qd Js] and lost with Two pairs : Queens and 3
+Seat 3: Hotvoltige showed [Jc 9c] and won 62974 with Flush Jack high
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 21 - HandId: #4806216885538390024-139-1782682989 - Holdem no limit (800/3500/7000) - 2026/06/28 21:43:09 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #5 is the button
+Seat 1: Dinde.640520 (202588, 0.21€ bounty)
+Seat 3: Hotvoltige (290338, 0.88€ bounty)
+Seat 4: MyPseudo (230159, 0.29€ bounty)
+Seat 5: Winavole1Max (159314, 0.16€ bounty)
+Seat 6: Ellessedee25 (42086, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Dinde.640520 posts ante 800
+Hotvoltige posts ante 800
+MyPseudo posts ante 800
+Winavole1Max posts ante 800
+Dinde.640520 posts small blind 3500
+Hotvoltige posts big blind 7000
+Dealt to MyPseudo [5s Jc]
+*** PRE-FLOP *** 
+MyPseudo folds
+Winavole1Max calls 7000
+Dinde.640520 raises 24200 to 31200
+Hotvoltige folds
+Winavole1Max calls 24200
+*** FLOP *** [4s 6s 9h]
+Dinde.640520 bets 170588 and is all-in
+Winavole1Max calls 127314 and is all-in
+*** TURN *** [4s 6s 9h][Kh]
+*** RIVER *** [4s 6s 9h Kh][2h]
+*** SHOW DOWN ***
+Winavole1Max shows [8s 8d] (One pair : 8)
+Dinde.640520 shows [Ad As] (One pair : Aces)
+Dinde.640520 collected 370502 from pot
+*** SUMMARY ***
+Total pot 370502 | No rake
+Board: [4s 6s 9h Kh 2h]
+Seat 1: Dinde.640520 (small blind) showed [Ad As] and won 370502 with One pair : Aces
+Seat 5: Winavole1Max (button) showed [8s 8d] and lost with One pair : 8
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 21 - HandId: #4806216885538390024-140-1782683035 - Holdem no limit (800/3500/7000) - 2026/06/28 21:43:55 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #1 is the button
+Seat 1: Dinde.640520 (370502, 0.29€ bounty)
+Seat 3: Hotvoltige (282538, 0.88€ bounty)
+Seat 4: MyPseudo (229359, 0.29€ bounty)
+Seat 6: Ellessedee25 (42086, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Hotvoltige posts ante 800
+MyPseudo posts ante 800
+Dinde.640520 posts ante 800
+Ellessedee25 posts ante 800
+Hotvoltige posts small blind 3500
+MyPseudo posts big blind 7000
+Dealt to MyPseudo [Qs 4h]
+*** PRE-FLOP *** 
+Ellessedee25 folds
+Dinde.640520 calls 7000
+Hotvoltige folds
+MyPseudo checks
+*** FLOP *** [Qd 5d Td]
+MyPseudo bets 10350
+Dinde.640520 folds
+MyPseudo collected 31050 from pot
+*** SUMMARY ***
+Total pot 31050 | No rake
+Board: [Qd 5d Td]
+Seat 4: MyPseudo (big blind) won 31050
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 21 - HandId: #4806216885538390024-141-1782683061 - Holdem no limit (800/3500/7000) - 2026/06/28 21:44:21 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #3 is the button
+Seat 1: Dinde.640520 (362702, 0.29€ bounty)
+Seat 2: Orca38720392 (80140, 0.16€ bounty)
+Seat 3: Hotvoltige (278238, 0.88€ bounty)
+Seat 4: MyPseudo (242259, 0.29€ bounty)
+Seat 5: kelde091 (99527, 0.21€ bounty)
+Seat 6: Ellessedee25 (41286, 0.11€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 800
+kelde091 posts ante 800
+Dinde.640520 posts ante 800
+Orca38720392 posts ante 800
+Hotvoltige posts ante 800
+Ellessedee25 posts ante 800
+MyPseudo posts small blind 3500
+kelde091 posts big blind 7000
+Dealt to MyPseudo [Jc 2h]
+*** PRE-FLOP *** 
+Ellessedee25 raises 33486 to 40486 and is all-in
+Dinde.640520 folds
+Orca38720392 folds
+Hotvoltige calls 40486
+MyPseudo folds
+kelde091 folds
+*** FLOP *** [7d 7h Kc]
+*** TURN *** [7d 7h Kc][4s]
+*** RIVER *** [7d 7h Kc 4s][4d]
+*** SHOW DOWN ***
+Hotvoltige shows [Qd Th] (Two pairs : 7 and 4)
+Ellessedee25 shows [As 5s] (Two pairs : 7 and 4)
+Ellessedee25 collected 96272 from pot
+*** SUMMARY ***
+Total pot 96272 | No rake
+Board: [7d 7h Kc 4s 4d]
+Seat 3: Hotvoltige (button) showed [Qd Th] and lost with Two pairs : 7 and 4
+Seat 6: Ellessedee25 showed [As 5s] and won 96272 with Two pairs : 7 and 4
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 21 - HandId: #4806216885538390024-142-1782683088 - Holdem no limit (800/3500/7000) - 2026/06/28 21:44:48 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #4 is the button
+Seat 1: Dinde.640520 (361902, 0.29€ bounty)
+Seat 2: Orca38720392 (79340, 0.16€ bounty)
+Seat 3: Hotvoltige (236952, 0.88€ bounty)
+Seat 4: MyPseudo (237959, 0.29€ bounty)
+Seat 5: kelde091 (91727, 0.21€ bounty)
+Seat 6: Ellessedee25 (96272, 0.11€ bounty)
+*** ANTE/BLINDS ***
+kelde091 posts ante 800
+Ellessedee25 posts ante 800
+Dinde.640520 posts ante 800
+Orca38720392 posts ante 800
+Hotvoltige posts ante 800
+MyPseudo posts ante 800
+kelde091 posts small blind 3500
+Ellessedee25 posts big blind 7000
+Dealt to MyPseudo [9s 4h]
+*** PRE-FLOP *** 
+Dinde.640520 folds
+Orca38720392 folds
+Hotvoltige raises 22300 to 29300
+MyPseudo folds
+kelde091 folds
+Ellessedee25 folds
+Hotvoltige collected 44600 from pot
+*** SUMMARY ***
+Total pot 44600 | No rake
+Seat 3: Hotvoltige won 44600
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 21 - HandId: #4806216885538390024-143-1782683100 - Holdem no limit (800/3500/7000) - 2026/06/28 21:45:00 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #5 is the button
+Seat 1: Dinde.640520 (361102, 0.29€ bounty)
+Seat 2: Orca38720392 (78540, 0.16€ bounty)
+Seat 3: Hotvoltige (251452, 0.88€ bounty)
+Seat 4: MyPseudo (237159, 0.29€ bounty)
+Seat 5: kelde091 (87427, 0.21€ bounty)
+Seat 6: Ellessedee25 (88472, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Ellessedee25 posts ante 800
+Dinde.640520 posts ante 800
+Orca38720392 posts ante 800
+Hotvoltige posts ante 800
+MyPseudo posts ante 800
+kelde091 posts ante 800
+Ellessedee25 posts small blind 3500
+Dinde.640520 posts big blind 7000
+Dealt to MyPseudo [6d As]
+*** PRE-FLOP *** 
+Orca38720392 calls 7000
+Hotvoltige raises 29300 to 36300
+MyPseudo folds
+kelde091 folds
+Ellessedee25 folds
+Dinde.640520 folds
+Orca38720392 folds
+Hotvoltige collected 58600 from pot
+*** SUMMARY ***
+Total pot 58600 | No rake
+Seat 3: Hotvoltige won 58600
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 21 - HandId: #4806216885538390024-144-1782683148 - Holdem no limit (800/3500/7000) - 2026/06/28 21:45:48 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #6 is the button
+Seat 1: Dinde.640520 (353302, 0.29€ bounty)
+Seat 2: Orca38720392 (70740, 0.16€ bounty)
+Seat 3: Hotvoltige (272952, 0.88€ bounty)
+Seat 4: MyPseudo (236359, 0.29€ bounty)
+Seat 5: kelde091 (86627, 0.21€ bounty)
+Seat 6: Ellessedee25 (84172, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Dinde.640520 posts ante 800
+Orca38720392 posts ante 800
+Hotvoltige posts ante 800
+MyPseudo posts ante 800
+kelde091 posts ante 800
+Ellessedee25 posts ante 800
+Dinde.640520 posts small blind 3500
+Orca38720392 posts big blind 7000
+Dealt to MyPseudo [8h 6d]
+*** PRE-FLOP *** 
+Hotvoltige calls 7000
+MyPseudo folds
+kelde091 raises 78827 to 85827 and is all-in
+Ellessedee25 folds
+Dinde.640520 folds
+Orca38720392 calls 62940 and is all-in
+Hotvoltige calls 78827
+*** FLOP *** [4h 5s 7d]
+*** TURN *** [4h 5s 7d][2h]
+*** RIVER *** [4h 5s 7d 2h][2c]
+*** SHOW DOWN ***
+kelde091 shows [Kd Jd] (One pair : 2)
+Orca38720392 shows [Qc Qd] (Two pairs : Queens and 2)
+Hotvoltige shows [6h As] (One pair : 2)
+Hotvoltige collected 31774 from side pot 1
+Orca38720392 collected 218120 from main pot
+*** SUMMARY ***
+Total pot 249894 | No rake
+Board: [4h 5s 7d 2h 2c]
+Seat 2: Orca38720392 (big blind) showed [Qc Qd] and won 218120 with Two pairs : Queens and 2
+Seat 3: Hotvoltige showed [6h As] and won 31774 with One pair : 2
+Seat 5: kelde091 showed [Kd Jd] and lost with One pair : 2
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 21 - HandId: #4806216885538390024-145-1782683183 - Holdem no limit (800/3500/7000) - 2026/06/28 21:46:23 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #1 is the button
+Seat 1: Dinde.640520 (349002, 0.29€ bounty)
+Seat 2: Orca38720392 (218120, 0.16€ bounty)
+Seat 3: Hotvoltige (218099, 0.98€ bounty)
+Seat 4: MyPseudo (235559, 0.29€ bounty)
+Seat 6: Ellessedee25 (83372, 0.11€ bounty)
+*** ANTE/BLINDS ***
+Orca38720392 posts ante 800
+Hotvoltige posts ante 800
+Dinde.640520 posts ante 800
+MyPseudo posts ante 800
+Ellessedee25 posts ante 800
+Orca38720392 posts small blind 3500
+Hotvoltige posts big blind 7000
+Dealt to MyPseudo [Jc 7s]
+*** PRE-FLOP *** 
+MyPseudo folds
+Ellessedee25 folds
+Dinde.640520 folds
+Orca38720392 calls 3500
+Hotvoltige raises 18000 to 25000
+Orca38720392 calls 18000
+*** FLOP *** [6s 6h Jh]
+Orca38720392 checks
+Hotvoltige bets 192299 and is all-in
+Orca38720392 calls 192299
+*** TURN *** [6s 6h Jh][Th]
+*** RIVER *** [6s 6h Jh Th][4h]
+*** SHOW DOWN ***
+Hotvoltige shows [Ac Tc] (Two pairs : Tens and 6)
+Orca38720392 shows [Js 9s] (Two pairs : Jacks and 6)
+Orca38720392 collected 438598 from pot
+*** SUMMARY ***
+Total pot 438598 | No rake
+Board: [6s 6h Jh Th 4h]
+Seat 2: Orca38720392 (small blind) showed [Js 9s] and won 438598 with Two pairs : Jacks and 6
+Seat 3: Hotvoltige (big blind) showed [Ac Tc] and lost with Two pairs : Tens and 6
+
+
+Winamax Poker - Tournament "Kill The Fish" buyIn: 0.22€ + 0.03€ level: 21 - HandId: #4806216885538390024-146-1782683221 - Holdem no limit (800/3500/7000) - 2026/06/28 21:47:01 UTC
+Table: 'Kill The Fish(1119034571)#007' 6-max (real money) Seat #2 is the button
+Seat 1: Dinde.640520 (348202, 0.29€ bounty)
+Seat 2: Orca38720392 (438619, 0.65€ bounty)
+Seat 4: MyPseudo (234759, 0.29€ bounty)
+Seat 6: Ellessedee25 (82572, 0.11€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 800
+Dinde.640520 posts ante 800
+Orca38720392 posts ante 800
+Ellessedee25 posts ante 800
+MyPseudo posts big blind 7000
+Dealt to MyPseudo [Ac 3s]
+*** PRE-FLOP *** 
+Ellessedee25 folds
+Dinde.640520 folds
+Orca38720392 calls 7000
+MyPseudo checks
+*** FLOP *** [9s 7c As]
+MyPseudo checks
+Orca38720392 checks
+*** TURN *** [9s 7c As][6c]
+MyPseudo bets 8600
+Orca38720392 calls 8600
+*** RIVER *** [9s 7c As 6c][8d]
+MyPseudo checks
+Orca38720392 bets 422219 and is all-in
+MyPseudo calls 218359 and is all-in
+*** SHOW DOWN ***
+MyPseudo shows [Ac 3s] (One pair : Aces)
+Orca38720392 shows [Jd Tc] (Straight Jack high)
+Orca38720392 collected 674978 from pot
+*** SUMMARY ***
+Total pot 674978 | No rake
+Board: [9s 7c As 6c 8d]
+Seat 2: Orca38720392 (button) showed [Jd Tc] and won 674978 with Straight Jack high
+Seat 4: MyPseudo (big blind) showed [Ac 3s] and lost with One pair : Aces
+
+

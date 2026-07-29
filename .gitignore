@@ -6,8 +6,5 @@ venv/
 *.egg-info/
 *coverage*
 
-# Samples for parsing
-samples/
-
 # Runtime logs
 logs/

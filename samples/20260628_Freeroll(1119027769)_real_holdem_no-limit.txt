@@ -1,0 +1,369 @@
+Winamax Poker - Tournament "Freeroll" buyIn: 0€ + 0€ level: 1 - HandId: #4806187671170843057-9-1782664923 - Holdem no limit (25/100/200) - 2026/06/28 16:42:03 UTC
+Table: 'Freeroll(1119027769)#0432' 6-max (real money) Seat #1 is the button
+Seat 1: ElPacouz (19200)
+Seat 2: serge.titus (15000)
+Seat 3: Nelson71 (19300)
+Seat 4: MyPseudo (20000)
+Seat 5: perci50 (37625)
+Seat 6: PastaFrappe (28875)
+*** ANTE/BLINDS ***
+serge.titus posts ante 25
+Nelson71 posts ante 25
+ElPacouz posts ante 25
+MyPseudo posts ante 25
+perci50 posts ante 25
+PastaFrappe posts ante 25
+serge.titus posts small blind 100
+Nelson71 posts big blind 200
+Dealt to MyPseudo [8h 2s]
+*** PRE-FLOP *** 
+MyPseudo folds
+perci50 calls 200
+PastaFrappe folds
+ElPacouz folds
+serge.titus calls 100
+Nelson71 raises 200 to 400
+perci50 calls 200
+serge.titus calls 200
+*** FLOP *** [Kc 7s 3c]
+serge.titus checks
+Nelson71 bets 18875 and is all-in
+perci50 folds
+serge.titus folds
+Nelson71 collected 20225 from pot
+*** SUMMARY ***
+Total pot 20225 | No rake
+Board: [Kc 7s 3c]
+Seat 3: Nelson71 (big blind) won 20225
+
+
+Winamax Poker - Tournament "Freeroll" buyIn: 0€ + 0€ level: 1 - HandId: #4806187671170843057-10-1782664980 - Holdem no limit (25/100/200) - 2026/06/28 16:43:00 UTC
+Table: 'Freeroll(1119027769)#0432' 6-max (real money) Seat #2 is the button
+Seat 1: ElPacouz (19175)
+Seat 2: serge.titus (14575)
+Seat 3: Nelson71 (20225)
+Seat 4: MyPseudo (19975)
+Seat 5: perci50 (37200)
+Seat 6: PastaFrappe (28850)
+*** ANTE/BLINDS ***
+Nelson71 posts ante 25
+MyPseudo posts ante 25
+ElPacouz posts ante 25
+serge.titus posts ante 25
+perci50 posts ante 25
+PastaFrappe posts ante 25
+Nelson71 posts small blind 100
+MyPseudo posts big blind 200
+Dealt to MyPseudo [9d 8s]
+*** PRE-FLOP *** 
+perci50 folds
+PastaFrappe raises 1100 to 1300
+ElPacouz folds
+serge.titus folds
+Nelson71 folds
+MyPseudo folds
+PastaFrappe collected 1750 from pot
+*** SUMMARY ***
+Total pot 1750 | No rake
+Seat 6: PastaFrappe won 1750
+
+
+Winamax Poker - Tournament "Freeroll" buyIn: 0€ + 0€ level: 1 - HandId: #4806187671170843057-11-1782665000 - Holdem no limit (25/100/200) - 2026/06/28 16:43:20 UTC
+Table: 'Freeroll(1119027769)#0432' 6-max (real money) Seat #3 is the button
+Seat 1: ElPacouz (19150)
+Seat 2: serge.titus (14550)
+Seat 3: Nelson71 (20100)
+Seat 4: MyPseudo (19750)
+Seat 5: perci50 (37175)
+Seat 6: PastaFrappe (29275)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 25
+perci50 posts ante 25
+ElPacouz posts ante 25
+serge.titus posts ante 25
+Nelson71 posts ante 25
+PastaFrappe posts ante 25
+MyPseudo posts small blind 100
+perci50 posts big blind 200
+Dealt to MyPseudo [Jh Ah]
+*** PRE-FLOP *** 
+PastaFrappe folds
+ElPacouz folds
+serge.titus calls 200
+Nelson71 folds
+MyPseudo raises 300 to 500
+perci50 calls 300
+serge.titus calls 300
+*** FLOP *** [2s 9c Qh]
+MyPseudo checks
+perci50 checks
+serge.titus bets 200
+MyPseudo raises 588 to 788
+perci50 folds
+serge.titus calls 588
+*** TURN *** [2s 9c Qh][Td]
+MyPseudo checks
+serge.titus checks
+*** RIVER *** [2s 9c Qh Td][Tc]
+MyPseudo checks
+serge.titus checks
+*** SHOW DOWN ***
+MyPseudo shows [Jh Ah] (One pair : Tens)
+serge.titus shows [Qs 7h] (Two pairs : Queens and Tens)
+serge.titus collected 3226 from pot
+*** SUMMARY ***
+Total pot 3226 | No rake
+Board: [2s 9c Qh Td Tc]
+Seat 2: serge.titus showed [Qs 7h] and won 3226 with Two pairs : Queens and Tens
+Seat 4: MyPseudo (small blind) showed [Jh Ah] and lost with One pair : Tens
+
+
+Winamax Poker - Tournament "Freeroll" buyIn: 0€ + 0€ level: 2 - HandId: #4806187671170843057-12-1782665077 - Holdem no limit (30/125/250) - 2026/06/28 16:44:37 UTC
+Table: 'Freeroll(1119027769)#0432' 6-max (real money) Seat #4 is the button
+Seat 1: ElPacouz (19125)
+Seat 2: serge.titus (16463)
+Seat 3: Nelson71 (20075)
+Seat 4: MyPseudo (18437)
+Seat 5: perci50 (36650)
+Seat 6: PastaFrappe (29250)
+*** ANTE/BLINDS ***
+perci50 posts ante 30
+PastaFrappe posts ante 30
+ElPacouz posts ante 30
+serge.titus posts ante 30
+Nelson71 posts ante 30
+MyPseudo posts ante 30
+perci50 posts small blind 125
+PastaFrappe posts big blind 250
+Dealt to MyPseudo [7c Jh]
+*** PRE-FLOP *** 
+ElPacouz folds
+serge.titus calls 250
+Nelson71 folds
+MyPseudo folds
+perci50 calls 125
+PastaFrappe checks
+*** FLOP *** [2h 4d 6c]
+perci50 checks
+PastaFrappe checks
+serge.titus checks
+*** TURN *** [2h 4d 6c][5d]
+perci50 checks
+PastaFrappe bets 930
+serge.titus folds
+perci50 folds
+PastaFrappe collected 1860 from pot
+*** SUMMARY ***
+Total pot 1860 | No rake
+Board: [2h 4d 6c 5d]
+Seat 6: PastaFrappe (big blind) won 1860
+
+
+Winamax Poker - Tournament "Freeroll" buyIn: 0€ + 0€ level: 2 - HandId: #4806187671170843057-13-1782665147 - Holdem no limit (30/125/250) - 2026/06/28 16:45:47 UTC
+Table: 'Freeroll(1119027769)#0432' 6-max (real money) Seat #5 is the button
+Seat 1: ElPacouz (19095)
+Seat 2: serge.titus (16183)
+Seat 3: Nelson71 (20045)
+Seat 4: MyPseudo (18407)
+Seat 5: perci50 (36370)
+Seat 6: PastaFrappe (29900)
+*** ANTE/BLINDS ***
+PastaFrappe posts ante 30
+ElPacouz posts ante 30
+serge.titus posts ante 30
+Nelson71 posts ante 30
+MyPseudo posts ante 30
+perci50 posts ante 30
+PastaFrappe posts small blind 125
+ElPacouz posts big blind 250
+Dealt to MyPseudo [9s 9d]
+*** PRE-FLOP *** 
+serge.titus calls 250
+Nelson71 folds
+MyPseudo raises 313 to 563
+perci50 folds
+PastaFrappe folds
+ElPacouz folds
+serge.titus calls 313
+*** FLOP *** [2s 8s 3d]
+serge.titus checks
+MyPseudo bets 588
+serge.titus calls 588
+*** TURN *** [2s 8s 3d][7c]
+serge.titus bets 2857
+MyPseudo raises 2857 to 5714
+serge.titus raises 9288 to 15002 and is all-in
+MyPseudo raises 2224 to 17226 and is all-in
+*** RIVER *** [2s 8s 3d 7c][8c]
+*** SHOW DOWN ***
+serge.titus shows [Qd Qh] (Two pairs : Queens and 8)
+MyPseudo shows [9s 9d] (Two pairs : 9 and 8)
+MyPseudo collected 2224 from side pot 1
+serge.titus collected 32861 from main pot
+*** SUMMARY ***
+Total pot 35085 | No rake
+Board: [2s 8s 3d 7c 8c]
+Seat 2: serge.titus showed [Qd Qh] and won 32861 with Two pairs : Queens and 8
+Seat 4: MyPseudo showed [9s 9d] and won 2224 with Two pairs : 9 and 8
+
+
+Winamax Poker - Tournament "Freeroll" buyIn: 0€ + 0€ level: 3 - HandId: #4806187671170843057-14-1782665209 - Holdem no limit (35/150/300) - 2026/06/28 16:46:49 UTC
+Table: 'Freeroll(1119027769)#0432' 6-max (real money) Seat #6 is the button
+Seat 1: ElPacouz (18815)
+Seat 2: serge.titus (32861)
+Seat 3: Nelson71 (20015)
+Seat 4: MyPseudo (2224)
+Seat 5: perci50 (36340)
+Seat 6: PastaFrappe (29745)
+*** ANTE/BLINDS ***
+ElPacouz posts ante 35
+serge.titus posts ante 35
+Nelson71 posts ante 35
+MyPseudo posts ante 35
+perci50 posts ante 35
+PastaFrappe posts ante 35
+ElPacouz posts small blind 150
+serge.titus posts big blind 300
+Dealt to MyPseudo [Ks 2s]
+*** PRE-FLOP *** 
+Nelson71 folds
+MyPseudo folds
+perci50 calls 300
+PastaFrappe raises 1800 to 2100
+ElPacouz folds
+serge.titus folds
+perci50 calls 1800
+*** FLOP *** [2c Ah Th]
+perci50 checks
+PastaFrappe bets 3459
+perci50 folds
+PastaFrappe collected 8319 from pot
+*** SUMMARY ***
+Total pot 8319 | No rake
+Board: [2c Ah Th]
+Seat 6: PastaFrappe (button) won 8319
+
+
+Winamax Poker - Tournament "Freeroll" buyIn: 0€ + 0€ level: 3 - HandId: #4806187671170843057-15-1782665268 - Holdem no limit (35/150/300) - 2026/06/28 16:47:48 UTC
+Table: 'Freeroll(1119027769)#0432' 6-max (real money) Seat #1 is the button
+Seat 1: ElPacouz (18630)
+Seat 2: serge.titus (32526)
+Seat 3: Nelson71 (19980)
+Seat 4: MyPseudo (2189)
+Seat 5: perci50 (34205)
+Seat 6: PastaFrappe (32470)
+*** ANTE/BLINDS ***
+serge.titus posts ante 35
+Nelson71 posts ante 35
+ElPacouz posts ante 35
+MyPseudo posts ante 35
+perci50 posts ante 35
+PastaFrappe posts ante 35
+serge.titus posts small blind 150
+Nelson71 posts big blind 300
+Dealt to MyPseudo [7d Jh]
+*** PRE-FLOP *** 
+MyPseudo folds
+perci50 calls 300
+PastaFrappe folds
+ElPacouz folds
+serge.titus calls 150
+Nelson71 checks
+*** FLOP *** [3h 6h 5s]
+serge.titus checks
+Nelson71 checks
+perci50 bets 555
+serge.titus folds
+Nelson71 folds
+perci50 collected 1665 from pot
+*** SUMMARY ***
+Total pot 1665 | No rake
+Board: [3h 6h 5s]
+Seat 5: perci50 won 1665
+
+
+Winamax Poker - Tournament "Freeroll" buyIn: 0€ + 0€ level: 4 - HandId: #4806187671170843057-16-1782665317 - Holdem no limit (40/175/350) - 2026/06/28 16:48:37 UTC
+Table: 'Freeroll(1119027769)#0432' 6-max (real money) Seat #2 is the button
+Seat 1: ElPacouz (18595)
+Seat 2: serge.titus (32191)
+Seat 3: Nelson71 (19645)
+Seat 4: MyPseudo (2154)
+Seat 5: perci50 (34980)
+Seat 6: PastaFrappe (32435)
+*** ANTE/BLINDS ***
+Nelson71 posts ante 40
+MyPseudo posts ante 40
+ElPacouz posts ante 40
+serge.titus posts ante 40
+perci50 posts ante 40
+PastaFrappe posts ante 40
+Nelson71 posts small blind 175
+MyPseudo posts big blind 350
+Dealt to MyPseudo [8d 9c]
+*** PRE-FLOP *** 
+perci50 calls 350
+PastaFrappe folds
+ElPacouz folds
+serge.titus calls 350
+Nelson71 folds
+MyPseudo checks
+*** FLOP *** [Ac Qs 3c]
+MyPseudo checks
+perci50 bets 1465
+serge.titus calls 1465
+MyPseudo folds
+*** TURN *** [Ac Qs 3c][Kd]
+perci50 checks
+serge.titus bets 350
+perci50 calls 350
+*** RIVER *** [Ac Qs 3c Kd][5s]
+perci50 checks
+serge.titus bets 29986 and is all-in
+perci50 folds
+serge.titus collected 35081 from pot
+*** SUMMARY ***
+Total pot 35081 | No rake
+Board: [Ac Qs 3c Kd 5s]
+Seat 2: serge.titus (button) won 35081
+
+
+Winamax Poker - Tournament "Freeroll" buyIn: 0€ + 0€ level: 4 - HandId: #4806187671170843057-17-1782665382 - Holdem no limit (40/175/350) - 2026/06/28 16:49:42 UTC
+Table: 'Freeroll(1119027769)#0432' 6-max (real money) Seat #3 is the button
+Seat 1: ElPacouz (18555)
+Seat 2: serge.titus (35081)
+Seat 3: Nelson71 (19430)
+Seat 4: MyPseudo (1764)
+Seat 5: perci50 (32775)
+Seat 6: PastaFrappe (32395)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 40
+perci50 posts ante 40
+ElPacouz posts ante 40
+serge.titus posts ante 40
+Nelson71 posts ante 40
+PastaFrappe posts ante 40
+MyPseudo posts small blind 175
+perci50 posts big blind 350
+Dealt to MyPseudo [Js 8s]
+*** PRE-FLOP *** 
+PastaFrappe raises 700 to 1050
+ElPacouz folds
+serge.titus folds
+Nelson71 folds
+MyPseudo raises 674 to 1724 and is all-in
+perci50 folds
+PastaFrappe calls 674
+*** FLOP *** [4h Kc Kh]
+*** TURN *** [4h Kc Kh][Ac]
+*** RIVER *** [4h Kc Kh Ac][Ad]
+*** SHOW DOWN ***
+MyPseudo shows [Js 8s] (Two pairs : Aces and Kings)
+PastaFrappe shows [As 9h] (Full of Aces and Kings)
+PastaFrappe collected 4038 from pot
+*** SUMMARY ***
+Total pot 4038 | No rake
+Board: [4h Kc Kh Ac Ad]
+Seat 4: MyPseudo (small blind) showed [Js 8s] and lost with Two pairs : Aces and Kings
+Seat 6: PastaFrappe showed [As 9h] and won 4038 with Full of Aces and Kings
+
+

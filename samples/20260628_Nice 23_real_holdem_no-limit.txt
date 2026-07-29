@@ -1,0 +1,2618 @@
+Winamax Poker - CashGame - HandId: #22603906-296-1782665521 - Holdem no limit (0.01€/0.02€) - 2026/06/28 16:52:01 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: Rataxes67 (2.03€)
+Seat 2: Tikaf-lacour (1.42€)
+Seat 3: Kaplan82 (3.03€)
+Seat 4: 13Inaki (2.54€)
+Seat 5: MyPseudo (2€)
+*** ANTE/BLINDS ***
+Tikaf-lacour posts small blind 0.01€
+Kaplan82 posts big blind 0.02€
+MyPseudo posts big blind 0.02€ out of position
+Dealt to MyPseudo [6s Ts]
+*** PRE-FLOP *** 
+13Inaki raises 0.07€ to 0.09€
+MyPseudo folds
+Rataxes67 folds
+Tikaf-lacour calls 0.08€
+Kaplan82 folds
+*** FLOP *** [Qd Ad 5d]
+Tikaf-lacour checks
+13Inaki bets 0.22€
+Tikaf-lacour calls 0.22€
+*** TURN *** [Qd Ad 5d][4d]
+Tikaf-lacour bets 0.02€
+13Inaki raises 0.70€ to 0.72€
+Tikaf-lacour folds
+13Inaki collected 1.36€ from pot
+*** SUMMARY ***
+Total pot 1.36€ | Rake 0.04€
+Board: [Qd Ad 5d 4d]
+Seat 4: 13Inaki won 1.36€
+
+
+Winamax Poker - CashGame - HandId: #22603906-297-1782665597 - Holdem no limit (0.01€/0.02€) - 2026/06/28 16:53:17 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: Rataxes67 (2.03€)
+Seat 2: Tikaf-lacour (1.09€)
+Seat 3: Kaplan82 (3.01€)
+Seat 4: 13Inaki (2.87€)
+Seat 5: MyPseudo (1.98€)
+*** ANTE/BLINDS ***
+Kaplan82 posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [Ac 8d]
+*** PRE-FLOP *** 
+Rataxes67 folds
+Tikaf-lacour calls 0.02€
+Kaplan82 folds
+MyPseudo checks
+*** FLOP *** [8s 2h 6c]
+MyPseudo checks
+Tikaf-lacour checks
+*** TURN *** [8s 2h 6c][7d]
+MyPseudo bets 0.03€
+Tikaf-lacour calls 0.03€
+*** RIVER *** [8s 2h 6c 7d][9c]
+MyPseudo bets 0.06€
+Tikaf-lacour raises 0.06€ to 0.12€
+MyPseudo calls 0.06€
+*** SHOW DOWN ***
+MyPseudo shows [Ac 8d] (One pair : 8)
+Tikaf-lacour shows [Jh 5d] (Straight 9 high)
+Tikaf-lacour collected 0.33€ from pot
+*** SUMMARY ***
+Total pot 0.33€ | Rake 0.02€
+Board: [8s 2h 6c 7d 9c]
+Seat 2: Tikaf-lacour (button) showed [Jh 5d] and won 0.33€ with Straight 9 high
+Seat 5: MyPseudo (big blind) showed [Ac 8d] and lost with One pair : 8
+
+
+Winamax Poker - CashGame - HandId: #22603906-298-1782665651 - Holdem no limit (0.01€/0.02€) - 2026/06/28 16:54:11 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: Rataxes67 (2.03€)
+Seat 2: Tikaf-lacour (1.25€)
+Seat 3: Kaplan82 (3€)
+Seat 4: Phantom Fury (2.51€)
+Seat 5: MyPseudo (1.81€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+Tikaf-lacour posts big blind 0.02€
+Dealt to MyPseudo [2c 9h]
+*** PRE-FLOP *** 
+Kaplan82 folds
+MyPseudo calls 0.01€
+Tikaf-lacour checks
+*** FLOP *** [3c Kd 6h]
+MyPseudo checks
+Tikaf-lacour checks
+*** TURN *** [3c Kd 6h][Kc]
+MyPseudo checks
+Tikaf-lacour checks
+*** RIVER *** [3c Kd 6h Kc][4c]
+MyPseudo checks
+Tikaf-lacour checks
+*** SHOW DOWN ***
+MyPseudo shows [2c 9h] (One pair : Kings)
+Tikaf-lacour shows [Jc 2d] (One pair : Kings)
+Tikaf-lacour collected 0.04€ from pot
+*** SUMMARY ***
+Total pot 0.04€ | No rake
+Board: [3c Kd 6h Kc 4c]
+Seat 2: Tikaf-lacour (big blind) showed [Jc 2d] and won 0.04€ with One pair : Kings
+Seat 5: MyPseudo (small blind) showed [2c 9h] and lost with One pair : Kings
+
+
+Winamax Poker - CashGame - HandId: #22603906-299-1782665694 - Holdem no limit (0.01€/0.02€) - 2026/06/28 16:54:54 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: BoufBeats (2€)
+Seat 2: Tikaf-lacour (1.27€)
+Seat 3: Kaplan82 (3€)
+Seat 4: Phantom Fury (2.51€)
+Seat 5: MyPseudo (1.79€)
+*** ANTE/BLINDS ***
+Tikaf-lacour posts small blind 0.01€
+Kaplan82 posts big blind 0.02€
+Dealt to MyPseudo [2d Jc]
+*** PRE-FLOP *** 
+MyPseudo folds
+Tikaf-lacour calls 0.01€
+Kaplan82 checks
+*** FLOP *** [Ac 8c 3h]
+Tikaf-lacour checks
+Kaplan82 checks
+*** TURN *** [Ac 8c 3h][6c]
+Tikaf-lacour bets 0.02€
+Kaplan82 folds
+Tikaf-lacour collected 0.06€ from pot
+*** SUMMARY ***
+Total pot 0.06€ | No rake
+Board: [Ac 8c 3h 6c]
+Seat 2: Tikaf-lacour (small blind) won 0.06€
+
+
+Winamax Poker - CashGame - HandId: #22603906-300-1782665732 - Holdem no limit (0.01€/0.02€) - 2026/06/28 16:55:32 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: BoufBeats (2€)
+Seat 2: Tikaf-lacour (1.29€)
+Seat 3: Kaplan82 (2.98€)
+Seat 4: Phantom Fury (2.51€)
+Seat 5: MyPseudo (1.79€)
+*** ANTE/BLINDS ***
+Kaplan82 posts small blind 0.01€
+Phantom Fury posts big blind 0.02€
+Dealt to MyPseudo [Jd Td]
+*** PRE-FLOP *** 
+MyPseudo raises 0.02€ to 0.04€
+Tikaf-lacour calls 0.04€
+Kaplan82 folds
+Phantom Fury folds
+*** FLOP *** [Ad 4s Kh]
+MyPseudo checks
+Tikaf-lacour checks
+*** TURN *** [Ad 4s Kh][6c]
+MyPseudo checks
+Tikaf-lacour checks
+*** RIVER *** [Ad 4s Kh 6c][Jh]
+MyPseudo bets 0.06€
+Tikaf-lacour folds
+MyPseudo collected 0.16€ from pot
+*** SUMMARY ***
+Total pot 0.16€ | Rake 0.01€
+Board: [Ad 4s Kh 6c Jh]
+Seat 5: MyPseudo won 0.16€
+
+
+Winamax Poker - CashGame - HandId: #22603906-301-1782665773 - Holdem no limit (0.01€/0.02€) - 2026/06/28 16:56:13 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: BoufBeats (2€)
+Seat 2: Tikaf-lacour (1.25€)
+Seat 3: Kaplan82 (2.97€)
+Seat 4: Phantom Fury (2.49€)
+Seat 5: MyPseudo (1.85€)
+*** ANTE/BLINDS ***
+Phantom Fury posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [Tc Qh]
+*** PRE-FLOP *** 
+Tikaf-lacour calls 0.02€
+Kaplan82 folds
+Phantom Fury folds
+MyPseudo checks
+*** FLOP *** [Jd 8s 7c]
+MyPseudo checks
+Tikaf-lacour bets 0.02€
+MyPseudo raises 0.02€ to 0.04€
+Tikaf-lacour calls 0.02€
+*** TURN *** [Jd 8s 7c][5h]
+MyPseudo checks
+Tikaf-lacour checks
+*** RIVER *** [Jd 8s 7c 5h][2d]
+MyPseudo bets 0.07€
+Tikaf-lacour folds
+MyPseudo collected 0.19€ from pot
+*** SUMMARY ***
+Total pot 0.19€ | Rake 0.01€
+Board: [Jd 8s 7c 5h 2d]
+Seat 5: MyPseudo (big blind) won 0.19€
+
+
+Winamax Poker - CashGame - HandId: #22603906-302-1782665826 - Holdem no limit (0.01€/0.02€) - 2026/06/28 16:57:06 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: BoufBeats (2€)
+Seat 2: Tikaf-lacour (1.19€)
+Seat 3: Kaplan82 (2.97€)
+Seat 4: Phantom Fury (2.48€)
+Seat 5: MyPseudo (1.91€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+BoufBeats posts big blind 0.02€
+Dealt to MyPseudo [3h 6d]
+*** PRE-FLOP *** 
+Tikaf-lacour calls 0.02€
+Kaplan82 folds
+Phantom Fury folds
+MyPseudo calls 0.01€
+BoufBeats checks
+*** FLOP *** [2c 8s 6c]
+MyPseudo checks
+BoufBeats checks
+Tikaf-lacour bets 0.02€
+MyPseudo calls 0.02€
+BoufBeats calls 0.02€
+*** TURN *** [2c 8s 6c][Kc]
+MyPseudo checks
+BoufBeats checks
+Tikaf-lacour checks
+*** RIVER *** [2c 8s 6c Kc][Jc]
+MyPseudo checks
+BoufBeats checks
+Tikaf-lacour bets 0.08€
+MyPseudo folds
+BoufBeats calls 0.08€
+*** SHOW DOWN ***
+BoufBeats shows [4d 7c] (Flush King high)
+Tikaf-lacour shows [Td Tc] (Flush King high)
+Tikaf-lacour collected 0.26€ from pot
+*** SUMMARY ***
+Total pot 0.26€ | Rake 0.02€
+Board: [2c 8s 6c Kc Jc]
+Seat 1: BoufBeats (big blind) showed [4d 7c] and lost with Flush King high
+Seat 2: Tikaf-lacour showed [Td Tc] and won 0.26€ with Flush King high
+
+
+Winamax Poker - CashGame - HandId: #22603906-303-1782665905 - Holdem no limit (0.01€/0.02€) - 2026/06/28 16:58:25 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: BoufBeats (2€)
+Seat 2: Tikaf-lacour (1.33€)
+Seat 3: Kaplan82 (2.97€)
+Seat 4: Phantom Fury (2.48€)
+Seat 5: MyPseudo (1.87€)
+*** ANTE/BLINDS ***
+BoufBeats posts small blind 0.01€
+Tikaf-lacour posts big blind 0.02€
+Dealt to MyPseudo [Ts Kc]
+*** PRE-FLOP *** 
+Kaplan82 folds
+Phantom Fury folds
+MyPseudo raises 0.02€ to 0.04€
+BoufBeats folds
+Tikaf-lacour calls 0.02€
+*** FLOP *** [Jh 5h 8d]
+Tikaf-lacour checks
+MyPseudo bets 0.03€
+Tikaf-lacour calls 0.03€
+*** TURN *** [Jh 5h 8d][7c]
+Tikaf-lacour checks
+MyPseudo checks
+*** RIVER *** [Jh 5h 8d 7c][Jc]
+Tikaf-lacour bets 0.02€
+MyPseudo calls 0.02€
+*** SHOW DOWN ***
+Tikaf-lacour shows [2d 9d] (One pair : Jacks)
+MyPseudo shows [Ts Kc] (One pair : Jacks)
+MyPseudo collected 0.18€ from pot
+*** SUMMARY ***
+Total pot 0.18€ | Rake 0.01€
+Board: [Jh 5h 8d 7c Jc]
+Seat 2: Tikaf-lacour (big blind) showed [2d 9d] and lost with One pair : Jacks
+Seat 5: MyPseudo (button) showed [Ts Kc] and won 0.18€ with One pair : Jacks
+
+
+Winamax Poker - CashGame - HandId: #22603906-304-1782665970 - Holdem no limit (0.01€/0.02€) - 2026/06/28 16:59:30 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: BoufBeats (2€)
+Seat 2: Tikaf-lacour (1.24€)
+Seat 3: Kaplan82 (2.97€)
+Seat 4: Phantom Fury (2.48€)
+Seat 5: MyPseudo (1.96€)
+*** ANTE/BLINDS ***
+Tikaf-lacour posts small blind 0.01€
+Kaplan82 posts big blind 0.02€
+Dealt to MyPseudo [2h 9c]
+*** PRE-FLOP *** 
+Phantom Fury folds
+MyPseudo folds
+BoufBeats raises 0.03€ to 0.05€
+Tikaf-lacour calls 0.04€
+Kaplan82 folds
+*** FLOP *** [3c 2c 7s]
+Tikaf-lacour checks
+BoufBeats bets 0.04€
+Tikaf-lacour calls 0.04€
+*** TURN *** [3c 2c 7s][5d]
+Tikaf-lacour checks
+BoufBeats checks
+*** RIVER *** [3c 2c 7s 5d][9s]
+Tikaf-lacour checks
+BoufBeats checks
+*** SHOW DOWN ***
+Tikaf-lacour shows [Td 3d] (One pair : 3)
+BoufBeats shows [Jc 7c] (One pair : 7)
+BoufBeats collected 0.19€ from pot
+*** SUMMARY ***
+Total pot 0.19€ | Rake 0.01€
+Board: [3c 2c 7s 5d 9s]
+Seat 1: BoufBeats (button) showed [Jc 7c] and won 0.19€ with One pair : 7
+Seat 2: Tikaf-lacour (small blind) showed [Td 3d] and lost with One pair : 3
+
+
+Winamax Poker - CashGame - HandId: #22603906-305-1782666031 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:00:31 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: BoufBeats (2.10€)
+Seat 2: Tikaf-lacour (1.15€)
+Seat 3: Kaplan82 (2.95€)
+Seat 4: Phantom Fury (2.48€)
+Seat 5: MyPseudo (1.96€)
+*** ANTE/BLINDS ***
+Kaplan82 posts small blind 0.01€
+Phantom Fury posts big blind 0.02€
+Dealt to MyPseudo [2d 8d]
+*** PRE-FLOP *** 
+MyPseudo folds
+BoufBeats raises 0.03€ to 0.05€
+Tikaf-lacour calls 0.05€
+Kaplan82 raises 0.18€ to 0.23€
+Phantom Fury folds
+BoufBeats folds
+Tikaf-lacour folds
+Kaplan82 collected 0.35€ from pot
+*** SUMMARY ***
+Total pot 0.35€ | No rake
+Seat 3: Kaplan82 (small blind) won 0.35€
+
+
+Winamax Poker - CashGame - HandId: #22603906-306-1782666073 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:01:13 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: BoufBeats (2.05€)
+Seat 2: Tikaf-lacour (1.10€)
+Seat 3: Kaplan82 (3.07€)
+Seat 4: Phantom Fury (2.46€)
+Seat 5: MyPseudo (1.96€)
+*** ANTE/BLINDS ***
+Phantom Fury posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [8h 2h]
+*** PRE-FLOP *** 
+BoufBeats raises 0.03€ to 0.05€
+Tikaf-lacour calls 0.05€
+Kaplan82 folds
+Phantom Fury folds
+MyPseudo folds
+*** FLOP *** [2s Qc 3h]
+BoufBeats checks
+Tikaf-lacour checks
+*** TURN *** [2s Qc 3h][7c]
+BoufBeats bets 0.10€
+Tikaf-lacour folds
+BoufBeats collected 0.22€ from pot
+*** SUMMARY ***
+Total pot 0.22€ | Rake 0.01€
+Board: [2s Qc 3h 7c]
+Seat 1: BoufBeats won 0.22€
+
+
+Winamax Poker - CashGame - HandId: #22603906-307-1782666114 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:01:54 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: BoufBeats (2.12€)
+Seat 2: Tikaf-lacour (1.05€)
+Seat 3: Kaplan82 (3.07€)
+Seat 4: Phantom Fury (2.45€)
+Seat 5: MyPseudo (1.94€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+BoufBeats posts big blind 0.02€
+Dealt to MyPseudo [Tc Qs]
+*** PRE-FLOP *** 
+Tikaf-lacour calls 0.02€
+Kaplan82 raises 0.06€ to 0.08€
+Phantom Fury folds
+MyPseudo folds
+BoufBeats folds
+Tikaf-lacour folds
+Kaplan82 collected 0.13€ from pot
+*** SUMMARY ***
+Total pot 0.13€ | No rake
+Seat 3: Kaplan82 won 0.13€
+
+
+Winamax Poker - CashGame - HandId: #22603906-308-1782666164 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:02:44 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: BoufBeats (2.10€)
+Seat 2: Tikaf-lacour (1.03€)
+Seat 3: Kaplan82 (3.12€)
+Seat 4: Phantom Fury (2.45€)
+Seat 5: MyPseudo (1.93€)
+*** ANTE/BLINDS ***
+BoufBeats posts small blind 0.01€
+Tikaf-lacour posts big blind 0.02€
+Dealt to MyPseudo [8d 5c]
+*** PRE-FLOP *** 
+Kaplan82 folds
+Phantom Fury folds
+MyPseudo folds
+BoufBeats folds
+Tikaf-lacour collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: Tikaf-lacour (big blind) won 0.03€
+
+
+Winamax Poker - CashGame - HandId: #22603906-309-1782666232 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:03:52 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: BoufBeats (2.09€)
+Seat 2: Tikaf-lacour (1.04€)
+Seat 4: Phantom Fury (2.45€)
+Seat 5: MyPseudo (1.93€)
+*** ANTE/BLINDS ***
+Tikaf-lacour posts small blind 0.01€
+Phantom Fury posts big blind 0.02€
+Dealt to MyPseudo [Kd Jd]
+*** PRE-FLOP *** 
+MyPseudo raises 0.02€ to 0.04€
+BoufBeats raises 0.08€ to 0.12€
+Tikaf-lacour folds
+Phantom Fury folds
+MyPseudo calls 0.08€
+*** FLOP *** [4c Ks 8h]
+MyPseudo checks
+BoufBeats bets 0.07€
+MyPseudo calls 0.07€
+*** TURN *** [4c Ks 8h][Kc]
+MyPseudo checks
+BoufBeats checks
+*** RIVER *** [4c Ks 8h Kc][4d]
+MyPseudo bets 1.74€ and is all-in
+BoufBeats folds
+MyPseudo collected 2.13€ from pot
+*** SUMMARY ***
+Total pot 2.13€ | Rake 0.02€
+Board: [4c Ks 8h Kc 4d]
+Seat 5: MyPseudo won 2.13€
+
+
+Winamax Poker - CashGame - HandId: #22603906-310-1782666341 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:05:41 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: BoufBeats (2€)
+Seat 2: Tikaf-lacour (1.03€)
+Seat 3: MuchaPLata12 (2€)
+Seat 4: Phantom Fury (2.43€)
+Seat 5: MyPseudo (2.13€)
+*** ANTE/BLINDS ***
+Phantom Fury posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [9h 3d]
+*** PRE-FLOP *** 
+BoufBeats raises 0.03€ to 0.05€
+Tikaf-lacour calls 0.05€
+Phantom Fury calls 0.04€
+MyPseudo folds
+*** FLOP *** [Th 4s 5d]
+Phantom Fury checks
+BoufBeats bets 0.04€
+Tikaf-lacour calls 0.04€
+Phantom Fury calls 0.04€
+*** TURN *** [Th 4s 5d][7h]
+Phantom Fury checks
+BoufBeats bets 0.22€
+Tikaf-lacour calls 0.22€
+Phantom Fury folds
+*** RIVER *** [Th 4s 5d 7h][3s]
+BoufBeats bets 1.69€ and is all-in
+Tikaf-lacour folds
+BoufBeats collected 2.38€ from pot
+*** SUMMARY ***
+Total pot 2.38€ | Rake 0.04€
+Board: [Th 4s 5d 7h 3s]
+Seat 1: BoufBeats won 2.38€
+
+
+Winamax Poker - CashGame - HandId: #22603906-311-1782666400 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:06:40 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: BoufBeats (2.38€)
+Seat 2: Tikaf-lacour (0.72€)
+Seat 3: MuchaPLata12 (2€)
+Seat 4: Phantom Fury (2.34€)
+Seat 5: MyPseudo (2.11€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+BoufBeats posts big blind 0.02€
+MuchaPLata12 posts big blind 0.02€ out of position
+Dealt to MyPseudo [Kc Ts]
+*** PRE-FLOP *** 
+Tikaf-lacour calls 0.02€
+MuchaPLata12 checks
+Phantom Fury raises 0.09€ to 0.11€
+MyPseudo folds
+BoufBeats folds
+Tikaf-lacour calls 0.09€
+MuchaPLata12 folds
+*** FLOP *** [6c 8s 4h]
+Tikaf-lacour checks
+Phantom Fury bets 2.23€ and is all-in
+Tikaf-lacour folds
+Phantom Fury collected 2.48€ from pot
+*** SUMMARY ***
+Total pot 2.48€ | Rake 0.02€
+Board: [6c 8s 4h]
+Seat 4: Phantom Fury (button) won 2.48€
+
+
+Winamax Poker - CashGame - HandId: #22603906-312-1782666483 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:08:03 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: BoufBeats (2.36€)
+Seat 2: Tikaf-lacour (0.61€)
+Seat 3: MuchaPLata12 (2€)
+Seat 4: Phantom Fury (2.48€)
+Seat 5: MyPseudo (2.10€)
+*** ANTE/BLINDS ***
+BoufBeats posts small blind 0.01€
+Tikaf-lacour posts big blind 0.02€
+Dealt to MyPseudo [Kh Qc]
+*** PRE-FLOP *** 
+MuchaPLata12 folds
+Phantom Fury folds
+MyPseudo raises 0.03€ to 0.05€
+BoufBeats folds
+Tikaf-lacour calls 0.03€
+*** FLOP *** [7d 6h 9c]
+Tikaf-lacour checks
+MyPseudo bets 0.04€
+Tikaf-lacour calls 0.04€
+*** TURN *** [7d 6h 9c][Th]
+Tikaf-lacour checks
+MyPseudo checks
+*** RIVER *** [7d 6h 9c Th][3h]
+Tikaf-lacour checks
+MyPseudo checks
+*** SHOW DOWN ***
+MyPseudo shows [Kh Qc] (High card : King)
+Tikaf-lacour shows [3s Ah] (One pair : 3)
+Tikaf-lacour collected 0.18€ from pot
+*** SUMMARY ***
+Total pot 0.18€ | Rake 0.01€
+Board: [7d 6h 9c Th 3h]
+Seat 2: Tikaf-lacour (big blind) showed [3s Ah] and won 0.18€ with One pair : 3
+Seat 5: MyPseudo (button) showed [Kh Qc] and lost with High card : King
+
+
+Winamax Poker - CashGame - HandId: #22603906-313-1782666540 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:09:00 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: BoufBeats (2.35€)
+Seat 2: Tikaf-lacour (0.70€)
+Seat 3: MuchaPLata12 (2€)
+Seat 4: Phantom Fury (2.48€)
+Seat 5: MyPseudo (2.01€)
+*** ANTE/BLINDS ***
+Tikaf-lacour posts small blind 0.01€
+MuchaPLata12 posts big blind 0.02€
+Dealt to MyPseudo [7c Jd]
+*** PRE-FLOP *** 
+Phantom Fury folds
+MyPseudo folds
+BoufBeats raises 0.03€ to 0.05€
+Tikaf-lacour calls 0.04€
+MuchaPLata12 raises 0.19€ to 0.24€
+BoufBeats folds
+Tikaf-lacour folds
+MuchaPLata12 collected 0.34€ from pot
+*** SUMMARY ***
+Total pot 0.34€ | No rake
+Seat 3: MuchaPLata12 (big blind) won 0.34€
+
+
+Winamax Poker - CashGame - HandId: #22603906-314-1782666574 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:09:34 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: BoufBeats (2.30€)
+Seat 2: Tikaf-lacour (0.65€)
+Seat 3: MuchaPLata12 (2.10€)
+Seat 4: Phantom Fury (2.48€)
+Seat 5: MyPseudo (2.01€)
+*** ANTE/BLINDS ***
+MuchaPLata12 posts small blind 0.01€
+Phantom Fury posts big blind 0.02€
+Dealt to MyPseudo [Qc Ks]
+*** PRE-FLOP *** 
+MyPseudo raises 0.02€ to 0.04€
+BoufBeats folds
+Tikaf-lacour calls 0.04€
+MuchaPLata12 folds
+Phantom Fury calls 0.02€
+*** FLOP *** [Qd 9c 8c]
+Phantom Fury checks
+MyPseudo bets 0.05€
+Tikaf-lacour raises 0.05€ to 0.10€
+Phantom Fury folds
+MyPseudo raises 0.05€ to 0.15€
+Tikaf-lacour calls 0.05€
+*** TURN *** [Qd 9c 8c][Jc]
+MyPseudo bets 0.15€
+Tikaf-lacour raises 0.15€ to 0.30€
+MyPseudo raises 1.52€ to 1.82€ and is all-in
+Tikaf-lacour calls 0.16€ and is all-in
+*** RIVER *** [Qd 9c 8c Jc][5c]
+*** SHOW DOWN ***
+Tikaf-lacour shows [Jd Qh] (Two pairs : Queens and Jacks)
+MyPseudo shows [Qc Ks] (Flush Queen high)
+MyPseudo collected 2.63€ from pot
+*** SUMMARY ***
+Total pot 2.63€ | Rake 0.08€
+Board: [Qd 9c 8c Jc 5c]
+Seat 2: Tikaf-lacour (button) showed [Jd Qh] and lost with Two pairs : Queens and Jacks
+Seat 5: MyPseudo showed [Qc Ks] and won 2.63€ with Flush Queen high
+
+
+Winamax Poker - CashGame - HandId: #22603906-315-1782666627 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:10:27 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: BoufBeats (2.30€)
+Seat 2: Tikaf-lacour (0€)
+Seat 3: MuchaPLata12 (2.09€)
+Seat 4: Phantom Fury (2.44€)
+Seat 5: MyPseudo (2.63€)
+*** ANTE/BLINDS ***
+Phantom Fury posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [6d Qh]
+*** PRE-FLOP *** 
+BoufBeats folds
+MuchaPLata12 folds
+Phantom Fury folds
+MyPseudo collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 5: MyPseudo (big blind) won 0.03€
+
+
+Winamax Poker - CashGame - HandId: #22603906-316-1782666639 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:10:39 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: BoufBeats (2.30€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.09€)
+Seat 4: Phantom Fury (2.43€)
+Seat 5: MyPseudo (2.64€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+BoufBeats posts big blind 0.02€
+Dealt to MyPseudo [6s 4s]
+*** PRE-FLOP *** 
+MuchaPLata12 raises 0.03€ to 0.05€
+Phantom Fury raises 0.10€ to 0.15€
+MyPseudo folds
+BoufBeats folds
+MuchaPLata12 calls 0.10€
+*** FLOP *** [Jd Ac Kd]
+MuchaPLata12 checks
+Phantom Fury bets 0.08€
+MuchaPLata12 calls 0.08€
+*** TURN *** [Jd Ac Kd][7c]
+MuchaPLata12 checks
+Phantom Fury checks
+*** RIVER *** [Jd Ac Kd 7c][3c]
+MuchaPLata12 checks
+Phantom Fury checks
+*** SHOW DOWN ***
+MuchaPLata12 shows [Ad 5d] (One pair : Aces)
+Phantom Fury shows [Ts As] (One pair : Aces)
+Phantom Fury collected 0.46€ from pot
+*** SUMMARY ***
+Total pot 0.46€ | Rake 0.03€
+Board: [Jd Ac Kd 7c 3c]
+Seat 3: MuchaPLata12 showed [Ad 5d] and lost with One pair : Aces
+Seat 4: Phantom Fury (button) showed [Ts As] and won 0.46€ with One pair : Aces
+
+
+Winamax Poker - CashGame - HandId: #22603906-317-1782666685 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:11:25 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: BoufBeats (2.28€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2€)
+Seat 4: Phantom Fury (2.66€)
+Seat 5: MyPseudo (2.63€)
+*** ANTE/BLINDS ***
+BoufBeats posts small blind 0.01€
+-DeckCifer- posts big blind 0.02€
+Dealt to MyPseudo [Th 2d]
+*** PRE-FLOP *** 
+MuchaPLata12 folds
+Phantom Fury folds
+MyPseudo raises 0.02€ to 0.04€
+BoufBeats folds
+-DeckCifer- folds
+MyPseudo collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 5: MyPseudo (button) won 0.07€
+
+
+Winamax Poker - CashGame - HandId: #22603906-318-1782666719 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:11:59 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: BoufBeats (2.27€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2€)
+Seat 4: Phantom Fury (2.66€)
+Seat 5: MyPseudo (2.66€)
+*** ANTE/BLINDS ***
+-DeckCifer- posts small blind 0.01€
+MuchaPLata12 posts big blind 0.02€
+Dealt to MyPseudo [7c Tc]
+*** PRE-FLOP *** 
+Phantom Fury folds
+MyPseudo folds
+BoufBeats folds
+-DeckCifer- raises 0.04€ to 0.06€
+MuchaPLata12 raises 0.18€ to 0.24€
+-DeckCifer- folds
+MuchaPLata12 collected 0.30€ from pot
+*** SUMMARY ***
+Total pot 0.30€ | No rake
+Seat 3: MuchaPLata12 (big blind) won 0.30€
+
+
+Winamax Poker - CashGame - HandId: #22603906-319-1782666773 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:12:53 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: BoufBeats (2.27€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.06€)
+Seat 4: Phantom Fury (2.66€)
+Seat 5: MyPseudo (2.66€)
+*** ANTE/BLINDS ***
+MuchaPLata12 posts small blind 0.01€
+Phantom Fury posts big blind 0.02€
+Dealt to MyPseudo [8s 3h]
+*** PRE-FLOP *** 
+MyPseudo folds
+BoufBeats folds
+-DeckCifer- raises 0.03€ to 0.05€
+MuchaPLata12 folds
+Phantom Fury calls 0.03€
+*** FLOP *** [Ks 4s 2h]
+Phantom Fury checks
+-DeckCifer- bets 0.05€
+Phantom Fury calls 0.05€
+*** TURN *** [Ks 4s 2h][3d]
+Phantom Fury checks
+-DeckCifer- checks
+*** RIVER *** [Ks 4s 2h 3d][Qh]
+Phantom Fury bets 0.15€
+-DeckCifer- folds
+Phantom Fury collected 0.35€ from pot
+*** SUMMARY ***
+Total pot 0.35€ | Rake 0.01€
+Board: [Ks 4s 2h 3d Qh]
+Seat 4: Phantom Fury (big blind) won 0.35€
+
+
+Winamax Poker - CashGame - HandId: #22603906-320-1782666882 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:14:42 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: BoufBeats (2.27€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.05€)
+Seat 4: Phantom Fury (2.76€)
+Seat 5: MyPseudo (2.66€)
+*** ANTE/BLINDS ***
+Phantom Fury posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [5c 2d]
+*** PRE-FLOP *** 
+BoufBeats folds
+-DeckCifer- folds
+MuchaPLata12 folds
+Phantom Fury raises 0.03€ to 0.05€
+MyPseudo folds
+Phantom Fury collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 4: Phantom Fury (small blind) won 0.07€
+
+
+Winamax Poker - CashGame - HandId: #22603906-321-1782666915 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:15:15 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: BoufBeats (2.27€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.05€)
+Seat 4: Phantom Fury (2.78€)
+Seat 5: MyPseudo (2.64€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+BoufBeats posts big blind 0.02€
+Dealt to MyPseudo [Ts Jh]
+*** PRE-FLOP *** 
+-DeckCifer- raises 0.03€ to 0.05€
+MuchaPLata12 raises 0.11€ to 0.16€
+Phantom Fury folds
+MyPseudo folds
+BoufBeats folds
+-DeckCifer- folds
+MuchaPLata12 collected 0.24€ from pot
+*** SUMMARY ***
+Total pot 0.24€ | No rake
+Seat 3: MuchaPLata12 won 0.24€
+
+
+Winamax Poker - CashGame - HandId: #22603906-322-1782666946 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:15:46 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: BoufBeats (2.25€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.13€)
+Seat 4: Phantom Fury (2.78€)
+Seat 5: MyPseudo (2.63€)
+*** ANTE/BLINDS ***
+BoufBeats posts small blind 0.01€
+-DeckCifer- posts big blind 0.02€
+Dealt to MyPseudo [7d 7s]
+*** PRE-FLOP *** 
+MuchaPLata12 folds
+Phantom Fury raises 0.03€ to 0.05€
+MyPseudo raises 0.03€ to 0.08€
+BoufBeats folds
+-DeckCifer- folds
+Phantom Fury calls 0.03€
+*** FLOP *** [8h Jd 6c]
+Phantom Fury checks
+MyPseudo bets 0.05€
+Phantom Fury calls 0.05€
+*** TURN *** [8h Jd 6c][3h]
+Phantom Fury checks
+MyPseudo checks
+*** RIVER *** [8h Jd 6c 3h][4d]
+Phantom Fury bets 0.23€
+MyPseudo folds
+Phantom Fury collected 0.50€ from pot
+*** SUMMARY ***
+Total pot 0.50€ | Rake 0.02€
+Board: [8h Jd 6c 3h 4d]
+Seat 4: Phantom Fury won 0.50€
+
+
+Winamax Poker - CashGame - HandId: #22603906-323-1782667037 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:17:17 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: BoufBeats (2.24€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.13€)
+Seat 4: Phantom Fury (2.92€)
+Seat 5: MyPseudo (2.50€)
+*** ANTE/BLINDS ***
+-DeckCifer- posts small blind 0.01€
+MuchaPLata12 posts big blind 0.02€
+Dealt to MyPseudo [Qd Ks]
+*** PRE-FLOP *** 
+Phantom Fury folds
+MyPseudo raises 0.02€ to 0.04€
+BoufBeats folds
+-DeckCifer- folds
+MuchaPLata12 folds
+MyPseudo collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 5: MyPseudo won 0.07€
+
+
+Winamax Poker - CashGame - HandId: #22603906-324-1782667077 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:17:57 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: BoufBeats (2.24€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.11€)
+Seat 4: Phantom Fury (2.92€)
+Seat 5: MyPseudo (2.53€)
+*** ANTE/BLINDS ***
+MuchaPLata12 posts small blind 0.01€
+Phantom Fury posts big blind 0.02€
+Dealt to MyPseudo [Jd 9d]
+*** PRE-FLOP *** 
+MyPseudo calls 0.02€
+BoufBeats folds
+-DeckCifer- folds
+MuchaPLata12 calls 0.01€
+Phantom Fury checks
+*** FLOP *** [Kd Jc Td]
+MuchaPLata12 checks
+Phantom Fury checks
+MyPseudo bets 0.03€
+MuchaPLata12 folds
+Phantom Fury folds
+MyPseudo collected 0.09€ from pot
+*** SUMMARY ***
+Total pot 0.09€ | No rake
+Board: [Kd Jc Td]
+Seat 5: MyPseudo won 0.09€
+
+
+Winamax Poker - CashGame - HandId: #22603906-325-1782667132 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:18:52 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: BoufBeats (2.24€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.09€)
+Seat 4: Phantom Fury (2.90€)
+Seat 5: MyPseudo (2.57€)
+*** ANTE/BLINDS ***
+Phantom Fury posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [2d 5c]
+*** PRE-FLOP *** 
+BoufBeats folds
+-DeckCifer- raises 0.03€ to 0.05€
+MuchaPLata12 folds
+Phantom Fury folds
+MyPseudo folds
+-DeckCifer- collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 2: -DeckCifer- won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #22603906-326-1782667157 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:19:17 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: BoufBeats (2.24€)
+Seat 2: -DeckCifer- (2.03€)
+Seat 3: MuchaPLata12 (2.09€)
+Seat 4: Phantom Fury (2.89€)
+Seat 5: MyPseudo (2.55€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+BoufBeats posts big blind 0.02€
+Dealt to MyPseudo [Qc 2h]
+*** PRE-FLOP *** 
+-DeckCifer- folds
+MuchaPLata12 folds
+Phantom Fury folds
+MyPseudo calls 0.01€
+BoufBeats checks
+*** FLOP *** [Ks As 9c]
+MyPseudo checks
+BoufBeats checks
+*** TURN *** [Ks As 9c][3h]
+MyPseudo checks
+BoufBeats bets 0.03€
+MyPseudo calls 0.03€
+*** RIVER *** [Ks As 9c 3h][3s]
+MyPseudo checks
+BoufBeats bets 0.10€
+MyPseudo folds
+BoufBeats collected 0.19€ from pot
+*** SUMMARY ***
+Total pot 0.19€ | Rake 0.01€
+Board: [Ks As 9c 3h 3s]
+Seat 1: BoufBeats (big blind) won 0.19€
+
+
+Winamax Poker - CashGame - HandId: #22603906-327-1782667256 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:20:56 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: BoufBeats (2.28€)
+Seat 2: -DeckCifer- (2.03€)
+Seat 3: MuchaPLata12 (2.09€)
+Seat 4: Phantom Fury (2.89€)
+Seat 5: MyPseudo (2.50€)
+*** ANTE/BLINDS ***
+BoufBeats posts small blind 0.01€
+-DeckCifer- posts big blind 0.02€
+Dealt to MyPseudo [9s 5s]
+*** PRE-FLOP *** 
+MuchaPLata12 folds
+Phantom Fury folds
+MyPseudo folds
+BoufBeats folds
+-DeckCifer- collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: -DeckCifer- (big blind) won 0.03€
+
+
+Winamax Poker - CashGame - HandId: #22603906-328-1782667287 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:21:27 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: BoufBeats (2.27€)
+Seat 2: -DeckCifer- (2.04€)
+Seat 3: MuchaPLata12 (2.09€)
+Seat 4: Phantom Fury (2.89€)
+Seat 5: MyPseudo (2.50€)
+*** ANTE/BLINDS ***
+-DeckCifer- posts small blind 0.01€
+MuchaPLata12 posts big blind 0.02€
+Dealt to MyPseudo [4h 9c]
+*** PRE-FLOP *** 
+Phantom Fury folds
+MyPseudo folds
+BoufBeats raises 0.03€ to 0.05€
+-DeckCifer- calls 0.04€
+MuchaPLata12 folds
+*** FLOP *** [7h Kc Jd]
+-DeckCifer- checks
+BoufBeats bets 0.03€
+-DeckCifer- folds
+BoufBeats collected 0.14€ from pot
+*** SUMMARY ***
+Total pot 0.14€ | Rake 0.01€
+Board: [7h Kc Jd]
+Seat 1: BoufBeats (button) won 0.14€
+
+
+Winamax Poker - CashGame - HandId: #22603906-329-1782667344 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:22:24 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: BoufBeats (2.33€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.07€)
+Seat 4: Phantom Fury (2.89€)
+Seat 5: MyPseudo (2.50€)
+*** ANTE/BLINDS ***
+MuchaPLata12 posts small blind 0.01€
+Phantom Fury posts big blind 0.02€
+Dealt to MyPseudo [6d 3h]
+*** PRE-FLOP *** 
+MyPseudo folds
+BoufBeats raises 0.03€ to 0.05€
+-DeckCifer- folds
+MuchaPLata12 raises 0.15€ to 0.20€
+Phantom Fury folds
+BoufBeats calls 0.15€
+*** FLOP *** [Ac 8d Js]
+MuchaPLata12 checks
+BoufBeats checks
+*** TURN *** [Ac 8d Js][Ks]
+MuchaPLata12 bets 0.32€
+BoufBeats folds
+MuchaPLata12 collected 0.72€ from pot
+*** SUMMARY ***
+Total pot 0.72€ | Rake 0.02€
+Board: [Ac 8d Js Ks]
+Seat 3: MuchaPLata12 (small blind) won 0.72€
+
+
+Winamax Poker - CashGame - HandId: #22603906-330-1782667390 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:23:10 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: BoufBeats (2.13€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.27€)
+Seat 4: Phantom Fury (2.87€)
+Seat 5: MyPseudo (2.50€)
+*** ANTE/BLINDS ***
+Phantom Fury posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [5d 3c]
+*** PRE-FLOP *** 
+BoufBeats raises 0.03€ to 0.05€
+-DeckCifer- folds
+MuchaPLata12 folds
+Phantom Fury folds
+MyPseudo folds
+BoufBeats collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 1: BoufBeats won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #22603906-331-1782667411 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:23:31 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: BoufBeats (2.16€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.27€)
+Seat 4: Phantom Fury (2.86€)
+Seat 5: MyPseudo (2.48€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+BoufBeats posts big blind 0.02€
+Dealt to MyPseudo [6c 8s]
+*** PRE-FLOP *** 
+-DeckCifer- folds
+MuchaPLata12 folds
+Phantom Fury raises 0.03€ to 0.05€
+MyPseudo folds
+BoufBeats raises 0.17€ to 0.22€
+Phantom Fury calls 0.17€
+*** FLOP *** [Tc 2s Kd]
+BoufBeats bets 0.12€
+Phantom Fury raises 0.12€ to 0.24€
+BoufBeats calls 0.12€
+*** TURN *** [Tc 2s Kd][3d]
+BoufBeats checks
+Phantom Fury checks
+*** RIVER *** [Tc 2s Kd 3d][Kc]
+BoufBeats checks
+Phantom Fury checks
+*** SHOW DOWN ***
+Phantom Fury shows [Qd Qh] (Two pairs : Kings and Queens)
+BoufBeats shows [As Ah] (Two pairs : Aces and Kings)
+BoufBeats collected 0.88€ from pot
+*** SUMMARY ***
+Total pot 0.88€ | Rake 0.05€
+Board: [Tc 2s Kd 3d Kc]
+Seat 1: BoufBeats (big blind) showed [As Ah] and won 0.88€ with Two pairs : Aces and Kings
+Seat 4: Phantom Fury (button) showed [Qd Qh] and lost with Two pairs : Kings and Queens
+
+
+Winamax Poker - CashGame - HandId: #22603906-332-1782667505 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:25:05 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: BoufBeats (2.58€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.27€)
+Seat 4: Phantom Fury (2.40€)
+Seat 5: MyPseudo (2.47€)
+*** ANTE/BLINDS ***
+BoufBeats posts small blind 0.01€
+-DeckCifer- posts big blind 0.02€
+Dealt to MyPseudo [Td Jd]
+*** PRE-FLOP *** 
+MuchaPLata12 folds
+Phantom Fury folds
+MyPseudo raises 0.03€ to 0.05€
+BoufBeats folds
+-DeckCifer- folds
+MyPseudo collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 5: MyPseudo (button) won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #22603906-333-1782667541 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:25:41 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: BoufBeats (2.57€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.27€)
+Seat 4: Phantom Fury (2.40€)
+Seat 5: MyPseudo (2.50€)
+*** ANTE/BLINDS ***
+-DeckCifer- posts small blind 0.01€
+MuchaPLata12 posts big blind 0.02€
+Dealt to MyPseudo [3s Kc]
+*** PRE-FLOP *** 
+Phantom Fury folds
+MyPseudo folds
+BoufBeats folds
+-DeckCifer- raises 0.04€ to 0.06€
+MuchaPLata12 raises 0.18€ to 0.24€
+-DeckCifer- folds
+MuchaPLata12 collected 0.30€ from pot
+*** SUMMARY ***
+Total pot 0.30€ | No rake
+Seat 3: MuchaPLata12 (big blind) won 0.30€
+
+
+Winamax Poker - CashGame - HandId: #22603906-334-1782667589 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:26:29 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: BoufBeats (2.57€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.33€)
+Seat 4: Phantom Fury (2.40€)
+Seat 5: MyPseudo (2.50€)
+*** ANTE/BLINDS ***
+MuchaPLata12 posts small blind 0.01€
+Phantom Fury posts big blind 0.02€
+Dealt to MyPseudo [2s 7c]
+*** PRE-FLOP *** 
+MyPseudo folds
+BoufBeats raises 0.03€ to 0.05€
+-DeckCifer- folds
+MuchaPLata12 folds
+Phantom Fury folds
+BoufBeats collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 1: BoufBeats won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #22603906-335-1782667602 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:26:42 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: BoufBeats (2.60€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.32€)
+Seat 4: Phantom Fury (2.38€)
+Seat 5: MyPseudo (2.50€)
+*** ANTE/BLINDS ***
+Phantom Fury posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [2s 8c]
+*** PRE-FLOP *** 
+BoufBeats folds
+-DeckCifer- folds
+MuchaPLata12 folds
+Phantom Fury folds
+MyPseudo shows [2s 8c] (High card : 8)
+MyPseudo collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 5: MyPseudo (big blind) showed [2s 8c] and won 0.03€ with High card : 8
+
+
+Winamax Poker - CashGame - HandId: #22603906-336-1782667631 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:27:11 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: BoufBeats (2.60€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.32€)
+Seat 4: Phantom Fury (2.37€)
+Seat 5: MyPseudo (2.51€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+BoufBeats posts big blind 0.02€
+Dealt to MyPseudo [8s Kh]
+*** PRE-FLOP *** 
+-DeckCifer- folds
+MuchaPLata12 folds
+Phantom Fury folds
+MyPseudo calls 0.01€
+BoufBeats checks
+*** FLOP *** [Qh 5h Kd]
+MyPseudo checks
+BoufBeats checks
+*** TURN *** [Qh 5h Kd][5c]
+MyPseudo bets 0.04€
+BoufBeats folds
+MyPseudo collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Board: [Qh 5h Kd 5c]
+Seat 5: MyPseudo (small blind) won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #22603906-337-1782667704 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:28:24 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: BoufBeats (2.58€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.32€)
+Seat 4: Phantom Fury (2.37€)
+Seat 5: MyPseudo (2.53€)
+*** ANTE/BLINDS ***
+BoufBeats posts small blind 0.01€
+-DeckCifer- posts big blind 0.02€
+Dealt to MyPseudo [3d 6s]
+*** PRE-FLOP *** 
+MuchaPLata12 folds
+Phantom Fury folds
+MyPseudo folds
+BoufBeats folds
+-DeckCifer- collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: -DeckCifer- (big blind) won 0.03€
+
+
+Winamax Poker - CashGame - HandId: #22603906-338-1782667728 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:28:48 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: BoufBeats (2.57€)
+Seat 2: -DeckCifer- (2.01€)
+Seat 3: MuchaPLata12 (2.32€)
+Seat 4: Phantom Fury (2.37€)
+Seat 5: MyPseudo (2.53€)
+*** ANTE/BLINDS ***
+-DeckCifer- posts small blind 0.01€
+MuchaPLata12 posts big blind 0.02€
+Dealt to MyPseudo [Qs Jd]
+*** PRE-FLOP *** 
+Phantom Fury folds
+MyPseudo raises 0.02€ to 0.04€
+BoufBeats folds
+-DeckCifer- folds
+MuchaPLata12 folds
+MyPseudo collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 5: MyPseudo won 0.07€
+
+
+Winamax Poker - CashGame - HandId: #22603906-339-1782667756 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:29:16 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: BoufBeats (2.57€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.30€)
+Seat 4: Phantom Fury (2.37€)
+Seat 5: MyPseudo (2.56€)
+*** ANTE/BLINDS ***
+MuchaPLata12 posts small blind 0.01€
+Phantom Fury posts big blind 0.02€
+Dealt to MyPseudo [Jd 6h]
+*** PRE-FLOP *** 
+MyPseudo folds
+BoufBeats raises 0.03€ to 0.05€
+-DeckCifer- calls 0.05€
+MuchaPLata12 folds
+Phantom Fury raises 0.19€ to 0.24€
+BoufBeats folds
+-DeckCifer- folds
+Phantom Fury collected 0.35€ from pot
+*** SUMMARY ***
+Total pot 0.35€ | No rake
+Seat 4: Phantom Fury (big blind) won 0.35€
+
+
+Winamax Poker - CashGame - HandId: #22603906-340-1782667839 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:30:39 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: BoufBeats (2.52€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.29€)
+Seat 4: Phantom Fury (2.48€)
+Seat 5: MyPseudo (2.56€)
+*** ANTE/BLINDS ***
+Phantom Fury posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [Qd 5c]
+*** PRE-FLOP *** 
+BoufBeats folds
+-DeckCifer- folds
+MuchaPLata12 raises 0.03€ to 0.05€
+Phantom Fury folds
+MyPseudo calls 0.03€
+*** FLOP *** [3h Jc Qh]
+MyPseudo checks
+MuchaPLata12 checks
+*** TURN *** [3h Jc Qh][3d]
+MyPseudo checks
+MuchaPLata12 bets 0.08€
+MyPseudo raises 0.09€ to 0.17€
+MuchaPLata12 calls 0.09€
+*** RIVER *** [3h Jc Qh 3d][Js]
+MyPseudo bets 0.29€
+MuchaPLata12 calls 0.29€
+*** SHOW DOWN ***
+MyPseudo shows [Qd 5c] (Two pairs : Queens and Jacks)
+MuchaPLata12 shows [Qs Ad] (Two pairs : Queens and Jacks)
+MuchaPLata12 collected 0.97€ from pot
+*** SUMMARY ***
+Total pot 0.97€ | Rake 0.06€
+Board: [3h Jc Qh 3d Js]
+Seat 3: MuchaPLata12 (button) showed [Qs Ad] and won 0.97€ with Two pairs : Queens and Jacks
+Seat 5: MyPseudo (big blind) showed [Qd 5c] and lost with Two pairs : Queens and Jacks
+
+
+Winamax Poker - CashGame - HandId: #22603906-341-1782667953 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:32:33 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: BoufBeats (2.52€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.75€)
+Seat 4: Phantom Fury (2.47€)
+Seat 5: MyPseudo (2.05€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+BoufBeats posts big blind 0.02€
+Dealt to MyPseudo [6h 3d]
+*** PRE-FLOP *** 
+-DeckCifer- raises 0.03€ to 0.05€
+MuchaPLata12 folds
+Phantom Fury folds
+MyPseudo folds
+BoufBeats folds
+-DeckCifer- collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 2: -DeckCifer- won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #22603906-342-1782667976 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:32:56 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: BoufBeats (2.50€)
+Seat 2: -DeckCifer- (2.03€)
+Seat 3: MuchaPLata12 (2.75€)
+Seat 4: Phantom Fury (2.47€)
+Seat 5: MyPseudo (2.04€)
+*** ANTE/BLINDS ***
+BoufBeats posts small blind 0.01€
+-DeckCifer- posts big blind 0.02€
+Dealt to MyPseudo [9d 4c]
+*** PRE-FLOP *** 
+MuchaPLata12 folds
+Phantom Fury folds
+MyPseudo calls 0.02€
+BoufBeats raises 0.08€ to 0.10€
+-DeckCifer- folds
+MyPseudo folds
+BoufBeats collected 0.14€ from pot
+*** SUMMARY ***
+Total pot 0.14€ | No rake
+Seat 1: BoufBeats (small blind) won 0.14€
+
+
+Winamax Poker - CashGame - HandId: #22603906-343-1782668013 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:33:33 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: BoufBeats (2.54€)
+Seat 2: -DeckCifer- (2.01€)
+Seat 3: MuchaPLata12 (2.75€)
+Seat 4: Phantom Fury (2.47€)
+Seat 5: MyPseudo (2.02€)
+*** ANTE/BLINDS ***
+-DeckCifer- posts small blind 0.01€
+MuchaPLata12 posts big blind 0.02€
+Dealt to MyPseudo [Js 9d]
+*** PRE-FLOP *** 
+Phantom Fury folds
+MyPseudo folds
+BoufBeats folds
+-DeckCifer- raises 0.04€ to 0.06€
+MuchaPLata12 folds
+-DeckCifer- collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 2: -DeckCifer- (small blind) won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #22603906-344-1782668060 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:34:20 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: BoufBeats (2.54€)
+Seat 2: -DeckCifer- (2.03€)
+Seat 3: MuchaPLata12 (2.73€)
+Seat 4: Phantom Fury (2.47€)
+Seat 5: MyPseudo (2.02€)
+*** ANTE/BLINDS ***
+MuchaPLata12 posts small blind 0.01€
+Phantom Fury posts big blind 0.02€
+Dealt to MyPseudo [2h Th]
+*** PRE-FLOP *** 
+MyPseudo folds
+BoufBeats raises 0.03€ to 0.05€
+-DeckCifer- folds
+MuchaPLata12 folds
+Phantom Fury folds
+BoufBeats collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 1: BoufBeats won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #22603906-345-1782668105 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:35:05 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: BoufBeats (2.57€)
+Seat 2: -DeckCifer- (2.03€)
+Seat 3: MuchaPLata12 (2.72€)
+Seat 4: Phantom Fury (2.45€)
+Seat 5: MyPseudo (2.02€)
+*** ANTE/BLINDS ***
+Phantom Fury posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [6d Jc]
+*** PRE-FLOP *** 
+BoufBeats folds
+-DeckCifer- folds
+MuchaPLata12 folds
+Phantom Fury raises 0.03€ to 0.05€
+MyPseudo folds
+Phantom Fury collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 4: Phantom Fury (small blind) won 0.07€
+
+
+Winamax Poker - CashGame - HandId: #22603906-346-1782668139 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:35:39 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: BoufBeats (2.57€)
+Seat 2: -DeckCifer- (2.03€)
+Seat 3: MuchaPLata12 (2.72€)
+Seat 4: Phantom Fury (2.47€)
+Seat 5: MyPseudo (2€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+BoufBeats posts big blind 0.02€
+Dealt to MyPseudo [Qh Tc]
+*** PRE-FLOP *** 
+-DeckCifer- folds
+MuchaPLata12 folds
+Phantom Fury folds
+MyPseudo raises 0.02€ to 0.04€
+BoufBeats folds
+MyPseudo collected 0.06€ from pot
+*** SUMMARY ***
+Total pot 0.06€ | No rake
+Seat 5: MyPseudo (small blind) won 0.06€
+
+
+Winamax Poker - CashGame - HandId: #22603906-347-1782668178 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:36:18 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: BoufBeats (2.55€)
+Seat 2: -DeckCifer- (2.03€)
+Seat 3: MuchaPLata12 (2.72€)
+Seat 5: MyPseudo (2.02€)
+*** ANTE/BLINDS ***
+BoufBeats posts small blind 0.01€
+-DeckCifer- posts big blind 0.02€
+Dealt to MyPseudo [7h Qc]
+*** PRE-FLOP *** 
+MuchaPLata12 folds
+MyPseudo folds
+BoufBeats raises 0.04€ to 0.06€
+-DeckCifer- calls 0.04€
+*** FLOP *** [Jd 8c 8h]
+BoufBeats bets 0.03€
+-DeckCifer- folds
+BoufBeats collected 0.14€ from pot
+*** SUMMARY ***
+Total pot 0.14€ | Rake 0.01€
+Board: [Jd 8c 8h]
+Seat 1: BoufBeats (small blind) won 0.14€
+
+
+Winamax Poker - CashGame - HandId: #22603906-348-1782668241 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:37:21 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: BoufBeats (2.60€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.72€)
+Seat 4: Loi0la (0€)
+Seat 5: MyPseudo (2.02€)
+*** ANTE/BLINDS ***
+-DeckCifer- posts small blind 0.01€
+MuchaPLata12 posts big blind 0.02€
+Dealt to MyPseudo [3c 2d]
+*** PRE-FLOP *** 
+MyPseudo folds
+BoufBeats raises 0.03€ to 0.05€
+-DeckCifer- folds
+MuchaPLata12 folds
+BoufBeats collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 1: BoufBeats (button) won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #22603906-349-1782668264 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:37:44 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: BoufBeats (2.63€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.70€)
+Seat 4: Loi0la (2€)
+Seat 5: MyPseudo (2.02€)
+*** ANTE/BLINDS ***
+MuchaPLata12 posts small blind 0.01€
+Loi0la posts big blind 0.02€
+Dealt to MyPseudo [Qs 6s]
+*** PRE-FLOP *** 
+MyPseudo folds
+BoufBeats folds
+-DeckCifer- folds
+MuchaPLata12 folds
+Loi0la collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 4: Loi0la (big blind) won 0.03€
+
+
+Winamax Poker - CashGame - HandId: #22603906-350-1782668285 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:38:05 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: BoufBeats (2.63€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.69€)
+Seat 4: Loi0la (2.01€)
+Seat 5: MyPseudo (2.02€)
+*** ANTE/BLINDS ***
+Loi0la posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [7s 9d]
+*** PRE-FLOP *** 
+BoufBeats folds
+-DeckCifer- folds
+MuchaPLata12 raises 0.03€ to 0.05€
+Loi0la folds
+MyPseudo folds
+MuchaPLata12 collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 3: MuchaPLata12 (button) won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #22603906-351-1782668316 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:38:36 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: BoufBeats (2.63€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.72€)
+Seat 4: Loi0la (2€)
+Seat 5: MyPseudo (2€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+BoufBeats posts big blind 0.02€
+Dealt to MyPseudo [6h Qs]
+*** PRE-FLOP *** 
+-DeckCifer- raises 0.03€ to 0.05€
+MuchaPLata12 folds
+Loi0la folds
+MyPseudo folds
+BoufBeats folds
+-DeckCifer- collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 2: -DeckCifer- won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #22603906-352-1782668349 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:39:09 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: BoufBeats (2.61€)
+Seat 2: -DeckCifer- (2.03€)
+Seat 3: MuchaPLata12 (2.72€)
+Seat 4: Loi0la (2€)
+Seat 5: MyPseudo (1.99€)
+*** ANTE/BLINDS ***
+BoufBeats posts small blind 0.01€
+-DeckCifer- posts big blind 0.02€
+Dealt to MyPseudo [Td 7h]
+*** PRE-FLOP *** 
+MuchaPLata12 raises 0.03€ to 0.05€
+Loi0la folds
+MyPseudo folds
+BoufBeats folds
+-DeckCifer- folds
+MuchaPLata12 collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 3: MuchaPLata12 won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #22603906-353-1782668395 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:39:55 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: BoufBeats (2.60€)
+Seat 2: -DeckCifer- (2.01€)
+Seat 3: MuchaPLata12 (2.75€)
+Seat 4: Loi0la (2€)
+Seat 5: MyPseudo (1.99€)
+*** ANTE/BLINDS ***
+-DeckCifer- posts small blind 0.01€
+MuchaPLata12 posts big blind 0.02€
+Dealt to MyPseudo [7h Ad]
+*** PRE-FLOP *** 
+Loi0la folds
+MyPseudo folds
+BoufBeats raises 0.03€ to 0.05€
+-DeckCifer- folds
+MuchaPLata12 folds
+BoufBeats collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 1: BoufBeats (button) won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #22603906-354-1782668439 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:40:39 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: BoufBeats (2.63€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.73€)
+Seat 4: Loi0la (2€)
+Seat 5: MyPseudo (1.99€)
+*** ANTE/BLINDS ***
+MuchaPLata12 posts small blind 0.01€
+Loi0la posts big blind 0.02€
+Dealt to MyPseudo [8h 2h]
+*** PRE-FLOP *** 
+MyPseudo folds
+BoufBeats folds
+-DeckCifer- folds
+MuchaPLata12 raises 0.04€ to 0.06€
+Loi0la calls 0.04€
+*** FLOP *** [4c Qc 8c]
+MuchaPLata12 checks
+Loi0la checks
+*** TURN *** [4c Qc 8c][6c]
+MuchaPLata12 checks
+Loi0la checks
+*** RIVER *** [4c Qc 8c 6c][Qs]
+MuchaPLata12 checks
+Loi0la checks
+*** SHOW DOWN ***
+MuchaPLata12 shows [9d Td] (One pair : Queens)
+Loi0la shows [Th Kh] (One pair : Queens)
+Loi0la collected 0.11€ from pot
+*** SUMMARY ***
+Total pot 0.11€ | Rake 0.01€
+Board: [4c Qc 8c 6c Qs]
+Seat 3: MuchaPLata12 (small blind) showed [9d Td] and lost with One pair : Queens
+Seat 4: Loi0la (big blind) showed [Th Kh] and won 0.11€ with One pair : Queens
+
+
+Winamax Poker - CashGame - HandId: #22603906-355-1782668495 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:41:35 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: BoufBeats (2.63€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.67€)
+Seat 4: Loi0la (2.05€)
+Seat 5: MyPseudo (1.99€)
+*** ANTE/BLINDS ***
+Loi0la posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [9s 8s]
+*** PRE-FLOP *** 
+BoufBeats raises 0.03€ to 0.05€
+-DeckCifer- folds
+MuchaPLata12 folds
+Loi0la folds
+MyPseudo calls 0.03€
+*** FLOP *** [5c 8h 5s]
+MyPseudo checks
+BoufBeats checks
+*** TURN *** [5c 8h 5s][Td]
+MyPseudo checks
+BoufBeats bets 0.04€
+MyPseudo calls 0.04€
+*** RIVER *** [5c 8h 5s Td][Ks]
+MyPseudo bets 0.07€
+BoufBeats folds
+MyPseudo collected 0.25€ from pot
+*** SUMMARY ***
+Total pot 0.25€ | Rake 0.01€
+Board: [5c 8h 5s Td Ks]
+Seat 5: MyPseudo (big blind) won 0.25€
+
+
+Winamax Poker - CashGame - HandId: #22603906-356-1782668600 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:43:20 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: BoufBeats (2.54€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.67€)
+Seat 4: Loi0la (2.04€)
+Seat 5: MyPseudo (2.08€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+BoufBeats posts big blind 0.02€
+Dealt to MyPseudo [8c Ks]
+*** PRE-FLOP *** 
+-DeckCifer- folds
+MuchaPLata12 folds
+Loi0la raises 0.03€ to 0.05€
+MyPseudo folds
+BoufBeats folds
+Loi0la collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 4: Loi0la (button) won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #22603906-357-1782668624 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:43:44 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: BoufBeats (2.52€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.67€)
+Seat 4: Loi0la (2.07€)
+Seat 5: MyPseudo (2.07€)
+*** ANTE/BLINDS ***
+BoufBeats posts small blind 0.01€
+-DeckCifer- posts big blind 0.02€
+Dealt to MyPseudo [7h 9h]
+*** PRE-FLOP *** 
+MuchaPLata12 folds
+Loi0la folds
+MyPseudo raises 0.03€ to 0.05€
+BoufBeats folds
+-DeckCifer- folds
+MyPseudo collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 5: MyPseudo (button) won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #22603906-358-1782668657 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:44:17 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: BoufBeats (2.51€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.67€)
+Seat 4: Loi0la (2.07€)
+Seat 5: MyPseudo (2.10€)
+*** ANTE/BLINDS ***
+-DeckCifer- posts small blind 0.01€
+MuchaPLata12 posts big blind 0.02€
+Dealt to MyPseudo [6c 6d]
+*** PRE-FLOP *** 
+Loi0la folds
+MyPseudo raises 0.02€ to 0.04€
+BoufBeats folds
+-DeckCifer- raises 0.16€ to 0.20€
+MuchaPLata12 folds
+MyPseudo folds
+-DeckCifer- collected 0.26€ from pot
+*** SUMMARY ***
+Total pot 0.26€ | No rake
+Seat 2: -DeckCifer- (small blind) won 0.26€
+
+
+Winamax Poker - CashGame - HandId: #22603906-359-1782668708 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:45:08 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: BoufBeats (2.51€)
+Seat 2: -DeckCifer- (2.06€)
+Seat 3: MuchaPLata12 (2.65€)
+Seat 4: Loi0la (2.07€)
+Seat 5: MyPseudo (2.06€)
+*** ANTE/BLINDS ***
+MuchaPLata12 posts small blind 0.01€
+Loi0la posts big blind 0.02€
+Dealt to MyPseudo [Kd Th]
+*** PRE-FLOP *** 
+MyPseudo raises 0.02€ to 0.04€
+BoufBeats folds
+-DeckCifer- folds
+MuchaPLata12 folds
+Loi0la folds
+MyPseudo collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 5: MyPseudo won 0.07€
+
+
+Winamax Poker - CashGame - HandId: #22603906-360-1782668729 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:45:29 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: BoufBeats (2.51€)
+Seat 2: -DeckCifer- (2.06€)
+Seat 3: MuchaPLata12 (2.64€)
+Seat 4: Loi0la (2.05€)
+Seat 5: MyPseudo (2.09€)
+*** ANTE/BLINDS ***
+Loi0la posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [4d Js]
+*** PRE-FLOP *** 
+BoufBeats folds
+-DeckCifer- folds
+MuchaPLata12 folds
+Loi0la folds
+MyPseudo shows [4d Js] (High card : Jack)
+MyPseudo collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 5: MyPseudo (big blind) showed [4d Js] and won 0.03€ with High card : Jack
+
+
+Winamax Poker - CashGame - HandId: #22603906-361-1782668765 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:46:05 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: BoufBeats (2.51€)
+Seat 2: -DeckCifer- (2.06€)
+Seat 3: MuchaPLata12 (2.64€)
+Seat 4: Loi0la (2.04€)
+Seat 5: MyPseudo (2.10€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+BoufBeats posts big blind 0.02€
+Dealt to MyPseudo [Qc 7s]
+*** PRE-FLOP *** 
+-DeckCifer- folds
+MuchaPLata12 folds
+Loi0la folds
+MyPseudo calls 0.01€
+BoufBeats checks
+*** FLOP *** [2d Ks Qd]
+MyPseudo bets 0.02€
+BoufBeats folds
+MyPseudo collected 0.06€ from pot
+*** SUMMARY ***
+Total pot 0.06€ | No rake
+Board: [2d Ks Qd]
+Seat 5: MyPseudo (small blind) won 0.06€
+
+
+Winamax Poker - CashGame - HandId: #22603906-362-1782668828 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:47:08 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: BoufBeats (2.49€)
+Seat 2: -DeckCifer- (2.06€)
+Seat 3: MuchaPLata12 (2.64€)
+Seat 4: Loi0la (2.04€)
+Seat 5: MyPseudo (2.12€)
+*** ANTE/BLINDS ***
+BoufBeats posts small blind 0.01€
+-DeckCifer- posts big blind 0.02€
+Dealt to MyPseudo [Ks 5d]
+*** PRE-FLOP *** 
+MuchaPLata12 folds
+Loi0la folds
+MyPseudo raises 0.03€ to 0.05€
+BoufBeats folds
+-DeckCifer- calls 0.03€
+*** FLOP *** [8h 6c 8d]
+-DeckCifer- checks
+MyPseudo bets 0.04€
+-DeckCifer- raises 0.08€ to 0.12€
+MyPseudo calls 0.08€
+*** TURN *** [8h 6c 8d][5c]
+-DeckCifer- bets 0.18€
+MyPseudo raises 1.77€ to 1.95€ and is all-in
+-DeckCifer- folds
+MyPseudo collected 2.44€ from pot
+*** SUMMARY ***
+Total pot 2.44€ | Rake 0.04€
+Board: [8h 6c 8d 5c]
+Seat 5: MyPseudo (button) won 2.44€
+
+
+Winamax Poker - CashGame - HandId: #22603906-363-1782668937 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:48:57 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: BoufBeats (2.48€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.64€)
+Seat 4: Loi0la (2.04€)
+Seat 5: MyPseudo (2.44€)
+*** ANTE/BLINDS ***
+-DeckCifer- posts small blind 0.01€
+MuchaPLata12 posts big blind 0.02€
+Dealt to MyPseudo [8s Jd]
+*** PRE-FLOP *** 
+Loi0la folds
+MyPseudo folds
+BoufBeats raises 0.03€ to 0.05€
+-DeckCifer- folds
+MuchaPLata12 calls 0.03€
+*** FLOP *** [Th 7d 5d]
+MuchaPLata12 checks
+BoufBeats bets 0.04€
+MuchaPLata12 calls 0.04€
+*** TURN *** [Th 7d 5d][2c]
+MuchaPLata12 checks
+BoufBeats checks
+*** RIVER *** [Th 7d 5d 2c][6d]
+MuchaPLata12 bets 0.14€
+BoufBeats folds
+MuchaPLata12 collected 0.32€ from pot
+*** SUMMARY ***
+Total pot 0.32€ | Rake 0.01€
+Board: [Th 7d 5d 2c 6d]
+Seat 3: MuchaPLata12 (big blind) won 0.32€
+
+
+Winamax Poker - CashGame - HandId: #22603906-364-1782669041 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:50:41 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: BoufBeats (2.39€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.73€)
+Seat 4: Loi0la (2.04€)
+Seat 5: MyPseudo (2.44€)
+*** ANTE/BLINDS ***
+MuchaPLata12 posts small blind 0.01€
+Loi0la posts big blind 0.02€
+Dealt to MyPseudo [6d 7c]
+*** PRE-FLOP *** 
+MyPseudo folds
+BoufBeats folds
+-DeckCifer- folds
+MuchaPLata12 folds
+Loi0la collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 4: Loi0la (big blind) won 0.03€
+
+
+Winamax Poker - CashGame - HandId: #22603906-365-1782669070 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:51:10 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: BoufBeats (2.39€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.72€)
+Seat 4: Loi0la (2.05€)
+Seat 5: MyPseudo (2.44€)
+*** ANTE/BLINDS ***
+Loi0la posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [9s 3s]
+*** PRE-FLOP *** 
+BoufBeats folds
+-DeckCifer- raises 0.03€ to 0.05€
+MuchaPLata12 raises 0.11€ to 0.16€
+Loi0la folds
+MyPseudo folds
+-DeckCifer- folds
+MuchaPLata12 collected 0.24€ from pot
+*** SUMMARY ***
+Total pot 0.24€ | No rake
+Seat 3: MuchaPLata12 (button) won 0.24€
+
+
+Winamax Poker - CashGame - HandId: #22603906-366-1782669123 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:52:03 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: BoufBeats (2.39€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.80€)
+Seat 4: Loi0la (2.04€)
+Seat 5: MyPseudo (2.42€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+BoufBeats posts big blind 0.02€
+Dealt to MyPseudo [8c Ad]
+*** PRE-FLOP *** 
+-DeckCifer- folds
+MuchaPLata12 folds
+Loi0la folds
+MyPseudo raises 0.03€ to 0.05€
+BoufBeats calls 0.03€
+*** FLOP *** [5d As 4c]
+MyPseudo checks
+BoufBeats checks
+*** TURN *** [5d As 4c][3c]
+MyPseudo bets 0.04€
+BoufBeats folds
+MyPseudo collected 0.13€ from pot
+*** SUMMARY ***
+Total pot 0.13€ | Rake 0.01€
+Board: [5d As 4c 3c]
+Seat 5: MyPseudo (small blind) won 0.13€
+
+
+Winamax Poker - CashGame - HandId: #22603906-367-1782669202 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:53:22 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: BoufBeats (2.34€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.80€)
+Seat 4: Loi0la (2.04€)
+Seat 5: MyPseudo (2.46€)
+*** ANTE/BLINDS ***
+BoufBeats posts small blind 0.01€
+-DeckCifer- posts big blind 0.02€
+Dealt to MyPseudo [Jd 2d]
+*** PRE-FLOP *** 
+MuchaPLata12 folds
+Loi0la folds
+MyPseudo raises 0.02€ to 0.04€
+BoufBeats folds
+-DeckCifer- folds
+MyPseudo collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 5: MyPseudo (button) won 0.07€
+
+
+Winamax Poker - CashGame - HandId: #22603906-368-1782669245 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:54:05 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: BoufBeats (2.33€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: MuchaPLata12 (2.80€)
+Seat 4: Loi0la (2.04€)
+Seat 5: MyPseudo (2.49€)
+*** ANTE/BLINDS ***
+-DeckCifer- posts small blind 0.01€
+Loi0la posts big blind 0.02€
+Dealt to MyPseudo [Js 2s]
+*** PRE-FLOP *** 
+MyPseudo folds
+BoufBeats folds
+-DeckCifer- folds
+Loi0la collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 4: Loi0la (big blind) won 0.03€
+
+
+Winamax Poker - CashGame - HandId: #22603906-369-1782669260 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:54:20 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: BoufBeats (2.33€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: CrossPandaa (0€)
+Seat 4: Loi0la (2.05€)
+Seat 5: MyPseudo (2.49€)
+*** ANTE/BLINDS ***
+Loi0la posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [4h 3d]
+*** PRE-FLOP *** 
+BoufBeats folds
+-DeckCifer- folds
+Loi0la folds
+MyPseudo shows [4h 3d] (High card : 4)
+MyPseudo collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 5: MyPseudo (big blind) showed [4h 3d] and won 0.03€ with High card : 4
+
+
+Winamax Poker - CashGame - HandId: #22603906-370-1782669284 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:54:44 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: BoufBeats (2.33€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: CrossPandaa (2€)
+Seat 4: Loi0la (2.04€)
+Seat 5: MyPseudo (2.50€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+-DeckCifer- posts big blind 0.02€
+Dealt to MyPseudo [Kh Ah]
+*** PRE-FLOP *** 
+Loi0la folds
+MyPseudo raises 0.03€ to 0.05€
+-DeckCifer- folds
+MyPseudo collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 5: MyPseudo (small blind) won 0.07€
+
+
+Winamax Poker - CashGame - HandId: #22603906-371-1782669315 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:55:15 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: jonnyMR04 (2€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: CrossPandaa (2€)
+Seat 4: Loi0la (2.04€)
+Seat 5: MyPseudo (2.52€)
+*** ANTE/BLINDS ***
+-DeckCifer- posts small blind 0.01€
+CrossPandaa posts big blind 0.02€
+Dealt to MyPseudo [6d 6s]
+*** PRE-FLOP *** 
+Loi0la folds
+MyPseudo raises 0.04€ to 0.06€
+-DeckCifer- folds
+CrossPandaa folds
+MyPseudo collected 0.09€ from pot
+*** SUMMARY ***
+Total pot 0.09€ | No rake
+Seat 5: MyPseudo (button) won 0.09€
+
+
+Winamax Poker - CashGame - HandId: #22603906-372-1782669351 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:55:51 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: jonnyMR04 (2€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: CrossPandaa (2€)
+Seat 4: Loi0la (2.04€)
+Seat 5: MyPseudo (2.55€)
+*** ANTE/BLINDS ***
+CrossPandaa posts small blind 0.01€
+Loi0la posts big blind 0.02€
+jonnyMR04 posts big blind 0.02€ out of position
+Dealt to MyPseudo [As Qs]
+*** PRE-FLOP *** 
+MyPseudo raises 0.02€ to 0.04€
+jonnyMR04 calls 0.02€
+-DeckCifer- folds
+CrossPandaa calls 0.03€
+Loi0la calls 0.02€
+*** FLOP *** [Kc 5h 3c]
+CrossPandaa checks
+Loi0la checks
+MyPseudo bets 0.06€
+jonnyMR04 calls 0.06€
+CrossPandaa raises 0.26€ to 0.32€
+Loi0la folds
+MyPseudo folds
+jonnyMR04 folds
+CrossPandaa collected 0.58€ from pot
+*** SUMMARY ***
+Total pot 0.58€ | Rake 0.02€
+Board: [Kc 5h 3c]
+Seat 3: CrossPandaa (small blind) won 0.58€
+
+
+Winamax Poker - CashGame - HandId: #22603906-373-1782669470 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:57:50 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: jonnyMR04 (1.90€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: CrossPandaa (2.22€)
+Seat 4: Loi0la (2€)
+Seat 5: MyPseudo (2.45€)
+*** ANTE/BLINDS ***
+Loi0la posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [Ad 7c]
+*** PRE-FLOP *** 
+jonnyMR04 calls 0.02€
+-DeckCifer- folds
+CrossPandaa raises 0.08€ to 0.10€
+Loi0la folds
+MyPseudo calls 0.08€
+jonnyMR04 calls 0.08€
+*** FLOP *** [2s 8h 4d]
+MyPseudo checks
+jonnyMR04 checks
+CrossPandaa checks
+*** TURN *** [2s 8h 4d][Th]
+MyPseudo checks
+jonnyMR04 checks
+CrossPandaa checks
+*** RIVER *** [2s 8h 4d Th][Ts]
+MyPseudo checks
+jonnyMR04 checks
+CrossPandaa bets 0.16€
+MyPseudo calls 0.16€
+jonnyMR04 calls 0.16€
+*** SHOW DOWN ***
+CrossPandaa shows [Kh 9s] (One pair : Tens)
+MyPseudo shows [Ad 7c] (One pair : Tens)
+jonnyMR04 shows [3d 3c] (Two pairs : Tens and 3)
+jonnyMR04 collected 0.74€ from pot
+*** SUMMARY ***
+Total pot 0.74€ | Rake 0.05€
+Board: [2s 8h 4d Th Ts]
+Seat 1: jonnyMR04 showed [3d 3c] and won 0.74€ with Two pairs : Tens and 3
+Seat 3: CrossPandaa (button) showed [Kh 9s] and lost with One pair : Tens
+Seat 5: MyPseudo (big blind) showed [Ad 7c] and lost with One pair : Tens
+
+
+Winamax Poker - CashGame - HandId: #22603906-374-1782669575 - Holdem no limit (0.01€/0.02€) - 2026/06/28 17:59:35 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: jonnyMR04 (2.38€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: CrossPandaa (2€)
+Seat 4: Loi0la (2€)
+Seat 5: MyPseudo (2.19€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+jonnyMR04 posts big blind 0.02€
+Dealt to MyPseudo [8d Ts]
+*** PRE-FLOP *** 
+-DeckCifer- folds
+CrossPandaa folds
+Loi0la folds
+MyPseudo calls 0.01€
+jonnyMR04 checks
+*** FLOP *** [3h 5d 2d]
+MyPseudo checks
+jonnyMR04 checks
+*** TURN *** [3h 5d 2d][Th]
+MyPseudo bets 0.02€
+jonnyMR04 calls 0.02€
+*** RIVER *** [3h 5d 2d Th][5s]
+MyPseudo bets 0.08€
+jonnyMR04 calls 0.08€
+*** SHOW DOWN ***
+jonnyMR04 shows [Ks 6s] (One pair : 5)
+MyPseudo shows [8d Ts] (Two pairs : Tens and 5)
+MyPseudo collected 0.23€ from pot
+*** SUMMARY ***
+Total pot 0.23€ | Rake 0.01€
+Board: [3h 5d 2d Th 5s]
+Seat 1: jonnyMR04 (big blind) showed [Ks 6s] and lost with One pair : 5
+Seat 5: MyPseudo (small blind) showed [8d Ts] and won 0.23€ with Two pairs : Tens and 5
+
+
+Winamax Poker - CashGame - HandId: #22603906-375-1782669628 - Holdem no limit (0.01€/0.02€) - 2026/06/28 18:00:28 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: jonnyMR04 (2.26€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: CrossPandaa (2€)
+Seat 4: Loi0la (2€)
+Seat 5: MyPseudo (2.30€)
+*** ANTE/BLINDS ***
+jonnyMR04 posts small blind 0.01€
+-DeckCifer- posts big blind 0.02€
+Dealt to MyPseudo [5c Qc]
+*** PRE-FLOP *** 
+CrossPandaa folds
+Loi0la folds
+MyPseudo raises 0.02€ to 0.04€
+jonnyMR04 calls 0.03€
+-DeckCifer- folds
+*** FLOP *** [Qs Ac Jd]
+jonnyMR04 checks
+MyPseudo bets 0.07€
+jonnyMR04 folds
+MyPseudo collected 0.16€ from pot
+*** SUMMARY ***
+Total pot 0.16€ | Rake 0.01€
+Board: [Qs Ac Jd]
+Seat 5: MyPseudo (button) won 0.16€
+
+
+Winamax Poker - CashGame - HandId: #22603906-376-1782669679 - Holdem no limit (0.01€/0.02€) - 2026/06/28 18:01:19 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: jonnyMR04 (2.22€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: CrossPandaa (2€)
+Seat 4: Loi0la (2€)
+Seat 5: MyPseudo (2.35€)
+*** ANTE/BLINDS ***
+-DeckCifer- posts small blind 0.01€
+CrossPandaa posts big blind 0.02€
+Dealt to MyPseudo [Qs Ts]
+*** PRE-FLOP *** 
+Loi0la folds
+MyPseudo raises 0.02€ to 0.04€
+jonnyMR04 calls 0.04€
+-DeckCifer- calls 0.03€
+CrossPandaa calls 0.02€
+*** FLOP *** [5c Kc 9c]
+-DeckCifer- checks
+CrossPandaa checks
+MyPseudo checks
+jonnyMR04 bets 0.16€
+-DeckCifer- folds
+CrossPandaa folds
+MyPseudo folds
+jonnyMR04 collected 0.31€ from pot
+*** SUMMARY ***
+Total pot 0.31€ | Rake 0.01€
+Board: [5c Kc 9c]
+Seat 1: jonnyMR04 (button) won 0.31€
+
+
+Winamax Poker - CashGame - HandId: #22603906-377-1782669755 - Holdem no limit (0.01€/0.02€) - 2026/06/28 18:02:35 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: jonnyMR04 (2.33€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: CrossPandaa (2€)
+Seat 4: Loi0la (2€)
+Seat 5: MyPseudo (2.31€)
+*** ANTE/BLINDS ***
+CrossPandaa posts small blind 0.01€
+Loi0la posts big blind 0.02€
+Dealt to MyPseudo [2d 8s]
+*** PRE-FLOP *** 
+MyPseudo folds
+jonnyMR04 calls 0.02€
+-DeckCifer- folds
+CrossPandaa folds
+Loi0la checks
+*** FLOP *** [6c Jh 7d]
+Loi0la checks
+jonnyMR04 checks
+*** TURN *** [6c Jh 7d][9s]
+Loi0la checks
+jonnyMR04 checks
+*** RIVER *** [6c Jh 7d 9s][3d]
+Loi0la bets 0.04€
+jonnyMR04 folds
+Loi0la collected 0.09€ from pot
+*** SUMMARY ***
+Total pot 0.09€ | No rake
+Board: [6c Jh 7d 9s 3d]
+Seat 4: Loi0la (big blind) won 0.09€
+
+
+Winamax Poker - CashGame - HandId: #22603906-378-1782669842 - Holdem no limit (0.01€/0.02€) - 2026/06/28 18:04:02 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: jonnyMR04 (2.31€)
+Seat 2: -DeckCifer- (2€)
+Seat 3: CrossPandaa (2€)
+Seat 4: Loi0la (2.03€)
+Seat 5: MyPseudo (2.31€)
+*** ANTE/BLINDS ***
+Loi0la posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [7c Jd]
+*** PRE-FLOP *** 
+jonnyMR04 calls 0.02€
+-DeckCifer- raises 0.06€ to 0.08€
+CrossPandaa folds
+Loi0la folds
+MyPseudo folds
+jonnyMR04 calls 0.06€
+*** FLOP *** [Td Ad Kd]
+jonnyMR04 checks
+-DeckCifer- checks
+*** TURN *** [Td Ad Kd][7d]
+jonnyMR04 checks
+-DeckCifer- bets 0.06€
+jonnyMR04 folds
+-DeckCifer- collected 0.24€ from pot
+*** SUMMARY ***
+Total pot 0.24€ | Rake 0.01€
+Board: [Td Ad Kd 7d]
+Seat 2: -DeckCifer- won 0.24€
+
+
+Winamax Poker - CashGame - HandId: #22603906-379-1782669897 - Holdem no limit (0.01€/0.02€) - 2026/06/28 18:04:57 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: jonnyMR04 (2.23€)
+Seat 2: -DeckCifer- (2.10€)
+Seat 3: CrossPandaa (2€)
+Seat 4: Loi0la (2.02€)
+Seat 5: MyPseudo (2.29€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+jonnyMR04 posts big blind 0.02€
+Dealt to MyPseudo [Qs 6d]
+*** PRE-FLOP *** 
+-DeckCifer- folds
+CrossPandaa folds
+Loi0la folds
+MyPseudo calls 0.01€
+jonnyMR04 checks
+*** FLOP *** [9d 2c Ac]
+MyPseudo bets 0.02€
+jonnyMR04 folds
+MyPseudo collected 0.06€ from pot
+*** SUMMARY ***
+Total pot 0.06€ | No rake
+Board: [9d 2c Ac]
+Seat 5: MyPseudo (small blind) won 0.06€
+
+
+Winamax Poker - CashGame - HandId: #22603906-380-1782669944 - Holdem no limit (0.01€/0.02€) - 2026/06/28 18:05:44 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: jonnyMR04 (2.21€)
+Seat 2: -DeckCifer- (2.10€)
+Seat 3: CrossPandaa (2€)
+Seat 4: Loi0la (2.02€)
+Seat 5: MyPseudo (2.31€)
+*** ANTE/BLINDS ***
+jonnyMR04 posts small blind 0.01€
+-DeckCifer- posts big blind 0.02€
+Dealt to MyPseudo [3h 7d]
+*** PRE-FLOP *** 
+CrossPandaa folds
+Loi0la folds
+MyPseudo folds
+jonnyMR04 calls 0.01€
+-DeckCifer- checks
+*** FLOP *** [2d 9d As]
+jonnyMR04 bets 0.02€
+-DeckCifer- calls 0.02€
+*** TURN *** [2d 9d As][4s]
+jonnyMR04 bets 0.02€
+-DeckCifer- calls 0.02€
+*** RIVER *** [2d 9d As 4s][8s]
+jonnyMR04 bets 0.02€
+-DeckCifer- calls 0.02€
+*** SHOW DOWN ***
+jonnyMR04 shows [2c 3c] (One pair : 2)
+-DeckCifer- shows [5s 4d] (One pair : 4)
+-DeckCifer- collected 0.15€ from pot
+*** SUMMARY ***
+Total pot 0.15€ | Rake 0.01€
+Board: [2d 9d As 4s 8s]
+Seat 1: jonnyMR04 (small blind) showed [2c 3c] and lost with One pair : 2
+Seat 2: -DeckCifer- (big blind) showed [5s 4d] and won 0.15€ with One pair : 4
+
+
+Winamax Poker - CashGame - HandId: #22603906-381-1782670005 - Holdem no limit (0.01€/0.02€) - 2026/06/28 18:06:45 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: jonnyMR04 (2.13€)
+Seat 2: -DeckCifer- (2.17€)
+Seat 3: CrossPandaa (2€)
+Seat 4: Loi0la (2.02€)
+Seat 5: MyPseudo (2.31€)
+*** ANTE/BLINDS ***
+-DeckCifer- posts small blind 0.01€
+CrossPandaa posts big blind 0.02€
+Dealt to MyPseudo [4h 7s]
+*** PRE-FLOP *** 
+Loi0la folds
+MyPseudo folds
+jonnyMR04 raises 0.02€ to 0.04€
+-DeckCifer- folds
+CrossPandaa raises 0.14€ to 0.18€
+jonnyMR04 raises 0.14€ to 0.32€
+CrossPandaa calls 0.14€
+*** FLOP *** [3h 8s Td]
+CrossPandaa checks
+jonnyMR04 checks
+*** TURN *** [3h 8s Td][Kh]
+CrossPandaa bets 0.23€
+jonnyMR04 raises 1.58€ to 1.81€ and is all-in
+CrossPandaa folds
+jonnyMR04 collected 2.63€ from pot
+*** SUMMARY ***
+Total pot 2.63€ | Rake 0.06€
+Board: [3h 8s Td Kh]
+Seat 1: jonnyMR04 (button) won 2.63€
+
+
+Winamax Poker - CashGame - HandId: #22603906-382-1782670045 - Holdem no limit (0.01€/0.02€) - 2026/06/28 18:07:25 UTC
+Table: 'Nice 23' 5-max (real money) Seat #2 is the button
+Seat 1: jonnyMR04 (2.63€)
+Seat 2: -DeckCifer- (2.16€)
+Seat 3: CrossPandaa (2€)
+Seat 4: Loi0la (2.02€)
+Seat 5: MyPseudo (2.31€)
+*** ANTE/BLINDS ***
+CrossPandaa posts small blind 0.01€
+Loi0la posts big blind 0.02€
+Dealt to MyPseudo [8c 3h]
+*** PRE-FLOP *** 
+MyPseudo folds
+jonnyMR04 raises 0.05€ to 0.07€
+-DeckCifer- folds
+CrossPandaa calls 0.06€
+Loi0la folds
+*** FLOP *** [Qd Qc Kh]
+CrossPandaa checks
+jonnyMR04 bets 0.02€
+CrossPandaa calls 0.02€
+*** TURN *** [Qd Qc Kh][3d]
+CrossPandaa checks
+jonnyMR04 bets 0.02€
+CrossPandaa calls 0.02€
+*** RIVER *** [Qd Qc Kh 3d][4d]
+CrossPandaa checks
+jonnyMR04 bets 0.16€
+CrossPandaa folds
+jonnyMR04 collected 0.39€ from pot
+*** SUMMARY ***
+Total pot 0.39€ | Rake 0.01€
+Board: [Qd Qc Kh 3d 4d]
+Seat 1: jonnyMR04 won 0.39€
+
+
+Winamax Poker - CashGame - HandId: #22603906-383-1782670085 - Holdem no limit (0.01€/0.02€) - 2026/06/28 18:08:05 UTC
+Table: 'Nice 23' 5-max (real money) Seat #3 is the button
+Seat 1: jonnyMR04 (2.75€)
+Seat 2: -DeckCifer- (2.16€)
+Seat 3: CrossPandaa (2€)
+Seat 4: Loi0la (2€)
+Seat 5: MyPseudo (2.31€)
+*** ANTE/BLINDS ***
+Loi0la posts small blind 0.01€
+MyPseudo posts big blind 0.02€
+Dealt to MyPseudo [Jh 3d]
+*** PRE-FLOP *** 
+jonnyMR04 calls 0.02€
+-DeckCifer- folds
+CrossPandaa folds
+Loi0la folds
+MyPseudo raises 0.03€ to 0.05€
+jonnyMR04 calls 0.03€
+*** FLOP *** [8c 5d Kh]
+MyPseudo checks
+jonnyMR04 checks
+*** TURN *** [8c 5d Kh][Qc]
+MyPseudo bets 0.03€
+jonnyMR04 folds
+MyPseudo collected 0.13€ from pot
+*** SUMMARY ***
+Total pot 0.13€ | Rake 0.01€
+Board: [8c 5d Kh Qc]
+Seat 5: MyPseudo (big blind) won 0.13€
+
+
+Winamax Poker - CashGame - HandId: #22603906-384-1782670128 - Holdem no limit (0.01€/0.02€) - 2026/06/28 18:08:48 UTC
+Table: 'Nice 23' 5-max (real money) Seat #4 is the button
+Seat 1: jonnyMR04 (2.70€)
+Seat 2: -DeckCifer- (2.16€)
+Seat 3: CrossPandaa (2€)
+Seat 4: Loi0la (2€)
+Seat 5: MyPseudo (2.36€)
+*** ANTE/BLINDS ***
+MyPseudo posts small blind 0.01€
+jonnyMR04 posts big blind 0.02€
+Dealt to MyPseudo [4h 3d]
+*** PRE-FLOP *** 
+-DeckCifer- folds
+CrossPandaa folds
+Loi0la folds
+MyPseudo calls 0.01€
+jonnyMR04 checks
+*** FLOP *** [4s Ac Jd]
+MyPseudo checks
+jonnyMR04 checks
+*** TURN *** [4s Ac Jd][Kc]
+MyPseudo checks
+jonnyMR04 checks
+*** RIVER *** [4s Ac Jd Kc][Tc]
+MyPseudo bets 0.02€
+jonnyMR04 folds
+MyPseudo collected 0.06€ from pot
+*** SUMMARY ***
+Total pot 0.06€ | No rake
+Board: [4s Ac Jd Kc Tc]
+Seat 5: MyPseudo (small blind) won 0.06€
+
+
+Winamax Poker - CashGame - HandId: #22603906-385-1782670165 - Holdem no limit (0.01€/0.02€) - 2026/06/28 18:09:25 UTC
+Table: 'Nice 23' 5-max (real money) Seat #5 is the button
+Seat 1: jonnyMR04 (2.68€)
+Seat 2: -DeckCifer- (2.16€)
+Seat 3: CrossPandaa (2€)
+Seat 4: Loi0la (2€)
+Seat 5: MyPseudo (2.38€)
+*** ANTE/BLINDS ***
+jonnyMR04 posts small blind 0.01€
+-DeckCifer- posts big blind 0.02€
+Dealt to MyPseudo [8h 2c]
+*** PRE-FLOP *** 
+CrossPandaa folds
+Loi0la folds
+MyPseudo folds
+jonnyMR04 calls 0.01€
+-DeckCifer- checks
+*** FLOP *** [Kd Qs Kh]
+jonnyMR04 bets 0.04€
+-DeckCifer- calls 0.04€
+*** TURN *** [Kd Qs Kh][5h]
+jonnyMR04 checks
+-DeckCifer- bets 0.06€
+jonnyMR04 calls 0.06€
+*** RIVER *** [Kd Qs Kh 5h][5c]
+jonnyMR04 checks
+-DeckCifer- checks
+*** SHOW DOWN ***
+-DeckCifer- shows [6s Qh] (Two pairs : Kings and Queens)
+jonnyMR04 shows [Jd Qc] (Two pairs : Kings and Queens)
+jonnyMR04 collected 0.23€ from pot
+*** SUMMARY ***
+Total pot 0.23€ | Rake 0.01€
+Board: [Kd Qs Kh 5h 5c]
+Seat 1: jonnyMR04 (small blind) showed [Jd Qc] and won 0.23€ with Two pairs : Kings and Queens
+Seat 2: -DeckCifer- (big blind) showed [6s Qh] and lost with Two pairs : Kings and Queens
+
+
+Winamax Poker - CashGame - HandId: #22603906-386-1782670207 - Holdem no limit (0.01€/0.02€) - 2026/06/28 18:10:07 UTC
+Table: 'Nice 23' 5-max (real money) Seat #1 is the button
+Seat 1: jonnyMR04 (2.79€)
+Seat 2: -DeckCifer- (2.04€)
+Seat 3: CrossPandaa (2€)
+Seat 4: Loi0la (2€)
+Seat 5: MyPseudo (2.38€)
+*** ANTE/BLINDS ***
+-DeckCifer- posts small blind 0.01€
+CrossPandaa posts big blind 0.02€
+Dealt to MyPseudo [9s 9h]
+*** PRE-FLOP *** 
+Loi0la folds
+MyPseudo raises 0.03€ to 0.05€
+jonnyMR04 calls 0.05€
+-DeckCifer- raises 0.19€ to 0.24€
+CrossPandaa folds
+MyPseudo raises 0.19€ to 0.43€
+jonnyMR04 calls 0.38€
+-DeckCifer- calls 0.19€
+*** FLOP *** [Qs 5d 5c]
+-DeckCifer- checks
+MyPseudo checks
+jonnyMR04 checks
+*** TURN *** [Qs 5d 5c][8d]
+-DeckCifer- checks
+MyPseudo bets 0.33€
+jonnyMR04 calls 0.33€
+-DeckCifer- folds
+*** RIVER *** [Qs 5d 5c 8d][3d]
+MyPseudo checks
+jonnyMR04 bets 2.03€ and is all-in
+MyPseudo calls 1.62€ and is all-in
+*** SHOW DOWN ***
+MyPseudo shows [9s 9h] (Two pairs : 9 and 5)
+jonnyMR04 shows [2d 9d] (Flush 9 high)
+jonnyMR04 collected 5.32€ from pot
+*** SUMMARY ***
+Total pot 5.32€ | Rake 0.30€
+Board: [Qs 5d 5c 8d 3d]
+Seat 1: jonnyMR04 (button) showed [2d 9d] and won 5.32€ with Flush 9 high
+Seat 5: MyPseudo showed [9s 9h] and lost with Two pairs : 9 and 5
+
+
