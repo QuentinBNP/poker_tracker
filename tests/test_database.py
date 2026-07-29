@@ -1,12 +1,13 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
+from pathlib import Path
 
 from database.database import Database
 from database.models import Action, Hand, ImportRecord, Player, Tournament
 
 
-def test_database_can_store_and_read_tournament(tmp_path) -> None:
+def test_database_can_store_and_read_tournament(tmp_path: Path) -> None:
     database = Database(tmp_path / "data" / "tracker.db")
     database.initialize()
 
@@ -27,7 +28,7 @@ def test_database_can_store_and_read_tournament(tmp_path) -> None:
     assert stored_tournament == tournament
 
 
-def test_database_can_store_hand_players_actions_and_import(tmp_path) -> None:
+def test_database_can_store_hand_players_actions_and_import(tmp_path: Path) -> None:
     database = Database(tmp_path / "data" / "tracker.db")
     database.initialize()
 

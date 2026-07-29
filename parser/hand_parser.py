@@ -4,7 +4,6 @@ import re
 from datetime import datetime, timezone
 from typing import Any
 
-
 HAND_SPLIT_PATTERN = re.compile(r"\n{2,}(?=Winamax Poker - )")
 SEAT_PATTERN = re.compile(r"^Seat (?P<seat>\d+): (?P<name>.+?) \((?P<details>.+)\)$")
 ACTION_AMOUNT_PATTERN = re.compile(r"(?P<amount>\d+(?:[.,]\d+)?)€?")
@@ -32,7 +31,10 @@ def _parse_single_hand(hand_text: str) -> dict[str, Any]:
     header = lines[0]
     table_line = next((line for line in lines if line.startswith("Table:")), "")
     hero_line = next((line for line in lines if line.startswith("Dealt to ")), "")
-    summary_index = next((index for index, line in enumerate(lines) if line == "*** SUMMARY ***"), len(lines))
+    summary_index = next(
+        (index for index, line in enumerate(lines) if line == "*** SUMMARY ***"),
+        len(lines),
+    )
     summary_lines = lines[summary_index + 1 :]
 
     parsed_header = _parse_header(header)
@@ -64,7 +66,10 @@ def _parse_single_hand(hand_text: str) -> dict[str, Any]:
 
 def _parse_header(header: str) -> dict[str, Any]:
     hand_id_match = re.search(r"HandId: (?P<hand_id>#.+?) - Holdem no limit", header)
-    played_at_match = re.search(r"- (?P<played_at>\d{4}/\d{2}/\d{2} \d{2}:\d{2}:\d{2} UTC)$", header)
+    played_at_match = re.search(
+        r"- (?P<played_at>\d{4}/\d{2}/\d{2} \d{2}:\d{2}:\d{2} UTC)$",
+        header,
+    )
     buy_in_match = re.search(r"buyIn: (?P<buy_in>.+?) level:", header)
     tournament_name_match = re.search(r'^Winamax Poker - Tournament "(?P<name>.+?)"', header)
     tournament_id_match = re.search(r"\((?P<tournament_id>\d+)\)", header)
@@ -73,10 +78,18 @@ def _parse_header(header: str) -> dict[str, Any]:
     return {
         "hand_id": hand_id_match.group("hand_id") if hand_id_match else "",
         "game_type": game_type,
-        "tournament_name": tournament_name_match.group("name") if tournament_name_match else None,
-        "tournament_id": tournament_id_match.group("tournament_id") if tournament_id_match else None,
+        "tournament_name": (
+            tournament_name_match.group("name") if tournament_name_match else None
+        ),
+        "tournament_id": (
+            tournament_id_match.group("tournament_id") if tournament_id_match else None
+        ),
         "buy_in": _sum_money_parts(buy_in_match.group("buy_in")) if buy_in_match else None,
-        "played_at": _parse_datetime(played_at_match.group("played_at")) if played_at_match else None,
+        "played_at": (
+            _parse_datetime(played_at_match.group("played_at"))
+            if played_at_match
+            else None
+        ),
     }
 
 
@@ -161,7 +174,11 @@ def _parse_actions(lines: list[str]) -> list[dict[str, Any]]:
         if line.startswith("*** SHOW DOWN ***"):
             street = "SHOW_DOWN"
             continue
-        if line.startswith("*** SUMMARY ***") or line.startswith("Seat ") or line.startswith("Table:"):
+        if (
+            line.startswith("*** SUMMARY ***")
+            or line.startswith("Seat ")
+            or line.startswith("Table:")
+        ):
             continue
         if line.startswith("Winamax Poker -") or line.startswith("Dealt to ") or not street:
             continue
@@ -178,14 +195,26 @@ def _parse_actions(lines: list[str]) -> list[dict[str, Any]]:
 def _parse_action_line(line: str, street: str) -> dict[str, Any] | None:
     patterns: list[tuple[str, str]] = [
         (r"^(?P<player>.+?) posts ante (?P<amount>.+?)(?: out of position)?$", "POST_ANTE"),
-        (r"^(?P<player>.+?) posts small blind (?P<amount>.+?)(?: out of position)?$", "POST_SMALL_BLIND"),
-        (r"^(?P<player>.+?) posts big blind (?P<amount>.+?)(?: out of position)?$", "POST_BIG_BLIND"),
+        (
+            r"^(?P<player>.+?) posts small blind (?P<amount>.+?)(?: out of position)?$",
+            "POST_SMALL_BLIND",
+        ),
+        (
+            r"^(?P<player>.+?) posts big blind (?P<amount>.+?)(?: out of position)?$",
+            "POST_BIG_BLIND",
+        ),
         (r"^(?P<player>.+?) folds$", "FOLD"),
         (r"^(?P<player>.+?) checks$", "CHECK"),
         (r"^(?P<player>.+?) calls (?P<amount>.+?)$", "CALL"),
         (r"^(?P<player>.+?) bets (?P<amount>.+?)(?: and is all-in)?$", "BET"),
-        (r"^(?P<player>.+?) raises (?P<amount>.+?) to (?P<to_amount>.+?)(?: and is all-in)?$", "RAISE"),
-        (r"^(?P<player>.+?) collected (?P<amount>.+?) from (?:side pot \d+|main pot|pot)$", "COLLECT"),
+        (
+            r"^(?P<player>.+?) raises (?P<amount>.+?) to (?P<to_amount>.+?)(?: and is all-in)?$",
+            "RAISE",
+        ),
+        (
+            r"^(?P<player>.+?) collected (?P<amount>.+?) from (?:side pot \d+|main pot|pot)$",
+            "COLLECT",
+        ),
         (r"^(?P<player>.+?) shows \[(?P<cards>[^\]]+)\] \((?P<description>.+)\)$", "SHOW"),
     ]
 
@@ -245,7 +274,10 @@ def _parse_winners(summary_lines: list[str]) -> list[str]:
         if not line.startswith("Seat ") or " won " not in line:
             continue
 
-        winner_match = re.match(r"^Seat \d+: (?P<name>.+?)(?: \([^)]+\))?(?: showed \[[^\]]+\] and)? won ", line)
+        winner_match = re.match(
+            r"^Seat \d+: (?P<name>.+?)(?: \([^)]+\))?(?: showed \[[^\]]+\] and)? won ",
+            line,
+        )
         if winner_match:
             winners.append(winner_match.group("name"))
 
@@ -257,7 +289,8 @@ def _parse_hero_result(summary_lines: list[str], hero_name: str) -> float:
         return 0.0
 
     hero_pattern = re.compile(
-        rf"^Seat \d+: {re.escape(hero_name)}(?: \([^)]+\))?(?: showed \[[^\]]+\] and)? (?P<outcome>won|lost)(?: (?P<amount>.+?))?(?: with .+)?$"
+        rf"^Seat \d+: {re.escape(hero_name)}(?: \([^)]+\))?(?: showed \[[^\]]+\] and)? "
+        rf"(?P<outcome>won|lost)(?: (?P<amount>.+?))?(?: with .+)?$"
     )
     for line in summary_lines:
         match = hero_pattern.match(line)

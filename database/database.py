@@ -237,7 +237,10 @@ class Database:
                 (hero_name,),
             ).fetchone()[0]
             tournaments_played = connection.execute(
-                "SELECT COUNT(DISTINCT tournament_id) FROM hands WHERE hero = ? AND tournament_id IS NOT NULL",
+                (
+                    "SELECT COUNT(DISTINCT tournament_id) FROM hands "
+                    "WHERE hero = ? AND tournament_id IS NOT NULL"
+                ),
                 (hero_name,),
             ).fetchone()[0]
             total_result = connection.execute(
@@ -282,7 +285,8 @@ class Database:
         with self._connect() as connection:
             rows = connection.execute(
                 """
-                SELECT tournament_id, name, buy_in, prize_pool, players_count, started_at, finished_at, position
+                SELECT tournament_id, name, buy_in, prize_pool,
+                       players_count, started_at, finished_at, position
                 FROM tournaments
                 ORDER BY started_at DESC, id DESC
                 LIMIT ?

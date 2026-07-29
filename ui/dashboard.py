@@ -1,12 +1,16 @@
 from __future__ import annotations
 
 import tkinter as tk
+from datetime import datetime
+from statistics.calculator import StatisticsCalculator
 from tkinter import ttk
+from typing import Mapping
 
 from database.database import Database
-from statistics.calculator import StatisticsCalculator
 from ui.hands_view import HandsView
 from ui.tournaments_view import TournamentsView
+
+HandRow = Mapping[str, object]
 
 
 class DashboardView(ttk.Frame):
@@ -52,11 +56,20 @@ class DashboardView(ttk.Frame):
         self.overview_tab.columnconfigure(0, weight=3)
         self.overview_tab.columnconfigure(1, weight=2)
 
-        recent_hands_frame = ttk.LabelFrame(self.overview_tab, text="Recent hands", padding=12)
+        recent_hands_frame = ttk.LabelFrame(
+            self.overview_tab,
+            text="Recent hands",
+            padding=12,
+        )
         recent_hands_frame.grid(row=0, column=0, sticky="nsew", padx=(0, 8))
         recent_hands_frame.columnconfigure(0, weight=1)
         recent_hands_frame.rowconfigure(0, weight=1)
-        self.recent_hands_list = tk.Listbox(recent_hands_frame, height=10, borderwidth=0, highlightthickness=0)
+        self.recent_hands_list = tk.Listbox(
+            recent_hands_frame,
+            height=10,
+            borderwidth=0,
+            highlightthickness=0,
+        )
         self.recent_hands_list.grid(row=0, column=0, sticky="nsew")
 
         stats_frame = ttk.LabelFrame(self.overview_tab, text="Statistics", padding=12)
@@ -88,8 +101,7 @@ class DashboardView(ttk.Frame):
 
         self.recent_hands_list.delete(0, tk.END)
         for hand in recent_hands[:8]:
-            played_at = hand["played_at"].strftime("%m-%d %H:%M") if hand.get("played_at") else "-"
-            line = f"{played_at}  {hand.get('hero_cards') or '--'}  {hand.get('table_name') or '-'}  {_format_result(float(hand.get('result') or 0.0))}"
+            line = _format_recent_hand_line(hand)
             self.recent_hands_list.insert(tk.END, line)
 
         self.hands_view.refresh(recent_hands)
@@ -113,6 +125,27 @@ def _build_metric(master: ttk.Frame, column: int, title: str) -> ttk.Label:
 
 def _format_result(value: float) -> str:
     return f"{value:+.2f}"
+
+
+def _format_recent_hand_line(hand: HandRow) -> str:
+    played_at_value = _as_datetime(hand.get("played_at"))
+    played_at = played_at_value.strftime("%m-%d %H:%M") if played_at_value else "-"
+    hero_cards = str(hand.get("hero_cards") or "--")
+    table_name = str(hand.get("table_name") or "-")
+    result = _format_result(_as_float(hand.get("result")))
+    return f"{played_at}  {hero_cards}  {table_name}  {result}"
+
+
+def _as_datetime(value: object) -> datetime | None:
+    return value if isinstance(value, datetime) else None
+
+
+def _as_float(value: object) -> float:
+    if isinstance(value, bool):
+        return float(value)
+    if isinstance(value, int | float):
+        return float(value)
+    return 0.0
 
 
 def create_main_window(database: Database, hero_name: str) -> tk.Tk:

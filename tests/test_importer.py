@@ -6,7 +6,6 @@ from pathlib import Path
 from database.database import Database
 from database.importer import DatabaseImporter
 
-
 SAMPLES_DIR = Path(__file__).resolve().parents[1] / "samples"
 
 

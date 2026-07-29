@@ -40,7 +40,7 @@ def test_bootstrap_application_initializes_database(tmp_path: Path) -> None:
         encoding="utf-8",
     )
 
-    database = bootstrap_application(config_path)
+    bootstrap_application(config_path)
 
     assert database_path.exists()
 

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from database.database import Database
 
+
 class StatisticsCalculator:
     def __init__(self, database: Database, hero_name: str) -> None:
         self.database = database
@@ -33,7 +34,7 @@ class StatisticsCalculator:
         recent_hands_by_id = {str(hand["hand_id"]): hand for hand in recent_hands}
         for hand_id in showdown_hands:
             hand = recent_hands_by_id.get(hand_id)
-            if hand and float(hand["result"]) > 0:
+            if hand and _as_float(hand.get("result")) > 0:
                 showdown_wins += 1
 
         vpip_hands = sum(
@@ -49,7 +50,9 @@ class StatisticsCalculator:
             for action_names in preflop_actions_by_hand.values()
             if "CALL" in action_names and "RAISE" not in action_names
         )
-        bets_and_raises = sum(1 for action_name in postflop_actions if action_name in {"BET", "RAISE"})
+        bets_and_raises = sum(
+            1 for action_name in postflop_actions if action_name in {"BET", "RAISE"}
+        )
         calls = sum(1 for action_name in postflop_actions if action_name == "CALL")
 
         return {
@@ -59,9 +62,21 @@ class StatisticsCalculator:
             "vpip": _percentage(vpip_hands, hands_played),
             "pfr": _percentage(pfr_hands, hands_played),
             "limp_percentage": _percentage(limp_hands, hands_played),
-            "aggression_factor": float(bets_and_raises) / float(calls) if calls else float(bets_and_raises),
+            "aggression_factor": (
+                float(bets_and_raises) / float(calls)
+                if calls
+                else float(bets_and_raises)
+            ),
             "showdown_win_percentage": _percentage(showdown_wins, float(len(showdown_hands))),
         }
+
+
+def _as_float(value: object) -> float:
+    if isinstance(value, bool):
+        return float(value)
+    if isinstance(value, int | float):
+        return float(value)
+    return 0.0
 
 
 def _percentage(numerator: int, denominator: float) -> float:

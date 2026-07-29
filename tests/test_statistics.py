@@ -1,13 +1,14 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
+from pathlib import Path
+from statistics.calculator import StatisticsCalculator
 
 from database.database import Database
 from database.models import Action, Hand, Tournament
-from statistics.calculator import StatisticsCalculator
 
 
-def test_statistics_calculator_uses_existing_hand_and_action_data(tmp_path) -> None:
+def test_statistics_calculator_uses_existing_hand_and_action_data(tmp_path: Path) -> None:
     database = Database(tmp_path / "data" / "tracker.db")
     database.initialize()
     database.insert_tournament(
@@ -51,16 +52,46 @@ def test_statistics_calculator_uses_existing_hand_and_action_data(tmp_path) -> N
     database.replace_actions_for_hand(
         "hand-1",
         [
-            Action(hand_id="hand-1", player="MyPseudo", street="PRE_FLOP", action="CALL", amount=10.0),
-            Action(hand_id="hand-1", player="MyPseudo", street="FLOP", action="BET", amount=15.0),
-            Action(hand_id="hand-1", player="MyPseudo", street="SHOW_DOWN", action="SHOW", amount=None),
+            Action(
+                hand_id="hand-1",
+                player="MyPseudo",
+                street="PRE_FLOP",
+                action="CALL",
+                amount=10.0,
+            ),
+            Action(
+                hand_id="hand-1",
+                player="MyPseudo",
+                street="FLOP",
+                action="BET",
+                amount=15.0,
+            ),
+            Action(
+                hand_id="hand-1",
+                player="MyPseudo",
+                street="SHOW_DOWN",
+                action="SHOW",
+                amount=None,
+            ),
         ],
     )
     database.replace_actions_for_hand(
         "hand-2",
         [
-            Action(hand_id="hand-2", player="MyPseudo", street="PRE_FLOP", action="RAISE", amount=12.0),
-            Action(hand_id="hand-2", player="MyPseudo", street="FLOP", action="CALL", amount=8.0),
+            Action(
+                hand_id="hand-2",
+                player="MyPseudo",
+                street="PRE_FLOP",
+                action="RAISE",
+                amount=12.0,
+            ),
+            Action(
+                hand_id="hand-2",
+                player="MyPseudo",
+                street="FLOP",
+                action="CALL",
+                amount=8.0,
+            ),
         ],
     )
 

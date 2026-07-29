@@ -7,7 +7,6 @@ from typing import Any
 from database.database import Database
 from logging_system import configure_logging, get_logger
 
-
 BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_CONFIG_PATH = BASE_DIR / "config" / "config.json"
 

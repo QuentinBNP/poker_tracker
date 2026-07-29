@@ -4,7 +4,6 @@ import re
 from datetime import datetime, timezone
 from typing import Any
 
-
 SUMMARY_HEADER_PATTERN = re.compile(
     r"^Winamax Poker - Tournament summary : (?P<name>.+?)\((?P<tournament_id>\d+)\)",
     re.MULTILINE,
@@ -94,11 +93,16 @@ def _parse_money_parts(value: str | None) -> list[float]:
     if value is None:
         return []
 
-    return [
-        _parse_amount(part)
-        for part in re.split(r"\s*\+\s*", value)
-        if part.strip()
-    ]
+    parts: list[float] = []
+    for part in re.split(r"\s*\+\s*", value):
+        if not part.strip():
+            continue
+
+        parsed_amount = _parse_amount(part)
+        if parsed_amount is not None:
+            parts.append(parsed_amount)
+
+    return parts
 
 
 def _sum_money_parts(value: str | None) -> float:

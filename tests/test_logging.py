@@ -3,8 +3,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from logging_system import get_logger
 from bootstrap import bootstrap_application
+from logging_system import get_logger
 
 
 def test_bootstrap_application_configures_log_files(tmp_path: Path) -> None:

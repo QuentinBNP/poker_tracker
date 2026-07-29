@@ -150,7 +150,11 @@ class DatabaseImporter:
         self.database.insert_tournament(
             Tournament(
                 tournament_id=tournament_id,
-                name=parsed_hand.get("tournament_name") or parsed_hand.get("table_name") or tournament_id,
+                name=(
+                    parsed_hand.get("tournament_name")
+                    or parsed_hand.get("table_name")
+                    or tournament_id
+                ),
                 buy_in=parsed_hand.get("buy_in") or 0.0,
                 prize_pool=0.0,
                 players_count=0,

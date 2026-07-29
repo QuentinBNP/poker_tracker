@@ -4,7 +4,6 @@ import logging
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
-
 LOGGER_NAMESPACE = "poker_tracker"
 LOG_FORMAT = "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
 MAX_LOG_BYTES = 1_048_576

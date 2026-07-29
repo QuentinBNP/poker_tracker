@@ -1,7 +1,11 @@
 from __future__ import annotations
 
 import tkinter as tk
+from datetime import datetime
 from tkinter import ttk
+from typing import Mapping, Sequence
+
+TournamentRow = Mapping[str, object]
 
 
 class TournamentsView(ttk.Frame):
@@ -38,28 +42,37 @@ class TournamentsView(ttk.Frame):
         scrollbar.grid(row=0, column=1, sticky="ns")
 
 
-    def refresh(self, tournaments: list[dict[str, object]]) -> None:
+    def refresh(self, tournaments: Sequence[TournamentRow]) -> None:
         for item in self.tree.get_children():
             self.tree.delete(item)
 
         for tournament in tournaments:
-            started_at = (
-                tournament["started_at"].strftime("%Y-%m-%d %H:%M")
-                if tournament.get("started_at")
-                else "-"
-            )
+            started_at_value = _as_datetime(tournament.get("started_at"))
+            started_at = started_at_value.strftime("%Y-%m-%d %H:%M") if started_at_value else "-"
             self.tree.insert(
                 "",
                 "end",
                 values=(
                     started_at,
                     tournament.get("name") or "-",
-                    _format_amount(float(tournament.get("buy_in") or 0.0)),
-                    _format_amount(float(tournament.get("prize_pool") or 0.0)),
+                    _format_amount(_as_float(tournament.get("buy_in"))),
+                    _format_amount(_as_float(tournament.get("prize_pool"))),
                     tournament.get("players_count") or 0,
                     tournament.get("position") or "-",
                 ),
             )
+
+
+def _as_datetime(value: object) -> datetime | None:
+    return value if isinstance(value, datetime) else None
+
+
+def _as_float(value: object) -> float:
+    if isinstance(value, bool):
+        return float(value)
+    if isinstance(value, int | float):
+        return float(value)
+    return 0.0
 
 
 def _format_amount(value: float) -> str:

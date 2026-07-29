@@ -6,12 +6,13 @@ from pathlib import Path
 from parser.hand_parser import parse_hand_history
 from parser.tournament_parser import parse_tournament_summary
 
-
 SAMPLES_DIR = Path(__file__).resolve().parents[1] / "samples"
 
 
 def test_parse_freeroll_tournament_summary() -> None:
-    text = (SAMPLES_DIR / "20260628_Freeroll(1119027769)_real_holdem_no-limit_summary.txt").read_text(
+    text = (
+        SAMPLES_DIR / "20260628_Freeroll(1119027769)_real_holdem_no-limit_summary.txt"
+    ).read_text(
         encoding="utf-8"
     )
 
@@ -30,7 +31,10 @@ def test_parse_freeroll_tournament_summary() -> None:
 
 
 def test_parse_knockout_tournament_summary_with_bounty() -> None:
-    text = (SAMPLES_DIR / "20260628_Kill The Fish(1119034571)_real_holdem_no-limit_summary.txt").read_text(
+    text = (
+        SAMPLES_DIR
+        / "20260628_Kill The Fish(1119034571)_real_holdem_no-limit_summary.txt"
+    ).read_text(
         encoding="utf-8"
     )
 
@@ -67,12 +71,18 @@ def test_parse_tournament_hand_history_extracts_core_fields() -> None:
     assert first_hand["result"] == 0.0
     assert first_hand["winners"] == ["Nelson71"]
     assert any(action["action"] == "POST_BIG_BLIND" for action in first_hand["actions"]) is False
-    assert any(action["action"] == "FOLD" and action["player"] == "MyPseudo" for action in first_hand["actions"])
+    assert any(
+        action["action"] == "FOLD" and action["player"] == "MyPseudo"
+        for action in first_hand["actions"]
+    )
 
     assert third_hand["hero_cards"] == "Jh Ah"
     assert third_hand["board"] == "2s 9c Qh Td Tc"
     assert third_hand["pot"] == 3226.0
-    assert any(action["action"] == "RAISE" and action["player"] == "MyPseudo" for action in third_hand["actions"])
+    assert any(
+        action["action"] == "RAISE" and action["player"] == "MyPseudo"
+        for action in third_hand["actions"]
+    )
 
 
 def test_parse_cash_game_hand_history_supports_decimal_amounts() -> None:
@@ -92,4 +102,8 @@ def test_parse_cash_game_hand_history_supports_decimal_amounts() -> None:
     assert first_hand["board"] == "Qd Ad 5d 4d"
     assert second_hand["hero"] == "MyPseudo"
     assert second_hand["hero_cards"] == "Ac 8d"
-    assert any(action["amount"] == 0.12 for action in second_hand["actions"] if action["action"] == "RAISE")
+    assert any(
+        action["amount"] == 0.12
+        for action in second_hand["actions"]
+        if action["action"] == "RAISE"
+    )
