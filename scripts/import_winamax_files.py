@@ -1,13 +1,16 @@
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
-
-from bootstrap import bootstrap_application, load_config, resolve_config_path
-from database.importer import DatabaseImporter
 
 
 def main() -> None:
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+    from bootstrap import bootstrap_application, load_config, resolve_config_path
+    from database.importer import DatabaseImporter
+
     args = _parse_args()
     config = load_config(args.config)
     database = bootstrap_application(args.config)
@@ -41,7 +44,10 @@ def _parse_args() -> argparse.Namespace:
         "path",
         nargs="?",
         type=Path,
-        help="Optional file or directory to import. Defaults to winamax_folder from config/config.json.",
+        help=(
+            "Optional file or directory to import. "
+            "Defaults to winamax_folder from config/config.json."
+        ),
     )
     parser.add_argument(
         "--config",

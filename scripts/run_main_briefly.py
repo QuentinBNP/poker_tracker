@@ -4,7 +4,6 @@ import subprocess
 import sys
 from pathlib import Path
 
-
 RUN_TIMEOUT_SECONDS = 10
 TERMINATION_TIMEOUT_SECONDS = 5
 

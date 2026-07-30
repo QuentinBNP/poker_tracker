@@ -1,10 +1,15 @@
 from __future__ import annotations
 
-from bootstrap import bootstrap_application, load_config
-from ui import create_main_window
+import sys
+from pathlib import Path
 
 
 def main() -> None:
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+    from bootstrap import bootstrap_application, load_config
+    from ui import create_main_window
+
     config = load_config()
     database = bootstrap_application()
     root = create_main_window(database, config["player_name"])
