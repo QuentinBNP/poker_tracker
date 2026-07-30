@@ -1,5 +1,8 @@
 # Poker Tracker
 
+[![CI](https://github.com/QuentinBNP/poker_tracker/actions/workflows/pytest.yml/badge.svg)](https://github.com/QuentinBNP/poker_tracker/actions/workflows/pytest.yml)
+[![Coverage](https://codecov.io/gh/QuentinBNP/poker_tracker/graph/badge.svg)](https://codecov.io/gh/QuentinBNP/poker_tracker)
+
 Poker Tracker is a personal Winamax desktop tracker written in Python.
 
 The current codebase can:
@@ -40,6 +43,10 @@ poker_tracker/
 ├── bootstrap.py
 ├── main.py
 ├── logging_system.py
+├── scripts/
+│   ├── import_winamax_files.py
+│   ├── run_main_briefly.py
+│   └── smoke_test_ui.py
 ├── config/
 │   └── config.json
 ├── database/
@@ -84,6 +91,43 @@ source venv/bin/activate
 pip install -e .[dev]
 ```
 
+## Windows Quick Start
+
+On Windows, install Python 3.11 or newer from the official Python installer and keep the default `tkinter` support enabled.
+
+Create and activate a virtual environment from PowerShell:
+
+```powershell
+py -3.12 -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -e .[dev]
+```
+
+Then update `config/config.json` with your real Winamax history folder, for example:
+
+```json
+{
+  "player_name": "MyPseudo",
+  "winamax_folder": "C:/Users/YourUser/AppData/Roaming/winamax/documents",
+  "database_path": "data/poker_tracker.db",
+  "log_directory": "logs"
+}
+```
+
+Start the desktop app with:
+
+```powershell
+python main.py
+```
+
+If you want the dashboard to show real data immediately, import files first:
+
+```powershell
+python scripts/import_winamax_files.py
+```
+
+Note: the current app opens the dashboard and database, but live file watching is not yet wired into the running UI.
+
 ## Configuration
 
 Edit [config/config.json](/home/sesa781182/pers/poker_tracker/config/config.json) before running the app.
@@ -125,42 +169,16 @@ If the database is empty, the UI will open but show no imported data yet.
 
 ### 2. Import Winamax files into the database
 
-The importer exists, but there is not yet a CLI command or menu action for it. For now, use a short Python snippet.
+The importer exists as a script, but there is not yet a UI menu action for it.
 
 ```bash
-python - <<'PY'
-from pathlib import Path
-
-from bootstrap import bootstrap_application, load_config, resolve_config_path
-from database.importer import DatabaseImporter
-
-config = load_config()
-database = bootstrap_application()
-importer = DatabaseImporter(database)
-
-project_root_config = Path("config/config.json")
-winamax_folder = resolve_config_path(project_root_config, config["winamax_folder"])
-
-for path in sorted(winamax_folder.glob("*.txt")):
-    report = importer.import_file(path)
-    print(path.name, report.status, report.hands_imported, report.tournaments_imported)
-PY
+python scripts/import_winamax_files.py
 ```
 
 You can also import a single file:
 
 ```bash
-python - <<'PY'
-from pathlib import Path
-
-from bootstrap import bootstrap_application
-from database.importer import DatabaseImporter
-
-database = bootstrap_application()
-importer = DatabaseImporter(database)
-report = importer.import_file(Path("samples/20260628_Freeroll(1119027769)_real_holdem_no-limit.txt"))
-print(report)
-PY
+python scripts/import_winamax_files.py samples/20260628_Freeroll(1119027769)_real_holdem_no-limit.txt
 ```
 
 ### 3. Use the dashboard
@@ -207,3 +225,20 @@ Current tests cover:
 - importer
 - logging setup
 - statistics calculation
+
+## Coverage And Badges
+
+The CI workflow already generates:
+
+- line coverage
+- branch coverage
+- `coverage.xml`
+- `htmlcov/`
+
+The README badge above uses Codecov. To make it work reliably:
+
+1. Enable the repository on Codecov.
+2. Keep the `Upload coverage to Codecov` step in the GitHub Actions workflow.
+3. If the repository is private, add a `CODECOV_TOKEN` repository secret in GitHub and configure Codecov to use it.
+
+Important limitation: `pytest-cov` and `coverage.py` report line and branch coverage, but they do not provide a standard functional coverage metric. If you want "functional coverage", that usually means tracking tested features or scenarios separately, not a built-in Python coverage percentage.
