@@ -149,6 +149,14 @@ def _as_float(value: object) -> float:
 
 
 def create_main_window(database: Database, hero_name: str) -> tk.Tk:
+    root, _ = create_main_window_with_view(database, hero_name)
+    return root
+
+
+def create_main_window_with_view(
+    database: Database,
+    hero_name: str,
+) -> tuple[tk.Tk, DashboardView]:
     root = tk.Tk()
     root.title("Poker Tracker")
     root.geometry("1100x720")
@@ -158,4 +166,4 @@ def create_main_window(database: Database, hero_name: str) -> tk.Tk:
 
     view = DashboardView(root, database=database, hero_name=hero_name)
     view.grid(row=0, column=0, sticky="nsew")
-    return root
+    return root, view
