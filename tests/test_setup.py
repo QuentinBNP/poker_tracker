@@ -3,7 +3,9 @@ from __future__ import annotations
 import json
 import sqlite3
 from pathlib import Path
+from typing import Any
 
+import bootstrap
 from bootstrap import bootstrap_application, load_config
 
 
@@ -53,3 +55,20 @@ def test_bootstrap_application_initializes_database(tmp_path: Path) -> None:
         }
 
     assert {"tournaments", "hands", "players", "actions", "imports"}.issubset(table_names)
+
+
+def test_load_config_creates_default_config_in_user_directory(
+    tmp_path: Path,
+    monkeypatch: Any,
+) -> None:
+    monkeypatch.setenv("XDG_CONFIG_HOME", str(tmp_path / "config-home"))
+    monkeypatch.setenv("XDG_DATA_HOME", str(tmp_path / "data-home"))
+
+    config = bootstrap.load_config()
+    config_path = bootstrap.get_default_config_path()
+
+    assert config_path.exists()
+    assert config_path.parent.name == "MyPokerTracker"
+    assert config["database_path"].endswith("mypokertracker.db")
+    assert "MyPokerTracker" in config["database_path"]
+    assert "MyPokerTracker" in config["log_directory"]

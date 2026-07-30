@@ -8,3 +8,7 @@ venv/
 
 # Runtime logs
 logs/
+
+# Packaging outputs
+build/
+dist/

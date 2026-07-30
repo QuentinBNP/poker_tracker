@@ -8,7 +8,12 @@ from pathlib import Path
 def main() -> None:
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-    from bootstrap import bootstrap_application, load_config, resolve_config_path
+    from bootstrap import (
+        bootstrap_application,
+        get_default_config_path,
+        load_config,
+        resolve_config_path,
+    )
     from database.importer import DatabaseImporter
 
     args = _parse_args()
@@ -16,7 +21,7 @@ def main() -> None:
     database = bootstrap_application(args.config)
     importer = DatabaseImporter(database)
 
-    base_config_path = args.config or Path("config/config.json")
+    base_config_path = args.config or get_default_config_path()
     source_path = args.path or resolve_config_path(base_config_path, config["winamax_folder"])
 
     if source_path.is_file():

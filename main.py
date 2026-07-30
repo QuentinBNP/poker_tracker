@@ -1,8 +1,8 @@
 from __future__ import annotations
 
 from bootstrap import (
-    DEFAULT_CONFIG_PATH,
     bootstrap_application,
+    get_default_config_path,
     load_config,
     resolve_config_path,
 )
@@ -16,7 +16,7 @@ def main() -> None:
     config = load_config()
     database = bootstrap_application()
     importer = DatabaseImporter(database)
-    watch_path = resolve_config_path(DEFAULT_CONFIG_PATH, config["winamax_folder"])
+    watch_path = resolve_config_path(get_default_config_path(), config["winamax_folder"])
     logger = get_logger("watcher")
 
     root, dashboard = create_main_window_with_view(database, config["player_name"])

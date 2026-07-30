@@ -2,11 +2,12 @@ from __future__ import annotations
 
 import tkinter as tk
 from datetime import datetime
-from statistics.calculator import StatisticsCalculator
 from tkinter import ttk
 from typing import Mapping
 
+from app_info import APP_NAME
 from database.database import Database
+from poker_stats.calculator import StatisticsCalculator
 from ui.hands_view import HandsView
 from ui.tournaments_view import TournamentsView
 
@@ -23,7 +24,7 @@ class DashboardView(ttk.Frame):
         self.columnconfigure(0, weight=1)
         self.rowconfigure(1, weight=1)
 
-        title = ttk.Label(self, text="Poker Tracker", font=("TkHeadingFont", 18, "bold"))
+        title = ttk.Label(self, text=APP_NAME, font=("TkHeadingFont", 18, "bold"))
         subtitle = ttk.Label(self, text=f"Hero: {hero_name}")
         title.grid(row=0, column=0, sticky="w")
         subtitle.grid(row=1, column=0, sticky="w", pady=(4, 12))
@@ -158,7 +159,7 @@ def create_main_window_with_view(
     hero_name: str,
 ) -> tuple[tk.Tk, DashboardView]:
     root = tk.Tk()
-    root.title("Poker Tracker")
+    root.title(APP_NAME)
     root.geometry("1100x720")
     root.minsize(900, 600)
     root.columnconfigure(0, weight=1)

@@ -4,7 +4,9 @@ import logging
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
-LOGGER_NAMESPACE = "poker_tracker"
+from app_info import APP_SLUG
+
+LOGGER_NAMESPACE = APP_SLUG
 LOG_FORMAT = "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
 MAX_LOG_BYTES = 1_048_576
 BACKUP_COUNT = 3
@@ -21,8 +23,8 @@ def configure_logging(log_directory: Path) -> None:
     log_directory.mkdir(parents=True, exist_ok=True)
 
     root_logger = logging.getLogger(LOGGER_NAMESPACE)
-    configured_directory = getattr(root_logger, "_poker_tracker_log_directory", None)
-    if getattr(root_logger, "_poker_tracker_configured", False):
+    configured_directory = getattr(root_logger, f"_{APP_SLUG}_log_directory", None)
+    if getattr(root_logger, f"_{APP_SLUG}_configured", False):
         if configured_directory == log_directory:
             return
 
@@ -45,8 +47,8 @@ def configure_logging(log_directory: Path) -> None:
         if component != "app":
             logger.addHandler(_build_handler(log_directory / filename, formatter))
 
-    root_logger._poker_tracker_configured = True  # type: ignore[attr-defined]
-    root_logger._poker_tracker_log_directory = log_directory  # type: ignore[attr-defined]
+    setattr(root_logger, f"_{APP_SLUG}_configured", True)
+    setattr(root_logger, f"_{APP_SLUG}_log_directory", log_directory)
 
 
 def get_logger(component: str) -> logging.Logger:

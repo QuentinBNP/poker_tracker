@@ -1,9 +1,9 @@
-# Poker Tracker
+# MyPokerTracker
 
 [![CI](https://github.com/QuentinBNP/poker_tracker/actions/workflows/pytest.yml/badge.svg)](https://github.com/QuentinBNP/poker_tracker/actions/workflows/pytest.yml)
 [![Coverage](https://codecov.io/gh/QuentinBNP/poker_tracker/graph/badge.svg)](https://codecov.io/gh/QuentinBNP/poker_tracker)
 
-Poker Tracker is a personal Winamax desktop tracker written in Python.
+MyPokerTracker is a personal Winamax desktop tracker written in Python.
 
 The current codebase can:
 
@@ -57,7 +57,7 @@ poker_tracker/
 ├── parser/
 │   ├── hand_parser.py
 │   └── tournament_parser.py
-├── statistics/
+├── poker_stats/
 │   └── calculator.py
 ├── ui/
 │   ├── dashboard.py

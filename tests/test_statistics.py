@@ -2,10 +2,10 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 from pathlib import Path
-from statistics.calculator import StatisticsCalculator
 
 from database.database import Database
 from database.models import Action, Hand, Tournament
+from poker_stats.calculator import StatisticsCalculator
 
 
 def test_statistics_calculator_uses_existing_hand_and_action_data(tmp_path: Path) -> None:
