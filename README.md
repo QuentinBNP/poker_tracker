@@ -226,6 +226,22 @@ Current tests cover:
 - logging setup
 - statistics calculation
 
+## Git Hook
+
+This repository includes a plain Git pre-commit hook that runs `ruff check .` and `mypy .` through a repo script.
+
+Enable it once per clone with:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+You can also run the same checks manually at any time:
+
+```bash
+./scripts/run_quality_checks.sh
+```
+
 ## Coverage And Badges
 
 The CI workflow already generates:
