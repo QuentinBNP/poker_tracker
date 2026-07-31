@@ -26,6 +26,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e ".[dev]"
 
+      - name: Verify release tag matches project version
+        run: python .github/workflows/scripts/verify_release_version.py "${{ github.ref_name }}"
+
       - name: Install Inno Setup
         run: choco install innosetup --no-progress -y
 

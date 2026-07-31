@@ -2,10 +2,12 @@ from __future__ import annotations
 
 import json
 import sqlite3
+import tomllib
 from pathlib import Path
 from typing import Any
 
 import bootstrap
+from app_info import APP_ICON_PATH, APP_VERSION
 from bootstrap import bootstrap_application, load_config
 
 
@@ -72,3 +74,12 @@ def test_load_config_creates_default_config_in_user_directory(
     assert config["database_path"].endswith("mypokertracker.db")
     assert "MyPokerTracker" in config["database_path"]
     assert "MyPokerTracker" in config["log_directory"]
+
+
+def test_app_version_comes_from_project_metadata() -> None:
+    project_root = Path(__file__).resolve().parent.parent
+    with (project_root / "pyproject.toml").open("rb") as pyproject_file:
+        project_version = tomllib.load(pyproject_file)["project"]["version"]
+
+    assert APP_VERSION == project_version
+    assert APP_ICON_PATH == project_root / "assets" / "MyPokerTracker.ico"

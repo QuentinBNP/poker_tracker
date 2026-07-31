@@ -88,10 +88,10 @@ jobs:
             htmlcov/
 
       - name: Smoke test Tk app initialization
-        run: xvfb-run -a python scripts/smoke_test_ui.py
+        run: xvfb-run -a python .github/workflows/scripts/smoke_test_ui.py
 
       - name: Run main.py briefly
-        run: xvfb-run -a python scripts/run_main_briefly.py
+        run: xvfb-run -a python .github/workflows/scripts/run_main_briefly.py
 
   test-windows:
     runs-on: windows-latest
@@ -114,10 +114,10 @@ jobs:
         run: pytest
 
       - name: Smoke test Tk app initialization
-        run: python scripts/smoke_test_ui.py
+        run: python .github/workflows/scripts/smoke_test_ui.py
 
       - name: Run main.py briefly
-        run: python scripts/run_main_briefly.py
+        run: python .github/workflows/scripts/run_main_briefly.py
 
   package-windows:
     runs-on: windows-latest

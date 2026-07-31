@@ -1,12 +1,26 @@
 from __future__ import annotations
 
+from importlib.metadata import version
 from pathlib import Path
+import tomllib
 
 APP_NAME = "MyPokerTracker"
 APP_SLUG = "mypokertracker"
-APP_VERSION = "0.1.0"
 APP_COMPANY = "Quentin Bonopera"
 APP_AUTHOR = "Quentin Bonopera"
 APP_DESCRIPTION = "MyPokerTracker Winamax desktop application"
 APP_ICON_NAME = "MyPokerTracker.ico"
-APP_ICON_PATH = Path(__file__).resolve().parent / "assets" / APP_ICON_NAME
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+APP_ICON_PATH = PROJECT_ROOT / "assets" / APP_ICON_NAME
+
+
+def _get_app_version() -> str:
+	pyproject_path = PROJECT_ROOT / "pyproject.toml"
+	if pyproject_path.exists():
+		with pyproject_path.open("rb") as pyproject_file:
+			return str(tomllib.load(pyproject_file)["project"]["version"])
+
+	return version("mypokertracker")
+
+
+APP_VERSION = _get_app_version()

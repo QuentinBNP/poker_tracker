@@ -4,13 +4,13 @@ import subprocess
 import sys
 from pathlib import Path
 
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 RUN_TIMEOUT_SECONDS = 10
 TERMINATION_TIMEOUT_SECONDS = 5
 
 
 def main() -> None:
-    project_root = Path(__file__).resolve().parent.parent
-    process = subprocess.Popen([sys.executable, "src/main.py"], cwd=project_root)
+    process = subprocess.Popen([sys.executable, "src/main.py"], cwd=PROJECT_ROOT)
 
     try:
         exit_code = process.wait(timeout=RUN_TIMEOUT_SECONDS)

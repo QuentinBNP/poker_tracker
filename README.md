@@ -9,6 +9,18 @@ Current packaged Windows builds use the bundled MyPokerTracker icon and embed Wi
 
 Tagged releases are built by [.github/workflows/tag.yaml](/home/sesa781182/pers/poker_tracker/.github/workflows/tag.yaml) and publish the Windows installer when you push a tag.
 
+## Releases
+
+The version in `pyproject.toml` is the single source of truth for the application, Windows executable, and installer. Before releasing, update that version and [CHANGELOG.md](/home/sesa781182/pers/poker_tracker/CHANGELOG.md), then create the matching `vX.Y.Z` tag. The release workflow rejects tags that do not match the project version.
+
+## Installed Windows Data
+
+The installed application creates its editable configuration at `%APPDATA%\MyPokerTracker\config.json`, usually `C:\Users\<your-user>\AppData\Roaming\MyPokerTracker\config.json`.
+
+Its database and logs are stored separately at `%LOCALAPPDATA%\MyPokerTracker`, usually `C:\Users\<your-user>\AppData\Local\MyPokerTracker`. Uninstalling the application removes the installed program but keeps these files. To completely remove MyPokerTracker, delete both folders after uninstalling.
+
+Use the Start Menu entry `MyPokerTracker > Uninstall MyPokerTracker` to uninstall a future release. The existing 0.1.0 installation can be removed from Windows Settings > Apps > Installed apps, or by running `unins000.exe` from its MyPokerTracker installation folder.
+
 The current codebase can:
 
 - parse Winamax tournament summary files
@@ -46,8 +58,12 @@ Not fully wired yet:
 poker_tracker/
 ├── scripts/
 │   ├── import_winamax_files.py
+│   ├── build_windows_exe.py
+│   └── build_windows_installer.py
+├── .github/workflows/scripts/
 │   ├── run_main_briefly.py
-│   └── smoke_test_ui.py
+│   ├── smoke_test_ui.py
+│   └── verify_release_version.py
 ├── config/
 │   └── config.json
 ├── src/
@@ -98,7 +114,7 @@ py -3.12 -m venv venv
 pip install -e .[dev]
 ```
 
-Then update `config/config.json` with your real Winamax history folder, for example:
+Then update `%APPDATA%\MyPokerTracker\config.json` with your real Winamax history folder, for example:
 
 ```json
 {
@@ -125,7 +141,7 @@ Note: the current app opens the dashboard and database, but live file watching i
 
 ## Configuration
 
-Edit [config/config.json](/home/sesa781182/pers/poker_tracker/config/config.json) before running the app.
+For the installed Windows application, edit `%APPDATA%\MyPokerTracker\config.json`. The repository [config/config.json](/home/sesa781182/pers/poker_tracker/config/config.json) is only for local development with an explicit config path.
 
 Example:
 

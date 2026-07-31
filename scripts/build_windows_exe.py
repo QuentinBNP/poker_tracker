@@ -42,6 +42,8 @@ def main() -> None:
         str(assets_dir / "version_info.txt"),
         "--paths",
         str(source_dir),
+        "--copy-metadata",
+        "mypokertracker",
         str(source_dir / "main.py"),
     ]
     subprocess.run(command, cwd=project_root, check=True)

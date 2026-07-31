@@ -3,10 +3,11 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+
 
 def main() -> None:
-    project_root = Path(__file__).resolve().parent.parent
-    sys.path.insert(0, str(project_root / "src"))
+    sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
     from bootstrap import bootstrap_application, load_config
     from ui import create_main_window
