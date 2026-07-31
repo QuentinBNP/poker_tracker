@@ -1,11 +1,12 @@
 from __future__ import annotations
 
+import sys
 import tkinter as tk
 from datetime import datetime
 from tkinter import ttk
 from typing import Mapping
 
-from app_info import APP_NAME
+from app_info import APP_ICON_PATH, APP_NAME
 from database.database import Database
 from poker_stats.calculator import StatisticsCalculator
 from ui.hands_view import HandsView
@@ -160,6 +161,7 @@ def create_main_window_with_view(
 ) -> tuple[tk.Tk, DashboardView]:
     root = tk.Tk()
     root.title(APP_NAME)
+    _configure_window_icon(root)
     root.geometry("1100x720")
     root.minsize(900, 600)
     root.columnconfigure(0, weight=1)
@@ -168,3 +170,13 @@ def create_main_window_with_view(
     view = DashboardView(root, database=database, hero_name=hero_name)
     view.grid(row=0, column=0, sticky="nsew")
     return root, view
+
+
+def _configure_window_icon(root: tk.Tk) -> None:
+    if sys.platform != "win32" or not APP_ICON_PATH.exists():
+        return
+
+    try:
+        root.iconbitmap(default=str(APP_ICON_PATH))
+    except tk.TclError:
+        return

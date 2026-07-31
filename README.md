@@ -5,6 +5,10 @@
 
 MyPokerTracker is a personal Winamax desktop tracker written in Python.
 
+Current packaged Windows builds use the bundled MyPokerTracker icon and embed Windows version metadata in the generated executable and installer.
+
+Tagged releases are built by [.github/workflows/tag.yaml](/home/sesa781182/pers/poker_tracker/.github/workflows/tag.yaml) and publish the Windows installer when you push a tag.
+
 The current codebase can:
 
 - parse Winamax tournament summary files
