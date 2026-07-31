@@ -8,7 +8,8 @@ from pathlib import Path
 
 def main() -> None:
     project_root = Path(__file__).resolve().parent.parent
-    sys.path.insert(0, str(project_root))
+    source_dir = project_root / "src"
+    sys.path.insert(0, str(source_dir))
 
     from app_info import APP_NAME
 
@@ -40,8 +41,8 @@ def main() -> None:
         "--version-file",
         str(assets_dir / "version_info.txt"),
         "--paths",
-        str(project_root),
-        str(project_root / "main.py"),
+        str(source_dir),
+        str(source_dir / "main.py"),
     ]
     subprocess.run(command, cwd=project_root, check=True)
 

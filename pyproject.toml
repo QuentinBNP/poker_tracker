@@ -21,13 +21,16 @@ requires = ["setuptools>=69.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-py-modules = ["bootstrap", "logging_system", "main"]
+package-dir = {"" = "src"}
+py-modules = ["app_info", "bootstrap", "logging_system", "main"]
 
 [tool.setuptools.packages.find]
+where = ["src"]
 include = ["database", "database.*", "parser", "parser.*", "poker_stats", "poker_stats.*", "ui", "ui.*", "watcher", "watcher.*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["src"]
 addopts = "--cov=bootstrap --cov=logging_system --cov=main --cov=database --cov=parser --cov=poker_stats --cov=ui --cov=watcher --cov-branch --cov-report=term-missing --cov-report=xml --cov-report=html"
 
 [tool.ruff]
@@ -39,7 +42,7 @@ select = ["E", "F", "I", "B"]
 
 [tool.mypy]
 python_version = "3.11"
-files = ["bootstrap.py", "logging_system.py", "main.py", "database", "parser", "poker_stats", "ui", "watcher"]
+files = ["src"]
 ignore_missing_imports = true
 check_untyped_defs = true
 disallow_incomplete_defs = true

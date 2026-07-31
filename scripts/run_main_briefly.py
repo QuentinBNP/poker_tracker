@@ -10,7 +10,7 @@ TERMINATION_TIMEOUT_SECONDS = 5
 
 def main() -> None:
     project_root = Path(__file__).resolve().parent.parent
-    process = subprocess.Popen([sys.executable, "main.py"], cwd=project_root)
+    process = subprocess.Popen([sys.executable, "src/main.py"], cwd=project_root)
 
     try:
         exit_code = process.wait(timeout=RUN_TIMEOUT_SECONDS)

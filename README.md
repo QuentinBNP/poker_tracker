@@ -44,31 +44,22 @@ Not fully wired yet:
 
 ```text
 poker_tracker/
-├── bootstrap.py
-├── main.py
-├── logging_system.py
 ├── scripts/
 │   ├── import_winamax_files.py
 │   ├── run_main_briefly.py
 │   └── smoke_test_ui.py
 ├── config/
 │   └── config.json
-├── database/
-│   ├── __init__.py
-│   ├── database.py
-│   ├── importer.py
-│   └── models.py
-├── parser/
-│   ├── hand_parser.py
-│   └── tournament_parser.py
-├── poker_stats/
-│   └── calculator.py
-├── ui/
-│   ├── dashboard.py
-│   ├── hands_view.py
-│   └── tournaments_view.py
-├── watcher/
-│   └── file_watcher.py
+├── src/
+│   ├── app_info.py
+│   ├── bootstrap.py
+│   ├── logging_system.py
+│   ├── main.py
+│   ├── database/
+│   ├── parser/
+│   ├── poker_stats/
+│   ├── ui/
+│   └── watcher/
 └── tests/
 ```
 
@@ -121,7 +112,7 @@ Then update `config/config.json` with your real Winamax history folder, for exam
 Start the desktop app with:
 
 ```powershell
-python main.py
+python src/main.py
 ```
 
 If you want the dashboard to show real data immediately, import files first:
@@ -159,7 +150,7 @@ Meaning:
 ### 1. Run the desktop application
 
 ```bash
-python main.py
+python src/main.py
 ```
 
 The app will:

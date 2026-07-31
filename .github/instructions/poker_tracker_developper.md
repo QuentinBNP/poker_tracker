@@ -72,37 +72,22 @@ Project structure:
 
 ```
 poker_tracker/
-
-│
-├── main.py
-│
-├── config/
-│   └── config.json
-│
-├── database/
-│   ├── database.py
-│   └── models.py
-│
-├── watcher/
-│   └── file_watcher.py
-│
-├── parser/
-│   ├── hand_parser.py
-│   └── tournament_parser.py
-│
-├── statistics/
-│   └── calculator.py
-│
-├── ui/
-│   ├── dashboard.py
-│   ├── hands_view.py
-│   └── tournaments_view.py
-│
-├── tests/
-│
-└── data/
-    └── poker_tracker.db
-
+   ├── src/
+   │   ├── main.py
+   │   ├── database/
+   │   │   ├── database.py
+   │   │   └── models.py
+   │   ├── watcher/
+   │   │   └── file_watcher.py
+   │   ├── parser/
+   │   │   ├── hand_parser.py
+   │   │   └── tournament_parser.py
+   │   ├── poker_stats/
+   │   │   └── calculator.py
+   │   └── ui/
+   │       ├── dashboard.py
+   │       ├── hands_view.py
+   │       └── tournaments_view.py
 ```
 
 ---
