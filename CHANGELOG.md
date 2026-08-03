@@ -13,6 +13,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - Windows uninstaller support.
 - New installations detect a single Winamax account folder and use its account name and history folder as defaults.
 - Added an in-app Settings dialog to edit and save the player name, Winamax folder, database path, and log folder.
+- Startup now imports existing Winamax hand-history and tournament-summary files instead of waiting for a later file change.
+- Tournament chip results are tracked and displayed in big blinds, while cash-game and tournament prize results are tracked separately as money profit or loss.
 
 ## [0.1.0]
 

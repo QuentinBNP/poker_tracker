@@ -34,6 +34,9 @@ def main() -> None:
         watcher = WinamaxFileWatcher(watch_path, on_detected=on_detected)
         try:
             watcher.start()
+            imported_files = watcher.process_existing_files()
+            logger.info("Processed %d existing Winamax files from %s",
+                        len(imported_files), watch_path)
         except FileNotFoundError:
             logger.warning("Watch path does not exist: %s", watch_path)
 

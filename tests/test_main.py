@@ -56,6 +56,14 @@ class _FakeWatcher:
     def start(self) -> None:
         self.started = True
 
+    def process_existing_files(self) -> list[DetectedFile]:
+        detected_file = DetectedFile(
+            path=self.watch_path / "existing-summary.txt",
+            file_type="tournament_summary",
+        )
+        self.on_detected(detected_file)
+        return [detected_file]
+
     def stop(self) -> None:
         self.stopped = True
 
@@ -117,6 +125,9 @@ def test_main_bootstraps_and_starts_ui(monkeypatch: Any) -> None:
     assert fake_watcher is not None
     assert fake_watcher.watch_path == fake_watch_path
     assert fake_watcher.started is True
+    assert fake_importer.calls == [
+        (fake_watch_path / "existing-summary.txt", "tournament_summary")
+    ]
 
     fake_watcher.on_detected(
         DetectedFile(
@@ -125,8 +136,11 @@ def test_main_bootstraps_and_starts_ui(monkeypatch: Any) -> None:
         )
     )
 
-    assert fake_importer.calls == [(Path("/tmp/hand.txt"), "hand_history")]
-    assert fake_root.after_calls == [(0, fake_dashboard.refresh)]
+    assert fake_importer.calls == [
+        (fake_watch_path / "existing-summary.txt", "tournament_summary"),
+        (Path("/tmp/hand.txt"), "hand_history"),
+    ]
+    assert fake_root.after_calls == [(0, fake_dashboard.refresh), (0, fake_dashboard.refresh)]
 
     _, on_close = fake_root.protocol_calls[0]
     on_close()
