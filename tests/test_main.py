@@ -67,7 +67,7 @@ def test_main_bootstraps_and_starts_ui(monkeypatch: Any) -> None:
     fake_importer = _FakeImporter(fake_database)
     fake_watch_path = Path("/tmp/winamax")
     fake_watcher: _FakeWatcher | None = None
-    captured_hero_names: list[str] = []
+    captured_configs: list[dict[str, object]] = []
 
     monkeypatch.setattr(
         app_main,
@@ -90,10 +90,12 @@ def test_main_bootstraps_and_starts_ui(monkeypatch: Any) -> None:
 
     def fake_create_main_window_with_view(
         database: object,
-        hero_name: str,
+        config: dict[str, object],
+        on_settings_saved: Any,
     ) -> tuple[_FakeRoot, _FakeDashboard]:
         assert database is fake_database
-        captured_hero_names.append(hero_name)
+        assert callable(on_settings_saved)
+        captured_configs.append(config)
         return fake_root, fake_dashboard
 
     monkeypatch.setattr(
@@ -104,7 +106,12 @@ def test_main_bootstraps_and_starts_ui(monkeypatch: Any) -> None:
 
     app_main.main()
 
-    assert captured_hero_names == ["MyPseudo"]
+    assert captured_configs == [
+        {
+            "player_name": "MyPseudo",
+            "winamax_folder": "data/winamax",
+        }
+    ]
     assert fake_root.mainloop_called is True
     assert fake_root.protocol_calls[0][0] == "WM_DELETE_WINDOW"
     assert fake_watcher is not None

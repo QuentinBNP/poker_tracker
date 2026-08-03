@@ -4,31 +4,48 @@ import sys
 import tkinter as tk
 from datetime import datetime
 from tkinter import ttk
-from typing import Mapping
+from typing import Callable, Mapping
 
 from app_info import APP_ICON_PATH, APP_NAME
 from database.database import Database
 from poker_stats.calculator import StatisticsCalculator
 from ui.hands_view import HandsView
+from ui.settings import SettingsDialog
 from ui.tournaments_view import TournamentsView
 
 HandRow = Mapping[str, object]
+SettingsCallback = Callable[[dict[str, str]], None]
 
 
 class DashboardView(ttk.Frame):
-    def __init__(self, master: tk.Misc, database: Database, hero_name: str) -> None:
+    def __init__(
+        self,
+        master: tk.Misc,
+        database: Database,
+        config: Mapping[str, object],
+        on_settings_saved: SettingsCallback,
+    ) -> None:
         super().__init__(master, padding=16)
         self.database = database
-        self.hero_name = hero_name
-        self.statistics = StatisticsCalculator(database, hero_name)
+        self.settings_config: dict[str, str] = {
+            key: str(value) for key, value in config.items()
+        }
+        self.hero_name = str(config["player_name"])
+        self.on_settings_saved = on_settings_saved
+        self.statistics = StatisticsCalculator(database, self.hero_name)
 
         self.columnconfigure(0, weight=1)
         self.rowconfigure(1, weight=1)
 
-        title = ttk.Label(self, text=APP_NAME, font=("TkHeadingFont", 18, "bold"))
-        subtitle = ttk.Label(self, text=f"Hero: {hero_name}")
+        header = ttk.Frame(self)
+        header.grid(row=0, column=0, sticky="ew")
+        header.columnconfigure(0, weight=1)
+        title = ttk.Label(header, text=APP_NAME, font=("TkHeadingFont", 18, "bold"))
+        self.subtitle = ttk.Label(self, text=f"Hero: {self.hero_name}")
+        settings_button = ttk.Button(header, text="Settings", command=self._open_settings)
         title.grid(row=0, column=0, sticky="w")
-        subtitle.grid(row=1, column=0, sticky="w", pady=(4, 12))
+        settings_button.grid(row=0, column=1, sticky="e")
+        self.subtitle.grid(row=1, column=0, sticky="w", pady=(4, 12))
 
         summary_frame = ttk.Frame(self)
         summary_frame.grid(row=2, column=0, sticky="ew")
@@ -116,6 +133,17 @@ class DashboardView(ttk.Frame):
             else:
                 label.configure(text=f"{value:.1f}%")
 
+    def _open_settings(self) -> None:
+        SettingsDialog(self, self.settings_config, self._save_settings)
+
+    def _save_settings(self, config: dict[str, str]) -> None:
+        self.settings_config = config
+        self.hero_name = config["player_name"]
+        self.statistics = StatisticsCalculator(self.database, self.hero_name)
+        self.subtitle.configure(text=f"Hero: {self.hero_name}")
+        self.on_settings_saved(config)
+        self.refresh()
+
 
 def _build_metric(master: ttk.Frame, column: int, title: str) -> ttk.Label:
     card = ttk.LabelFrame(master, text=title, padding=12)
@@ -150,14 +178,19 @@ def _as_float(value: object) -> float:
     return 0.0
 
 
-def create_main_window(database: Database, hero_name: str) -> tk.Tk:
-    root, _ = create_main_window_with_view(database, hero_name)
+def create_main_window(
+    database: Database,
+    config: Mapping[str, object],
+    on_settings_saved: SettingsCallback,
+) -> tk.Tk:
+    root, _ = create_main_window_with_view(database, config, on_settings_saved)
     return root
 
 
 def create_main_window_with_view(
     database: Database,
-    hero_name: str,
+    config: Mapping[str, object],
+    on_settings_saved: SettingsCallback,
 ) -> tuple[tk.Tk, DashboardView]:
     root = tk.Tk()
     root.title(APP_NAME)
@@ -167,7 +200,12 @@ def create_main_window_with_view(
     root.columnconfigure(0, weight=1)
     root.rowconfigure(0, weight=1)
 
-    view = DashboardView(root, database=database, hero_name=hero_name)
+    view = DashboardView(
+        root,
+        database=database,
+        config=config,
+        on_settings_saved=on_settings_saved,
+    )
     view.grid(row=0, column=0, sticky="nsew")
     return root, view
 

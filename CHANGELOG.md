@@ -11,6 +11,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - Centralized release versioning in `pyproject.toml`.
 - Moved application source code to `src/`.
 - Windows uninstaller support.
+- New installations detect a single Winamax account folder and use its account name and history folder as defaults.
+- Added an in-app Settings dialog to edit and save the player name, Winamax folder, database path, and log folder.
 
 ## [0.1.0]
 
