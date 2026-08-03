@@ -72,6 +72,8 @@ class DatabaseImporter:
             started_at=parsed["started_at"],
             finished_at=self._calculate_finished_at(parsed),
             position=parsed["position"],
+            winnings=parsed["winnings"] or 0.0,
+            bounty_winnings=parsed["bounty_winnings"],
         )
         self.database.insert_tournament(tournament)
         self.logger.info("Imported tournament summary %s", path.name)
@@ -108,6 +110,7 @@ class DatabaseImporter:
                 board=parsed_hand.get("board") or "",
                 pot=parsed_hand.get("pot") or 0.0,
                 result=parsed_hand.get("result") or 0.0,
+                big_blind=parsed_hand.get("big_blind") or 0.0,
             )
             self.database.insert_hand(hand)
 

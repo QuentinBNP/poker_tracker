@@ -58,7 +58,10 @@ class StatisticsCalculator:
         return {
             "hands_played": hands_played,
             "tournaments_played": float(summary["tournaments_played"]),
-            "total_result": float(summary["total_result"]),
+            "chip_result_bb": float(summary["chip_result_bb"]),
+            "cash_result": float(summary["cash_result"]),
+            "tournament_profit": float(summary["tournament_profit"]),
+            "money_result": float(summary["money_result"]),
             "vpip": _percentage(vpip_hands, hands_played),
             "pfr": _percentage(pfr_hands, hands_played),
             "limp_percentage": _percentage(limp_hands, hands_played),

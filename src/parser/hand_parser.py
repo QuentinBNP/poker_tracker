@@ -40,10 +40,15 @@ def _parse_single_hand(hand_text: str) -> dict[str, Any]:
     parsed_header = _parse_header(header)
     hero_name, hero_cards = _parse_hero_line(hero_line)
     players = _parse_players(lines, table_line)
-    actions = _parse_actions(lines)
+    all_actions = _parse_actions(lines)
+    actions = [
+        action
+        for action in all_actions
+        if action["action"] not in {"POST_ANTE", "POST_SMALL_BLIND", "POST_BIG_BLIND"}
+    ]
     board = _extract_board(lines, summary_lines)
     winners = _parse_winners(summary_lines)
-    hero_result = _parse_hero_result(summary_lines, hero_name)
+    hero_result = _calculate_hero_net_result(all_actions, summary_lines, hero_name)
     table_name = _parse_table_name(table_line)
     tournament_id = parsed_header["tournament_id"] or _parse_tournament_id_from_table_name(
         table_name
@@ -74,6 +79,7 @@ def _parse_header(header: str) -> dict[str, Any]:
     tournament_name_match = re.search(r'^Winamax Poker - Tournament "(?P<name>.+?)"', header)
     tournament_id_match = re.search(r"\((?P<tournament_id>\d+)\)", header)
     game_type = "tournament" if tournament_name_match else "cashgame"
+    blind_match = re.search(r"Holdem no limit \((?P<blinds>[^)]+)\)", header)
 
     return {
         "hand_id": hand_id_match.group("hand_id") if hand_id_match else "",
@@ -85,6 +91,7 @@ def _parse_header(header: str) -> dict[str, Any]:
             tournament_id_match.group("tournament_id") if tournament_id_match else None
         ),
         "buy_in": _sum_money_parts(buy_in_match.group("buy_in")) if buy_in_match else None,
+        "big_blind": _parse_big_blind(blind_match.group("blinds")) if blind_match else 0.0,
         "played_at": (
             _parse_datetime(played_at_match.group("played_at"))
             if played_at_match
@@ -284,7 +291,41 @@ def _parse_winners(summary_lines: list[str]) -> list[str]:
     return winners
 
 
-def _parse_hero_result(summary_lines: list[str], hero_name: str) -> float:
+def _calculate_hero_net_result(
+    actions: list[dict[str, Any]],
+    summary_lines: list[str],
+    hero_name: str,
+) -> float:
+    contributions = 0.0
+    collected = 0.0
+    committed_by_street: dict[str, float] = {}
+
+    for action in actions:
+        if action["player"] != hero_name:
+            continue
+
+        action_name = action["action"]
+        amount = float(action.get("amount") or 0.0)
+        street = "PRE_FLOP" if action["street"] == "ANTE_BLINDS" else action["street"]
+        committed = committed_by_street.get(street, 0.0)
+
+        if action_name in {"POST_ANTE", "POST_SMALL_BLIND", "POST_BIG_BLIND", "CALL", "BET"}:
+            contributions += amount
+            committed_by_street[street] = committed + amount
+        elif action_name == "RAISE":
+            contribution = max(0.0, amount - committed)
+            contributions += contribution
+            committed_by_street[street] = max(committed, amount)
+        elif action_name == "COLLECT":
+            collected += amount
+
+    if collected == 0.0:
+        collected = _parse_hero_collected(summary_lines, hero_name)
+
+    return collected - contributions
+
+
+def _parse_hero_collected(summary_lines: list[str], hero_name: str) -> float:
     if not hero_name:
         return 0.0
 
@@ -298,12 +339,17 @@ def _parse_hero_result(summary_lines: list[str], hero_name: str) -> float:
             continue
 
         if match.group("outcome") == "won":
-            amount = _parse_amount(match.group("amount"))
-            return amount or 0.0
+            return _parse_amount(match.group("amount")) or 0.0
 
         return 0.0
 
     return 0.0
+
+
+def _parse_big_blind(value: str) -> float:
+    amounts = [_parse_amount(part) for part in value.split("/")]
+    parsed_amounts = [amount for amount in amounts if amount is not None]
+    return parsed_amounts[-1] if parsed_amounts else 0.0
 
 
 def _parse_datetime(value: str) -> datetime:

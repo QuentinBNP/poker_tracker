@@ -36,7 +36,9 @@ class Database:
                     players_count,
                     started_at,
                     finished_at,
-                    position
+                    position,
+                    winnings,
+                    bounty_winnings
                 ) VALUES (
                     :tournament_id,
                     :name,
@@ -45,7 +47,9 @@ class Database:
                     :players_count,
                     :started_at,
                     :finished_at,
-                    :position
+                    :position,
+                    :winnings,
+                    :bounty_winnings
                 )
                 ON CONFLICT(tournament_id) DO UPDATE SET
                     name = excluded.name,
@@ -54,7 +58,9 @@ class Database:
                     players_count = excluded.players_count,
                     started_at = excluded.started_at,
                     finished_at = excluded.finished_at,
-                    position = excluded.position
+                    position = excluded.position,
+                    winnings = excluded.winnings,
+                    bounty_winnings = excluded.bounty_winnings
                 """,
                 payload,
             )
@@ -78,6 +84,8 @@ class Database:
             started_at=self._parse_datetime(row["started_at"]),
             finished_at=self._parse_datetime(row["finished_at"]),
             position=row["position"],
+            winnings=row["winnings"],
+            bounty_winnings=row["bounty_winnings"],
         )
 
     def insert_hand(self, hand: Hand) -> None:
@@ -96,7 +104,8 @@ class Database:
                     hero_cards,
                     board,
                     pot,
-                    result
+                    result,
+                    big_blind
                 ) VALUES (
                     :hand_id,
                     :tournament_id,
@@ -106,7 +115,8 @@ class Database:
                     :hero_cards,
                     :board,
                     :pot,
-                    :result
+                    :result,
+                    :big_blind
                 )
                 ON CONFLICT(hand_id) DO UPDATE SET
                     tournament_id = excluded.tournament_id,
@@ -116,7 +126,8 @@ class Database:
                     hero_cards = excluded.hero_cards,
                     board = excluded.board,
                     pot = excluded.pot,
-                    result = excluded.result
+                    result = excluded.result,
+                    big_blind = excluded.big_blind
                 """,
                 payload,
             )
@@ -141,6 +152,7 @@ class Database:
             board=row["board"] or "",
             pot=row["pot"],
             result=row["result"],
+            big_blind=row["big_blind"],
         )
 
     def insert_player(self, player: Player) -> None:
@@ -244,21 +256,39 @@ class Database:
                 (hero_name,),
             ).fetchone()[0]
             total_result = connection.execute(
-                "SELECT COALESCE(SUM(result), 0) FROM hands WHERE hero = ?",
+                (
+                    "SELECT COALESCE(SUM(result), 0) FROM hands "
+                    "WHERE hero = ? AND tournament_id IS NULL"
+                ),
                 (hero_name,),
+            ).fetchone()[0]
+            chip_result_bb = connection.execute(
+                """
+                SELECT COALESCE(SUM(result / big_blind), 0)
+                FROM hands
+                WHERE hero = ? AND tournament_id IS NOT NULL AND big_blind > 0
+                """,
+                (hero_name,),
+            ).fetchone()[0]
+            tournament_profit = connection.execute(
+                "SELECT COALESCE(SUM(winnings + bounty_winnings - buy_in), 0) FROM tournaments"
             ).fetchone()[0]
 
         return {
             "hands_played": int(hands_played),
             "tournaments_played": int(tournaments_played),
-            "total_result": float(total_result),
+            "cash_result": float(total_result),
+            "tournament_profit": float(tournament_profit),
+            "money_result": float(total_result + tournament_profit),
+            "chip_result_bb": float(chip_result_bb),
         }
 
     def list_recent_hands(self, hero_name: str, limit: int = 10) -> list[dict[str, object]]:
         with self._connect() as connection:
             rows = connection.execute(
                 """
-                SELECT hand_id, tournament_id, played_at, table_name, hero_cards, board, pot, result
+                SELECT hand_id, tournament_id, played_at, table_name,
+                        hero_cards, board, pot, result, big_blind
                 FROM hands
                 WHERE hero = ?
                 ORDER BY played_at DESC, id DESC
@@ -277,6 +307,7 @@ class Database:
                 "board": row["board"] or "",
                 "pot": float(row["pot"]),
                 "result": float(row["result"]),
+                "big_blind": float(row["big_blind"]),
             }
             for row in rows
         ]
@@ -285,8 +316,8 @@ class Database:
         with self._connect() as connection:
             rows = connection.execute(
                 """
-                SELECT tournament_id, name, buy_in, prize_pool,
-                       players_count, started_at, finished_at, position
+                  SELECT tournament_id, name, buy_in, prize_pool, winnings, bounty_winnings,
+                      players_count, started_at, finished_at, position
                 FROM tournaments
                 ORDER BY started_at DESC, id DESC
                 LIMIT ?
@@ -300,6 +331,9 @@ class Database:
                 "name": row["name"],
                 "buy_in": float(row["buy_in"]),
                 "prize_pool": float(row["prize_pool"]),
+                "winnings": float(row["winnings"]),
+                "bounty_winnings": float(row["bounty_winnings"]),
+                "profit": float(row["winnings"] + row["bounty_winnings"] - row["buy_in"]),
                 "players_count": int(row["players_count"]),
                 "started_at": self._parse_datetime(row["started_at"]),
                 "finished_at": self._parse_datetime(row["finished_at"]),
@@ -364,6 +398,8 @@ class Database:
             started_at TEXT,
             finished_at TEXT,
             position INTEGER
+            ,winnings REAL NOT NULL DEFAULT 0
+            ,bounty_winnings REAL NOT NULL DEFAULT 0
         );
 
         CREATE TABLE IF NOT EXISTS hands (
@@ -377,6 +413,7 @@ class Database:
             board TEXT,
             pot REAL NOT NULL DEFAULT 0,
             result REAL NOT NULL DEFAULT 0,
+            big_blind REAL NOT NULL DEFAULT 0,
             FOREIGN KEY (tournament_id) REFERENCES tournaments (tournament_id)
         );
 

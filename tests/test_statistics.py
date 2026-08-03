@@ -21,6 +21,7 @@ def test_statistics_calculator_uses_existing_hand_and_action_data(tmp_path: Path
             started_at=datetime(2026, 6, 28, 16, 30, 2, tzinfo=timezone.utc),
             finished_at=None,
             position=3925,
+            winnings=12.50,
         )
     )
     database.insert_hand(
@@ -34,6 +35,7 @@ def test_statistics_calculator_uses_existing_hand_and_action_data(tmp_path: Path
             board="2c 3d 4h 5s 6c",
             pot=100.0,
             result=25.0,
+            big_blind=5.0,
         )
     )
     database.insert_hand(
@@ -46,7 +48,8 @@ def test_statistics_calculator_uses_existing_hand_and_action_data(tmp_path: Path
             hero_cards="Qs Qd",
             board="As Kd 7h",
             pot=60.0,
-            result=0.0,
+            result=-10.0,
+            big_blind=5.0,
         )
     )
     database.replace_actions_for_hand(
@@ -99,7 +102,10 @@ def test_statistics_calculator_uses_existing_hand_and_action_data(tmp_path: Path
 
     assert statistics["hands_played"] == 2.0
     assert statistics["tournaments_played"] == 1.0
-    assert statistics["total_result"] == 25.0
+    assert statistics["chip_result_bb"] == 3.0
+    assert statistics["cash_result"] == 0.0
+    assert statistics["tournament_profit"] == 12.50
+    assert statistics["money_result"] == 12.50
     assert statistics["vpip"] == 100.0
     assert statistics["pfr"] == 50.0
     assert statistics["limp_percentage"] == 50.0

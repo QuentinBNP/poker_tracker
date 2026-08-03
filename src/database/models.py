@@ -14,6 +14,8 @@ class Tournament:
     started_at: datetime | None
     finished_at: datetime | None
     position: int | None
+    winnings: float = 0.0
+    bounty_winnings: float = 0.0
 
 
 @dataclass(slots=True)
@@ -27,6 +29,7 @@ class Hand:
     board: str
     pot: float
     result: float
+    big_blind: float = 0.0
 
 
 @dataclass(slots=True)
