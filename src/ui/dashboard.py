@@ -49,12 +49,13 @@ class DashboardView(ttk.Frame):
 
         summary_frame = ttk.Frame(self)
         summary_frame.grid(row=2, column=0, sticky="ew")
-        for column in range(3):
+        for column in range(4):
             summary_frame.columnconfigure(column, weight=1)
 
         self.hands_value = _build_metric(summary_frame, 0, "Hands Played")
         self.tournaments_value = _build_metric(summary_frame, 1, "Tournaments")
-        self.result_value = _build_metric(summary_frame, 2, "Result")
+        self.chip_result_value = _build_metric(summary_frame, 2, "Tournament Chips")
+        self.money_result_value = _build_metric(summary_frame, 3, "Money Profit")
 
         notebook = ttk.Notebook(self)
         notebook.grid(row=3, column=0, sticky="nsew", pady=(16, 0))
@@ -116,7 +117,12 @@ class DashboardView(ttk.Frame):
 
         self.hands_value.configure(text=str(summary["hands_played"]))
         self.tournaments_value.configure(text=str(summary["tournaments_played"]))
-        self.result_value.configure(text=_format_result(float(summary["total_result"])))
+        self.chip_result_value.configure(
+            text=f"{_format_result(float(summary['chip_result_bb']))} BB"
+        )
+        self.money_result_value.configure(
+            text=f"{_format_result(float(summary['money_result']))} EUR"
+        )
 
         self.recent_hands_list.delete(0, tk.END)
         for hand in recent_hands[:8]:

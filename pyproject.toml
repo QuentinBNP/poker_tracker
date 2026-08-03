@@ -1,6 +1,6 @@
 [project]
 name = "mypokertracker"
-version = "0.1.0"
+version = "0.2.0"
 description = "MyPokerTracker Winamax desktop application"
 requires-python = ">=3.11"
 dependencies = [

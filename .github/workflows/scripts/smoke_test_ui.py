@@ -14,7 +14,7 @@ def main() -> None:
 
     config = load_config()
     database = bootstrap_application()
-    root = create_main_window(database, config["player_name"])
+    root = create_main_window(database, config, lambda updated_config: None)
     root.update_idletasks()
     root.update()
     root.destroy()
