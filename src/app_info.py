@@ -1,8 +1,8 @@
 from __future__ import annotations
 
+import tomllib
 from importlib.metadata import version
 from pathlib import Path
-import tomllib
 
 APP_NAME = "MyPokerTracker"
 APP_SLUG = "mypokertracker"

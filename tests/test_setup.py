@@ -8,7 +8,7 @@ from typing import Any
 
 import bootstrap
 from app_info import APP_ICON_PATH, APP_VERSION
-from bootstrap import bootstrap_application, load_config
+from bootstrap import bootstrap_application, load_config, save_config
 
 
 def test_load_config_reads_json(tmp_path: Path) -> None:
@@ -74,6 +74,26 @@ def test_load_config_creates_default_config_in_user_directory(
     assert config["database_path"].endswith("mypokertracker.db")
     assert "MyPokerTracker" in config["database_path"]
     assert "MyPokerTracker" in config["log_directory"]
+
+
+def test_find_winamax_account_names_uses_history_directories(tmp_path: Path) -> None:
+    accounts_directory = tmp_path / "accounts"
+    history_directory = accounts_directory / "HeroPlayer" / "history"
+    history_directory.mkdir(parents=True)
+    (accounts_directory / "NotAnAccount").mkdir()
+
+    account_names = bootstrap._find_winamax_account_names(accounts_directory)
+
+    assert account_names == ["HeroPlayer"]
+
+
+def test_save_config_writes_valid_json(tmp_path: Path) -> None:
+    config_path = tmp_path / "config.json"
+    config = {"player_name": "HeroPlayer", "winamax_folder": "C:/Winamax/history"}
+
+    save_config(config, config_path)
+
+    assert json.loads(config_path.read_text(encoding="utf-8")) == config
 
 
 def test_app_version_comes_from_project_metadata() -> None:

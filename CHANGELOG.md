@@ -10,6 +10,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 - Centralized release versioning in `pyproject.toml`.
 - Moved application source code to `src/`.
+- Windows uninstaller support.
 
 ## [0.1.0]
 

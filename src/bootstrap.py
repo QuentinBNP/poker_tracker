@@ -28,6 +28,12 @@ def load_config(config_path: Path | None = None) -> dict[str, Any]:
         return json.load(config_file)
 
 
+def save_config(config: dict[str, str], config_path: Path | None = None) -> None:
+    path = config_path or get_default_config_path()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(config, indent=2) + "\n", encoding="utf-8")
+
+
 def bootstrap_application(config_path: Path | None = None) -> Database:
     path = config_path or get_default_config_path()
     config = load_config(path)
@@ -68,20 +74,39 @@ def _write_default_config(path: Path) -> None:
 
 
 def _default_config() -> dict[str, str]:
+    player_name, winamax_folder = _default_winamax_settings()
     return {
-        "player_name": "MyPseudo",
-        "winamax_folder": _default_winamax_folder(),
+        "player_name": player_name,
+        "winamax_folder": winamax_folder,
         "database_path": str(_get_data_directory() / "data" / f"{APP_SLUG}.db"),
         "log_directory": str(_get_data_directory() / "logs"),
     }
 
 
-def _default_winamax_folder() -> str:
+def _default_winamax_settings() -> tuple[str, str]:
     if os.name == "nt":
         appdata_root = Path(os.environ.get("APPDATA", Path.home() / "AppData" / "Roaming"))
-        return str(appdata_root / "winamax" / "documents")
+        accounts_directory = appdata_root / "winamax" / "documents" / "accounts"
+        account_names = _find_winamax_account_names(accounts_directory)
+        player_name = account_names[0] if len(account_names) == 1 else _default_player_name()
+        return player_name, str(accounts_directory / player_name / "history")
 
-    return "C:/Users/YourUser/AppData/Roaming/winamax/documents"
+    return _default_player_name(), "C:/Users/YourUser/AppData/Roaming/winamax/documents"
+
+
+def _find_winamax_account_names(accounts_directory: Path) -> list[str]:
+    if not accounts_directory.is_dir():
+        return []
+
+    return sorted(
+        path.name
+        for path in accounts_directory.iterdir()
+        if path.is_dir() and (path / "history").is_dir()
+    )
+
+
+def _default_player_name() -> str:
+    return os.environ.get("USERNAME") or os.environ.get("USER") or Path.home().name
 
 
 def _get_config_directory() -> Path:
