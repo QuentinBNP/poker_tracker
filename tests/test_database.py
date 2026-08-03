@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -95,3 +96,47 @@ def test_database_can_store_hand_players_actions_and_import(tmp_path: Path) -> N
     assert database.has_import(
         "20260628_Kill The Fish(1119034571)_real_holdem_no-limit.txt"
     )
+
+
+def test_database_initialization_migrates_existing_result_columns(tmp_path: Path) -> None:
+    database_path = tmp_path / "data" / "tracker.db"
+    database_path.parent.mkdir()
+    with sqlite3.connect(database_path) as connection:
+        connection.executescript(
+            """
+            CREATE TABLE tournaments (
+                id INTEGER PRIMARY KEY,
+                tournament_id TEXT NOT NULL UNIQUE,
+                name TEXT NOT NULL,
+                buy_in REAL NOT NULL,
+                prize_pool REAL NOT NULL DEFAULT 0,
+                players_count INTEGER NOT NULL DEFAULT 0,
+                started_at TEXT,
+                finished_at TEXT,
+                position INTEGER
+            );
+            CREATE TABLE hands (
+                id INTEGER PRIMARY KEY,
+                hand_id TEXT NOT NULL UNIQUE,
+                tournament_id TEXT,
+                played_at TEXT,
+                table_name TEXT NOT NULL,
+                hero TEXT NOT NULL,
+                hero_cards TEXT,
+                board TEXT,
+                pot REAL NOT NULL DEFAULT 0,
+                result REAL NOT NULL DEFAULT 0
+            );
+            """
+        )
+
+    Database(database_path).initialize()
+
+    with sqlite3.connect(database_path) as connection:
+        hand_columns = {row[1] for row in connection.execute("PRAGMA table_info(hands)")}
+        tournament_columns = {
+            row[1] for row in connection.execute("PRAGMA table_info(tournaments)")
+        }
+
+    assert "big_blind" in hand_columns
+    assert {"winnings", "bounty_winnings"}.issubset(tournament_columns)

@@ -18,6 +18,7 @@ class Database:
         with sqlite3.connect(self.database_path) as connection:
             connection.execute("PRAGMA foreign_keys = ON")
             connection.executescript(self._schema())
+            self._migrate_schema(connection)
             connection.commit()
 
     def insert_tournament(self, tournament: Tournament) -> None:
@@ -439,3 +440,35 @@ class Database:
             status TEXT NOT NULL
         );
         """
+
+    @staticmethod
+    def _migrate_schema(connection: sqlite3.Connection) -> None:
+        Database._add_column_if_missing(connection, "hands", "big_blind", "REAL NOT NULL DEFAULT 0")
+        Database._add_column_if_missing(
+            connection,
+            "tournaments",
+            "winnings",
+            "REAL NOT NULL DEFAULT 0",
+        )
+        Database._add_column_if_missing(
+            connection,
+            "tournaments",
+            "bounty_winnings",
+            "REAL NOT NULL DEFAULT 0",
+        )
+
+    @staticmethod
+    def _add_column_if_missing(
+        connection: sqlite3.Connection,
+        table_name: str,
+        column_name: str,
+        column_definition: str,
+    ) -> None:
+        columns = {
+            str(row[1])
+            for row in connection.execute(f"PRAGMA table_info({table_name})")
+        }
+        if column_name not in columns:
+            connection.execute(
+                f"ALTER TABLE {table_name} ADD COLUMN {column_name} {column_definition}"
+            )

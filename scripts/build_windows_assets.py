@@ -33,6 +33,7 @@ def main() -> None:
             app_description=APP_DESCRIPTION,
             app_name=APP_NAME,
             app_version=APP_VERSION,
+            icon_path=icon_path,
         ),
         encoding="utf-8",
     )
@@ -54,6 +55,7 @@ def _version_file_content(
     app_description: str,
     app_name: str,
     app_version: str,
+    icon_path: Path,
 ) -> str:
     version_tuple = _version_tuple(app_version)
     version_commas = ", ".join(str(part) for part in version_tuple)
@@ -103,6 +105,7 @@ def _installer_script_content(
     project_root / "build" / "windows-assets" / "MyPokerTracker.ico"
   ).as_posix()
   output_dir = (project_root / "dist" / "installer").as_posix()
+  installed_icon_name = f"{app_name}-{app_version}.ico"
   app_id = f"{{{{{app_name}}}}}"
   task_line = (
     'Name: "desktopicon"; Description: "Create a desktop shortcut"; '
@@ -112,6 +115,21 @@ def _installer_script_content(
     'Filename: "{app}\\{#MyAppExeName}"; '
     'Description: "Launch {#MyAppName}"; '
     'Flags: nowait postinstall skipifsilent'
+  )
+  icon_source_line = (
+    f'Source: "{icon_path}"; DestDir: "{{{{app}}}}"; '
+    f'DestName: "{installed_icon_name}"; Flags: ignoreversion'
+  )
+  group_icon_line = (
+    'Name: "{{group}}\\{{#MyAppName}}"; '
+    'Filename: "{{app}}\\{{#MyAppExeName}}"; '
+    f'IconFilename: "{{{{app}}}}\\{installed_icon_name}"'
+  )
+  desktop_icon_line = (
+    'Name: "{{autodesktop}}\\{{#MyAppName}}"; '
+    'Filename: "{{app}}\\{{#MyAppExeName}}"; '
+    f'IconFilename: "{{{{app}}}}\\{installed_icon_name}"; '
+    'Tasks: desktopicon'
   )
 
   return f'''#define MyAppName "{app_name}"
@@ -145,11 +163,12 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
 Source: "{dist_dir}\\*"; DestDir: "{{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
+{icon_source_line}
 
 [Icons]
-Name: "{{group}}\\{{#MyAppName}}"; Filename: "{{app}}\\{{#MyAppExeName}}"
+{group_icon_line}
 Name: "{{group}}\\Uninstall {{#MyAppName}}"; Filename: "{{uninstallexe}}"
-Name: "{{autodesktop}}\\{{#MyAppName}}"; Filename: "{{app}}\\{{#MyAppExeName}}"; Tasks: desktopicon
+{desktop_icon_line}
 
 [Run]
 {run_line}
