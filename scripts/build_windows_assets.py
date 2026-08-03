@@ -117,19 +117,19 @@ def _installer_script_content(
     'Flags: nowait postinstall skipifsilent'
   )
   icon_source_line = (
-    f'Source: "{icon_path}"; DestDir: "{{{{app}}}}"; '
+    f'Source: "{icon_path}"; DestDir: "{{app}}"; '
     f'DestName: "{installed_icon_name}"; Flags: ignoreversion'
   )
   group_icon_line = (
-    'Name: "{{group}}\\{{#MyAppName}}"; '
-    'Filename: "{{app}}\\{{#MyAppExeName}}"; '
-    f'IconFilename: "{{{{app}}}}\\{installed_icon_name}"'
+    f'Name: "{{group}}\\{{#MyAppName}}"; '
+    f'Filename: "{{app}}\\{{#MyAppExeName}}"; '
+    f'IconFilename: "{{app}}\\{installed_icon_name}"'
   )
   desktop_icon_line = (
-    'Name: "{{autodesktop}}\\{{#MyAppName}}"; '
-    'Filename: "{{app}}\\{{#MyAppExeName}}"; '
-    f'IconFilename: "{{{{app}}}}\\{installed_icon_name}"; '
-    'Tasks: desktopicon'
+    f'Name: "{{autodesktop}}\\{{#MyAppName}}"; '
+    f'Filename: "{{app}}\\{{#MyAppExeName}}"; '
+    f'IconFilename: "{{app}}\\{installed_icon_name}"; '
+    f'Tasks: desktopicon'
   )
 
   return f'''#define MyAppName "{app_name}"

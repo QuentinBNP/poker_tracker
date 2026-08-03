@@ -4,6 +4,13 @@ All notable changes to MyPokerTracker are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.1] - 2026-08-03
+
+### Changed
+
+- Added automatic SQLite migrations for existing databases, including the chip big-blind and tournament-winnings columns introduced in 0.2.0.
+- Fixed the Windows installer shortcut template so it compiles correctly and uses a versioned installed icon file, preventing stale shortcut icons after upgrades.
+
 ## [0.2.0] - 2026-08-03
 
 ### Added
@@ -27,5 +34,6 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - Local SQLite storage, dashboard, statistics, and file watching.
 - Windows executable and installer build support.
 
+[0.2.1]: https://github.com/QuentinBNP/poker_tracker/releases/tag/v0.2.1
 [0.2.0]: https://github.com/QuentinBNP/poker_tracker/releases/tag/v0.2.0
 [0.1.0]: https://github.com/QuentinBNP/poker_tracker/releases/tag/v0.1.0
