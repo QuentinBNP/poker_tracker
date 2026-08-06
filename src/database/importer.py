@@ -30,6 +30,8 @@ class DatabaseImporter:
 
     def import_file(self, path: Path, file_type: str | None = None) -> ImportReport:
         resolved_type = file_type or self._classify_file(path)
+        if self.database.has_current_import(path):
+            return ImportReport(path=path, file_type=resolved_type, status="skipped")
 
         try:
             text = path.read_text(encoding="utf-8")
@@ -49,11 +51,7 @@ class DatabaseImporter:
             return ImportReport(path=path, file_type=resolved_type, status="failed")
 
         self.database.record_import(
-            ImportRecord(
-                filename=path.name,
-                imported_at=self._imported_at(),
-                status=report.status,
-            )
+            self._import_record(path, report.status)
         )
         return report
 
@@ -188,3 +186,14 @@ class DatabaseImporter:
         from datetime import datetime
 
         return datetime.now(timezone.utc)
+
+    @classmethod
+    def _import_record(cls, path: Path, status: str) -> ImportRecord:
+        stats = path.stat()
+        return ImportRecord(
+            filename=path.name,
+            imported_at=cls._imported_at(),
+            status=status,
+            modified_at_ns=stats.st_mtime_ns,
+            file_size=stats.st_size,
+        )

@@ -1,5 +1,9 @@
 from __future__ import annotations
 
+import logging
+from pathlib import Path
+from threading import Thread
+
 from bootstrap import (
     bootstrap_application,
     get_default_config_path,
@@ -34,9 +38,11 @@ def main() -> None:
         watcher = WinamaxFileWatcher(watch_path, on_detected=on_detected)
         try:
             watcher.start()
-            imported_files = watcher.process_existing_files()
-            logger.info("Processed %d existing Winamax files from %s",
-                        len(imported_files), watch_path)
+            Thread(
+                target=_process_existing_files,
+                args=(watcher, watch_path, logger),
+                daemon=True,
+            ).start()
         except FileNotFoundError:
             logger.warning("Watch path does not exist: %s", watch_path)
 
@@ -56,6 +62,15 @@ def main() -> None:
 
     root.protocol("WM_DELETE_WINDOW", on_close)
     root.mainloop()
+
+
+def _process_existing_files(
+    watcher: WinamaxFileWatcher,
+    watch_path: Path,
+    logger: logging.Logger,
+) -> None:
+    imported_files = watcher.process_existing_files()
+    logger.info("Processed %d existing Winamax files from %s", len(imported_files), watch_path)
 
 
 if __name__ == "__main__":

@@ -221,16 +221,20 @@ class Database:
         with self._connect() as connection:
             connection.execute(
                 """
-                INSERT INTO imports (filename, imported_at, status)
-                VALUES (?, ?, ?)
+                INSERT INTO imports (filename, imported_at, status, modified_at_ns, file_size)
+                VALUES (?, ?, ?, ?, ?)
                 ON CONFLICT(filename) DO UPDATE SET
                     imported_at = excluded.imported_at,
-                    status = excluded.status
+                    status = excluded.status,
+                    modified_at_ns = excluded.modified_at_ns,
+                    file_size = excluded.file_size
                 """,
                 (
                     record.filename,
                     self._serialize_datetime(record.imported_at),
                     record.status,
+                    record.modified_at_ns,
+                    record.file_size,
                 ),
             )
 
@@ -239,6 +243,20 @@ class Database:
             row = connection.execute(
                 "SELECT 1 FROM imports WHERE filename = ?",
                 (filename,),
+            ).fetchone()
+
+        return row is not None
+
+    def has_current_import(self, path: Path) -> bool:
+        stats = path.stat()
+        with self._connect() as connection:
+            row = connection.execute(
+                """
+                SELECT 1 FROM imports
+                WHERE filename = ? AND status = 'success'
+                  AND modified_at_ns = ? AND file_size = ?
+                """,
+                (path.name, stats.st_mtime_ns, stats.st_size),
             ).fetchone()
 
         return row is not None
@@ -437,7 +455,9 @@ class Database:
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             filename TEXT NOT NULL UNIQUE,
             imported_at TEXT NOT NULL,
-            status TEXT NOT NULL
+            status TEXT NOT NULL,
+            modified_at_ns INTEGER,
+            file_size INTEGER
         );
         """
 
@@ -456,6 +476,8 @@ class Database:
             "bounty_winnings",
             "REAL NOT NULL DEFAULT 0",
         )
+        Database._add_column_if_missing(connection, "imports", "modified_at_ns", "INTEGER")
+        Database._add_column_if_missing(connection, "imports", "file_size", "INTEGER")
 
     @staticmethod
     def _add_column_if_missing(

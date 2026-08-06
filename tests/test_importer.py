@@ -70,7 +70,20 @@ def test_importer_reimport_does_not_duplicate_actions(tmp_path: Path) -> None:
         ).fetchone()[0]
 
     assert first_report.status == "success"
-    assert second_report.status == "success"
+    assert second_report.status == "skipped"
     assert action_count == len(
         database.list_actions_for_hand("#4806187671170843057-9-1782664923")
     )
+
+
+def test_importer_skips_an_unchanged_previously_imported_file(tmp_path: Path) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    importer = DatabaseImporter(database)
+    sample_path = SAMPLES_DIR / "20260628_Freeroll(1119027769)_real_holdem_no-limit.txt"
+
+    first_report = importer.import_file(sample_path)
+    second_report = importer.import_file(sample_path)
+
+    assert first_report.status == "success"
+    assert second_report.status == "skipped"

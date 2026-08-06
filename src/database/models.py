@@ -51,3 +51,5 @@ class ImportRecord:
     filename: str
     imported_at: datetime
     status: str
+    modified_at_ns: int | None = None
+    file_size: int | None = None

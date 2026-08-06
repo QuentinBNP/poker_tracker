@@ -4,6 +4,12 @@ All notable changes to MyPokerTracker are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+
+- Improve importer with cache to avoid re-importing already imported files.
+
 ## [0.2.1] - 2026-08-03
 
 ### Changed

@@ -68,6 +68,16 @@ class _FakeWatcher:
         self.stopped = True
 
 
+class _ImmediateThread:
+    def __init__(self, *, target: Any, args: tuple[Any, ...], daemon: bool) -> None:
+        self.target = target
+        self.args = args
+        self.daemon = daemon
+
+    def start(self) -> None:
+        self.target(*self.args)
+
+
 def test_main_bootstraps_and_starts_ui(monkeypatch: Any) -> None:
     fake_root = _FakeRoot()
     fake_dashboard = _FakeDashboard()
@@ -95,6 +105,7 @@ def test_main_bootstraps_and_starts_ui(monkeypatch: Any) -> None:
         return fake_watcher
 
     monkeypatch.setattr(app_main, "WinamaxFileWatcher", fake_watcher_factory)
+    monkeypatch.setattr(app_main, "Thread", _ImmediateThread)
 
     def fake_create_main_window_with_view(
         database: object,
