@@ -5,6 +5,7 @@ from pathlib import Path
 
 from database.database import Database
 from database.importer import DatabaseImporter
+from game_modes import GameMode
 
 SAMPLES_DIR = Path(__file__).resolve().parents[1] / "samples"
 
@@ -48,6 +49,8 @@ def test_importer_persists_hand_history_without_existing_tournament_summary(tmp_
     assert report.hands_imported >= 4
     assert first_hand is not None
     assert first_hand.hero == "MyPseudo"
+    assert first_hand.game_mode is GameMode.TOURNAMENT
+    assert first_hand.session_id is not None
     assert seeded_tournament is not None
     assert seeded_tournament.name == "Freeroll"
     assert any(action.action == "FOLD" and action.player == "MyPseudo" for action in actions)

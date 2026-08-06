@@ -6,6 +6,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ## [Unreleased]
 
+### Added
+
+- Added persisted game-mode classification, session records, session backfill for existing databases, and database indexes required for upcoming history and filter queries.
+
 ### Changed
 
 - Improve importer with cache to avoid re-importing already imported files.

@@ -12,3 +12,6 @@ logs/
 # Packaging outputs
 build/
 dist/
+
+# VS Code
+.vscode/

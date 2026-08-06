@@ -7,6 +7,7 @@ from typing import Any
 
 from database.database import Database
 from database.models import Action, Hand, ImportRecord, Player, Tournament
+from game_modes import GameMode
 from logging_system import get_logger
 from parser.hand_parser import parse_hand_history
 from parser.tournament_parser import parse_tournament_summary
@@ -109,7 +110,9 @@ class DatabaseImporter:
                 pot=parsed_hand.get("pot") or 0.0,
                 result=parsed_hand.get("result") or 0.0,
                 big_blind=parsed_hand.get("big_blind") or 0.0,
+                game_mode=GameMode(parsed_hand.get("game_mode", GameMode.CASH_GAME)),
             )
+            hand.session_id = self.database.assign_hand_to_session(hand)
             self.database.insert_hand(hand)
 
             for player_data in parsed_hand.get("players", []):

@@ -4,6 +4,8 @@ import re
 from datetime import datetime, timezone
 from typing import Any
 
+from game_modes import GameMode
+
 HAND_SPLIT_PATTERN = re.compile(r"\n{2,}(?=Winamax Poker - )")
 SEAT_PATTERN = re.compile(r"^Seat (?P<seat>\d+): (?P<name>.+?) \((?P<details>.+)\)$")
 ACTION_AMOUNT_PATTERN = re.compile(r"(?P<amount>\d+(?:[.,]\d+)?)€?")
@@ -79,11 +81,13 @@ def _parse_header(header: str) -> dict[str, Any]:
     tournament_name_match = re.search(r'^Winamax Poker - Tournament "(?P<name>.+?)"', header)
     tournament_id_match = re.search(r"\((?P<tournament_id>\d+)\)", header)
     game_type = "tournament" if tournament_name_match else "cashgame"
+    game_mode = _parse_game_mode(header, tournament_name_match is not None)
     blind_match = re.search(r"Holdem no limit \((?P<blinds>[^)]+)\)", header)
 
     return {
         "hand_id": hand_id_match.group("hand_id") if hand_id_match else "",
         "game_type": game_type,
+        "game_mode": game_mode,
         "tournament_name": (
             tournament_name_match.group("name") if tournament_name_match else None
         ),
@@ -98,6 +102,14 @@ def _parse_header(header: str) -> dict[str, Any]:
             else None
         ),
     }
+
+
+def _parse_game_mode(header: str, is_tournament: bool) -> GameMode:
+    if "Expresso" in header:
+        return GameMode.EXPRESSO
+    if is_tournament:
+        return GameMode.TOURNAMENT
+    return GameMode.CASH_GAME
 
 
 def _parse_hero_line(line: str) -> tuple[str, str]:

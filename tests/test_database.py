@@ -6,6 +6,7 @@ from pathlib import Path
 
 from database.database import Database
 from database.models import Action, Hand, ImportRecord, Player, Tournament
+from game_modes import GameMode
 
 
 def test_database_can_store_and_read_tournament(tmp_path: Path) -> None:
@@ -140,3 +141,92 @@ def test_database_initialization_migrates_existing_result_columns(tmp_path: Path
 
     assert "big_blind" in hand_columns
     assert {"winnings", "bounty_winnings"}.issubset(tournament_columns)
+
+
+def test_database_migrates_legacy_hands_to_game_modes_and_sessions(tmp_path: Path) -> None:
+    database_path = tmp_path / "data" / "tracker.db"
+    database_path.parent.mkdir()
+    with sqlite3.connect(database_path) as connection:
+        connection.executescript(
+            """
+            CREATE TABLE tournaments (
+                id INTEGER PRIMARY KEY,
+                tournament_id TEXT NOT NULL UNIQUE,
+                name TEXT NOT NULL,
+                buy_in REAL NOT NULL,
+                prize_pool REAL NOT NULL DEFAULT 0,
+                players_count INTEGER NOT NULL DEFAULT 0,
+                started_at TEXT,
+                finished_at TEXT,
+                position INTEGER
+            );
+            CREATE TABLE hands (
+                id INTEGER PRIMARY KEY,
+                hand_id TEXT NOT NULL UNIQUE,
+                tournament_id TEXT,
+                played_at TEXT,
+                table_name TEXT NOT NULL,
+                hero TEXT NOT NULL,
+                hero_cards TEXT,
+                board TEXT,
+                pot REAL NOT NULL DEFAULT 0,
+                result REAL NOT NULL DEFAULT 0
+            );
+            INSERT INTO tournaments (tournament_id, name, buy_in)
+            VALUES ('tournament-1', 'Freeroll', 0);
+            INSERT INTO hands (hand_id, tournament_id, played_at, table_name, hero)
+            VALUES ('tournament-hand', 'tournament-1', '2026-06-28T16:42:03+00:00',
+                    'Freeroll(tournament-1)#1', 'MyPseudo');
+            INSERT INTO hands (hand_id, played_at, table_name, hero)
+            VALUES ('cash-hand', '2026-06-28T16:52:01+00:00', 'Nice 23', 'MyPseudo');
+            """
+        )
+
+    database = Database(database_path)
+    database.initialize()
+
+    tournament_hand = database.get_hand("tournament-hand")
+    cash_hand = database.get_hand("cash-hand")
+
+    assert tournament_hand is not None
+    assert tournament_hand.game_mode is GameMode.TOURNAMENT
+    assert tournament_hand.session_id is not None
+    assert cash_hand is not None
+    assert cash_hand.game_mode is GameMode.CASH_GAME
+    assert cash_hand.session_id is not None
+
+
+def test_cash_hands_more_than_thirty_minutes_apart_get_distinct_sessions(tmp_path: Path) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    first_hand = Hand(
+        hand_id="cash-hand-1",
+        tournament_id=None,
+        played_at=datetime(2026, 6, 28, 16, 0, tzinfo=timezone.utc),
+        table_name="Nice 23",
+        hero="MyPseudo",
+        hero_cards="Ah Kh",
+        board="",
+        pot=0.0,
+        result=0.0,
+        game_mode=GameMode.CASH_GAME,
+    )
+    second_hand = Hand(
+        hand_id="cash-hand-2",
+        tournament_id=None,
+        played_at=datetime(2026, 6, 28, 16, 31, tzinfo=timezone.utc),
+        table_name="Nice 23",
+        hero="MyPseudo",
+        hero_cards="Qs Qd",
+        board="",
+        pot=0.0,
+        result=0.0,
+        game_mode=GameMode.CASH_GAME,
+    )
+
+    first_hand.session_id = database.assign_hand_to_session(first_hand)
+    database.insert_hand(first_hand)
+    second_hand.session_id = database.assign_hand_to_session(second_hand)
+    database.insert_hand(second_hand)
+
+    assert first_hand.session_id != second_hand.session_id

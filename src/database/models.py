@@ -3,6 +3,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import datetime
 
+from game_modes import GameMode
+
 
 @dataclass(slots=True)
 class Tournament:
@@ -16,6 +18,7 @@ class Tournament:
     position: int | None
     winnings: float = 0.0
     bounty_winnings: float = 0.0
+    game_mode: GameMode = GameMode.TOURNAMENT
 
 
 @dataclass(slots=True)
@@ -30,6 +33,18 @@ class Hand:
     pot: float
     result: float
     big_blind: float = 0.0
+    game_mode: GameMode = GameMode.CASH_GAME
+    session_id: int | None = None
+
+
+@dataclass(slots=True)
+class Session:
+    id: int | None
+    game_mode: GameMode
+    table_name: str | None
+    tournament_id: str | None
+    started_at: datetime | None
+    finished_at: datetime | None
 
 
 @dataclass(slots=True)

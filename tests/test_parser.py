@@ -3,6 +3,7 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from pathlib import Path
 
+from game_modes import GameMode
 from parser.hand_parser import parse_hand_history
 from parser.tournament_parser import parse_tournament_summary
 
@@ -62,6 +63,7 @@ def test_parse_tournament_hand_history_extracts_core_fields() -> None:
 
     assert first_hand["hand_id"] == "#4806187671170843057-9-1782664923"
     assert first_hand["game_type"] == "tournament"
+    assert first_hand["game_mode"] is GameMode.TOURNAMENT
     assert first_hand["tournament_id"] == "1119027769"
     assert first_hand["table_name"] == "Freeroll(1119027769)#0432"
     assert first_hand["hero"] == "MyPseudo"
@@ -96,6 +98,7 @@ def test_parse_cash_game_hand_history_supports_decimal_amounts() -> None:
     second_hand = hands[1]
 
     assert first_hand["game_type"] == "cashgame"
+    assert first_hand["game_mode"] is GameMode.CASH_GAME
     assert first_hand["tournament_id"] is None
     assert first_hand["table_name"] == "Nice 23"
     assert first_hand["pot"] == 1.36

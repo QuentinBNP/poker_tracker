@@ -5,7 +5,8 @@ from dataclasses import asdict
 from datetime import datetime
 from pathlib import Path
 
-from database.models import Action, Hand, ImportRecord, Player, Tournament
+from database.models import Action, Hand, ImportRecord, Player, Session, Tournament
+from game_modes import GameMode
 
 
 class Database:
@@ -19,6 +20,8 @@ class Database:
             connection.execute("PRAGMA foreign_keys = ON")
             connection.executescript(self._schema())
             self._migrate_schema(connection)
+            self._backfill_legacy_game_modes(connection)
+            self._backfill_legacy_sessions(connection)
             connection.commit()
 
     def insert_tournament(self, tournament: Tournament) -> None:
@@ -106,7 +109,9 @@ class Database:
                     board,
                     pot,
                     result,
-                    big_blind
+                    big_blind,
+                    game_mode,
+                    session_id
                 ) VALUES (
                     :hand_id,
                     :tournament_id,
@@ -117,7 +122,9 @@ class Database:
                     :board,
                     :pot,
                     :result,
-                    :big_blind
+                    :big_blind,
+                    :game_mode,
+                    :session_id
                 )
                 ON CONFLICT(hand_id) DO UPDATE SET
                     tournament_id = excluded.tournament_id,
@@ -128,7 +135,9 @@ class Database:
                     board = excluded.board,
                     pot = excluded.pot,
                     result = excluded.result,
-                    big_blind = excluded.big_blind
+                    big_blind = excluded.big_blind,
+                    game_mode = excluded.game_mode,
+                    session_id = excluded.session_id
                 """,
                 payload,
             )
@@ -154,7 +163,22 @@ class Database:
             pot=row["pot"],
             result=row["result"],
             big_blind=row["big_blind"],
+            game_mode=GameMode(row["game_mode"]),
+            session_id=row["session_id"],
         )
+
+    def assign_hand_to_session(self, hand: Hand) -> int:
+        if hand.game_mode is GameMode.TOURNAMENT or hand.game_mode is GameMode.EXPRESSO:
+            return self._assign_tournament_session(hand)
+        return self._assign_cash_session(hand)
+
+    def get_session(self, session_id: int) -> Session | None:
+        with self._connect() as connection:
+            row = connection.execute(
+                "SELECT * FROM sessions WHERE id = ?", (session_id,)
+            ).fetchone()
+
+        return self._session_from_row(row) if row is not None else None
 
     def insert_player(self, player: Player) -> None:
         with self._connect() as connection:
@@ -433,6 +457,20 @@ class Database:
             pot REAL NOT NULL DEFAULT 0,
             result REAL NOT NULL DEFAULT 0,
             big_blind REAL NOT NULL DEFAULT 0,
+            game_mode TEXT NOT NULL DEFAULT 'CASH_GAME',
+            session_id INTEGER,
+            FOREIGN KEY (session_id) REFERENCES sessions (id),
+            FOREIGN KEY (tournament_id) REFERENCES tournaments (tournament_id)
+        );
+
+        CREATE TABLE IF NOT EXISTS sessions (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            game_mode TEXT NOT NULL,
+            table_name TEXT,
+            tournament_id TEXT,
+            started_at TEXT,
+            finished_at TEXT,
+            UNIQUE (game_mode, tournament_id),
             FOREIGN KEY (tournament_id) REFERENCES tournaments (tournament_id)
         );
 
@@ -466,6 +504,13 @@ class Database:
         Database._add_column_if_missing(connection, "hands", "big_blind", "REAL NOT NULL DEFAULT 0")
         Database._add_column_if_missing(
             connection,
+            "hands",
+            "game_mode",
+            "TEXT NOT NULL DEFAULT 'CASH_GAME'",
+        )
+        Database._add_column_if_missing(connection, "hands", "session_id", "INTEGER")
+        Database._add_column_if_missing(
+            connection,
             "tournaments",
             "winnings",
             "REAL NOT NULL DEFAULT 0",
@@ -478,6 +523,165 @@ class Database:
         )
         Database._add_column_if_missing(connection, "imports", "modified_at_ns", "INTEGER")
         Database._add_column_if_missing(connection, "imports", "file_size", "INTEGER")
+        connection.executescript(
+            """
+            CREATE INDEX IF NOT EXISTS idx_hands_played_at ON hands (played_at);
+            CREATE INDEX IF NOT EXISTS idx_hands_tournament_id ON hands (tournament_id);
+            CREATE INDEX IF NOT EXISTS idx_hands_session_id ON hands (session_id);
+            CREATE INDEX IF NOT EXISTS idx_hands_game_mode ON hands (game_mode);
+            CREATE INDEX IF NOT EXISTS idx_hands_table_name ON hands (table_name);
+            CREATE INDEX IF NOT EXISTS idx_sessions_game_mode ON sessions (game_mode);
+            CREATE INDEX IF NOT EXISTS idx_sessions_tournament_id ON sessions (tournament_id);
+            """
+        )
+
+    @staticmethod
+    def _backfill_legacy_game_modes(connection: sqlite3.Connection) -> None:
+        connection.execute(
+            """
+            UPDATE hands
+            SET game_mode = CASE
+                WHEN tournament_id IS NULL THEN 'CASH_GAME'
+                WHEN LOWER(table_name) LIKE '%expresso%' THEN 'EXPRESSO'
+                ELSE 'TOURNAMENT'
+            END
+            WHERE game_mode IS NULL OR game_mode = 'CASH_GAME'
+            """
+        )
+
+    def _backfill_legacy_sessions(self, connection: sqlite3.Connection) -> None:
+        tournament_rows = connection.execute(
+            """
+            SELECT game_mode, tournament_id, MIN(played_at), MAX(played_at)
+            FROM hands
+            WHERE tournament_id IS NOT NULL AND session_id IS NULL
+            GROUP BY game_mode, tournament_id
+            """
+        ).fetchall()
+        for game_mode, tournament_id, started_at, finished_at in tournament_rows:
+            connection.execute(
+                """
+                INSERT INTO sessions (game_mode, tournament_id, started_at, finished_at)
+                VALUES (?, ?, ?, ?)
+                ON CONFLICT(game_mode, tournament_id) DO UPDATE SET
+                    started_at = MIN(sessions.started_at, excluded.started_at),
+                    finished_at = MAX(sessions.finished_at, excluded.finished_at)
+                """,
+                (game_mode, tournament_id, started_at, finished_at),
+            )
+            connection.execute(
+                """
+                UPDATE hands
+                SET session_id = (
+                    SELECT id FROM sessions
+                    WHERE game_mode = hands.game_mode AND tournament_id = hands.tournament_id
+                )
+                WHERE tournament_id = ? AND game_mode = ? AND session_id IS NULL
+                """,
+                (tournament_id, game_mode),
+            )
+
+        cash_rows = connection.execute(
+            """
+            SELECT id, game_mode, table_name, played_at
+            FROM hands
+            WHERE tournament_id IS NULL AND session_id IS NULL
+            ORDER BY table_name, played_at, id
+            """
+        ).fetchall()
+        for row in cash_rows:
+            hand = Hand(
+                hand_id="",
+                tournament_id=None,
+                played_at=self._parse_datetime(row[3]),
+                table_name=row[2],
+                hero="",
+                hero_cards="",
+                board="",
+                pot=0.0,
+                result=0.0,
+                game_mode=GameMode(row[1]),
+            )
+            session_id = self._find_or_create_cash_session(connection, hand)
+            connection.execute("UPDATE hands SET session_id = ? WHERE id = ?", (session_id, row[0]))
+
+    def _assign_tournament_session(self, hand: Hand) -> int:
+        if hand.tournament_id is None:
+            return self._assign_cash_session(hand)
+
+        with self._connect() as connection:
+            connection.execute(
+                """
+                INSERT INTO sessions (game_mode, tournament_id, started_at, finished_at)
+                VALUES (?, ?, ?, ?)
+                ON CONFLICT(game_mode, tournament_id) DO UPDATE SET
+                    started_at = MIN(sessions.started_at, excluded.started_at),
+                    finished_at = MAX(sessions.finished_at, excluded.finished_at)
+                """,
+                (
+                    hand.game_mode.value,
+                    hand.tournament_id,
+                    self._serialize_datetime(hand.played_at),
+                    self._serialize_datetime(hand.played_at),
+                ),
+            )
+            return int(
+                connection.execute(
+                    "SELECT id FROM sessions WHERE game_mode = ? AND tournament_id = ?",
+                    (hand.game_mode.value, hand.tournament_id),
+                ).fetchone()[0]
+            )
+
+    def _assign_cash_session(self, hand: Hand) -> int:
+        with self._connect() as connection:
+            return self._find_or_create_cash_session(connection, hand)
+
+    def _find_or_create_cash_session(self, connection: sqlite3.Connection, hand: Hand) -> int:
+        played_at = self._serialize_datetime(hand.played_at)
+        if played_at is not None:
+            row = connection.execute(
+                """
+                SELECT id FROM sessions
+                WHERE game_mode = ? AND tournament_id IS NULL AND table_name = ?
+                  AND finished_at >= datetime(?, '-30 minutes')
+                  AND started_at <= datetime(?, '+30 minutes')
+                ORDER BY started_at ASC
+                LIMIT 1
+                """,
+                (hand.game_mode.value, hand.table_name, played_at, played_at),
+            ).fetchone()
+            if row is not None:
+                session_id = int(row[0])
+                connection.execute(
+                    """
+                    UPDATE sessions
+                    SET started_at = MIN(started_at, ?), finished_at = MAX(finished_at, ?)
+                    WHERE id = ?
+                    """,
+                    (played_at, played_at, session_id),
+                )
+                return session_id
+
+        cursor = connection.execute(
+            """
+            INSERT INTO sessions (game_mode, table_name, started_at, finished_at)
+            VALUES (?, ?, ?, ?)
+            """,
+            (hand.game_mode.value, hand.table_name, played_at, played_at),
+        )
+        if cursor.lastrowid is None:
+            raise RuntimeError("SQLite did not return an ID for the new session")
+        return cursor.lastrowid
+
+    def _session_from_row(self, row: sqlite3.Row) -> Session:
+        return Session(
+            id=int(row["id"]),
+            game_mode=GameMode(row["game_mode"]),
+            table_name=row["table_name"],
+            tournament_id=row["tournament_id"],
+            started_at=self._parse_datetime(row["started_at"]),
+            finished_at=self._parse_datetime(row["finished_at"]),
+        )
 
     @staticmethod
     def _add_column_if_missing(
