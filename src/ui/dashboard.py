@@ -12,6 +12,7 @@ from database.filters import HistoryFilter
 from game_modes import GameMode
 from poker_stats.bankroll_service import BankrollPoint, BankrollService
 from poker_stats.statistics_service import StatisticsService
+from ui.bankroll_chart import BankrollChart
 from ui.hands_view import HandsView
 from ui.settings import SettingsDialog
 from ui.tournaments_view import TournamentsView
@@ -146,13 +147,16 @@ class DashboardView(ttk.Frame):
         self.overview_tab.rowconfigure(1, weight=1)
 
         bankroll_frame = ttk.LabelFrame(self.overview_tab, text="Bankroll", padding=12)
-        bankroll_frame.grid(row=0, column=0, columnspan=2, sticky="ew", pady=(0, 12))
+        bankroll_frame.grid(row=0, column=0, columnspan=2, sticky="nsew", pady=(0, 12))
         bankroll_frame.columnconfigure(1, weight=1)
+        bankroll_frame.rowconfigure(2, weight=1)
         ttk.Label(bankroll_frame, text="Selected result").grid(row=0, column=0, sticky="w")
         self.bankroll_value = ttk.Label(bankroll_frame, font=("TkHeadingFont", 16, "bold"))
         self.bankroll_value.grid(row=0, column=1, sticky="w", padx=(12, 0))
         self.bankroll_detail = ttk.Label(bankroll_frame)
         self.bankroll_detail.grid(row=1, column=0, columnspan=2, sticky="w", pady=(4, 0))
+        self.bankroll_chart = BankrollChart(bankroll_frame)
+        self.bankroll_chart.grid(row=2, column=0, columnspan=2, sticky="nsew", pady=(10, 0))
 
         recent_hands_frame = ttk.LabelFrame(
             self.overview_tab,
@@ -265,6 +269,7 @@ class DashboardView(ttk.Frame):
             value_label.configure(text=value)
 
     def _refresh_bankroll(self, points: list[BankrollPoint]) -> None:
+        self.bankroll_chart.set_points(points)
         if not points:
             self.bankroll_value.configure(text="No settled results")
             self.bankroll_detail.configure(

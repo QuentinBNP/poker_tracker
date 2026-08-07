@@ -13,6 +13,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 ### Changed
 
 - Redesigned the dashboard around global game-mode and date filters, mode-appropriate performance metrics, selected bankroll results, and filtered recent history.
+- Added an interactive native bankroll chart with source-linked hover details, wheel zoom, and drag panning.
 
 ## [0.3.0] - 2026-08-07
 
