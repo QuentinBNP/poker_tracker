@@ -250,13 +250,15 @@ class Database:
         with self._connect() as connection:
             connection.execute(
                 """
-                INSERT INTO imports (filename, imported_at, status, modified_at_ns, file_size)
-                VALUES (?, ?, ?, ?, ?)
+                INSERT INTO imports (
+                    filename, imported_at, status, modified_at_ns, file_size, import_version
+                ) VALUES (?, ?, ?, ?, ?, ?)
                 ON CONFLICT(filename) DO UPDATE SET
                     imported_at = excluded.imported_at,
                     status = excluded.status,
                     modified_at_ns = excluded.modified_at_ns,
-                    file_size = excluded.file_size
+                    file_size = excluded.file_size,
+                    import_version = excluded.import_version
                 """,
                 (
                     record.filename,
@@ -264,6 +266,7 @@ class Database:
                     record.status,
                     record.modified_at_ns,
                     record.file_size,
+                    record.import_version,
                 ),
             )
 
@@ -276,16 +279,16 @@ class Database:
 
         return row is not None
 
-    def has_current_import(self, path: Path) -> bool:
+    def has_current_import(self, path: Path, import_version: int) -> bool:
         stats = path.stat()
         with self._connect() as connection:
             row = connection.execute(
                 """
                 SELECT 1 FROM imports
                 WHERE filename = ? AND status = 'success'
-                  AND modified_at_ns = ? AND file_size = ?
+                  AND modified_at_ns = ? AND file_size = ? AND import_version = ?
                 """,
-                (path.name, stats.st_mtime_ns, stats.st_size),
+                (path.name, stats.st_mtime_ns, stats.st_size, import_version),
             ).fetchone()
 
         return row is not None
@@ -505,7 +508,8 @@ class Database:
             imported_at TEXT NOT NULL,
             status TEXT NOT NULL,
             modified_at_ns INTEGER,
-            file_size INTEGER
+            file_size INTEGER,
+            import_version INTEGER NOT NULL DEFAULT 0
         );
         """
 
@@ -539,6 +543,12 @@ class Database:
         )
         Database._add_column_if_missing(connection, "imports", "modified_at_ns", "INTEGER")
         Database._add_column_if_missing(connection, "imports", "file_size", "INTEGER")
+        Database._add_column_if_missing(
+            connection,
+            "imports",
+            "import_version",
+            "INTEGER NOT NULL DEFAULT 0",
+        )
         connection.executescript(
             """
             CREATE INDEX IF NOT EXISTS idx_hands_played_at ON hands (played_at);

@@ -129,6 +129,14 @@ def test_database_initialization_migrates_existing_result_columns(tmp_path: Path
                 pot REAL NOT NULL DEFAULT 0,
                 result REAL NOT NULL DEFAULT 0
             );
+            CREATE TABLE imports (
+                id INTEGER PRIMARY KEY,
+                filename TEXT NOT NULL UNIQUE,
+                imported_at TEXT NOT NULL,
+                status TEXT NOT NULL,
+                modified_at_ns INTEGER,
+                file_size INTEGER
+            );
             """
         )
 
@@ -139,9 +147,11 @@ def test_database_initialization_migrates_existing_result_columns(tmp_path: Path
         tournament_columns = {
             row[1] for row in connection.execute("PRAGMA table_info(tournaments)")
         }
+        import_columns = {row[1] for row in connection.execute("PRAGMA table_info(imports)")}
 
     assert "big_blind" in hand_columns
     assert {"winnings", "bounty_winnings"}.issubset(tournament_columns)
+    assert "import_version" in import_columns
 
 
 def test_database_migrates_legacy_hands_to_game_modes_and_sessions(tmp_path: Path) -> None:

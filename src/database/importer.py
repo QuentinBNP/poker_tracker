@@ -25,13 +25,15 @@ class ImportReport:
 
 
 class DatabaseImporter:
+    IMPORT_FORMAT_VERSION = 1
+
     def __init__(self, database: Database) -> None:
         self.database = database
         self.logger = get_logger("imports")
 
     def import_file(self, path: Path, file_type: str | None = None) -> ImportReport:
         resolved_type = file_type or self._classify_file(path)
-        if self.database.has_current_import(path):
+        if self.database.has_current_import(path, self.IMPORT_FORMAT_VERSION):
             return ImportReport(path=path, file_type=resolved_type, status="skipped")
 
         try:
@@ -47,6 +49,7 @@ class DatabaseImporter:
                     filename=path.name,
                     imported_at=self._imported_at(),
                     status="failed",
+                    import_version=self.IMPORT_FORMAT_VERSION,
                 )
             )
             return ImportReport(path=path, file_type=resolved_type, status="failed")
@@ -199,4 +202,5 @@ class DatabaseImporter:
             status=status,
             modified_at_ns=stats.st_mtime_ns,
             file_size=stats.st_size,
+            import_version=cls.IMPORT_FORMAT_VERSION,
         )
