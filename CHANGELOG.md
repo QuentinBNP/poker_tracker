@@ -10,6 +10,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 - Reimport cached Winamax files when the importer format changes, allowing upgraded installations to recover hand data that was not persisted by an earlier importer version.
 
+### Changed
+
+- Redesigned the dashboard around global game-mode and date filters, mode-appropriate performance metrics, selected bankroll results, and filtered recent history.
+
 ## [0.3.0] - 2026-08-07
 
 ### Added
