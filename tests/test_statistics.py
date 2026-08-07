@@ -7,6 +7,7 @@ from database.database import Database
 from database.filters import HistoryFilter
 from database.models import Action, Hand, Tournament
 from game_modes import GameMode
+from poker_stats.bankroll_service import BankrollService, BankrollSourceType
 from poker_stats.calculator import StatisticsCalculator
 from poker_stats.statistics_service import StatisticsService
 
@@ -194,3 +195,63 @@ def test_statistics_service_calculates_metrics_for_selected_game_mode(tmp_path: 
     assert cash_statistics["cash_result"] == 0.5
     assert cash_statistics["cash_bb"] == 1.0
     assert cash_statistics["cash_bb_per_100"] == 50.0
+
+
+def test_bankroll_service_returns_chronological_source_linked_points(tmp_path: Path) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    database.insert_tournament(
+        Tournament(
+            tournament_id="tournament-1",
+            name="Tournament",
+            buy_in=10.0,
+            prize_pool=100.0,
+            players_count=10,
+            started_at=datetime(2026, 6, 28, 12, tzinfo=timezone.utc),
+            finished_at=datetime(2026, 6, 28, 15, tzinfo=timezone.utc),
+            position=1,
+            winnings=25.0,
+        )
+    )
+    database.insert_hand(
+        Hand(
+            hand_id="cash-early",
+            tournament_id=None,
+            played_at=datetime(2026, 6, 28, 13, tzinfo=timezone.utc),
+            table_name="NL50",
+            hero="MyPseudo",
+            hero_cards="Ah Kh",
+            board="",
+            pot=0.0,
+            result=2.0,
+        )
+    )
+    database.insert_hand(
+        Hand(
+            hand_id="cash-late",
+            tournament_id=None,
+            played_at=datetime(2026, 6, 28, 16, tzinfo=timezone.utc),
+            table_name="NL50",
+            hero="MyPseudo",
+            hero_cards="Qs Qd",
+            board="",
+            pot=0.0,
+            result=-1.0,
+        )
+    )
+
+    points = BankrollService(database, "MyPseudo").calculate()
+    cash_points = BankrollService(database, "MyPseudo").calculate(
+        HistoryFilter(game_mode=GameMode.CASH_GAME)
+    )
+
+    assert [(point.source_type, point.source_id) for point in points] == [
+        (BankrollSourceType.HAND, "cash-early"),
+        (BankrollSourceType.TOURNAMENT, "tournament-1"),
+        (BankrollSourceType.HAND, "cash-late"),
+    ]
+    assert [point.result for point in points] == [2.0, 15.0, -1.0]
+    assert [point.balance for point in points] == [2.0, 17.0, 16.0]
+    assert points[0].session_id is None
+    assert points[1].tournament_id == "tournament-1"
+    assert [point.source_id for point in cash_points] == ["cash-early", "cash-late"]

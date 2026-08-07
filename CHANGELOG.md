@@ -4,13 +4,14 @@ All notable changes to MyPokerTracker are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.3.0] - 2026-08-07
 
 ### Added
 
 - Added persisted game-mode classification, session records, session backfill for existing databases, and database indexes required for upcoming history and filter queries.
 - Added shared date, game-mode, table, and tournament filters for hand, action, and tournament repository queries.
 - Added a filter-aware statistics service with cash-game BB/100 plus tournament and Expresso profit and ROI metrics.
+- Added a filter-aware bankroll service that produces chronological, source-linked cash-game, tournament, and Expresso result points.
 
 ### Changed
 
@@ -46,6 +47,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - Local SQLite storage, dashboard, statistics, and file watching.
 - Windows executable and installer build support.
 
+
+[0.3.0]: https://github.com/QuentinBNP/poker_tracker/releases/tag/v0.3.0
 [0.2.1]: https://github.com/QuentinBNP/poker_tracker/releases/tag/v0.2.1
 [0.2.0]: https://github.com/QuentinBNP/poker_tracker/releases/tag/v0.2.0
 [0.1.0]: https://github.com/QuentinBNP/poker_tracker/releases/tag/v0.1.0
