@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from database.database import Database
+from database.filters import HistoryFilter
 from database.models import Action, Hand, ImportRecord, Player, Tournament
 from game_modes import GameMode
 
@@ -230,3 +231,93 @@ def test_cash_hands_more_than_thirty_minutes_apart_get_distinct_sessions(tmp_pat
     database.insert_hand(second_hand)
 
     assert first_hand.session_id != second_hand.session_id
+
+
+def test_history_filters_apply_to_hands_actions_and_tournaments(tmp_path: Path) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    database.insert_tournament(
+        Tournament(
+            tournament_id="tournament-1",
+            name="Freeroll",
+            buy_in=0.0,
+            prize_pool=100.0,
+            players_count=10,
+            started_at=datetime(2026, 6, 2, tzinfo=timezone.utc),
+            finished_at=None,
+            position=1,
+        )
+    )
+    database.insert_tournament(
+        Tournament(
+            tournament_id="expresso-1",
+            name="Expresso One",
+            buy_in=1.0,
+            prize_pool=3.0,
+            players_count=3,
+            started_at=datetime(2026, 6, 3, tzinfo=timezone.utc),
+            finished_at=None,
+            position=1,
+            game_mode=GameMode.EXPRESSO,
+        )
+    )
+    database.insert_hand(
+        Hand(
+            hand_id="cash-alpha",
+            tournament_id=None,
+            played_at=datetime(2026, 6, 1, tzinfo=timezone.utc),
+            table_name="Alpha",
+            hero="MyPseudo",
+            hero_cards="Ah Kh",
+            board="",
+            pot=0.0,
+            result=1.0,
+        )
+    )
+    database.insert_hand(
+        Hand(
+            hand_id="tournament-hand",
+            tournament_id="tournament-1",
+            played_at=datetime(2026, 6, 2, tzinfo=timezone.utc),
+            table_name="Freeroll(tournament-1)#1",
+            hero="MyPseudo",
+            hero_cards="Qs Qd",
+            board="",
+            pot=0.0,
+            result=0.0,
+            game_mode=GameMode.TOURNAMENT,
+        )
+    )
+    database.replace_actions_for_hand(
+        "cash-alpha",
+        [Action("cash-alpha", "MyPseudo", "PRE_FLOP", "RAISE", 1.0)],
+    )
+
+    cash_filter = HistoryFilter(
+        start_at=datetime(2026, 6, 1, tzinfo=timezone.utc),
+        end_at=datetime(2026, 6, 1, 23, 59, tzinfo=timezone.utc),
+        game_mode=GameMode.CASH_GAME,
+        table_name="Alpha",
+    )
+    tournament_filter = HistoryFilter(
+        game_mode=GameMode.TOURNAMENT,
+        tournament_id="tournament-1",
+    )
+
+    assert [hand["hand_id"] for hand in database.list_filtered_hands("MyPseudo", cash_filter)] == [
+        "cash-alpha"
+    ]
+    filtered_actions = database.list_filtered_hero_actions("MyPseudo", cash_filter)
+    assert [action["hand_id"] for action in filtered_actions] == [
+        "cash-alpha"
+    ]
+    filtered_tournament_hands = database.list_filtered_hands("MyPseudo", tournament_filter)
+    assert [hand["hand_id"] for hand in filtered_tournament_hands] == [
+        "tournament-hand"
+    ]
+    assert [
+        tournament["tournament_id"]
+        for tournament in database.list_filtered_tournaments(
+            HistoryFilter(game_mode=GameMode.EXPRESSO)
+        )
+    ] == ["expresso-1"]

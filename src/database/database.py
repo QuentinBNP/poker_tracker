@@ -5,6 +5,7 @@ from dataclasses import asdict
 from datetime import datetime
 from pathlib import Path
 
+from database.filters import HistoryFilter
 from database.models import Action, Hand, ImportRecord, Player, Session, Tournament
 from game_modes import GameMode
 
@@ -42,7 +43,8 @@ class Database:
                     finished_at,
                     position,
                     winnings,
-                    bounty_winnings
+                    bounty_winnings,
+                    game_mode
                 ) VALUES (
                     :tournament_id,
                     :name,
@@ -53,7 +55,8 @@ class Database:
                     :finished_at,
                     :position,
                     :winnings,
-                    :bounty_winnings
+                    :bounty_winnings,
+                    :game_mode
                 )
                 ON CONFLICT(tournament_id) DO UPDATE SET
                     name = excluded.name,
@@ -64,7 +67,8 @@ class Database:
                     finished_at = excluded.finished_at,
                     position = excluded.position,
                     winnings = excluded.winnings,
-                    bounty_winnings = excluded.bounty_winnings
+                    bounty_winnings = excluded.bounty_winnings,
+                    game_mode = excluded.game_mode
                 """,
                 payload,
             )
@@ -90,6 +94,7 @@ class Database:
             position=row["position"],
             winnings=row["winnings"],
             bounty_winnings=row["bounty_winnings"],
+            game_mode=GameMode(row["game_mode"]),
         )
 
     def insert_hand(self, hand: Hand) -> None:
@@ -327,75 +332,55 @@ class Database:
         }
 
     def list_recent_hands(self, hero_name: str, limit: int = 10) -> list[dict[str, object]]:
-        with self._connect() as connection:
-            rows = connection.execute(
-                """
-                SELECT hand_id, tournament_id, played_at, table_name,
-                        hero_cards, board, pot, result, big_blind
-                FROM hands
-                WHERE hero = ?
-                ORDER BY played_at DESC, id DESC
-                LIMIT ?
-                """,
-                (hero_name, limit),
-            ).fetchall()
-
-        return [
-            {
-                "hand_id": row["hand_id"],
-                "tournament_id": row["tournament_id"],
-                "played_at": self._parse_datetime(row["played_at"]),
-                "table_name": row["table_name"],
-                "hero_cards": row["hero_cards"] or "",
-                "board": row["board"] or "",
-                "pot": float(row["pot"]),
-                "result": float(row["result"]),
-                "big_blind": float(row["big_blind"]),
-            }
-            for row in rows
-        ]
+        return self.list_filtered_hands(hero_name, HistoryFilter(), limit=limit)
 
     def list_recent_tournaments(self, limit: int = 10) -> list[dict[str, object]]:
-        with self._connect() as connection:
-            rows = connection.execute(
-                """
-                  SELECT tournament_id, name, buy_in, prize_pool, winnings, bounty_winnings,
-                      players_count, started_at, finished_at, position
-                FROM tournaments
-                ORDER BY started_at DESC, id DESC
-                LIMIT ?
-                """,
-                (limit,),
-            ).fetchall()
-
-        return [
-            {
-                "tournament_id": row["tournament_id"],
-                "name": row["name"],
-                "buy_in": float(row["buy_in"]),
-                "prize_pool": float(row["prize_pool"]),
-                "winnings": float(row["winnings"]),
-                "bounty_winnings": float(row["bounty_winnings"]),
-                "profit": float(row["winnings"] + row["bounty_winnings"] - row["buy_in"]),
-                "players_count": int(row["players_count"]),
-                "started_at": self._parse_datetime(row["started_at"]),
-                "finished_at": self._parse_datetime(row["finished_at"]),
-                "position": row["position"],
-            }
-            for row in rows
-        ]
+        return self.list_filtered_tournaments(HistoryFilter(), limit=limit)
 
     def list_hero_actions(self, hero_name: str) -> list[dict[str, object]]:
+        return self.list_filtered_hero_actions(hero_name, HistoryFilter())
+
+    def list_filtered_hands(
+        self,
+        hero_name: str,
+        filters: HistoryFilter,
+        limit: int = 50,
+        offset: int = 0,
+    ) -> list[dict[str, object]]:
+        conditions, parameters = filters.hand_conditions()
+        where_clause = " AND ".join(["h.hero = ?", *conditions])
         with self._connect() as connection:
             rows = connection.execute(
-                """
+                f"""
+                SELECT h.hand_id, h.tournament_id, h.session_id, h.game_mode, h.played_at,
+                       h.table_name, h.hero_cards, h.board, h.pot, h.result, h.big_blind
+                FROM hands h
+                WHERE {where_clause}
+                ORDER BY h.played_at DESC, h.id DESC
+                LIMIT ? OFFSET ?
+                """,
+                (hero_name, *parameters, limit, offset),
+            ).fetchall()
+
+        return [self._hand_row(row) for row in rows]
+
+    def list_filtered_hero_actions(
+        self,
+        hero_name: str,
+        filters: HistoryFilter,
+    ) -> list[dict[str, object]]:
+        conditions, parameters = filters.hand_conditions()
+        where_clause = " AND ".join(["h.hero = ?", "a.player = ?", *conditions])
+        with self._connect() as connection:
+            rows = connection.execute(
+                f"""
                 SELECT a.hand_id, a.street, a.action, a.amount, h.result
                 FROM actions a
                 INNER JOIN hands h ON h.hand_id = a.hand_id
-                WHERE h.hero = ? AND a.player = ?
+                WHERE {where_clause}
                 ORDER BY h.played_at ASC, a.id ASC
                 """,
-                (hero_name, hero_name),
+                (hero_name, hero_name, *parameters),
             ).fetchall()
 
         return [
@@ -408,6 +393,30 @@ class Database:
             }
             for row in rows
         ]
+
+    def list_filtered_tournaments(
+        self,
+        filters: HistoryFilter,
+        limit: int = 50,
+        offset: int = 0,
+    ) -> list[dict[str, object]]:
+        conditions, parameters = filters.tournament_conditions()
+        where_clause = " AND ".join(conditions) if conditions else "1 = 1"
+        with self._connect() as connection:
+            rows = connection.execute(
+                f"""
+                SELECT t.tournament_id, t.name, t.game_mode, t.buy_in, t.prize_pool,
+                       t.winnings, t.bounty_winnings, t.players_count, t.started_at,
+                       t.finished_at, t.position
+                FROM tournaments t
+                WHERE {where_clause}
+                ORDER BY t.started_at DESC, t.id DESC
+                LIMIT ? OFFSET ?
+                """,
+                (*parameters, limit, offset),
+            ).fetchall()
+
+        return [self._tournament_row(row) for row in rows]
 
     def _connect(self) -> sqlite3.Connection:
         connection = sqlite3.connect(self.database_path)
@@ -443,6 +452,7 @@ class Database:
             position INTEGER
             ,winnings REAL NOT NULL DEFAULT 0
             ,bounty_winnings REAL NOT NULL DEFAULT 0
+            ,game_mode TEXT NOT NULL DEFAULT 'TOURNAMENT'
         );
 
         CREATE TABLE IF NOT EXISTS hands (
@@ -521,6 +531,12 @@ class Database:
             "bounty_winnings",
             "REAL NOT NULL DEFAULT 0",
         )
+        Database._add_column_if_missing(
+            connection,
+            "tournaments",
+            "game_mode",
+            "TEXT NOT NULL DEFAULT 'TOURNAMENT'",
+        )
         Database._add_column_if_missing(connection, "imports", "modified_at_ns", "INTEGER")
         Database._add_column_if_missing(connection, "imports", "file_size", "INTEGER")
         connection.executescript(
@@ -532,6 +548,7 @@ class Database:
             CREATE INDEX IF NOT EXISTS idx_hands_table_name ON hands (table_name);
             CREATE INDEX IF NOT EXISTS idx_sessions_game_mode ON sessions (game_mode);
             CREATE INDEX IF NOT EXISTS idx_sessions_tournament_id ON sessions (tournament_id);
+            CREATE INDEX IF NOT EXISTS idx_tournaments_game_mode ON tournaments (game_mode);
             """
         )
 
@@ -682,6 +699,37 @@ class Database:
             started_at=self._parse_datetime(row["started_at"]),
             finished_at=self._parse_datetime(row["finished_at"]),
         )
+
+    def _hand_row(self, row: sqlite3.Row) -> dict[str, object]:
+        return {
+            "hand_id": row["hand_id"],
+            "tournament_id": row["tournament_id"],
+            "session_id": row["session_id"],
+            "game_mode": GameMode(row["game_mode"]),
+            "played_at": self._parse_datetime(row["played_at"]),
+            "table_name": row["table_name"],
+            "hero_cards": row["hero_cards"] or "",
+            "board": row["board"] or "",
+            "pot": float(row["pot"]),
+            "result": float(row["result"]),
+            "big_blind": float(row["big_blind"]),
+        }
+
+    def _tournament_row(self, row: sqlite3.Row) -> dict[str, object]:
+        return {
+            "tournament_id": row["tournament_id"],
+            "name": row["name"],
+            "game_mode": GameMode(row["game_mode"]),
+            "buy_in": float(row["buy_in"]),
+            "prize_pool": float(row["prize_pool"]),
+            "winnings": float(row["winnings"]),
+            "bounty_winnings": float(row["bounty_winnings"]),
+            "profit": float(row["winnings"] + row["bounty_winnings"] - row["buy_in"]),
+            "players_count": int(row["players_count"]),
+            "started_at": self._parse_datetime(row["started_at"]),
+            "finished_at": self._parse_datetime(row["finished_at"]),
+            "position": row["position"],
+        }
 
     @staticmethod
     def _add_column_if_missing(
