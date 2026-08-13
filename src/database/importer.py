@@ -25,7 +25,7 @@ class ImportReport:
 
 
 class DatabaseImporter:
-    IMPORT_FORMAT_VERSION = 1
+    IMPORT_FORMAT_VERSION = 2
 
     def __init__(self, database: Database) -> None:
         self.database = database
@@ -76,6 +76,7 @@ class DatabaseImporter:
             position=parsed["position"],
             winnings=parsed["winnings"] or 0.0,
             bounty_winnings=parsed["bounty_winnings"],
+            game_mode=GameMode(parsed["game_mode"]),
         )
         self.database.insert_tournament(tournament)
         self.logger.info("Imported tournament summary %s", path.name)
@@ -168,6 +169,7 @@ class DatabaseImporter:
                 started_at=None,
                 finished_at=None,
                 position=None,
+                game_mode=GameMode(parsed_hand.get("game_mode", GameMode.TOURNAMENT)),
             )
         )
 

@@ -33,6 +33,31 @@ def test_importer_persists_tournament_summary_and_import_history(tmp_path: Path)
     )
 
 
+def test_importer_persists_expresso_summary_mode(tmp_path: Path) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    summary_path = tmp_path / "Expresso(12345)_summary.txt"
+    summary_path.write_text(
+        """Winamax Poker - Tournament summary : Expresso Flash(12345)
+Tournament started 2026/06/28 12:00:00 UTC
+Mode : EXPRESSO
+Buy-In : 1€
+Prizepool : 3€
+Registered players : 3
+You finished in 1st place
+You won 3€
+""",
+        encoding="utf-8",
+    )
+
+    report = DatabaseImporter(database).import_file(summary_path)
+    stored_tournament = database.get_tournament("12345")
+
+    assert report.status == "success"
+    assert stored_tournament is not None
+    assert stored_tournament.game_mode is GameMode.EXPRESSO
+
+
 def test_importer_persists_hand_history_without_existing_tournament_summary(tmp_path: Path) -> None:
     database = Database(tmp_path / "data" / "tracker.db")
     database.initialize()

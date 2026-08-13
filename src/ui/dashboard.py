@@ -14,6 +14,7 @@ from poker_stats.bankroll_service import BankrollPoint, BankrollService
 from poker_stats.statistics_service import StatisticsService
 from ui.bankroll_chart import BankrollChart
 from ui.hands_view import HandsView
+from ui.sessions_view import SessionsView
 from ui.settings import SettingsDialog
 from ui.tournaments_view import TournamentsView
 
@@ -38,7 +39,8 @@ class DashboardView(ttk.Frame):
         self.on_settings_saved = on_settings_saved
         self.statistics_service = StatisticsService(database, self.hero_name)
         self.bankroll_service = BankrollService(database, self.hero_name)
-        self.mode_value = tk.StringVar(value="ALL")
+        self.all_modes_value = tk.BooleanVar(value=True)
+        self.mode_values = {mode: tk.BooleanVar() for mode in GameMode}
         self.period_value = tk.StringVar(value="All time")
         self.start_date_value = tk.StringVar()
         self.end_date_value = tk.StringVar()
@@ -76,10 +78,13 @@ class DashboardView(ttk.Frame):
         self.rowconfigure(3, weight=1)
 
         self.overview_tab = ttk.Frame(notebook, padding=16)
+        self.notebook = notebook
         self.hands_view = HandsView(notebook)
+        self.sessions_view = SessionsView(notebook, self._show_session_hands)
         self.tournaments_view = TournamentsView(notebook)
         notebook.add(self.overview_tab, text="Dashboard")
         notebook.add(self.hands_view, text="Hands")
+        notebook.add(self.sessions_view, text="Sessions")
         notebook.add(self.tournaments_view, text="Tournaments")
 
         self._build_overview_tab()
@@ -91,19 +96,18 @@ class DashboardView(ttk.Frame):
         filters.columnconfigure(5, weight=1)
 
         ttk.Label(filters, text="Mode").grid(row=0, column=0, sticky="w", padx=(0, 8))
-        mode_buttons = [
-            ("All", "ALL"),
-            ("Cash", GameMode.CASH_GAME.value),
-            ("Tournament", GameMode.TOURNAMENT.value),
-            ("Expresso", GameMode.EXPRESSO.value),
-        ]
-        for index, (label, value) in enumerate(mode_buttons, start=1):
-            ttk.Radiobutton(
+        ttk.Checkbutton(
+            filters,
+            text="All",
+            variable=self.all_modes_value,
+            command=self._select_all_modes,
+        ).grid(row=0, column=1, sticky="w", padx=(0, 8))
+        for index, mode in enumerate(GameMode, start=2):
+            ttk.Checkbutton(
                 filters,
-                text=label,
-                value=value,
-                variable=self.mode_value,
-                command=self.refresh,
+                text=_mode_label(mode),
+                variable=self.mode_values[mode],
+                command=self._select_specific_modes,
             ).grid(row=0, column=index, sticky="w", padx=(0, 8))
 
         ttk.Label(filters, text="Period").grid(row=1, column=0, sticky="w", pady=(10, 0))
@@ -197,6 +201,7 @@ class DashboardView(ttk.Frame):
         bankroll_points = self.bankroll_service.calculate(filters)
         recent_hands = self.database.list_filtered_hands(self.hero_name, filters, limit=50)
         recent_tournaments = self.database.list_filtered_tournaments(filters, limit=50)
+        sessions = self.database.list_sessions(self.hero_name, filters, limit=50)
 
         self._refresh_metrics(statistics)
         self._refresh_bankroll(bankroll_points)
@@ -207,6 +212,7 @@ class DashboardView(ttk.Frame):
             self.recent_hands_list.insert(tk.END, line)
 
         self.hands_view.refresh(recent_hands)
+        self.sessions_view.refresh(sessions)
         self.tournaments_view.refresh(recent_tournaments)
 
         for key, label in self.stats_labels.items():
@@ -217,33 +223,32 @@ class DashboardView(ttk.Frame):
                 label.configure(text=f"{value:.1f}%")
 
     def _build_history_filter(self) -> HistoryFilter:
-        mode = self.mode_value.get()
-        game_mode = GameMode(mode) if mode != "ALL" else None
+        game_modes = tuple(mode for mode, value in self.mode_values.items() if value.get())
         start_at, end_at, message = _resolve_period(
             self.period_value.get(),
             self.start_date_value.get(),
             self.end_date_value.get(),
         )
         self.filter_message.set(message)
-        return HistoryFilter(start_at=start_at, end_at=end_at, game_mode=game_mode)
+        return HistoryFilter(start_at=start_at, end_at=end_at, game_modes=game_modes)
 
     def _refresh_metrics(self, statistics: Mapping[str, float]) -> None:
-        mode = self.mode_value.get()
-        if mode == GameMode.CASH_GAME.value:
+        selected_modes = [mode for mode, value in self.mode_values.items() if value.get()]
+        if selected_modes == [GameMode.CASH_GAME]:
             metrics = [
                 ("Hands", f"{statistics['cash_hands_played']:.0f}"),
                 ("Profit", _format_money(statistics["cash_result"])),
                 ("BB won", f"{statistics['cash_bb']:+.1f} BB"),
                 ("BB / 100", f"{statistics['cash_bb_per_100']:+.1f}"),
             ]
-        elif mode == GameMode.TOURNAMENT.value:
+        elif selected_modes == [GameMode.TOURNAMENT]:
             metrics = [
                 ("Tournaments", f"{statistics['tournaments_played']:.0f}"),
                 ("Net profit", _format_money(statistics["tournament_profit"])),
                 ("ROI", f"{statistics['tournament_roi']:+.1f}%"),
                 ("VPIP", f"{statistics['vpip']:.1f}%"),
             ]
-        elif mode == GameMode.EXPRESSO.value:
+        elif selected_modes == [GameMode.EXPRESSO]:
             metrics = [
                 ("Expressos", f"{statistics['expressos_played']:.0f}"),
                 ("Net profit", _format_money(statistics["expresso_profit"])),
@@ -296,6 +301,24 @@ class DashboardView(ttk.Frame):
         self.on_settings_saved(config)
         self.refresh()
 
+    def _select_all_modes(self) -> None:
+        if self.all_modes_value.get():
+            for value in self.mode_values.values():
+                value.set(False)
+        else:
+            self.all_modes_value.set(True)
+        self.refresh()
+
+    def _select_specific_modes(self) -> None:
+        selected = any(value.get() for value in self.mode_values.values())
+        self.all_modes_value.set(not selected)
+        self.refresh()
+
+    def _show_session_hands(self, session_id: int) -> None:
+        hands = self.database.list_hands_for_session(self.hero_name, session_id)
+        self.hands_view.refresh(hands)
+        self.notebook.select(self.hands_view)
+
 
 def _build_metric(master: ttk.Frame, column: int) -> tuple[ttk.Label, ttk.Label]:
     card = ttk.LabelFrame(master, padding=12)
@@ -313,6 +336,14 @@ def _format_result(value: float) -> str:
 
 def _format_money(value: float) -> str:
     return f"{value:+.2f} EUR"
+
+
+def _mode_label(mode: GameMode) -> str:
+    return {
+        GameMode.CASH_GAME: "Cash",
+        GameMode.TOURNAMENT: "Tournament",
+        GameMode.EXPRESSO: "Expresso",
+    }[mode]
 
 
 def _resolve_period(

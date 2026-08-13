@@ -367,6 +367,67 @@ class Database:
 
         return [self._hand_row(row) for row in rows]
 
+    def list_hands_for_session(
+        self,
+        hero_name: str,
+        session_id: int,
+    ) -> list[dict[str, object]]:
+        with self._connect() as connection:
+            rows = connection.execute(
+                """
+                SELECT h.hand_id, h.tournament_id, h.session_id, h.game_mode, h.played_at,
+                       h.table_name, h.hero_cards, h.board, h.pot, h.result, h.big_blind
+                FROM hands h
+                WHERE h.hero = ? AND h.session_id = ?
+                ORDER BY h.played_at ASC, h.id ASC
+                """,
+                (hero_name, session_id),
+            ).fetchall()
+
+        return [self._hand_row(row) for row in rows]
+
+    def list_sessions(
+        self,
+        hero_name: str,
+        filters: HistoryFilter,
+        limit: int = 50,
+        offset: int = 0,
+    ) -> list[dict[str, object]]:
+        conditions, parameters = filters.hand_conditions()
+        where_clause = " AND ".join(["h.hero = ?", "h.session_id IS NOT NULL", *conditions])
+        with self._connect() as connection:
+            rows = connection.execute(
+                f"""
+                SELECT s.id, s.game_mode, s.table_name, s.tournament_id, s.started_at,
+                       s.finished_at, COUNT(h.id) AS hands_played,
+                       CASE WHEN s.tournament_id IS NULL THEN SUM(h.result)
+                            ELSE COALESCE(MAX(t.winnings + t.bounty_winnings - t.buy_in), 0)
+                       END AS result
+                FROM sessions s
+                INNER JOIN hands h ON h.session_id = s.id
+                LEFT JOIN tournaments t ON t.tournament_id = s.tournament_id
+                WHERE {where_clause}
+                GROUP BY s.id
+                ORDER BY s.started_at DESC, s.id DESC
+                LIMIT ? OFFSET ?
+                """,
+                (hero_name, *parameters, limit, offset),
+            ).fetchall()
+
+        return [
+            {
+                "session_id": int(row["id"]),
+                "game_mode": GameMode(row["game_mode"]),
+                "table_name": row["table_name"],
+                "tournament_id": row["tournament_id"],
+                "started_at": self._parse_datetime(row["started_at"]),
+                "finished_at": self._parse_datetime(row["finished_at"]),
+                "hands_played": int(row["hands_played"]),
+                "result": float(row["result"]),
+            }
+            for row in rows
+        ]
+
     def list_filtered_hero_actions(
         self,
         hero_name: str,
@@ -566,6 +627,13 @@ class Database:
     def _backfill_legacy_game_modes(connection: sqlite3.Connection) -> None:
         connection.execute(
             """
+            UPDATE tournaments
+            SET game_mode = 'EXPRESSO'
+            WHERE LOWER(name) LIKE '%expresso%'
+            """
+        )
+        connection.execute(
+            """
             UPDATE hands
             SET game_mode = CASE
                 WHEN tournament_id IS NULL THEN 'CASH_GAME'
@@ -573,6 +641,24 @@ class Database:
                 ELSE 'TOURNAMENT'
             END
             WHERE game_mode IS NULL OR game_mode = 'CASH_GAME'
+            """
+        )
+        connection.execute(
+            """
+            UPDATE hands
+            SET game_mode = 'EXPRESSO'
+            WHERE tournament_id IN (
+                SELECT tournament_id FROM tournaments WHERE game_mode = 'EXPRESSO'
+            )
+            """
+        )
+        connection.execute(
+            """
+            UPDATE sessions
+            SET game_mode = 'EXPRESSO'
+            WHERE tournament_id IN (
+                SELECT tournament_id FROM tournaments WHERE game_mode = 'EXPRESSO'
+            )
             """
         )
 
@@ -670,8 +756,8 @@ class Database:
                 """
                 SELECT id FROM sessions
                 WHERE game_mode = ? AND tournament_id IS NULL AND table_name = ?
-                  AND finished_at >= datetime(?, '-30 minutes')
-                  AND started_at <= datetime(?, '+30 minutes')
+                                    AND julianday(finished_at) >= julianday(?) - (30.0 / 1440.0)
+                                    AND julianday(started_at) <= julianday(?) + (30.0 / 1440.0)
                 ORDER BY started_at ASC
                 LIMIT 1
                 """,

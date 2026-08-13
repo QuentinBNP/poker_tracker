@@ -14,10 +14,19 @@ class TournamentsView(ttk.Frame):
         self.columnconfigure(0, weight=1)
         self.rowconfigure(0, weight=1)
 
-        columns = ("started_at", "name", "buy_in", "prize_pool", "players_count", "position")
+        columns = (
+            "started_at",
+            "game_mode",
+            "name",
+            "buy_in",
+            "prize_pool",
+            "players_count",
+            "position",
+        )
         self.tree = ttk.Treeview(self, columns=columns, show="headings", height=10)
         headings = {
             "started_at": "Started",
+            "game_mode": "Mode",
             "name": "Tournament",
             "buy_in": "Buy-in",
             "prize_pool": "Prize Pool",
@@ -26,6 +35,7 @@ class TournamentsView(ttk.Frame):
         }
         widths = {
             "started_at": 150,
+            "game_mode": 110,
             "name": 220,
             "buy_in": 90,
             "prize_pool": 100,
@@ -54,6 +64,7 @@ class TournamentsView(ttk.Frame):
                 "end",
                 values=(
                     started_at,
+                    tournament.get("game_mode") or "-",
                     tournament.get("name") or "-",
                     _format_amount(_as_float(tournament.get("buy_in"))),
                     _format_amount(_as_float(tournament.get("prize_pool"))),

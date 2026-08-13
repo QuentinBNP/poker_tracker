@@ -50,6 +50,22 @@ def test_parse_knockout_tournament_summary_with_bounty() -> None:
     assert parsed["bounty_winnings"] == 0.20
 
 
+def test_parse_expresso_summary_classifies_case_insensitively() -> None:
+    parsed = parse_tournament_summary(
+        """Winamax Poker - Tournament summary : Expresso Flash(12345)
+Tournament started 2026/06/28 12:00:00 UTC
+Mode : EXPRESSO
+Buy-In : 1€
+Prizepool : 3€
+Registered players : 3
+You finished in 1st place
+You won 3€
+"""
+    )
+
+    assert parsed["game_mode"] is GameMode.EXPRESSO
+
+
 def test_parse_tournament_hand_history_extracts_core_fields() -> None:
     text = (SAMPLES_DIR / "20260628_Freeroll(1119027769)_real_holdem_no-limit.txt").read_text(
         encoding="utf-8"

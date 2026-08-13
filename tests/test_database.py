@@ -331,3 +331,49 @@ def test_history_filters_apply_to_hands_actions_and_tournaments(tmp_path: Path) 
             HistoryFilter(game_mode=GameMode.EXPRESSO)
         )
     ] == ["expresso-1"]
+
+
+def test_multi_mode_filter_lists_matching_sessions_and_ordered_hands(tmp_path: Path) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    earlier_hand = Hand(
+        hand_id="cash-early",
+        tournament_id=None,
+        played_at=datetime(2026, 6, 1, 10, tzinfo=timezone.utc),
+        table_name="Alpha",
+        hero="MyPseudo",
+        hero_cards="Ah Kh",
+        board="",
+        pot=0.0,
+        result=1.0,
+    )
+    later_hand = Hand(
+        hand_id="cash-late",
+        tournament_id=None,
+        played_at=datetime(2026, 6, 1, 10, 10, tzinfo=timezone.utc),
+        table_name="Alpha",
+        hero="MyPseudo",
+        hero_cards="Qs Qd",
+        board="",
+        pot=0.0,
+        result=-0.5,
+    )
+    for hand in (earlier_hand, later_hand):
+        hand.session_id = database.assign_hand_to_session(hand)
+        database.insert_hand(hand)
+
+    filters = HistoryFilter(
+        game_modes=(GameMode.CASH_GAME, GameMode.EXPRESSO),
+    )
+    sessions = database.list_sessions("MyPseudo", filters)
+
+    assert len(sessions) == 1
+    assert sessions[0]["game_mode"] is GameMode.CASH_GAME
+    assert sessions[0]["hands_played"] == 2
+    assert sessions[0]["result"] == 0.5
+    session_id = sessions[0]["session_id"]
+    assert isinstance(session_id, int)
+    assert [
+        hand["hand_id"]
+        for hand in database.list_hands_for_session("MyPseudo", session_id)
+    ] == ["cash-early", "cash-late"]

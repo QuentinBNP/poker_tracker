@@ -4,6 +4,17 @@ All notable changes to MyPokerTracker are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Fixed
+
+- Classify and persist Winamax Expresso summaries separately from tournaments, including a cache-format upgrade that reimports unchanged files once.
+
+### Added
+
+- Allow the dashboard scope to combine Cash, Tournament, and Expresso modes, with an All option for the complete history.
+- Add filtered session history. Selecting a session opens its hands in chronological order.
+
 ## [0.4.0] - 2026-08-07
 
 ### Fixed

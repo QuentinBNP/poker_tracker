@@ -4,6 +4,8 @@ import re
 from datetime import datetime, timezone
 from typing import Any
 
+from game_modes import GameMode, classify_game_mode
+
 SUMMARY_HEADER_PATTERN = re.compile(
     r"^Winamax Poker - Tournament summary : (?P<name>.+?)\((?P<tournament_id>\d+)\)",
     re.MULTILINE,
@@ -26,9 +28,13 @@ def parse_tournament_summary(text: str) -> dict[str, Any]:
     position_text = _search_value(text, r"^You finished in (?P<value>\d+)(?:st|nd|rd|th) place$")
     winnings_text = _search_value(text, r"^You won (?P<value>.+)$")
 
+    name = header_match.group("name").strip()
+    mode = _search_value(text, r"^Mode : (?P<value>.+)$")
+    tournament_type = _search_value(text, r"^Type : (?P<value>.+)$")
     return {
         "tournament_id": header_match.group("tournament_id"),
-        "name": header_match.group("name").strip(),
+        "name": name,
+        "game_mode": classify_game_mode((name, mode, tournament_type), GameMode.TOURNAMENT),
         "player_name": player_name,
         "buy_in": _sum_money_parts(buy_in_text),
         "buy_in_components": _parse_money_parts(buy_in_text),
@@ -37,8 +43,8 @@ def parse_tournament_summary(text: str) -> dict[str, Any]:
         "started_at": _parse_datetime(started_at_text),
         "duration_seconds": _parse_duration_seconds(duration_text),
         "position": _parse_int(position_text),
-        "mode": _search_value(text, r"^Mode : (?P<value>.+)$"),
-        "type": _search_value(text, r"^Type : (?P<value>.+)$"),
+        "mode": mode,
+        "type": tournament_type,
         "speed": _search_value(text, r"^Speed : (?P<value>.+)$"),
         "winnings": _parse_primary_winnings(winnings_text),
         "bounty_winnings": _parse_bounty_winnings(winnings_text),

@@ -4,7 +4,7 @@ import re
 from datetime import datetime, timezone
 from typing import Any
 
-from game_modes import GameMode
+from game_modes import GameMode, classify_game_mode
 
 HAND_SPLIT_PATTERN = re.compile(r"\n{2,}(?=Winamax Poker - )")
 SEAT_PATTERN = re.compile(r"^Seat (?P<seat>\d+): (?P<name>.+?) \((?P<details>.+)\)$")
@@ -105,11 +105,10 @@ def _parse_header(header: str) -> dict[str, Any]:
 
 
 def _parse_game_mode(header: str, is_tournament: bool) -> GameMode:
-    if "Expresso" in header:
-        return GameMode.EXPRESSO
-    if is_tournament:
-        return GameMode.TOURNAMENT
-    return GameMode.CASH_GAME
+    return classify_game_mode(
+        (header,),
+        GameMode.TOURNAMENT if is_tournament else GameMode.CASH_GAME,
+    )
 
 
 def _parse_hero_line(line: str) -> tuple[str, str]:
