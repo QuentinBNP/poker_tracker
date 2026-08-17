@@ -4,6 +4,8 @@ import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
+import pytest
+
 from database.database import Database
 from database.filters import HistoryFilter
 from database.models import Action, Hand, ImportRecord, Player, Tournament
@@ -377,3 +379,60 @@ def test_multi_mode_filter_lists_matching_sessions_and_ordered_hands(tmp_path: P
         hand["hand_id"]
         for hand in database.list_hands_for_session("MyPseudo", session_id)
     ] == ["cash-early", "cash-late"]
+
+
+def test_filtered_hands_derive_bb_results_per_hand_blind(tmp_path: Path) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    database.insert_tournament(
+        Tournament(
+            tournament_id="event-1",
+            name="Event",
+            buy_in=1.0,
+            prize_pool=3.0,
+            players_count=3,
+            started_at=datetime(2026, 6, 2, tzinfo=timezone.utc),
+            finished_at=None,
+            position=None,
+        )
+    )
+    for hand_id, result, big_blind in (
+        ("nl2-win", 0.07, 0.02),
+        ("nl10-loss", -0.25, 0.10),
+    ):
+        database.insert_hand(
+            Hand(
+                hand_id=hand_id,
+                tournament_id=None,
+                played_at=datetime(2026, 6, 1, tzinfo=timezone.utc),
+                table_name="Cash",
+                hero="MyPseudo",
+                hero_cards="Ah Kh",
+                board="",
+                pot=0.0,
+                result=result,
+                big_blind=big_blind,
+            )
+        )
+    database.insert_hand(
+        Hand(
+            hand_id="tournament-hand",
+            tournament_id="event-1",
+            played_at=datetime(2026, 6, 2, tzinfo=timezone.utc),
+            table_name="Event",
+            hero="MyPseudo",
+            hero_cards="Qs Qd",
+            board="",
+            pot=0.0,
+            result=100.0,
+            big_blind=10.0,
+            game_mode=GameMode.TOURNAMENT,
+        )
+    )
+
+    hands = database.list_filtered_hands("MyPseudo", HistoryFilter(), limit=10)
+    results_by_hand = {str(hand["hand_id"]): hand["result_bb"] for hand in hands}
+
+    assert results_by_hand["nl2-win"] == pytest.approx(3.5)
+    assert results_by_hand["nl10-loss"] == pytest.approx(-2.5)
+    assert results_by_hand["tournament-hand"] == pytest.approx(10.0)

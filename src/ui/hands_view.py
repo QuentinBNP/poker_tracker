@@ -14,7 +14,7 @@ class HandsView(ttk.Frame):
         self.columnconfigure(0, weight=1)
         self.rowconfigure(0, weight=1)
 
-        columns = ("played_at", "table_name", "hero_cards", "board", "pot", "result")
+        columns = ("played_at", "table_name", "hero_cards", "board", "pot", "result", "result_bb")
         self.tree = ttk.Treeview(self, columns=columns, show="headings", height=10)
         headings = {
             "played_at": "Played",
@@ -23,6 +23,7 @@ class HandsView(ttk.Frame):
             "board": "Board",
             "pot": "Pot",
             "result": "Result",
+            "result_bb": "BB result",
         }
         widths = {
             "played_at": 150,
@@ -31,6 +32,7 @@ class HandsView(ttk.Frame):
             "board": 170,
             "pot": 80,
             "result": 80,
+            "result_bb": 80,
         }
         for column in columns:
             self.tree.heading(column, text=headings[column])
@@ -59,6 +61,7 @@ class HandsView(ttk.Frame):
                     hand.get("board") or "-",
                     _format_amount(_as_float(hand.get("pot"))),
                     _format_amount(_as_float(hand.get("result"))),
+                    _format_bb(hand.get("result_bb")),
                 ),
             )
 
@@ -77,3 +80,9 @@ def _as_float(value: object) -> float:
 
 def _format_amount(value: float) -> str:
     return f"{value:.2f}"
+
+
+def _format_bb(value: object) -> str:
+    if not isinstance(value, int | float):
+        return "-"
+    return f"{value:+.2f}"

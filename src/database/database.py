@@ -833,18 +833,22 @@ class Database:
         )
 
     def _hand_row(self, row: sqlite3.Row) -> dict[str, object]:
+        game_mode = GameMode(row["game_mode"])
+        big_blind = float(row["big_blind"])
+        result = float(row["result"])
         return {
             "hand_id": row["hand_id"],
             "tournament_id": row["tournament_id"],
             "session_id": row["session_id"],
-            "game_mode": GameMode(row["game_mode"]),
+            "game_mode": game_mode,
             "played_at": self._parse_datetime(row["played_at"]),
             "table_name": row["table_name"],
             "hero_cards": row["hero_cards"] or "",
             "board": row["board"] or "",
             "pot": float(row["pot"]),
-            "result": float(row["result"]),
-            "big_blind": float(row["big_blind"]),
+            "result": result,
+            "big_blind": big_blind,
+            "result_bb": result / big_blind if big_blind > 0 else None,
         }
 
     def _tournament_row(self, row: sqlite3.Row) -> dict[str, object]:
