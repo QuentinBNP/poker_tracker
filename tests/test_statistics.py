@@ -255,3 +255,46 @@ def test_bankroll_service_returns_chronological_source_linked_points(tmp_path: P
     assert points[0].session_id is None
     assert points[1].tournament_id == "tournament-1"
     assert [point.source_id for point in cash_points] == ["cash-early", "cash-late"]
+
+
+def test_advanced_statistics_show_sampled_preflop_rates_and_cash_metrics(tmp_path: Path) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    for index in range(20):
+        hand = Hand(
+            hand_id=f"cash-{index}",
+            tournament_id=None,
+            played_at=datetime(2026, 6, 1, 12, index, tzinfo=timezone.utc),
+            table_name="NL50",
+            hero="MyPseudo",
+            hero_cards="Ah Kh",
+            board="",
+            pot=0.0,
+            result=1.0 if index % 2 == 0 else -1.0,
+            big_blind=0.5,
+        )
+        database.insert_hand(hand)
+        database.replace_actions_for_hand(
+            hand.hand_id,
+            [
+                Action(hand.hand_id, "MyPseudo", "PRE_FLOP", "RAISE", 1.5, True),
+                Action(hand.hand_id, "Opponent", "PRE_FLOP", "RAISE", 4.5),
+                Action(hand.hand_id, "MyPseudo", "PRE_FLOP", "FOLD", None),
+            ],
+        )
+
+    metrics = {
+        metric.key: metric
+        for metric in StatisticsService(database, "MyPseudo").calculate_advanced()
+    }
+
+    assert metrics["hands_won"].value == 10.0
+    assert metrics["hands_lost"].value == 10.0
+    assert metrics["fold_to_three_bet"].value == 100.0
+    assert metrics["fold_to_three_bet"].sample_size == 20
+    assert metrics["four_bet"].value == 0.0
+    assert metrics["all_in_hands"].value == 20.0
+    assert metrics["all_in_win_rate"].value == 50.0
+    assert metrics["all_in_win_rate"].sample_size == 20
+    assert metrics["cash_bb"].value == 0.0
+    assert metrics["cash_bb_per_100"].value == 0.0

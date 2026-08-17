@@ -25,7 +25,7 @@ class ImportReport:
 
 
 class DatabaseImporter:
-    IMPORT_FORMAT_VERSION = 2
+    IMPORT_FORMAT_VERSION = 3
 
     def __init__(self, database: Database) -> None:
         self.database = database
@@ -133,6 +133,7 @@ class DatabaseImporter:
                     street=action["street"],
                     action=action["action"],
                     amount=action.get("amount"),
+                    is_all_in=bool(action.get("is_all_in")),
                 )
                 for action in parsed_hand.get("actions", [])
             ]

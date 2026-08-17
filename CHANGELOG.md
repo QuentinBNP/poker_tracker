@@ -6,6 +6,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ## [Unreleased]
 
+### Added
+
+- Add a dedicated advanced Statistics tab with filtered hand-outcome, VPIP, PFR, aggression, sampled preflop 3-Bet/4-Bet and all-in rates, and cash-game BB metrics.
+- Persist Winamax all-in action flags and reimport unchanged hand histories once so all-in metrics can use durable source data.
+
 ### Fixed
 
 - Classify and persist Winamax Expresso summaries separately from tournaments, including a cache-format upgrade that reimports unchanged files once.

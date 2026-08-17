@@ -16,6 +16,7 @@ from ui.bankroll_chart import BankrollChart
 from ui.hands_view import HandsView
 from ui.sessions_view import SessionsView
 from ui.settings import SettingsDialog
+from ui.statistics_view import StatisticsView
 from ui.tournaments_view import TournamentsView
 
 HandRow = Mapping[str, object]
@@ -81,10 +82,12 @@ class DashboardView(ttk.Frame):
         self.notebook = notebook
         self.hands_view = HandsView(notebook)
         self.sessions_view = SessionsView(notebook, self._show_session_hands)
+        self.statistics_view = StatisticsView(notebook)
         self.tournaments_view = TournamentsView(notebook)
         notebook.add(self.overview_tab, text="Dashboard")
         notebook.add(self.hands_view, text="Hands")
         notebook.add(self.sessions_view, text="Sessions")
+        notebook.add(self.statistics_view, text="Statistics")
         notebook.add(self.tournaments_view, text="Tournaments")
 
         self._build_overview_tab()
@@ -198,6 +201,7 @@ class DashboardView(ttk.Frame):
     def refresh(self) -> None:
         filters = self._build_history_filter()
         statistics = self.statistics_service.calculate(filters)
+        advanced_statistics = self.statistics_service.calculate_advanced(filters)
         bankroll_points = self.bankroll_service.calculate(filters)
         recent_hands = self.database.list_filtered_hands(self.hero_name, filters, limit=50)
         recent_tournaments = self.database.list_filtered_tournaments(filters, limit=50)
@@ -213,6 +217,7 @@ class DashboardView(ttk.Frame):
 
         self.hands_view.refresh(recent_hands)
         self.sessions_view.refresh(sessions)
+        self.statistics_view.refresh(advanced_statistics)
         self.tournaments_view.refresh(recent_tournaments)
 
         for key, label in self.stats_labels.items():

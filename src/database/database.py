@@ -206,8 +206,8 @@ class Database:
         with self._connect() as connection:
             connection.execute(
                 """
-                INSERT INTO actions (hand_id, player, street, action, amount)
-                VALUES (:hand_id, :player, :street, :action, :amount)
+                INSERT INTO actions (hand_id, player, street, action, amount, is_all_in)
+                VALUES (:hand_id, :player, :street, :action, :amount, :is_all_in)
                 """,
                 payload,
             )
@@ -217,8 +217,8 @@ class Database:
             connection.execute("DELETE FROM actions WHERE hand_id = ?", (hand_id,))
             connection.executemany(
                 """
-                INSERT INTO actions (hand_id, player, street, action, amount)
-                VALUES (:hand_id, :player, :street, :action, :amount)
+                INSERT INTO actions (hand_id, player, street, action, amount, is_all_in)
+                VALUES (:hand_id, :player, :street, :action, :amount, :is_all_in)
                 """,
                 [asdict(action) for action in actions],
             )
@@ -227,7 +227,7 @@ class Database:
         with self._connect() as connection:
             rows = connection.execute(
                 """
-                SELECT hand_id, player, street, action, amount
+                SELECT hand_id, player, street, action, amount, is_all_in
                 FROM actions
                 WHERE hand_id = ?
                 ORDER BY id ASC
@@ -242,6 +242,7 @@ class Database:
                 street=row["street"],
                 action=row["action"],
                 amount=row["amount"],
+                is_all_in=bool(row["is_all_in"]),
             )
             for row in rows
         ]
@@ -458,6 +459,34 @@ class Database:
             for row in rows
         ]
 
+    def list_filtered_actions(self, filters: HistoryFilter) -> list[dict[str, object]]:
+        conditions, parameters = filters.hand_conditions()
+        where_clause = " AND ".join(conditions) if conditions else "1 = 1"
+        with self._connect() as connection:
+            rows = connection.execute(
+                f"""
+                SELECT a.hand_id, a.player, a.street, a.action, a.amount, a.is_all_in, h.result
+                FROM actions a
+                INNER JOIN hands h ON h.hand_id = a.hand_id
+                WHERE {where_clause}
+                ORDER BY h.played_at ASC, h.id ASC, a.id ASC
+                """,
+                parameters,
+            ).fetchall()
+
+        return [
+            {
+                "hand_id": row["hand_id"],
+                "player": row["player"],
+                "street": row["street"],
+                "action": row["action"],
+                "amount": row["amount"],
+                "is_all_in": bool(row["is_all_in"]),
+                "result": float(row["result"]),
+            }
+            for row in rows
+        ]
+
     def list_filtered_tournaments(
         self,
         filters: HistoryFilter,
@@ -560,6 +589,7 @@ class Database:
             street TEXT NOT NULL,
             action TEXT NOT NULL,
             amount REAL,
+            is_all_in INTEGER NOT NULL DEFAULT 0,
             FOREIGN KEY (hand_id) REFERENCES hands (hand_id)
         );
 
@@ -584,6 +614,12 @@ class Database:
             "TEXT NOT NULL DEFAULT 'CASH_GAME'",
         )
         Database._add_column_if_missing(connection, "hands", "session_id", "INTEGER")
+        Database._add_column_if_missing(
+            connection,
+            "actions",
+            "is_all_in",
+            "INTEGER NOT NULL DEFAULT 0",
+        )
         Database._add_column_if_missing(
             connection,
             "tournaments",

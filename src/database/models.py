@@ -59,6 +59,7 @@ class Action:
     street: str
     action: str
     amount: float | None
+    is_all_in: bool = False
 
 
 @dataclass(slots=True)
