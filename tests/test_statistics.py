@@ -3,6 +3,8 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from pathlib import Path
 
+import pytest
+
 from database.database import Database
 from database.filters import HistoryFilter
 from database.models import Action, Hand, Tournament
@@ -285,6 +287,71 @@ def test_bb_history_uses_chronological_cash_hands_and_per_hand_blinds(tmp_path: 
     assert [point.hand_id for point in points] == ["nl2", "nl10"]
     assert [point.result_bb for point in points] == [3.0, -2.0]
     assert [point.balance_bb for point in points] == [3.0, 1.0]
+
+
+def test_manually_verified_mixed_mode_calculations(tmp_path: Path) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    database.insert_tournament(
+        Tournament(
+            tournament_id="tournament-1",
+            name="Tournament",
+            buy_in=10.0,
+            prize_pool=100.0,
+            players_count=10,
+            started_at=datetime(2026, 6, 1, 11, tzinfo=timezone.utc),
+            finished_at=datetime(2026, 6, 1, 13, tzinfo=timezone.utc),
+            position=1,
+            winnings=25.0,
+        )
+    )
+    database.insert_tournament(
+        Tournament(
+            tournament_id="expresso-1",
+            name="Expresso",
+            buy_in=2.0,
+            prize_pool=6.0,
+            players_count=3,
+            started_at=datetime(2026, 6, 1, 14, tzinfo=timezone.utc),
+            finished_at=datetime(2026, 6, 1, 15, tzinfo=timezone.utc),
+            position=1,
+            winnings=6.0,
+            game_mode=GameMode.EXPRESSO,
+        )
+    )
+    for hand_id, occurred_at, result, big_blind in (
+        ("cash-win", datetime(2026, 6, 1, 12, tzinfo=timezone.utc), 0.06, 0.02),
+        ("cash-loss", datetime(2026, 6, 1, 16, tzinfo=timezone.utc), -0.20, 0.10),
+    ):
+        database.insert_hand(
+            Hand(
+                hand_id=hand_id,
+                tournament_id=None,
+                played_at=occurred_at,
+                table_name="Cash",
+                hero="MyPseudo",
+                hero_cards="Ah Kh",
+                board="",
+                pot=1.0,
+                result=result,
+                big_blind=big_blind,
+            )
+        )
+
+    statistics = StatisticsService(database, "MyPseudo").calculate()
+    bankroll_points = BankrollService(database, "MyPseudo").calculate()
+    bb_points = BBHistoryService(database, "MyPseudo").calculate()
+
+    assert statistics["cash_result"] == pytest.approx(-0.14)
+    assert statistics["cash_bb"] == pytest.approx(1.0)
+    assert statistics["tournament_profit"] == pytest.approx(15.0)
+    assert statistics["expresso_profit"] == pytest.approx(4.0)
+    assert statistics["total_profit"] == pytest.approx(18.86)
+    assert [point.balance for point in bankroll_points] == pytest.approx(
+        [0.06, 15.06, 19.06, 18.86]
+    )
+    assert [point.result_bb for point in bb_points] == pytest.approx([3.0, -2.0])
+    assert [point.balance_bb for point in bb_points] == pytest.approx([3.0, 1.0])
 
 
 def test_advanced_statistics_show_sampled_preflop_rates_and_cash_metrics(tmp_path: Path) -> None:
