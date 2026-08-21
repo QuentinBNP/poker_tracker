@@ -10,6 +10,10 @@ SUMMARY_HEADER_PATTERN = re.compile(
     r"^Winamax Poker - Tournament summary : (?P<name>.+?)\((?P<tournament_id>\d+)\)",
     re.MULTILINE,
 )
+BOUNTY_WINNINGS_PATTERN = re.compile(
+    r"(?:^\s*|\+\s*)Bounty\s+(?P<amount>.+?)\s*$",
+    re.IGNORECASE,
+)
 
 
 def parse_tournament_summary(text: str) -> dict[str, Any]:
@@ -119,14 +123,18 @@ def _parse_primary_winnings(value: str | None) -> float | None:
     if value is None:
         return None
 
-    primary, *_ = value.split(" + Bounty ", maxsplit=1)
-    return _parse_amount(primary)
+    bounty_match = BOUNTY_WINNINGS_PATTERN.search(value)
+    primary = value[: bounty_match.start()].rstrip(" +") if bounty_match else value
+    return _parse_amount(primary) if primary else 0.0
 
 
 def _parse_bounty_winnings(value: str | None) -> float:
-    if value is None or " + Bounty " not in value:
+    if value is None:
         return 0.0
 
-    _, bounty = value.split(" + Bounty ", maxsplit=1)
-    parsed_bounty = _parse_amount(bounty)
+    bounty_match = BOUNTY_WINNINGS_PATTERN.search(value)
+    if bounty_match is None:
+        return 0.0
+
+    parsed_bounty = _parse_amount(bounty_match.group("amount"))
     return parsed_bounty or 0.0

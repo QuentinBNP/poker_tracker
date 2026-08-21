@@ -10,6 +10,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 - Import large hand-history files in a single SQLite transaction to avoid per-hand database commits and improve dashboard load time.
 - Limit BB-chart rendering density for large cash-game histories while retaining the complete calculation history.
+- Bounty winning parsing now correctly handles bounty amounts with a decimal point, e.g., `You won Bounty 0.13€`.
 
 ## [0.5.0] - 2026-08-21
 

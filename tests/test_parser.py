@@ -50,6 +50,19 @@ def test_parse_knockout_tournament_summary_with_bounty() -> None:
     assert parsed["bounty_winnings"] == 0.20
 
 
+def test_parse_knockout_summary_with_bounty_only_winnings() -> None:
+    text = (
+        SAMPLES_DIR / "20260731_SPACE KO(1140932862)_real_holdem_no-limit_summary.txt"
+    ).read_text(encoding="utf-8")
+
+    parsed = parse_tournament_summary(text)
+
+    assert parsed["tournament_id"] == "1140932862"
+    assert parsed["buy_in"] == 0.50
+    assert parsed["winnings"] == 0.0
+    assert parsed["bounty_winnings"] == 0.13
+
+
 def test_parse_expresso_summary_classifies_case_insensitively() -> None:
     parsed = parse_tournament_summary(
         """Winamax Poker - Tournament summary : Expresso Flash(12345)

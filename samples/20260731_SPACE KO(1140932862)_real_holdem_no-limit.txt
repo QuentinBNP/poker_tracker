@@ -1,0 +1,2796 @@
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681185-22-1785519942 - Holdem no limit (25/100/200) - 2026/07/31 17:45:42 UTC
+Table: 'SPACE KO(1140932862)#0032' 6-max (real money) Seat #2 is the button
+Seat 1: MyPseudo (20000, 0.25€ bounty)
+Seat 2: UyScuti8314 (20275, 0.25€ bounty)
+Seat 3: goldzihla39 (18955, 0.30€ bounty)
+Seat 4: HtagSun (15109, 0.25€ bounty)
+Seat 5: Darwa67 (62275, 0.25€ bounty)
+Seat 6: Huzul88 (19350, 0.25€ bounty)
+*** ANTE/BLINDS ***
+goldzihla39 posts ante 25
+HtagSun posts ante 25
+MyPseudo posts ante 25
+UyScuti8314 posts ante 25
+Darwa67 posts ante 25
+Huzul88 posts ante 25
+goldzihla39 posts small blind 100
+HtagSun posts big blind 200
+Dealt to MyPseudo [6s 5d]
+*** PRE-FLOP *** 
+Darwa67 folds
+Huzul88 raises 200 to 400
+MyPseudo folds
+UyScuti8314 calls 400
+goldzihla39 calls 300
+HtagSun calls 200
+*** FLOP *** [Kd Qs 2h]
+goldzihla39 bets 200
+HtagSun calls 200
+Huzul88 calls 200
+UyScuti8314 calls 200
+*** TURN *** [Kd Qs 2h][Ac]
+goldzihla39 bets 200
+HtagSun raises 1848 to 2048
+Huzul88 calls 2048
+UyScuti8314 folds
+goldzihla39 folds
+*** RIVER *** [Kd Qs 2h Ac][7d]
+HtagSun checks
+Huzul88 checks
+*** SHOW DOWN ***
+HtagSun shows [Ad 3h] (One pair : Aces)
+Huzul88 shows [Tc As] (One pair : Aces)
+Huzul88 collected 6846 from pot
+*** SUMMARY ***
+Total pot 6846 | No rake
+Board: [Kd Qs 2h Ac 7d]
+Seat 4: HtagSun (big blind) showed [Ad 3h] and lost with One pair : Aces
+Seat 6: Huzul88 showed [Tc As] and won 6846 with One pair : Aces
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681185-23-1785520028 - Holdem no limit (25/100/200) - 2026/07/31 17:47:08 UTC
+Table: 'SPACE KO(1140932862)#0032' 6-max (real money) Seat #3 is the button
+Seat 1: MyPseudo (19975, 0.25€ bounty)
+Seat 2: UyScuti8314 (19650, 0.25€ bounty)
+Seat 3: goldzihla39 (18130, 0.30€ bounty)
+Seat 4: HtagSun (12436, 0.25€ bounty)
+Seat 5: Darwa67 (62250, 0.25€ bounty)
+Seat 6: Huzul88 (23523, 0.25€ bounty)
+*** ANTE/BLINDS ***
+HtagSun posts ante 25
+Darwa67 posts ante 25
+MyPseudo posts ante 25
+UyScuti8314 posts ante 25
+goldzihla39 posts ante 25
+Huzul88 posts ante 25
+HtagSun posts small blind 100
+Darwa67 posts big blind 200
+Dealt to MyPseudo [Kc 4s]
+*** PRE-FLOP *** 
+Huzul88 folds
+MyPseudo folds
+UyScuti8314 calls 200
+goldzihla39 calls 200
+HtagSun calls 100
+Darwa67 checks
+*** FLOP *** [Jh 3d 2c]
+HtagSun bets 618
+Darwa67 folds
+UyScuti8314 calls 618
+goldzihla39 calls 618
+*** TURN *** [Jh 3d 2c][9s]
+HtagSun bets 1823
+UyScuti8314 calls 1823
+goldzihla39 folds
+*** RIVER *** [Jh 3d 2c 9s][Ah]
+HtagSun checks
+UyScuti8314 checks
+*** SHOW DOWN ***
+UyScuti8314 shows [Jd 8d] (One pair : Jacks)
+HtagSun shows [Qc Jc] (One pair : Jacks)
+HtagSun collected 6450 from pot
+*** SUMMARY ***
+Total pot 6450 | No rake
+Board: [Jh 3d 2c 9s Ah]
+Seat 2: UyScuti8314 showed [Jd 8d] and lost with One pair : Jacks
+Seat 4: HtagSun (small blind) showed [Qc Jc] and won 6450 with One pair : Jacks
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681185-24-1785520070 - Holdem no limit (25/100/200) - 2026/07/31 17:47:50 UTC
+Table: 'SPACE KO(1140932862)#0032' 6-max (real money) Seat #4 is the button
+Seat 1: MyPseudo (19950, 0.25€ bounty)
+Seat 2: UyScuti8314 (16984, 0.25€ bounty)
+Seat 3: goldzihla39 (17287, 0.30€ bounty)
+Seat 4: HtagSun (16220, 0.25€ bounty)
+Seat 5: Darwa67 (62025, 0.25€ bounty)
+Seat 6: Huzul88 (23498, 0.25€ bounty)
+*** ANTE/BLINDS ***
+Darwa67 posts ante 25
+Huzul88 posts ante 25
+MyPseudo posts ante 25
+UyScuti8314 posts ante 25
+goldzihla39 posts ante 25
+HtagSun posts ante 25
+Darwa67 posts small blind 100
+Huzul88 posts big blind 200
+Dealt to MyPseudo [9c Kc]
+*** PRE-FLOP *** 
+MyPseudo folds
+UyScuti8314 folds
+goldzihla39 raises 200 to 400
+HtagSun folds
+Darwa67 folds
+Huzul88 folds
+goldzihla39 collected 850 from pot
+*** SUMMARY ***
+Total pot 850 | No rake
+Seat 3: goldzihla39 won 850
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681185-25-1785520108 - Holdem no limit (25/100/200) - 2026/07/31 17:48:28 UTC
+Table: 'SPACE KO(1140932862)#0032' 6-max (real money) Seat #5 is the button
+Seat 1: MyPseudo (19925, 0.25€ bounty)
+Seat 3: goldzihla39 (17712, 0.30€ bounty)
+Seat 4: HtagSun (16195, 0.25€ bounty)
+Seat 5: Darwa67 (61900, 0.25€ bounty)
+Seat 6: Huzul88 (23273, 0.25€ bounty)
+*** ANTE/BLINDS ***
+Huzul88 posts ante 25
+MyPseudo posts ante 25
+goldzihla39 posts ante 25
+HtagSun posts ante 25
+Darwa67 posts ante 25
+Huzul88 posts small blind 100
+MyPseudo posts big blind 200
+Dealt to MyPseudo [4d 5c]
+*** PRE-FLOP *** 
+goldzihla39 folds
+HtagSun calls 200
+Darwa67 folds
+Huzul88 calls 100
+MyPseudo checks
+*** FLOP *** [Jc Js 2d]
+Huzul88 checks
+MyPseudo checks
+HtagSun checks
+*** TURN *** [Jc Js 2d][4h]
+Huzul88 checks
+MyPseudo bets 239
+HtagSun calls 239
+Huzul88 folds
+*** RIVER *** [Jc Js 2d 4h][5d]
+MyPseudo bets 602
+HtagSun folds
+MyPseudo collected 1805 from pot
+*** SUMMARY ***
+Total pot 1805 | No rake
+Board: [Jc Js 2d 4h 5d]
+Seat 1: MyPseudo (big blind) won 1805
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681185-26-1785520164 - Holdem no limit (25/100/200) - 2026/07/31 17:49:24 UTC
+Table: 'SPACE KO(1140932862)#0032' 6-max (real money) Seat #6 is the button
+Seat 1: MyPseudo (20664, 0.25€ bounty)
+Seat 2: AsVsKk (20000, 0.25€ bounty)
+Seat 3: goldzihla39 (17687, 0.30€ bounty)
+Seat 4: HtagSun (15731, 0.25€ bounty)
+Seat 5: Darwa67 (61875, 0.25€ bounty)
+Seat 6: Huzul88 (23048, 0.25€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 25
+AsVsKk posts ante 25
+goldzihla39 posts ante 25
+HtagSun posts ante 25
+Darwa67 posts ante 25
+Huzul88 posts ante 25
+MyPseudo posts small blind 100
+AsVsKk posts big blind 200
+Dealt to MyPseudo [As 4d]
+*** PRE-FLOP *** 
+goldzihla39 folds
+HtagSun folds
+Darwa67 calls 200
+Huzul88 calls 200
+MyPseudo raises 400 to 600
+AsVsKk calls 400
+Darwa67 calls 400
+Huzul88 calls 400
+*** FLOP *** [3d Ac Qc]
+MyPseudo checks
+AsVsKk checks
+Darwa67 checks
+Huzul88 checks
+*** TURN *** [3d Ac Qc][4h]
+MyPseudo bets 842
+AsVsKk folds
+Darwa67 folds
+Huzul88 calls 842
+*** RIVER *** [3d Ac Qc 4h][Kh]
+MyPseudo checks
+Huzul88 bets 2117
+MyPseudo raises 4869 to 6986
+Huzul88 raises 4869 to 11855
+MyPseudo raises 7342 to 19197 and is all-in
+Huzul88 calls 7342
+*** SHOW DOWN ***
+MyPseudo shows [As 4d] (Two pairs : Aces and 4)
+Huzul88 shows [Jc Ts] (Straight Ace high)
+Huzul88 collected 42628 from pot
+*** SUMMARY ***
+Total pot 42628 | No rake
+Board: [3d Ac Qc 4h Kh]
+Seat 1: MyPseudo (small blind) showed [As 4d] and lost with Two pairs : Aces and 4
+Seat 6: Huzul88 (button) showed [Jc Ts] and won 42628 with Straight Ace high
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681246-7-1785520298 - Holdem no limit (25/100/200) - 2026/07/31 17:51:38 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #6 is the button
+Seat 1: Papytime78 (12937, 0.25€ bounty)
+Seat 2: JK-Titan996 (40722, 0.30€ bounty)
+Seat 3: doublejack66 (17857, 0.25€ bounty)
+Seat 4: skynite79 (26425, 0.25€ bounty)
+Seat 5: MyPseudo (20000, 0.25€ bounty)
+Seat 6: doduHamster6 (40118, 0.30€ bounty)
+*** ANTE/BLINDS ***
+Papytime78 posts ante 25
+JK-Titan996 posts ante 25
+doublejack66 posts ante 25
+skynite79 posts ante 25
+MyPseudo posts ante 25
+doduHamster6 posts ante 25
+Papytime78 posts small blind 100
+JK-Titan996 posts big blind 200
+Dealt to MyPseudo [7c 5h]
+*** PRE-FLOP *** 
+doublejack66 raises 250 to 450
+skynite79 folds
+MyPseudo folds
+doduHamster6 folds
+Papytime78 calls 350
+JK-Titan996 folds
+*** FLOP *** [8d Th Ac]
+Papytime78 bets 1250
+doublejack66 raises 1250 to 2500
+Papytime78 calls 1250
+*** TURN *** [8d Th Ac][9d]
+Papytime78 checks
+doublejack66 bets 6250
+Papytime78 folds
+doublejack66 collected 12500 from pot
+*** SUMMARY ***
+Total pot 12500 | No rake
+Board: [8d Th Ac 9d]
+Seat 3: doublejack66 won 12500
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681246-8-1785520344 - Holdem no limit (25/100/200) - 2026/07/31 17:52:24 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #1 is the button
+Seat 1: Papytime78 (9962, 0.25€ bounty)
+Seat 2: JK-Titan996 (40497, 0.30€ bounty)
+Seat 3: doublejack66 (21132, 0.25€ bounty)
+Seat 4: skynite79 (26400, 0.25€ bounty)
+Seat 5: MyPseudo (19975, 0.25€ bounty)
+Seat 6: doduHamster6 (40093, 0.30€ bounty)
+*** ANTE/BLINDS ***
+JK-Titan996 posts ante 25
+doublejack66 posts ante 25
+Papytime78 posts ante 25
+skynite79 posts ante 25
+MyPseudo posts ante 25
+doduHamster6 posts ante 25
+JK-Titan996 posts small blind 100
+doublejack66 posts big blind 200
+Dealt to MyPseudo [7c 9d]
+*** PRE-FLOP *** 
+skynite79 folds
+MyPseudo folds
+doduHamster6 folds
+Papytime78 calls 200
+JK-Titan996 folds
+doublejack66 checks
+*** FLOP *** [3h 7h 7s]
+doublejack66 checks
+Papytime78 checks
+*** TURN *** [3h 7h 7s][7d]
+doublejack66 bets 20907 and is all-in
+Papytime78 folds
+doublejack66 collected 21557 from pot
+*** SUMMARY ***
+Total pot 21557 | No rake
+Board: [3h 7h 7s 7d]
+Seat 3: doublejack66 (big blind) won 21557
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681246-9-1785520381 - Holdem no limit (25/100/200) - 2026/07/31 17:53:01 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #2 is the button
+Seat 1: Papytime78 (9737, 0.25€ bounty)
+Seat 2: JK-Titan996 (40372, 0.30€ bounty)
+Seat 3: doublejack66 (21557, 0.25€ bounty)
+Seat 4: skynite79 (26375, 0.25€ bounty)
+Seat 5: MyPseudo (19950, 0.25€ bounty)
+Seat 6: doduHamster6 (40068, 0.30€ bounty)
+*** ANTE/BLINDS ***
+doublejack66 posts ante 25
+skynite79 posts ante 25
+Papytime78 posts ante 25
+JK-Titan996 posts ante 25
+MyPseudo posts ante 25
+doduHamster6 posts ante 25
+doublejack66 posts small blind 100
+skynite79 posts big blind 200
+Dealt to MyPseudo [Qs As]
+*** PRE-FLOP *** 
+MyPseudo raises 400 to 600
+doduHamster6 folds
+Papytime78 calls 600
+JK-Titan996 folds
+doublejack66 folds
+skynite79 calls 400
+*** FLOP *** [2d 3c Qc]
+skynite79 checks
+MyPseudo bets 677
+Papytime78 raises 3404 to 4081
+skynite79 folds
+MyPseudo calls 3404
+*** TURN *** [2d 3c Qc][2h]
+MyPseudo checks
+Papytime78 bets 5031 and is all-in
+MyPseudo calls 5031
+*** RIVER *** [2d 3c Qc 2h][Tc]
+*** SHOW DOWN ***
+Papytime78 shows [Qh 4d] (Two pairs : Queens and 2)
+MyPseudo shows [Qs As] (Two pairs : Queens and 2)
+MyPseudo collected 20274 from pot
+*** SUMMARY ***
+Total pot 20274 | No rake
+Board: [2d 3c Qc 2h Tc]
+Seat 1: Papytime78 showed [Qh 4d] and lost with Two pairs : Queens and 2
+Seat 5: MyPseudo showed [Qs As] and won 20274 with Two pairs : Queens and 2
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681246-10-1785520439 - Holdem no limit (25/100/200) - 2026/07/31 17:53:59 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #3 is the button
+Seat 2: JK-Titan996 (40347, 0.30€ bounty)
+Seat 3: doublejack66 (21432, 0.25€ bounty)
+Seat 4: skynite79 (25750, 0.25€ bounty)
+Seat 5: MyPseudo (30487, 0.37€ bounty)
+Seat 6: doduHamster6 (40043, 0.30€ bounty)
+*** ANTE/BLINDS ***
+skynite79 posts ante 25
+MyPseudo posts ante 25
+JK-Titan996 posts ante 25
+doublejack66 posts ante 25
+doduHamster6 posts ante 25
+skynite79 posts small blind 100
+MyPseudo posts big blind 200
+Dealt to MyPseudo [7c Kd]
+*** PRE-FLOP *** 
+doduHamster6 calls 200
+JK-Titan996 folds
+doublejack66 folds
+skynite79 folds
+MyPseudo checks
+*** FLOP *** [9d 6d Th]
+MyPseudo bets 206
+doduHamster6 calls 206
+*** TURN *** [9d 6d Th][4d]
+MyPseudo bets 519
+doduHamster6 calls 519
+*** RIVER *** [9d 6d Th 4d][3d]
+MyPseudo bets 1038
+doduHamster6 folds
+MyPseudo collected 3113 from pot
+*** SUMMARY ***
+Total pot 3113 | No rake
+Board: [9d 6d Th 4d 3d]
+Seat 5: MyPseudo (big blind) won 3113
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681246-11-1785520489 - Holdem no limit (25/100/200) - 2026/07/31 17:54:49 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #4 is the button
+Seat 1: Awful_Jojo (20000, 0.25€ bounty)
+Seat 2: JK-Titan996 (40322, 0.30€ bounty)
+Seat 3: doublejack66 (21407, 0.25€ bounty)
+Seat 4: skynite79 (25625, 0.25€ bounty)
+Seat 5: MyPseudo (31612, 0.37€ bounty)
+Seat 6: doduHamster6 (39093, 0.30€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 25
+doduHamster6 posts ante 25
+Awful_Jojo posts ante 25
+JK-Titan996 posts ante 25
+doublejack66 posts ante 25
+skynite79 posts ante 25
+MyPseudo posts small blind 100
+doduHamster6 posts big blind 200
+Dealt to MyPseudo [8s 3h]
+*** PRE-FLOP *** 
+Awful_Jojo folds
+JK-Titan996 folds
+doublejack66 calls 200
+skynite79 calls 200
+MyPseudo folds
+doduHamster6 checks
+*** FLOP *** [Th 8d 9h]
+doduHamster6 checks
+doublejack66 bets 425
+skynite79 folds
+doduHamster6 calls 425
+*** TURN *** [Th 8d 9h][Qd]
+doduHamster6 checks
+doublejack66 bets 850
+doduHamster6 calls 850
+*** RIVER *** [Th 8d 9h Qd][3d]
+doduHamster6 checks
+doublejack66 bets 850
+doduHamster6 raises 5100 to 5950
+doublejack66 folds
+doduHamster6 collected 10200 from pot
+*** SUMMARY ***
+Total pot 10200 | No rake
+Board: [Th 8d 9h Qd 3d]
+Seat 6: doduHamster6 (big blind) won 10200
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681246-12-1785520860 - Holdem no limit (25/100/200) - 2026/07/31 18:01:00 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #5 is the button
+Seat 1: Awful_Jojo (19975, 0.25€ bounty)
+Seat 2: JK-Titan996 (40297, 0.30€ bounty)
+Seat 3: doublejack66 (19057, 0.25€ bounty)
+Seat 4: skynite79 (25400, 0.25€ bounty)
+Seat 5: MyPseudo (31487, 0.37€ bounty)
+Seat 6: doduHamster6 (41843, 0.30€ bounty)
+*** ANTE/BLINDS ***
+doduHamster6 posts ante 25
+Awful_Jojo posts ante 25
+JK-Titan996 posts ante 25
+doublejack66 posts ante 25
+skynite79 posts ante 25
+MyPseudo posts ante 25
+doduHamster6 posts small blind 100
+Awful_Jojo posts big blind 200
+Dealt to MyPseudo [2c Qd]
+*** PRE-FLOP *** 
+JK-Titan996 raises 400 to 600
+doublejack66 raises 1200 to 1800
+skynite79 folds
+MyPseudo folds
+doduHamster6 calls 1700
+Awful_Jojo folds
+JK-Titan996 calls 1200
+*** FLOP *** [Kh 8c 5s]
+doduHamster6 checks
+JK-Titan996 checks
+doublejack66 bets 2875
+doduHamster6 calls 2875
+JK-Titan996 folds
+*** TURN *** [Kh 8c 5s][9h]
+doduHamster6 checks
+doublejack66 bets 14357 and is all-in
+doduHamster6 calls 14357
+*** RIVER *** [Kh 8c 5s 9h][3s]
+*** SHOW DOWN ***
+doduHamster6 shows [4h Ah] (High card : Ace)
+doublejack66 shows [Ad Ac] (One pair : Aces)
+doublejack66 collected 40214 from pot
+*** SUMMARY ***
+Total pot 40214 | No rake
+Board: [Kh 8c 5s 9h 3s]
+Seat 3: doublejack66 showed [Ad Ac] and won 40214 with One pair : Aces
+Seat 6: doduHamster6 (small blind) showed [4h Ah] and lost with High card : Ace
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681246-13-1785520916 - Holdem no limit (25/100/200) - 2026/07/31 18:01:56 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #6 is the button
+Seat 1: Awful_Jojo (19750, 0.25€ bounty)
+Seat 2: JK-Titan996 (38472, 0.30€ bounty)
+Seat 3: doublejack66 (40214, 0.25€ bounty)
+Seat 4: skynite79 (25375, 0.25€ bounty)
+Seat 5: MyPseudo (31462, 0.37€ bounty)
+Seat 6: doduHamster6 (22786, 0.30€ bounty)
+*** ANTE/BLINDS ***
+Awful_Jojo posts ante 25
+JK-Titan996 posts ante 25
+doublejack66 posts ante 25
+skynite79 posts ante 25
+MyPseudo posts ante 25
+doduHamster6 posts ante 25
+Awful_Jojo posts small blind 100
+JK-Titan996 posts big blind 200
+Dealt to MyPseudo [6d Tc]
+*** PRE-FLOP *** 
+doublejack66 folds
+skynite79 folds
+MyPseudo folds
+doduHamster6 folds
+Awful_Jojo folds
+JK-Titan996 collected 450 from pot
+*** SUMMARY ***
+Total pot 450 | No rake
+Seat 2: JK-Titan996 (big blind) won 450
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681246-14-1785520957 - Holdem no limit (25/100/200) - 2026/07/31 18:02:37 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #1 is the button
+Seat 1: Awful_Jojo (19625, 0.25€ bounty)
+Seat 2: JK-Titan996 (38697, 0.30€ bounty)
+Seat 3: doublejack66 (40189, 0.25€ bounty)
+Seat 4: skynite79 (25350, 0.25€ bounty)
+Seat 5: MyPseudo (31437, 0.37€ bounty)
+Seat 6: doduHamster6 (22761, 0.30€ bounty)
+*** ANTE/BLINDS ***
+JK-Titan996 posts ante 25
+doublejack66 posts ante 25
+Awful_Jojo posts ante 25
+skynite79 posts ante 25
+MyPseudo posts ante 25
+doduHamster6 posts ante 25
+JK-Titan996 posts small blind 100
+doublejack66 posts big blind 200
+Dealt to MyPseudo [7h 2h]
+*** PRE-FLOP *** 
+skynite79 folds
+MyPseudo folds
+doduHamster6 folds
+Awful_Jojo raises 300 to 500
+JK-Titan996 calls 400
+doublejack66 calls 300
+*** FLOP *** [3d 2c 3h]
+JK-Titan996 bets 1320
+doublejack66 folds
+Awful_Jojo calls 1320
+*** TURN *** [3d 2c 3h][4h]
+JK-Titan996 bets 4290
+Awful_Jojo calls 4290
+*** RIVER *** [3d 2c 3h 4h][6h]
+JK-Titan996 bets 32562 and is all-in
+Awful_Jojo calls 13490 and is all-in
+*** SHOW DOWN ***
+Awful_Jojo shows [8c 8s] (Two pairs : 8 and 3)
+JK-Titan996 shows [7s 6d] (Two pairs : 6 and 3)
+JK-Titan996 collected 19072 from side pot 1
+Awful_Jojo collected 39850 from main pot
+*** SUMMARY ***
+Total pot 58922 | No rake
+Board: [3d 2c 3h 4h 6h]
+Seat 1: Awful_Jojo (button) showed [8c 8s] and won 39850 with Two pairs : 8 and 3
+Seat 2: JK-Titan996 (small blind) showed [7s 6d] and won 19072 with Two pairs : 6 and 3
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681246-15-1785521019 - Holdem no limit (25/100/200) - 2026/07/31 18:03:39 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #2 is the button
+Seat 1: Awful_Jojo (39850, 0.25€ bounty)
+Seat 2: JK-Titan996 (19072, 0.30€ bounty)
+Seat 3: doublejack66 (39664, 0.25€ bounty)
+Seat 4: skynite79 (25325, 0.25€ bounty)
+Seat 5: MyPseudo (31412, 0.37€ bounty)
+Seat 6: doduHamster6 (22736, 0.30€ bounty)
+*** ANTE/BLINDS ***
+doublejack66 posts ante 25
+skynite79 posts ante 25
+Awful_Jojo posts ante 25
+JK-Titan996 posts ante 25
+MyPseudo posts ante 25
+doduHamster6 posts ante 25
+doublejack66 posts small blind 100
+skynite79 posts big blind 200
+Dealt to MyPseudo [Kd Jd]
+*** PRE-FLOP *** 
+MyPseudo raises 400 to 600
+doduHamster6 folds
+Awful_Jojo calls 600
+JK-Titan996 raises 2250 to 2850
+doublejack66 folds
+skynite79 folds
+MyPseudo calls 2250
+Awful_Jojo raises 36975 to 39825 and is all-in
+JK-Titan996 calls 16197 and is all-in
+MyPseudo calls 28537 and is all-in
+*** FLOP *** [4h 8c Kh]
+*** TURN *** [4h 8c Kh][5h]
+*** RIVER *** [4h 8c Kh 5h][Qs]
+*** SHOW DOWN ***
+Awful_Jojo shows [9c 9s] (One pair : 9)
+JK-Titan996 shows [Ac As] (One pair : Aces)
+MyPseudo shows [Kd Jd] (One pair : Kings)
+MyPseudo collected 24680 from side pot 1
+JK-Titan996 collected 57591 from main pot
+Awful_Jojo collected 8438 from side pot 2
+*** SUMMARY ***
+Total pot 90709 | No rake
+Board: [4h 8c Kh 5h Qs]
+Seat 1: Awful_Jojo showed [9c 9s] and won 8438 with One pair : 9
+Seat 2: JK-Titan996 (button) showed [Ac As] and won 57591 with One pair : Aces
+Seat 5: MyPseudo showed [Kd Jd] and won 24680 with One pair : Kings
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681246-16-1785521078 - Holdem no limit (25/100/200) - 2026/07/31 18:04:38 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #3 is the button
+Seat 1: Awful_Jojo (8438, 0.25€ bounty)
+Seat 2: JK-Titan996 (57591, 0.30€ bounty)
+Seat 3: doublejack66 (39539, 0.25€ bounty)
+Seat 4: skynite79 (25100, 0.25€ bounty)
+Seat 5: MyPseudo (24680, 0.37€ bounty)
+Seat 6: doduHamster6 (22711, 0.30€ bounty)
+*** ANTE/BLINDS ***
+skynite79 posts ante 25
+MyPseudo posts ante 25
+Awful_Jojo posts ante 25
+JK-Titan996 posts ante 25
+doublejack66 posts ante 25
+doduHamster6 posts ante 25
+skynite79 posts small blind 100
+MyPseudo posts big blind 200
+Dealt to MyPseudo [7d 9d]
+*** PRE-FLOP *** 
+doduHamster6 raises 22486 to 22686 and is all-in
+Awful_Jojo calls 8413 and is all-in
+JK-Titan996 folds
+doublejack66 folds
+skynite79 folds
+MyPseudo folds
+*** FLOP *** [Qd Ks 6h]
+*** TURN *** [Qd Ks 6h][4d]
+*** RIVER *** [Qd Ks 6h 4d][7c]
+*** SHOW DOWN ***
+Awful_Jojo shows [5d 5h] (One pair : 5)
+doduHamster6 shows [Kh Qh] (Two pairs : Kings and Queens)
+doduHamster6 collected 31549 from pot
+*** SUMMARY ***
+Total pot 31549 | No rake
+Board: [Qd Ks 6h 4d 7c]
+Seat 1: Awful_Jojo showed [5d 5h] and lost with One pair : 5
+Seat 6: doduHamster6 showed [Kh Qh] and won 31549 with Two pairs : Kings and Queens
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681246-17-1785521116 - Holdem no limit (25/100/200) - 2026/07/31 18:05:16 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #4 is the button
+Seat 2: JK-Titan996 (57566, 0.30€ bounty)
+Seat 3: doublejack66 (39514, 0.25€ bounty)
+Seat 4: skynite79 (24975, 0.25€ bounty)
+Seat 5: MyPseudo (24455, 0.37€ bounty)
+Seat 6: doduHamster6 (31549, 0.35€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 25
+doduHamster6 posts ante 25
+JK-Titan996 posts ante 25
+doublejack66 posts ante 25
+skynite79 posts ante 25
+MyPseudo posts small blind 100
+doduHamster6 posts big blind 200
+Dealt to MyPseudo [8c 7h]
+*** PRE-FLOP *** 
+JK-Titan996 calls 200
+doublejack66 calls 200
+skynite79 folds
+MyPseudo calls 100
+doduHamster6 checks
+*** FLOP *** [5s 3c Qc]
+MyPseudo bets 231
+doduHamster6 folds
+JK-Titan996 calls 231
+doublejack66 calls 231
+*** TURN *** [5s 3c Qc][2h]
+MyPseudo checks
+JK-Titan996 checks
+doublejack66 checks
+*** RIVER *** [5s 3c Qc 2h][4s]
+MyPseudo bets 534
+JK-Titan996 raises 56576 to 57110 and is all-in
+doublejack66 calls 39058 and is all-in
+MyPseudo folds
+*** SHOW DOWN ***
+doublejack66 shows [6c 4c] (Straight 6 high)
+JK-Titan996 shows [6h 7s] (Straight 7 high)
+JK-Titan996 collected 98320 from pot
+*** SUMMARY ***
+Total pot 98320 | No rake
+Board: [5s 3c Qc 2h 4s]
+Seat 2: JK-Titan996 showed [6h 7s] and won 98320 with Straight 7 high
+Seat 3: doublejack66 showed [6c 4c] and lost with Straight 6 high
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681246-18-1785521190 - Holdem no limit (25/100/200) - 2026/07/31 18:06:30 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #5 is the button
+Seat 1: RaZaLGhuL79 (20000, 0.25€ bounty)
+Seat 2: JK-Titan996 (98320, 0.35€ bounty)
+Seat 4: skynite79 (24950, 0.25€ bounty)
+Seat 5: MyPseudo (23465, 0.37€ bounty)
+Seat 6: doduHamster6 (31324, 0.35€ bounty)
+*** ANTE/BLINDS ***
+doduHamster6 posts ante 25
+RaZaLGhuL79 posts ante 25
+JK-Titan996 posts ante 25
+skynite79 posts ante 25
+MyPseudo posts ante 25
+doduHamster6 posts small blind 100
+RaZaLGhuL79 posts big blind 200
+Dealt to MyPseudo [6h Qh]
+*** PRE-FLOP *** 
+JK-Titan996 raises 200 to 400
+skynite79 folds
+MyPseudo folds
+doduHamster6 calls 300
+RaZaLGhuL79 calls 200
+*** FLOP *** [As 8c Kd]
+doduHamster6 bets 464
+RaZaLGhuL79 calls 464
+JK-Titan996 folds
+*** TURN *** [As 8c Kd][Tc]
+doduHamster6 bets 1464
+RaZaLGhuL79 folds
+doduHamster6 collected 3717 from pot
+*** SUMMARY ***
+Total pot 3717 | No rake
+Board: [As 8c Kd Tc]
+Seat 6: doduHamster6 (small blind) won 3717
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681246-19-1785521230 - Holdem no limit (25/100/200) - 2026/07/31 18:07:10 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #6 is the button
+Seat 1: RaZaLGhuL79 (19111, 0.25€ bounty)
+Seat 2: JK-Titan996 (97895, 0.35€ bounty)
+Seat 3: MV_GOAT79229 (20000, 0.25€ bounty)
+Seat 4: skynite79 (24925, 0.25€ bounty)
+Seat 5: MyPseudo (23440, 0.37€ bounty)
+Seat 6: doduHamster6 (32688, 0.35€ bounty)
+*** ANTE/BLINDS ***
+RaZaLGhuL79 posts ante 25
+JK-Titan996 posts ante 25
+MV_GOAT79229 posts ante 25
+skynite79 posts ante 25
+MyPseudo posts ante 25
+doduHamster6 posts ante 25
+RaZaLGhuL79 posts small blind 100
+JK-Titan996 posts big blind 200
+Dealt to MyPseudo [2h Qs]
+*** PRE-FLOP *** 
+MV_GOAT79229 calls 200
+skynite79 folds
+MyPseudo folds
+doduHamster6 folds
+RaZaLGhuL79 calls 100
+JK-Titan996 checks
+*** FLOP *** [Ad Th 6h]
+RaZaLGhuL79 checks
+JK-Titan996 bets 750
+MV_GOAT79229 folds
+RaZaLGhuL79 calls 750
+*** TURN *** [Ad Th 6h][2s]
+RaZaLGhuL79 checks
+JK-Titan996 bets 2250
+RaZaLGhuL79 raises 15886 to 18136 and is all-in
+JK-Titan996 raises 15886 to 34022
+*** RIVER *** [Ad Th 6h 2s][3c]
+*** SHOW DOWN ***
+RaZaLGhuL79 shows [7s As] (One pair : Aces)
+JK-Titan996 shows [6c Td] (Two pairs : Tens and 6)
+JK-Titan996 collected 54408 from pot
+*** SUMMARY ***
+Total pot 54408 | No rake
+Board: [Ad Th 6h 2s 3c]
+Seat 1: RaZaLGhuL79 (small blind) showed [7s As] and lost with One pair : Aces
+Seat 2: JK-Titan996 (big blind) showed [6c Td] and won 54408 with Two pairs : Tens and 6
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681246-20-1785521291 - Holdem no limit (25/100/200) - 2026/07/31 18:08:11 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #1 is the button
+Seat 2: JK-Titan996 (117306, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (19775, 0.25€ bounty)
+Seat 4: skynite79 (24900, 0.25€ bounty)
+Seat 5: MyPseudo (23415, 0.37€ bounty)
+Seat 6: doduHamster6 (32663, 0.35€ bounty)
+*** ANTE/BLINDS ***
+JK-Titan996 posts ante 25
+MV_GOAT79229 posts ante 25
+skynite79 posts ante 25
+MyPseudo posts ante 25
+doduHamster6 posts ante 25
+JK-Titan996 posts small blind 100
+MV_GOAT79229 posts big blind 200
+Dealt to MyPseudo [Ac Td]
+*** PRE-FLOP *** 
+skynite79 folds
+MyPseudo raises 400 to 600
+doduHamster6 folds
+JK-Titan996 folds
+MV_GOAT79229 folds
+MyPseudo collected 1025 from pot
+*** SUMMARY ***
+Total pot 1025 | No rake
+Seat 5: MyPseudo won 1025
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681246-21-1785521358 - Holdem no limit (25/100/200) - 2026/07/31 18:09:18 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #2 is the button
+Seat 1: FB-Boss (20000, 0.25€ bounty)
+Seat 2: JK-Titan996 (117181, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (19550, 0.25€ bounty)
+Seat 4: skynite79 (24875, 0.25€ bounty)
+Seat 5: MyPseudo (23815, 0.37€ bounty)
+Seat 6: doduHamster6 (32638, 0.35€ bounty)
+*** ANTE/BLINDS ***
+MV_GOAT79229 posts ante 25
+skynite79 posts ante 25
+FB-Boss posts ante 25
+JK-Titan996 posts ante 25
+MyPseudo posts ante 25
+doduHamster6 posts ante 25
+MV_GOAT79229 posts small blind 100
+skynite79 posts big blind 200
+Dealt to MyPseudo [Ac 8c]
+*** PRE-FLOP *** 
+MyPseudo raises 300 to 500
+doduHamster6 folds
+FB-Boss calls 500
+JK-Titan996 folds
+MV_GOAT79229 folds
+skynite79 calls 300
+*** FLOP *** [9s 3c Td]
+skynite79 checks
+MyPseudo bets 578
+FB-Boss calls 578
+skynite79 folds
+*** TURN *** [9s 3c Td][Ad]
+MyPseudo bets 1453
+FB-Boss folds
+MyPseudo collected 4359 from pot
+*** SUMMARY ***
+Total pot 4359 | No rake
+Board: [9s 3c Td Ad]
+Seat 5: MyPseudo won 4359
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 1 - HandId: #4900269329221681246-22-1785521406 - Holdem no limit (25/100/200) - 2026/07/31 18:10:06 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #3 is the button
+Seat 1: FB-Boss (18897, 0.25€ bounty)
+Seat 2: JK-Titan996 (117156, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (19425, 0.25€ bounty)
+Seat 4: skynite79 (24350, 0.25€ bounty)
+Seat 5: MyPseudo (25618, 0.37€ bounty)
+Seat 6: doduHamster6 (32613, 0.35€ bounty)
+*** ANTE/BLINDS ***
+skynite79 posts ante 25
+MyPseudo posts ante 25
+FB-Boss posts ante 25
+JK-Titan996 posts ante 25
+MV_GOAT79229 posts ante 25
+doduHamster6 posts ante 25
+skynite79 posts small blind 100
+MyPseudo posts big blind 200
+Dealt to MyPseudo [Jd 7c]
+*** PRE-FLOP *** 
+doduHamster6 folds
+FB-Boss calls 200
+JK-Titan996 folds
+MV_GOAT79229 calls 200
+skynite79 folds
+MyPseudo checks
+*** FLOP *** [9s Th 6d]
+MyPseudo checks
+FB-Boss bets 850
+MV_GOAT79229 folds
+MyPseudo calls 850
+*** TURN *** [9s Th 6d][Qs]
+MyPseudo bets 1683
+FB-Boss calls 1683
+*** RIVER *** [9s Th 6d Qs][4c]
+MyPseudo checks
+FB-Boss checks
+*** SHOW DOWN ***
+MyPseudo shows [Jd 7c] (High card : Queen)
+FB-Boss shows [5s Tc] (One pair : Tens)
+FB-Boss collected 5916 from pot
+*** SUMMARY ***
+Total pot 5916 | No rake
+Board: [9s Th 6d Qs 4c]
+Seat 1: FB-Boss showed [5s Tc] and won 5916 with One pair : Tens
+Seat 5: MyPseudo (big blind) showed [Jd 7c] and lost with High card : Queen
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 2 - HandId: #4900269329221681246-23-1785521477 - Holdem no limit (30/125/250) - 2026/07/31 18:11:17 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #4 is the button
+Seat 1: FB-Boss (22055, 0.25€ bounty)
+Seat 2: JK-Titan996 (117131, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (19200, 0.25€ bounty)
+Seat 4: skynite79 (24225, 0.25€ bounty)
+Seat 5: MyPseudo (22860, 0.37€ bounty)
+Seat 6: doduHamster6 (32588, 0.35€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 30
+doduHamster6 posts ante 30
+FB-Boss posts ante 30
+JK-Titan996 posts ante 30
+MV_GOAT79229 posts ante 30
+skynite79 posts ante 30
+MyPseudo posts small blind 125
+doduHamster6 posts big blind 250
+Dealt to MyPseudo [Qc 2c]
+*** PRE-FLOP *** 
+FB-Boss calls 250
+JK-Titan996 folds
+MV_GOAT79229 folds
+skynite79 raises 625 to 875
+MyPseudo folds
+doduHamster6 folds
+FB-Boss calls 625
+*** FLOP *** [7d 3d 8h]
+FB-Boss checks
+skynite79 bets 807
+FB-Boss calls 807
+*** TURN *** [7d 3d 8h][4h]
+FB-Boss checks
+skynite79 checks
+*** RIVER *** [7d 3d 8h 4h][7s]
+FB-Boss bets 250
+skynite79 calls 250
+*** SHOW DOWN ***
+FB-Boss shows [Jh 6h] (One pair : 7)
+skynite79 shows [9h Ah] (One pair : 7)
+skynite79 collected 4419 from pot
+*** SUMMARY ***
+Total pot 4419 | No rake
+Board: [7d 3d 8h 4h 7s]
+Seat 1: FB-Boss showed [Jh 6h] and lost with One pair : 7
+Seat 4: skynite79 (button) showed [9h Ah] and won 4419 with One pair : 7
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 2 - HandId: #4900269329221681246-24-1785521515 - Holdem no limit (30/125/250) - 2026/07/31 18:11:55 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #5 is the button
+Seat 1: FB-Boss (20093, 0.25€ bounty)
+Seat 2: JK-Titan996 (117101, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (19170, 0.25€ bounty)
+Seat 4: skynite79 (26682, 0.25€ bounty)
+Seat 5: MyPseudo (22705, 0.37€ bounty)
+Seat 6: doduHamster6 (32308, 0.35€ bounty)
+*** ANTE/BLINDS ***
+doduHamster6 posts ante 30
+FB-Boss posts ante 30
+JK-Titan996 posts ante 30
+MV_GOAT79229 posts ante 30
+skynite79 posts ante 30
+MyPseudo posts ante 30
+doduHamster6 posts small blind 125
+FB-Boss posts big blind 250
+Dealt to MyPseudo [Qs Ad]
+*** PRE-FLOP *** 
+JK-Titan996 folds
+MV_GOAT79229 calls 250
+skynite79 raises 625 to 875
+MyPseudo raises 1625 to 2500
+doduHamster6 folds
+FB-Boss folds
+MV_GOAT79229 raises 16640 to 19140 and is all-in
+skynite79 folds
+MyPseudo raises 3535 to 22675 and is all-in
+*** FLOP *** [4d 9s 9d]
+*** TURN *** [4d 9s 9d][3s]
+*** RIVER *** [4d 9s 9d 3s][8s]
+*** SHOW DOWN ***
+MV_GOAT79229 shows [Jc Jd] (Two pairs : Jacks and 9)
+MyPseudo shows [Qs Ad] (One pair : 9)
+MyPseudo collected 3535 from side pot 1
+MV_GOAT79229 collected 39710 from main pot
+*** SUMMARY ***
+Total pot 43245 | No rake
+Board: [4d 9s 9d 3s 8s]
+Seat 3: MV_GOAT79229 showed [Jc Jd] and won 39710 with Two pairs : Jacks and 9
+Seat 5: MyPseudo (button) showed [Qs Ad] and won 3535 with One pair : 9
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 2 - HandId: #4900269329221681246-25-1785521565 - Holdem no limit (30/125/250) - 2026/07/31 18:12:45 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #6 is the button
+Seat 1: FB-Boss (19813, 0.25€ bounty)
+Seat 2: JK-Titan996 (117071, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (39710, 0.25€ bounty)
+Seat 4: skynite79 (25777, 0.25€ bounty)
+Seat 5: MyPseudo (3535, 0.37€ bounty)
+Seat 6: doduHamster6 (32153, 0.35€ bounty)
+*** ANTE/BLINDS ***
+FB-Boss posts ante 30
+JK-Titan996 posts ante 30
+MV_GOAT79229 posts ante 30
+skynite79 posts ante 30
+MyPseudo posts ante 30
+doduHamster6 posts ante 30
+FB-Boss posts small blind 125
+JK-Titan996 posts big blind 250
+Dealt to MyPseudo [Jc Jd]
+*** PRE-FLOP *** 
+MV_GOAT79229 folds
+skynite79 folds
+MyPseudo raises 3255 to 3505 and is all-in
+doduHamster6 folds
+FB-Boss calls 3380
+JK-Titan996 folds
+*** FLOP *** [Th Ac Qs]
+*** TURN *** [Th Ac Qs][Ks]
+*** RIVER *** [Th Ac Qs Ks][6s]
+*** SHOW DOWN ***
+FB-Boss shows [9s Ah] (One pair : Aces)
+MyPseudo shows [Jc Jd] (Straight Ace high)
+MyPseudo collected 7440 from pot
+*** SUMMARY ***
+Total pot 7440 | No rake
+Board: [Th Ac Qs Ks 6s]
+Seat 1: FB-Boss (small blind) showed [9s Ah] and lost with One pair : Aces
+Seat 5: MyPseudo showed [Jc Jd] and won 7440 with Straight Ace high
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 2 - HandId: #4900269329221681246-26-1785521589 - Holdem no limit (30/125/250) - 2026/07/31 18:13:09 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #1 is the button
+Seat 1: FB-Boss (16278, 0.25€ bounty)
+Seat 2: JK-Titan996 (116791, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (39680, 0.25€ bounty)
+Seat 4: skynite79 (25747, 0.25€ bounty)
+Seat 5: MyPseudo (7440, 0.37€ bounty)
+Seat 6: doduHamster6 (32123, 0.35€ bounty)
+*** ANTE/BLINDS ***
+JK-Titan996 posts ante 30
+MV_GOAT79229 posts ante 30
+FB-Boss posts ante 30
+skynite79 posts ante 30
+MyPseudo posts ante 30
+doduHamster6 posts ante 30
+JK-Titan996 posts small blind 125
+MV_GOAT79229 posts big blind 250
+Dealt to MyPseudo [4d Kh]
+*** PRE-FLOP *** 
+skynite79 folds
+MyPseudo folds
+doduHamster6 calls 250
+FB-Boss raises 250 to 500
+JK-Titan996 folds
+MV_GOAT79229 folds
+doduHamster6 calls 250
+*** FLOP *** [2c 7s 9d]
+doduHamster6 checks
+FB-Boss bets 1555
+doduHamster6 calls 1555
+*** TURN *** [2c 7s 9d][3c]
+doduHamster6 checks
+FB-Boss bets 4665
+doduHamster6 calls 4665
+*** RIVER *** [2c 7s 9d 3c][4c]
+doduHamster6 checks
+FB-Boss bets 250
+doduHamster6 folds
+FB-Boss collected 14245 from pot
+*** SUMMARY ***
+Total pot 14245 | No rake
+Board: [2c 7s 9d 3c 4c]
+Seat 1: FB-Boss (button) won 14245
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 2 - HandId: #4900269329221681246-27-1785521614 - Holdem no limit (30/125/250) - 2026/07/31 18:13:34 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #2 is the button
+Seat 1: FB-Boss (23523, 0.25€ bounty)
+Seat 2: JK-Titan996 (116636, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (39400, 0.25€ bounty)
+Seat 4: skynite79 (25717, 0.25€ bounty)
+Seat 5: MyPseudo (7410, 0.37€ bounty)
+Seat 6: doduHamster6 (25373, 0.35€ bounty)
+*** ANTE/BLINDS ***
+MV_GOAT79229 posts ante 30
+skynite79 posts ante 30
+FB-Boss posts ante 30
+JK-Titan996 posts ante 30
+MyPseudo posts ante 30
+doduHamster6 posts ante 30
+MV_GOAT79229 posts small blind 125
+skynite79 posts big blind 250
+Dealt to MyPseudo [2s 6h]
+*** PRE-FLOP *** 
+MyPseudo folds
+doduHamster6 folds
+FB-Boss calls 250
+JK-Titan996 folds
+MV_GOAT79229 calls 125
+skynite79 checks
+*** FLOP *** [Jd 8c Qc]
+MV_GOAT79229 checks
+skynite79 checks
+FB-Boss bets 250
+MV_GOAT79229 calls 250
+skynite79 folds
+*** TURN *** [Jd 8c Qc][7d]
+MV_GOAT79229 checks
+FB-Boss bets 250
+MV_GOAT79229 calls 250
+*** RIVER *** [Jd 8c Qc 7d][Th]
+MV_GOAT79229 bets 676
+FB-Boss raises 3282 to 3958
+MV_GOAT79229 calls 3282
+*** SHOW DOWN ***
+MV_GOAT79229 shows [7c Qs] (Two pairs : Queens and 7)
+FB-Boss shows [Kh 9h] (Straight King high)
+FB-Boss collected 9846 from pot
+*** SUMMARY ***
+Total pot 9846 | No rake
+Board: [Jd 8c Qc 7d Th]
+Seat 1: FB-Boss showed [Kh 9h] and won 9846 with Straight King high
+Seat 3: MV_GOAT79229 (small blind) showed [7c Qs] and lost with Two pairs : Queens and 7
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 2 - HandId: #4900269329221681246-28-1785521660 - Holdem no limit (30/125/250) - 2026/07/31 18:14:20 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #3 is the button
+Seat 1: FB-Boss (28631, 0.25€ bounty)
+Seat 2: JK-Titan996 (116606, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (34662, 0.25€ bounty)
+Seat 4: skynite79 (25437, 0.25€ bounty)
+Seat 5: MyPseudo (7380, 0.37€ bounty)
+Seat 6: doduHamster6 (25343, 0.35€ bounty)
+*** ANTE/BLINDS ***
+skynite79 posts ante 30
+MyPseudo posts ante 30
+FB-Boss posts ante 30
+JK-Titan996 posts ante 30
+MV_GOAT79229 posts ante 30
+doduHamster6 posts ante 30
+skynite79 posts small blind 125
+MyPseudo posts big blind 250
+Dealt to MyPseudo [Qs 4c]
+*** PRE-FLOP *** 
+doduHamster6 raises 436 to 686
+FB-Boss folds
+JK-Titan996 folds
+MV_GOAT79229 folds
+skynite79 calls 561
+MyPseudo folds
+*** FLOP *** [Ad 2d 9s]
+skynite79 checks
+doduHamster6 bets 1802
+skynite79 folds
+doduHamster6 collected 3604 from pot
+*** SUMMARY ***
+Total pot 3604 | No rake
+Board: [Ad 2d 9s]
+Seat 6: doduHamster6 won 3604
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 2 - HandId: #4900269329221681246-29-1785521688 - Holdem no limit (30/125/250) - 2026/07/31 18:14:48 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #4 is the button
+Seat 1: FB-Boss (28601, 0.25€ bounty)
+Seat 2: JK-Titan996 (116576, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (34632, 0.25€ bounty)
+Seat 4: skynite79 (24721, 0.25€ bounty)
+Seat 5: MyPseudo (7100, 0.37€ bounty)
+Seat 6: doduHamster6 (26429, 0.35€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 30
+doduHamster6 posts ante 30
+FB-Boss posts ante 30
+JK-Titan996 posts ante 30
+MV_GOAT79229 posts ante 30
+skynite79 posts ante 30
+MyPseudo posts small blind 125
+doduHamster6 posts big blind 250
+Dealt to MyPseudo [9c Kc]
+*** PRE-FLOP *** 
+FB-Boss calls 250
+JK-Titan996 folds
+MV_GOAT79229 folds
+skynite79 folds
+MyPseudo raises 500 to 750
+doduHamster6 folds
+FB-Boss calls 500
+*** FLOP *** [4h Ac 6c]
+MyPseudo bets 637
+FB-Boss calls 637
+*** TURN *** [4h Ac 6c][Ah]
+MyPseudo bets 1602
+FB-Boss calls 1602
+*** RIVER *** [4h Ac 6c Ah][4c]
+MyPseudo bets 4081 and is all-in
+FB-Boss folds
+MyPseudo collected 10489 from pot
+*** SUMMARY ***
+Total pot 10489 | No rake
+Board: [4h Ac 6c Ah 4c]
+Seat 5: MyPseudo (small blind) won 10489
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 2 - HandId: #4900269329221681246-30-1785521723 - Holdem no limit (30/125/250) - 2026/07/31 18:15:23 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #5 is the button
+Seat 1: FB-Boss (25582, 0.25€ bounty)
+Seat 2: JK-Titan996 (116546, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (34602, 0.25€ bounty)
+Seat 4: skynite79 (24691, 0.25€ bounty)
+Seat 5: MyPseudo (10489, 0.37€ bounty)
+Seat 6: doduHamster6 (26149, 0.35€ bounty)
+*** ANTE/BLINDS ***
+doduHamster6 posts ante 30
+FB-Boss posts ante 30
+JK-Titan996 posts ante 30
+MV_GOAT79229 posts ante 30
+skynite79 posts ante 30
+MyPseudo posts ante 30
+doduHamster6 posts small blind 125
+FB-Boss posts big blind 250
+Dealt to MyPseudo [9d Js]
+*** PRE-FLOP *** 
+JK-Titan996 folds
+MV_GOAT79229 calls 250
+skynite79 folds
+MyPseudo folds
+doduHamster6 raises 517 to 767
+FB-Boss calls 517
+MV_GOAT79229 raises 33805 to 34572 and is all-in
+doduHamster6 calls 25352 and is all-in
+FB-Boss folds
+*** FLOP *** [As Qd Jc]
+*** TURN *** [As Qd Jc][7d]
+*** RIVER *** [As Qd Jc 7d][4c]
+*** SHOW DOWN ***
+doduHamster6 shows [Ks Qc] (One pair : Queens)
+MV_GOAT79229 shows [Ac Kc] (One pair : Aces)
+MV_GOAT79229 collected 61638 from pot
+*** SUMMARY ***
+Total pot 61638 | No rake
+Board: [As Qd Jc 7d 4c]
+Seat 3: MV_GOAT79229 showed [Ac Kc] and won 61638 with One pair : Aces
+Seat 6: doduHamster6 (small blind) showed [Ks Qc] and lost with One pair : Queens
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 2 - HandId: #4900269329221681246-31-1785521775 - Holdem no limit (30/125/250) - 2026/07/31 18:16:15 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #6 is the button
+Seat 1: FB-Boss (24785, 0.25€ bounty)
+Seat 2: JK-Titan996 (116516, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (61638, 0.32€ bounty)
+Seat 4: skynite79 (24661, 0.25€ bounty)
+Seat 5: MyPseudo (10459, 0.37€ bounty)
+*** ANTE/BLINDS ***
+FB-Boss posts ante 30
+JK-Titan996 posts ante 30
+MV_GOAT79229 posts ante 30
+skynite79 posts ante 30
+MyPseudo posts ante 30
+FB-Boss posts small blind 125
+JK-Titan996 posts big blind 250
+Dealt to MyPseudo [Qs 9s]
+*** PRE-FLOP *** 
+MV_GOAT79229 folds
+skynite79 folds
+MyPseudo raises 375 to 625
+FB-Boss raises 375 to 1000
+JK-Titan996 folds
+MyPseudo calls 375
+*** FLOP *** [6h 8c 5c]
+FB-Boss bets 250
+MyPseudo calls 250
+*** TURN *** [6h 8c 5c][8h]
+FB-Boss bets 250
+MyPseudo calls 250
+*** RIVER *** [6h 8c 5c 8h][9d]
+FB-Boss bets 3400
+MyPseudo calls 3400
+*** SHOW DOWN ***
+FB-Boss shows [Ah Td] (One pair : 8)
+MyPseudo shows [Qs 9s] (Two pairs : 9 and 8)
+MyPseudo collected 10200 from pot
+*** SUMMARY ***
+Total pot 10200 | No rake
+Board: [6h 8c 5c 8h 9d]
+Seat 1: FB-Boss (small blind) showed [Ah Td] and lost with One pair : 8
+Seat 5: MyPseudo showed [Qs 9s] and won 10200 with Two pairs : 9 and 8
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 2 - HandId: #4900269329221681246-32-1785521814 - Holdem no limit (30/125/250) - 2026/07/31 18:16:54 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #1 is the button
+Seat 1: FB-Boss (19855, 0.25€ bounty)
+Seat 2: JK-Titan996 (116236, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (61608, 0.32€ bounty)
+Seat 4: skynite79 (24631, 0.25€ bounty)
+Seat 5: MyPseudo (15729, 0.37€ bounty)
+Seat 6: Tmslme11 (20000, 0.25€ bounty)
+*** ANTE/BLINDS ***
+JK-Titan996 posts ante 30
+MV_GOAT79229 posts ante 30
+FB-Boss posts ante 30
+skynite79 posts ante 30
+MyPseudo posts ante 30
+Tmslme11 posts ante 30
+JK-Titan996 posts small blind 125
+MV_GOAT79229 posts big blind 250
+Dealt to MyPseudo [Qd 4h]
+*** PRE-FLOP *** 
+skynite79 folds
+MyPseudo folds
+Tmslme11 folds
+FB-Boss raises 250 to 500
+JK-Titan996 folds
+MV_GOAT79229 calls 250
+*** FLOP *** [Th 8c 7h]
+MV_GOAT79229 checks
+FB-Boss bets 250
+MV_GOAT79229 calls 250
+*** TURN *** [Th 8c 7h][As]
+MV_GOAT79229 checks
+FB-Boss bets 1173
+MV_GOAT79229 folds
+FB-Boss collected 2978 from pot
+*** SUMMARY ***
+Total pot 2978 | No rake
+Board: [Th 8c 7h As]
+Seat 1: FB-Boss (button) won 2978
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 2 - HandId: #4900269329221681246-33-1785521839 - Holdem no limit (30/125/250) - 2026/07/31 18:17:19 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #2 is the button
+Seat 1: FB-Boss (20880, 0.25€ bounty)
+Seat 2: JK-Titan996 (116081, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (60828, 0.32€ bounty)
+Seat 4: skynite79 (24601, 0.25€ bounty)
+Seat 5: MyPseudo (15699, 0.37€ bounty)
+Seat 6: Tmslme11 (19970, 0.25€ bounty)
+*** ANTE/BLINDS ***
+MV_GOAT79229 posts ante 30
+skynite79 posts ante 30
+FB-Boss posts ante 30
+JK-Titan996 posts ante 30
+MyPseudo posts ante 30
+Tmslme11 posts ante 30
+MV_GOAT79229 posts small blind 125
+skynite79 posts big blind 250
+Dealt to MyPseudo [4c 5c]
+*** PRE-FLOP *** 
+MyPseudo folds
+Tmslme11 calls 250
+FB-Boss folds
+JK-Titan996 folds
+MV_GOAT79229 folds
+skynite79 checks
+*** FLOP *** [Qc 6s 8c]
+skynite79 checks
+Tmslme11 bets 250
+skynite79 calls 250
+*** TURN *** [Qc 6s 8c][5d]
+skynite79 checks
+Tmslme11 bets 250
+skynite79 raises 1086 to 1336
+Tmslme11 calls 1086
+*** RIVER *** [Qc 6s 8c 5d][Kd]
+skynite79 bets 3182
+Tmslme11 folds
+skynite79 collected 7159 from pot
+*** SUMMARY ***
+Total pot 7159 | No rake
+Board: [Qc 6s 8c 5d Kd]
+Seat 4: skynite79 (big blind) won 7159
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 2 - HandId: #4900269329221681246-34-1785521877 - Holdem no limit (30/125/250) - 2026/07/31 18:17:57 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #3 is the button
+Seat 1: FB-Boss (20850, 0.25€ bounty)
+Seat 2: JK-Titan996 (116051, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (60673, 0.32€ bounty)
+Seat 4: skynite79 (26712, 0.25€ bounty)
+Seat 5: MyPseudo (15669, 0.37€ bounty)
+Seat 6: Tmslme11 (18104, 0.25€ bounty)
+*** ANTE/BLINDS ***
+skynite79 posts ante 30
+MyPseudo posts ante 30
+FB-Boss posts ante 30
+JK-Titan996 posts ante 30
+MV_GOAT79229 posts ante 30
+Tmslme11 posts ante 30
+skynite79 posts small blind 125
+MyPseudo posts big blind 250
+Dealt to MyPseudo [Js Ad]
+*** PRE-FLOP *** 
+Tmslme11 raises 17824 to 18074 and is all-in
+FB-Boss folds
+JK-Titan996 folds
+MV_GOAT79229 raises 42569 to 60643 and is all-in
+skynite79 folds
+MyPseudo folds
+*** FLOP *** [5c 3c 6s]
+*** TURN *** [5c 3c 6s][As]
+*** RIVER *** [5c 3c 6s As][Ah]
+*** SHOW DOWN ***
+Tmslme11 shows [Tc Ts] (Two pairs : Aces and Tens)
+MV_GOAT79229 shows [Qs Qd] (Two pairs : Aces and Queens)
+MV_GOAT79229 collected 79272 from pot
+*** SUMMARY ***
+Total pot 79272 | No rake
+Board: [5c 3c 6s As Ah]
+Seat 3: MV_GOAT79229 (button) showed [Qs Qd] and won 79272 with Two pairs : Aces and Queens
+Seat 6: Tmslme11 showed [Tc Ts] and lost with Two pairs : Aces and Tens
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 3 - HandId: #4900269329221681246-35-1785521912 - Holdem no limit (35/150/300) - 2026/07/31 18:18:32 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #4 is the button
+Seat 1: FB-Boss (20820, 0.25€ bounty)
+Seat 2: JK-Titan996 (116021, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (79272, 0.57€ bounty)
+Seat 4: skynite79 (26557, 0.25€ bounty)
+Seat 5: MyPseudo (15389, 0.37€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 35
+FB-Boss posts ante 35
+JK-Titan996 posts ante 35
+MV_GOAT79229 posts ante 35
+skynite79 posts ante 35
+MyPseudo posts small blind 150
+FB-Boss posts big blind 300
+Dealt to MyPseudo [As Js]
+*** PRE-FLOP *** 
+JK-Titan996 folds
+MV_GOAT79229 folds
+skynite79 folds
+MyPseudo raises 600 to 900
+FB-Boss raises 600 to 1500
+MyPseudo raises 3750 to 5250
+FB-Boss calls 3750
+*** FLOP *** [Td Qd Ks]
+MyPseudo checks
+FB-Boss bets 10675
+MyPseudo calls 10104 and is all-in
+*** TURN *** [Td Qd Ks][3d]
+*** RIVER *** [Td Qd Ks 3d][5s]
+*** SHOW DOWN ***
+FB-Boss shows [Ad Kc] (One pair : Kings)
+MyPseudo shows [As Js] (Straight Ace high)
+MyPseudo collected 30883 from main pot
+FB-Boss collected 571 from side pot 1
+*** SUMMARY ***
+Total pot 31454 | No rake
+Board: [Td Qd Ks 3d 5s]
+Seat 1: FB-Boss (big blind) showed [Ad Kc] and won 571 with One pair : Kings
+Seat 5: MyPseudo (small blind) showed [As Js] and won 30883 with Straight Ace high
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 3 - HandId: #4900269329221681246-36-1785521962 - Holdem no limit (35/150/300) - 2026/07/31 18:19:22 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #5 is the button
+Seat 1: FB-Boss (5431, 0.25€ bounty)
+Seat 2: JK-Titan996 (115986, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (79237, 0.57€ bounty)
+Seat 4: skynite79 (26522, 0.25€ bounty)
+Seat 5: MyPseudo (30883, 0.37€ bounty)
+*** ANTE/BLINDS ***
+FB-Boss posts ante 35
+JK-Titan996 posts ante 35
+MV_GOAT79229 posts ante 35
+skynite79 posts ante 35
+MyPseudo posts ante 35
+FB-Boss posts small blind 150
+JK-Titan996 posts big blind 300
+Dealt to MyPseudo [7c 3s]
+*** PRE-FLOP *** 
+MV_GOAT79229 folds
+skynite79 folds
+MyPseudo folds
+FB-Boss calls 150
+JK-Titan996 checks
+*** FLOP *** [8c Qc 2c]
+FB-Boss checks
+JK-Titan996 checks
+*** TURN *** [8c Qc 2c][Kd]
+FB-Boss checks
+JK-Titan996 checks
+*** RIVER *** [8c Qc 2c Kd][8h]
+FB-Boss checks
+JK-Titan996 checks
+*** SHOW DOWN ***
+FB-Boss shows [Jc 5h] (One pair : 8)
+JK-Titan996 shows [2d 3h] (Two pairs : 8 and 2)
+JK-Titan996 collected 775 from pot
+*** SUMMARY ***
+Total pot 775 | No rake
+Board: [8c Qc 2c Kd 8h]
+Seat 1: FB-Boss (small blind) showed [Jc 5h] and lost with One pair : 8
+Seat 2: JK-Titan996 (big blind) showed [2d 3h] and won 775 with Two pairs : 8 and 2
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 3 - HandId: #4900269329221681246-37-1785521999 - Holdem no limit (35/150/300) - 2026/07/31 18:19:59 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #1 is the button
+Seat 1: FB-Boss (5096, 0.25€ bounty)
+Seat 2: JK-Titan996 (116426, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (79202, 0.57€ bounty)
+Seat 4: skynite79 (26487, 0.25€ bounty)
+Seat 5: MyPseudo (30848, 0.37€ bounty)
+Seat 6: Reprends2020 (20000, 0.25€ bounty)
+*** ANTE/BLINDS ***
+JK-Titan996 posts ante 35
+MV_GOAT79229 posts ante 35
+FB-Boss posts ante 35
+skynite79 posts ante 35
+MyPseudo posts ante 35
+Reprends2020 posts ante 35
+JK-Titan996 posts small blind 150
+MV_GOAT79229 posts big blind 300
+Dealt to MyPseudo [Tc 2h]
+*** PRE-FLOP *** 
+skynite79 raises 300 to 600
+MyPseudo folds
+Reprends2020 folds
+FB-Boss calls 600
+JK-Titan996 folds
+MV_GOAT79229 folds
+*** FLOP *** [Qc 2s As]
+skynite79 bets 651
+FB-Boss folds
+skynite79 collected 2511 from pot
+*** SUMMARY ***
+Total pot 2511 | No rake
+Board: [Qc 2s As]
+Seat 4: skynite79 won 2511
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 3 - HandId: #4900269329221681246-38-1785522059 - Holdem no limit (35/150/300) - 2026/07/31 18:20:59 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #2 is the button
+Seat 1: FB-Boss (4461, 0.25€ bounty)
+Seat 2: JK-Titan996 (116241, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (78867, 0.57€ bounty)
+Seat 4: skynite79 (27712, 0.25€ bounty)
+Seat 5: MyPseudo (30813, 0.37€ bounty)
+Seat 6: Reprends2020 (19965, 0.25€ bounty)
+*** ANTE/BLINDS ***
+MV_GOAT79229 posts ante 35
+skynite79 posts ante 35
+FB-Boss posts ante 35
+JK-Titan996 posts ante 35
+MyPseudo posts ante 35
+Reprends2020 posts ante 35
+MV_GOAT79229 posts small blind 150
+skynite79 posts big blind 300
+Dealt to MyPseudo [Ac 7h]
+*** PRE-FLOP *** 
+MyPseudo folds
+Reprends2020 folds
+FB-Boss folds
+JK-Titan996 folds
+MV_GOAT79229 calls 150
+skynite79 checks
+*** FLOP *** [8c Kc Ks]
+MV_GOAT79229 checks
+skynite79 checks
+*** TURN *** [8c Kc Ks][As]
+MV_GOAT79229 checks
+skynite79 checks
+*** RIVER *** [8c Kc Ks As][6d]
+MV_GOAT79229 bets 527
+skynite79 folds
+MV_GOAT79229 collected 1337 from pot
+*** SUMMARY ***
+Total pot 1337 | No rake
+Board: [8c Kc Ks As 6d]
+Seat 3: MV_GOAT79229 (small blind) won 1337
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 3 - HandId: #4900269329221681246-39-1785522125 - Holdem no limit (35/150/300) - 2026/07/31 18:22:05 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #3 is the button
+Seat 1: FB-Boss (4426, 0.25€ bounty)
+Seat 2: JK-Titan996 (116206, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (79342, 0.57€ bounty)
+Seat 4: skynite79 (27377, 0.25€ bounty)
+Seat 5: MyPseudo (30778, 0.37€ bounty)
+Seat 6: Reprends2020 (19930, 0.25€ bounty)
+*** ANTE/BLINDS ***
+skynite79 posts ante 35
+MyPseudo posts ante 35
+FB-Boss posts ante 35
+JK-Titan996 posts ante 35
+MV_GOAT79229 posts ante 35
+Reprends2020 posts ante 35
+skynite79 posts small blind 150
+MyPseudo posts big blind 300
+Dealt to MyPseudo [4s 3s]
+*** PRE-FLOP *** 
+Reprends2020 folds
+FB-Boss folds
+JK-Titan996 folds
+MV_GOAT79229 folds
+skynite79 calls 150
+MyPseudo checks
+*** FLOP *** [3c Kc Jc]
+skynite79 bets 300
+MyPseudo folds
+skynite79 collected 1110 from pot
+*** SUMMARY ***
+Total pot 1110 | No rake
+Board: [3c Kc Jc]
+Seat 4: skynite79 (small blind) won 1110
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 3 - HandId: #4900269329221681246-40-1785522157 - Holdem no limit (35/150/300) - 2026/07/31 18:22:37 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #4 is the button
+Seat 2: JK-Titan996 (116171, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (79307, 0.57€ bounty)
+Seat 4: skynite79 (27852, 0.25€ bounty)
+Seat 5: MyPseudo (30443, 0.37€ bounty)
+Seat 6: Reprends2020 (19895, 0.25€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 35
+Reprends2020 posts ante 35
+JK-Titan996 posts ante 35
+MV_GOAT79229 posts ante 35
+skynite79 posts ante 35
+MyPseudo posts small blind 150
+Reprends2020 posts big blind 300
+Dealt to MyPseudo [7h 8d]
+*** PRE-FLOP *** 
+JK-Titan996 folds
+MV_GOAT79229 calls 300
+skynite79 folds
+MyPseudo calls 150
+Reprends2020 checks
+*** FLOP *** [8c 6h Jd]
+MyPseudo bets 355
+Reprends2020 folds
+MV_GOAT79229 calls 355
+*** TURN *** [8c 6h Jd][Qs]
+MyPseudo checks
+MV_GOAT79229 bets 1785
+MyPseudo folds
+MV_GOAT79229 collected 3570 from pot
+*** SUMMARY ***
+Total pot 3570 | No rake
+Board: [8c 6h Jd Qs]
+Seat 3: MV_GOAT79229 won 3570
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 3 - HandId: #4900269329221681246-41-1785522206 - Holdem no limit (35/150/300) - 2026/07/31 18:23:26 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #5 is the button
+Seat 2: JK-Titan996 (116136, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (80402, 0.57€ bounty)
+Seat 4: skynite79 (27817, 0.25€ bounty)
+Seat 5: MyPseudo (29753, 0.37€ bounty)
+Seat 6: Reprends2020 (19560, 0.25€ bounty)
+*** ANTE/BLINDS ***
+Reprends2020 posts ante 35
+JK-Titan996 posts ante 35
+MV_GOAT79229 posts ante 35
+skynite79 posts ante 35
+MyPseudo posts ante 35
+Reprends2020 posts small blind 150
+JK-Titan996 posts big blind 300
+Dealt to MyPseudo [4d 7h]
+*** PRE-FLOP *** 
+MV_GOAT79229 folds
+skynite79 raises 300 to 600
+MyPseudo folds
+Reprends2020 folds
+JK-Titan996 folds
+skynite79 collected 1225 from pot
+*** SUMMARY ***
+Total pot 1225 | No rake
+Seat 4: skynite79 won 1225
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 3 - HandId: #4900269329221681246-42-1785522217 - Holdem no limit (35/150/300) - 2026/07/31 18:23:37 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #6 is the button
+Seat 2: JK-Titan996 (115801, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (80367, 0.57€ bounty)
+Seat 4: skynite79 (28407, 0.25€ bounty)
+Seat 5: MyPseudo (29718, 0.37€ bounty)
+Seat 6: Reprends2020 (19375, 0.25€ bounty)
+*** ANTE/BLINDS ***
+JK-Titan996 posts ante 35
+MV_GOAT79229 posts ante 35
+skynite79 posts ante 35
+MyPseudo posts ante 35
+Reprends2020 posts ante 35
+JK-Titan996 posts small blind 150
+MV_GOAT79229 posts big blind 300
+Dealt to MyPseudo [9c 5s]
+*** PRE-FLOP *** 
+skynite79 folds
+MyPseudo folds
+Reprends2020 folds
+JK-Titan996 folds
+MV_GOAT79229 collected 625 from pot
+*** SUMMARY ***
+Total pot 625 | No rake
+Seat 3: MV_GOAT79229 (big blind) won 625
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 3 - HandId: #4900269329221681246-43-1785522239 - Holdem no limit (35/150/300) - 2026/07/31 18:23:59 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #2 is the button
+Seat 2: JK-Titan996 (115616, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (80657, 0.57€ bounty)
+Seat 4: skynite79 (28372, 0.25€ bounty)
+Seat 5: MyPseudo (29683, 0.37€ bounty)
+Seat 6: Reprends2020 (19340, 0.25€ bounty)
+*** ANTE/BLINDS ***
+MV_GOAT79229 posts ante 35
+skynite79 posts ante 35
+JK-Titan996 posts ante 35
+MyPseudo posts ante 35
+Reprends2020 posts ante 35
+MV_GOAT79229 posts small blind 150
+skynite79 posts big blind 300
+Dealt to MyPseudo [Jh 8d]
+*** PRE-FLOP *** 
+MyPseudo folds
+Reprends2020 raises 300 to 600
+JK-Titan996 raises 1825 to 2425
+MV_GOAT79229 folds
+skynite79 folds
+Reprends2020 folds
+JK-Titan996 collected 3650 from pot
+*** SUMMARY ***
+Total pot 3650 | No rake
+Seat 2: JK-Titan996 (button) won 3650
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 3 - HandId: #4900269329221681246-44-1785522258 - Holdem no limit (35/150/300) - 2026/07/31 18:24:18 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #3 is the button
+Seat 2: JK-Titan996 (116806, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (80472, 0.57€ bounty)
+Seat 4: skynite79 (28037, 0.25€ bounty)
+Seat 5: MyPseudo (29648, 0.37€ bounty)
+Seat 6: Reprends2020 (18705, 0.25€ bounty)
+*** ANTE/BLINDS ***
+skynite79 posts ante 35
+MyPseudo posts ante 35
+JK-Titan996 posts ante 35
+MV_GOAT79229 posts ante 35
+Reprends2020 posts ante 35
+skynite79 posts small blind 150
+MyPseudo posts big blind 300
+Dealt to MyPseudo [2s 8c]
+*** PRE-FLOP *** 
+Reprends2020 folds
+JK-Titan996 folds
+MV_GOAT79229 folds
+skynite79 calls 150
+MyPseudo checks
+*** FLOP *** [Jc Kc 6s]
+skynite79 bets 300
+MyPseudo folds
+skynite79 collected 1075 from pot
+*** SUMMARY ***
+Total pot 1075 | No rake
+Board: [Jc Kc 6s]
+Seat 4: skynite79 (small blind) won 1075
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 3 - HandId: #4900269329221681246-45-1785522278 - Holdem no limit (35/150/300) - 2026/07/31 18:24:38 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #4 is the button
+Seat 1: Pechegros (20000, 0.25€ bounty)
+Seat 2: JK-Titan996 (116771, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (80437, 0.57€ bounty)
+Seat 4: skynite79 (28477, 0.25€ bounty)
+Seat 5: MyPseudo (29313, 0.37€ bounty)
+Seat 6: Reprends2020 (18670, 0.25€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 35
+Reprends2020 posts ante 35
+Pechegros posts ante 35
+JK-Titan996 posts ante 35
+MV_GOAT79229 posts ante 35
+skynite79 posts ante 35
+MyPseudo posts small blind 150
+Reprends2020 posts big blind 300
+Dealt to MyPseudo [6d 6s]
+*** PRE-FLOP *** 
+Pechegros raises 300 to 600
+JK-Titan996 folds
+MV_GOAT79229 folds
+skynite79 calls 600
+MyPseudo calls 450
+Reprends2020 calls 300
+*** FLOP *** [2s 4s As]
+MyPseudo bets 861
+Reprends2020 calls 861
+Pechegros raises 861 to 1722
+skynite79 raises 26120 to 27842 and is all-in
+MyPseudo folds
+Reprends2020 calls 17174 and is all-in
+Pechegros calls 17643 and is all-in
+*** TURN *** [2s 4s As][Td]
+*** RIVER *** [2s 4s As Td][9h]
+*** SHOW DOWN ***
+Pechegros shows [3d Ah] (One pair : Aces)
+Reprends2020 shows [5d Ks] (High card : Ace)
+skynite79 shows [Qs Js] (Flush Ace high)
+skynite79 collected 68713 from pot
+*** SUMMARY ***
+Total pot 68713 | No rake
+Board: [2s 4s As Td 9h]
+Seat 1: Pechegros showed [3d Ah] and lost with One pair : Aces
+Seat 4: skynite79 (button) showed [Qs Js] and won 68713 with Flush Ace high
+Seat 6: Reprends2020 (big blind) showed [5d Ks] and lost with High card : Ace
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 4 - HandId: #4900269329221681246-46-1785522391 - Holdem no limit (40/175/350) - 2026/07/31 18:26:31 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #5 is the button
+Seat 2: JK-Titan996 (116736, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (80402, 0.57€ bounty)
+Seat 4: skynite79 (68713, 0.42€ bounty)
+Seat 5: MyPseudo (27817, 0.37€ bounty)
+*** ANTE/BLINDS ***
+JK-Titan996 posts ante 40
+MV_GOAT79229 posts ante 40
+skynite79 posts ante 40
+MyPseudo posts ante 40
+JK-Titan996 posts big blind 350
+Dealt to MyPseudo [4h 9c]
+*** PRE-FLOP *** 
+MV_GOAT79229 folds
+skynite79 folds
+MyPseudo raises 525 to 875
+JK-Titan996 folds
+MyPseudo collected 1385 from pot
+*** SUMMARY ***
+Total pot 1385 | No rake
+Seat 5: MyPseudo (button) won 1385
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 4 - HandId: #4900269329221681246-47-1785522411 - Holdem no limit (40/175/350) - 2026/07/31 18:26:51 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #6 is the button
+Seat 1: RndmWhiner (69058, 0.30€ bounty)
+Seat 2: JK-Titan996 (116346, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (80362, 0.57€ bounty)
+Seat 4: skynite79 (68673, 0.42€ bounty)
+Seat 5: MyPseudo (28287, 0.37€ bounty)
+*** ANTE/BLINDS ***
+JK-Titan996 posts ante 40
+MV_GOAT79229 posts ante 40
+skynite79 posts ante 40
+MyPseudo posts ante 40
+JK-Titan996 posts small blind 175
+MV_GOAT79229 posts big blind 350
+Dealt to MyPseudo [7c 9s]
+*** PRE-FLOP *** 
+skynite79 folds
+MyPseudo folds
+JK-Titan996 folds
+MV_GOAT79229 collected 685 from pot
+*** SUMMARY ***
+Total pot 685 | No rake
+Seat 3: MV_GOAT79229 (big blind) won 685
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 4 - HandId: #4900269329221681246-48-1785522422 - Holdem no limit (40/175/350) - 2026/07/31 18:27:02 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #2 is the button
+Seat 1: RndmWhiner (69058, 0.30€ bounty)
+Seat 2: JK-Titan996 (116131, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (80657, 0.57€ bounty)
+Seat 4: skynite79 (68633, 0.42€ bounty)
+Seat 5: MyPseudo (28247, 0.37€ bounty)
+*** ANTE/BLINDS ***
+MV_GOAT79229 posts ante 40
+skynite79 posts ante 40
+RndmWhiner posts ante 40
+JK-Titan996 posts ante 40
+MyPseudo posts ante 40
+MV_GOAT79229 posts small blind 175
+skynite79 posts big blind 350
+Dealt to MyPseudo [4c 2h]
+*** PRE-FLOP *** 
+MyPseudo folds
+RndmWhiner folds
+JK-Titan996 raises 350 to 700
+MV_GOAT79229 folds
+skynite79 raises 1400 to 2100
+JK-Titan996 folds
+skynite79 collected 3175 from pot
+*** SUMMARY ***
+Total pot 3175 | No rake
+Seat 4: skynite79 (big blind) won 3175
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 4 - HandId: #4900269329221681246-49-1785522450 - Holdem no limit (40/175/350) - 2026/07/31 18:27:30 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #3 is the button
+Seat 1: RndmWhiner (69018, 0.30€ bounty)
+Seat 2: JK-Titan996 (115391, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (80442, 0.57€ bounty)
+Seat 4: skynite79 (69668, 0.42€ bounty)
+Seat 5: MyPseudo (28207, 0.37€ bounty)
+*** ANTE/BLINDS ***
+skynite79 posts ante 40
+MyPseudo posts ante 40
+RndmWhiner posts ante 40
+JK-Titan996 posts ante 40
+MV_GOAT79229 posts ante 40
+skynite79 posts small blind 175
+MyPseudo posts big blind 350
+Dealt to MyPseudo [Ks 4c]
+*** PRE-FLOP *** 
+RndmWhiner raises 525 to 875
+JK-Titan996 folds
+MV_GOAT79229 folds
+skynite79 calls 700
+MyPseudo folds
+*** FLOP *** [Ac 3d 3h]
+skynite79 checks
+RndmWhiner bets 690
+skynite79 calls 690
+*** TURN *** [Ac 3d 3h][Td]
+skynite79 checks
+RndmWhiner bets 2944
+skynite79 folds
+RndmWhiner collected 6624 from pot
+*** SUMMARY ***
+Total pot 6624 | No rake
+Board: [Ac 3d 3h Td]
+Seat 1: RndmWhiner won 6624
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 4 - HandId: #4900269329221681246-50-1785522498 - Holdem no limit (40/175/350) - 2026/07/31 18:28:18 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #4 is the button
+Seat 1: RndmWhiner (71093, 0.30€ bounty)
+Seat 2: JK-Titan996 (115351, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (80402, 0.57€ bounty)
+Seat 4: skynite79 (68063, 0.42€ bounty)
+Seat 5: MyPseudo (27817, 0.37€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 40
+RndmWhiner posts ante 40
+JK-Titan996 posts ante 40
+MV_GOAT79229 posts ante 40
+skynite79 posts ante 40
+MyPseudo posts small blind 175
+RndmWhiner posts big blind 350
+Dealt to MyPseudo [9h Ts]
+*** PRE-FLOP *** 
+JK-Titan996 folds
+MV_GOAT79229 calls 350
+skynite79 raises 875 to 1225
+MyPseudo folds
+RndmWhiner calls 875
+MV_GOAT79229 calls 875
+*** FLOP *** [Td 9d 5h]
+RndmWhiner checks
+MV_GOAT79229 checks
+skynite79 bets 1418
+RndmWhiner calls 1418
+MV_GOAT79229 folds
+*** TURN *** [Td 9d 5h][9c]
+RndmWhiner checks
+skynite79 bets 4476
+RndmWhiner folds
+skynite79 collected 11362 from pot
+*** SUMMARY ***
+Total pot 11362 | No rake
+Board: [Td 9d 5h 9c]
+Seat 4: skynite79 (button) won 11362
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 4 - HandId: #4900269329221681246-51-1785522577 - Holdem no limit (40/175/350) - 2026/07/31 18:29:37 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #5 is the button
+Seat 1: RndmWhiner (68410, 0.30€ bounty)
+Seat 2: JK-Titan996 (115311, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (79137, 0.57€ bounty)
+Seat 4: skynite79 (72266, 0.42€ bounty)
+Seat 5: MyPseudo (27602, 0.37€ bounty)
+*** ANTE/BLINDS ***
+RndmWhiner posts ante 40
+JK-Titan996 posts ante 40
+MV_GOAT79229 posts ante 40
+skynite79 posts ante 40
+MyPseudo posts ante 40
+RndmWhiner posts small blind 175
+JK-Titan996 posts big blind 350
+Dealt to MyPseudo [Jc 9d]
+*** PRE-FLOP *** 
+MV_GOAT79229 folds
+skynite79 folds
+MyPseudo raises 525 to 875
+RndmWhiner folds
+JK-Titan996 raises 1750 to 2625
+MyPseudo folds
+JK-Titan996 collected 3875 from pot
+*** SUMMARY ***
+Total pot 3875 | No rake
+Seat 2: JK-Titan996 (big blind) won 3875
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 4 - HandId: #4900269329221681246-52-1785522610 - Holdem no limit (40/175/350) - 2026/07/31 18:30:10 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #1 is the button
+Seat 1: RndmWhiner (68195, 0.30€ bounty)
+Seat 2: JK-Titan996 (116521, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (79097, 0.57€ bounty)
+Seat 4: skynite79 (72226, 0.42€ bounty)
+Seat 5: MyPseudo (26687, 0.37€ bounty)
+*** ANTE/BLINDS ***
+JK-Titan996 posts ante 40
+MV_GOAT79229 posts ante 40
+RndmWhiner posts ante 40
+skynite79 posts ante 40
+MyPseudo posts ante 40
+JK-Titan996 posts small blind 175
+MV_GOAT79229 posts big blind 350
+Dealt to MyPseudo [Qh 7d]
+*** PRE-FLOP *** 
+skynite79 raises 350 to 700
+MyPseudo folds
+RndmWhiner folds
+JK-Titan996 folds
+MV_GOAT79229 raises 78357 to 79057 and is all-in
+skynite79 folds
+MV_GOAT79229 collected 80132 from pot
+*** SUMMARY ***
+Total pot 80132 | No rake
+Seat 3: MV_GOAT79229 (big blind) won 80132
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 4 - HandId: #4900269329221681246-53-1785522627 - Holdem no limit (40/175/350) - 2026/07/31 18:30:27 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #2 is the button
+Seat 1: RndmWhiner (68155, 0.30€ bounty)
+Seat 2: JK-Titan996 (116306, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (80132, 0.57€ bounty)
+Seat 4: skynite79 (71486, 0.42€ bounty)
+Seat 5: MyPseudo (26647, 0.37€ bounty)
+*** ANTE/BLINDS ***
+MV_GOAT79229 posts ante 40
+skynite79 posts ante 40
+RndmWhiner posts ante 40
+JK-Titan996 posts ante 40
+MyPseudo posts ante 40
+MV_GOAT79229 posts small blind 175
+skynite79 posts big blind 350
+Dealt to MyPseudo [Jh 9c]
+*** PRE-FLOP *** 
+MyPseudo folds
+RndmWhiner folds
+JK-Titan996 folds
+MV_GOAT79229 calls 175
+skynite79 checks
+*** FLOP *** [Td 3d 5s]
+MV_GOAT79229 checks
+skynite79 checks
+*** TURN *** [Td 3d 5s][Kd]
+MV_GOAT79229 checks
+skynite79 bets 450
+MV_GOAT79229 calls 450
+*** RIVER *** [Td 3d 5s Kd][7d]
+MV_GOAT79229 checks
+skynite79 checks
+*** SHOW DOWN ***
+MV_GOAT79229 shows [8c Ks] (One pair : Kings)
+skynite79 shows [Js Kh] (One pair : Kings)
+skynite79 collected 1800 from pot
+*** SUMMARY ***
+Total pot 1800 | No rake
+Board: [Td 3d 5s Kd 7d]
+Seat 3: MV_GOAT79229 (small blind) showed [8c Ks] and lost with One pair : Kings
+Seat 4: skynite79 (big blind) showed [Js Kh] and won 1800 with One pair : Kings
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 4 - HandId: #4900269329221681246-54-1785522675 - Holdem no limit (40/175/350) - 2026/07/31 18:31:15 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #3 is the button
+Seat 1: RndmWhiner (68115, 0.30€ bounty)
+Seat 2: JK-Titan996 (116266, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (79292, 0.57€ bounty)
+Seat 4: skynite79 (72446, 0.42€ bounty)
+Seat 5: MyPseudo (26607, 0.37€ bounty)
+Seat 6: paulskaaa (20000, 0.25€ bounty)
+*** ANTE/BLINDS ***
+skynite79 posts ante 40
+MyPseudo posts ante 40
+RndmWhiner posts ante 40
+JK-Titan996 posts ante 40
+MV_GOAT79229 posts ante 40
+paulskaaa posts ante 40
+skynite79 posts small blind 175
+MyPseudo posts big blind 350
+Dealt to MyPseudo [4h 9c]
+*** PRE-FLOP *** 
+paulskaaa folds
+RndmWhiner folds
+JK-Titan996 folds
+MV_GOAT79229 folds
+skynite79 calls 175
+MyPseudo checks
+*** FLOP *** [3c 6s Js]
+skynite79 checks
+MyPseudo bets 470
+skynite79 calls 470
+*** TURN *** [3c 6s Js][3s]
+skynite79 checks
+MyPseudo checks
+*** RIVER *** [3c 6s Js 3s][Th]
+skynite79 bets 1504
+MyPseudo folds
+skynite79 collected 3384 from pot
+*** SUMMARY ***
+Total pot 3384 | No rake
+Board: [3c 6s Js 3s Th]
+Seat 4: skynite79 (small blind) won 3384
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 4 - HandId: #4900269329221681246-55-1785522715 - Holdem no limit (40/175/350) - 2026/07/31 18:31:55 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #4 is the button
+Seat 1: RndmWhiner (68075, 0.30€ bounty)
+Seat 2: JK-Titan996 (116226, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (79252, 0.57€ bounty)
+Seat 4: skynite79 (73466, 0.42€ bounty)
+Seat 5: MyPseudo (25747, 0.37€ bounty)
+Seat 6: paulskaaa (19960, 0.25€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 40
+paulskaaa posts ante 40
+RndmWhiner posts ante 40
+JK-Titan996 posts ante 40
+MV_GOAT79229 posts ante 40
+skynite79 posts ante 40
+MyPseudo posts small blind 175
+paulskaaa posts big blind 350
+Dealt to MyPseudo [6h 4c]
+*** PRE-FLOP *** 
+RndmWhiner raises 525 to 875
+JK-Titan996 folds
+MV_GOAT79229 raises 78337 to 79212 and is all-in
+skynite79 folds
+MyPseudo folds
+paulskaaa folds
+RndmWhiner calls 67160 and is all-in
+*** FLOP *** [3s 6d Ac]
+*** TURN *** [3s 6d Ac][9d]
+*** RIVER *** [3s 6d Ac 9d][Jc]
+*** SHOW DOWN ***
+RndmWhiner shows [Qc Qs] (One pair : Queens)
+MV_GOAT79229 shows [8h 8d] (One pair : 8)
+MV_GOAT79229 collected 11177 from side pot 1
+RndmWhiner collected 136835 from main pot
+*** SUMMARY ***
+Total pot 148012 | No rake
+Board: [3s 6d Ac 9d Jc]
+Seat 1: RndmWhiner showed [Qc Qs] and won 136835 with One pair : Queens
+Seat 3: MV_GOAT79229 showed [8h 8d] and won 11177 with One pair : 8
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 5 - HandId: #4900269329221681246-56-1785522757 - Holdem no limit (50/200/400) - 2026/07/31 18:32:37 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #5 is the button
+Seat 1: RndmWhiner (136835, 0.30€ bounty)
+Seat 2: JK-Titan996 (116186, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (11177, 0.57€ bounty)
+Seat 4: skynite79 (73426, 0.42€ bounty)
+Seat 5: MyPseudo (25532, 0.37€ bounty)
+Seat 6: paulskaaa (19570, 0.25€ bounty)
+*** ANTE/BLINDS ***
+paulskaaa posts ante 50
+RndmWhiner posts ante 50
+JK-Titan996 posts ante 50
+MV_GOAT79229 posts ante 50
+skynite79 posts ante 50
+MyPseudo posts ante 50
+paulskaaa posts small blind 200
+RndmWhiner posts big blind 400
+Dealt to MyPseudo [5c Ah]
+*** PRE-FLOP *** 
+JK-Titan996 folds
+MV_GOAT79229 folds
+skynite79 folds
+MyPseudo raises 600 to 1000
+paulskaaa folds
+RndmWhiner calls 600
+*** FLOP *** [Tc 5h Ks]
+RndmWhiner checks
+MyPseudo bets 825
+RndmWhiner calls 825
+*** TURN *** [Tc 5h Ks][Kd]
+RndmWhiner checks
+MyPseudo checks
+*** RIVER *** [Tc 5h Ks Kd][3c]
+RndmWhiner bets 4980
+MyPseudo calls 4980
+*** SHOW DOWN ***
+RndmWhiner shows [Jd Qc] (One pair : Kings)
+MyPseudo shows [5c Ah] (Two pairs : Kings and 5)
+MyPseudo collected 14110 from pot
+*** SUMMARY ***
+Total pot 14110 | No rake
+Board: [Tc 5h Ks Kd 3c]
+Seat 1: RndmWhiner (big blind) showed [Jd Qc] and lost with One pair : Kings
+Seat 5: MyPseudo (button) showed [5c Ah] and won 14110 with Two pairs : Kings and 5
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 5 - HandId: #4900269329221681246-57-1785522817 - Holdem no limit (50/200/400) - 2026/07/31 18:33:37 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #6 is the button
+Seat 1: RndmWhiner (129980, 0.30€ bounty)
+Seat 2: JK-Titan996 (116136, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (11127, 0.57€ bounty)
+Seat 4: skynite79 (73376, 0.42€ bounty)
+Seat 5: MyPseudo (32787, 0.37€ bounty)
+Seat 6: paulskaaa (19320, 0.25€ bounty)
+*** ANTE/BLINDS ***
+RndmWhiner posts ante 50
+JK-Titan996 posts ante 50
+MV_GOAT79229 posts ante 50
+skynite79 posts ante 50
+MyPseudo posts ante 50
+paulskaaa posts ante 50
+RndmWhiner posts small blind 200
+JK-Titan996 posts big blind 400
+Dealt to MyPseudo [3c Qd]
+*** PRE-FLOP *** 
+MV_GOAT79229 folds
+skynite79 raises 400 to 800
+MyPseudo folds
+paulskaaa calls 800
+RndmWhiner calls 600
+JK-Titan996 calls 400
+*** FLOP *** [Jh 6h Ts]
+RndmWhiner checks
+JK-Titan996 bets 3500
+skynite79 raises 69026 to 72526 and is all-in
+paulskaaa calls 18470 and is all-in
+RndmWhiner folds
+JK-Titan996 folds
+*** TURN *** [Jh 6h Ts][9c]
+*** RIVER *** [Jh 6h Ts 9c][2s]
+*** SHOW DOWN ***
+paulskaaa shows [Kh 4h] (High card : King)
+skynite79 shows [Kd Kc] (One pair : Kings)
+skynite79 collected 97996 from pot
+*** SUMMARY ***
+Total pot 97996 | No rake
+Board: [Jh 6h Ts 9c 2s]
+Seat 4: skynite79 showed [Kd Kc] and won 97996 with One pair : Kings
+Seat 6: paulskaaa (button) showed [Kh 4h] and lost with High card : King
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 5 - HandId: #4900269329221681246-58-1785522885 - Holdem no limit (50/200/400) - 2026/07/31 18:34:45 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #1 is the button
+Seat 1: RndmWhiner (129130, 0.30€ bounty)
+Seat 2: JK-Titan996 (111786, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (11077, 0.57€ bounty)
+Seat 4: skynite79 (97996, 0.47€ bounty)
+Seat 5: MyPseudo (32737, 0.37€ bounty)
+*** ANTE/BLINDS ***
+JK-Titan996 posts ante 50
+MV_GOAT79229 posts ante 50
+RndmWhiner posts ante 50
+skynite79 posts ante 50
+MyPseudo posts ante 50
+JK-Titan996 posts small blind 200
+MV_GOAT79229 posts big blind 400
+Dealt to MyPseudo [Jd Tc]
+*** PRE-FLOP *** 
+skynite79 raises 400 to 800
+MyPseudo folds
+RndmWhiner folds
+JK-Titan996 calls 600
+MV_GOAT79229 folds
+*** FLOP *** [Kh 3c 6h]
+JK-Titan996 bets 2250
+skynite79 folds
+JK-Titan996 collected 4500 from pot
+*** SUMMARY ***
+Total pot 4500 | No rake
+Board: [Kh 3c 6h]
+Seat 2: JK-Titan996 (small blind) won 4500
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 5 - HandId: #4900269329221681246-59-1785522905 - Holdem no limit (50/200/400) - 2026/07/31 18:35:05 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #2 is the button
+Seat 1: RndmWhiner (129080, 0.30€ bounty)
+Seat 2: JK-Titan996 (113186, 0.40€ bounty)
+Seat 3: MV_GOAT79229 (10627, 0.57€ bounty)
+Seat 4: skynite79 (97146, 0.47€ bounty)
+Seat 5: MyPseudo (32687, 0.37€ bounty)
+*** ANTE/BLINDS ***
+MV_GOAT79229 posts ante 50
+skynite79 posts ante 50
+RndmWhiner posts ante 50
+JK-Titan996 posts ante 50
+MyPseudo posts ante 50
+MV_GOAT79229 posts small blind 200
+skynite79 posts big blind 400
+Dealt to MyPseudo [4h 7c]
+*** PRE-FLOP *** 
+MyPseudo folds
+RndmWhiner raises 600 to 1000
+JK-Titan996 folds
+MV_GOAT79229 raises 9577 to 10577 and is all-in
+skynite79 folds
+RndmWhiner calls 9577
+*** FLOP *** [5h Kc 2h]
+*** TURN *** [5h Kc 2h][8h]
+*** RIVER *** [5h Kc 2h 8h][Js]
+*** SHOW DOWN ***
+MV_GOAT79229 shows [4c 4d] (One pair : 4)
+RndmWhiner shows [Ks Tc] (One pair : Kings)
+RndmWhiner collected 21804 from pot
+*** SUMMARY ***
+Total pot 21804 | No rake
+Board: [5h Kc 2h 8h Js]
+Seat 1: RndmWhiner showed [Ks Tc] and won 21804 with One pair : Kings
+Seat 3: MV_GOAT79229 (small blind) showed [4c 4d] and lost with One pair : 4
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 5 - HandId: #4900269329221681246-60-1785522943 - Holdem no limit (50/200/400) - 2026/07/31 18:35:43 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #3 is the button
+Seat 1: RndmWhiner (140257, 0.41€ bounty)
+Seat 2: JK-Titan996 (113136, 0.40€ bounty)
+Seat 4: skynite79 (96696, 0.47€ bounty)
+Seat 5: MyPseudo (32637, 0.37€ bounty)
+*** ANTE/BLINDS ***
+skynite79 posts ante 50
+MyPseudo posts ante 50
+RndmWhiner posts ante 50
+JK-Titan996 posts ante 50
+skynite79 posts small blind 200
+MyPseudo posts big blind 400
+Dealt to MyPseudo [Ah 9c]
+*** PRE-FLOP *** 
+RndmWhiner folds
+JK-Titan996 folds
+skynite79 raises 1000 to 1400
+MyPseudo raises 2600 to 4000
+skynite79 calls 2600
+*** FLOP *** [8c 9h 8h]
+skynite79 checks
+MyPseudo bets 5412
+skynite79 calls 5412
+*** TURN *** [8c 9h 8h][Ts]
+skynite79 checks
+MyPseudo bets 9512
+skynite79 raises 77722 to 87234 and is all-in
+MyPseudo calls 13663 and is all-in
+*** RIVER *** [8c 9h 8h Ts][Td]
+*** SHOW DOWN ***
+skynite79 shows [7s 7d] (Two pairs : Tens and 8)
+MyPseudo shows [Ah 9c] (Two pairs : Tens and 9)
+MyPseudo collected 65374 from main pot
+skynite79 collected 64059 from side pot 1
+*** SUMMARY ***
+Total pot 129433 | No rake
+Board: [8c 9h 8h Ts Td]
+Seat 4: skynite79 (small blind) showed [7s 7d] and won 64059 with Two pairs : Tens and 8
+Seat 5: MyPseudo (big blind) showed [Ah 9c] and won 65374 with Two pairs : Tens and 9
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 5 - HandId: #4900269329221681246-61-1785522997 - Holdem no limit (50/200/400) - 2026/07/31 18:36:37 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #4 is the button
+Seat 1: RndmWhiner (140207, 0.41€ bounty)
+Seat 2: JK-Titan996 (113086, 0.40€ bounty)
+Seat 3: Sorcier38 (20000, 0.25€ bounty)
+Seat 4: skynite79 (64059, 0.47€ bounty)
+Seat 5: MyPseudo (65374, 0.37€ bounty)
+Seat 6: Miss-Poisse (18345, 0.25€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 50
+Miss-Poisse posts ante 50
+RndmWhiner posts ante 50
+JK-Titan996 posts ante 50
+Sorcier38 posts ante 50
+skynite79 posts ante 50
+MyPseudo posts small blind 200
+Miss-Poisse posts big blind 400
+Dealt to MyPseudo [2h 4h]
+*** PRE-FLOP *** 
+RndmWhiner folds
+JK-Titan996 raises 400 to 800
+Sorcier38 raises 19150 to 19950 and is all-in
+skynite79 folds
+MyPseudo folds
+Miss-Poisse calls 17895 and is all-in
+JK-Titan996 folds
+*** FLOP *** [Qc 2c Jh]
+*** TURN *** [Qc 2c Jh][As]
+*** RIVER *** [Qc 2c Jh As][5c]
+*** SHOW DOWN ***
+Miss-Poisse shows [3h Kh] (High card : Ace)
+Sorcier38 shows [3c 3d] (One pair : 3)
+Sorcier38 collected 39545 from pot
+*** SUMMARY ***
+Total pot 39545 | No rake
+Board: [Qc 2c Jh As 5c]
+Seat 3: Sorcier38 showed [3c 3d] and won 39545 with One pair : 3
+Seat 6: Miss-Poisse (big blind) showed [3h Kh] and lost with High card : Ace
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 5 - HandId: #4900269329221681246-62-1785523031 - Holdem no limit (50/200/400) - 2026/07/31 18:37:11 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #5 is the button
+Seat 1: RndmWhiner (140157, 0.41€ bounty)
+Seat 2: JK-Titan996 (112236, 0.40€ bounty)
+Seat 3: Sorcier38 (39545, 0.50€ bounty)
+Seat 4: skynite79 (64009, 0.47€ bounty)
+Seat 5: MyPseudo (65124, 0.37€ bounty)
+*** ANTE/BLINDS ***
+RndmWhiner posts ante 50
+JK-Titan996 posts ante 50
+Sorcier38 posts ante 50
+skynite79 posts ante 50
+MyPseudo posts ante 50
+RndmWhiner posts big blind 400
+Dealt to MyPseudo [Ts 3h]
+*** PRE-FLOP *** 
+JK-Titan996 folds
+Sorcier38 calls 400
+skynite79 folds
+MyPseudo folds
+RndmWhiner checks
+*** FLOP *** [9d 2s Ks]
+RndmWhiner checks
+Sorcier38 checks
+*** TURN *** [9d 2s Ks][8d]
+RndmWhiner checks
+Sorcier38 checks
+*** RIVER *** [9d 2s Ks 8d][Tc]
+RndmWhiner checks
+Sorcier38 checks
+*** SHOW DOWN ***
+Sorcier38 shows [2d Ah] (One pair : 2)
+RndmWhiner shows [8c 4d] (One pair : 8)
+RndmWhiner collected 1050 from pot
+*** SUMMARY ***
+Total pot 1050 | No rake
+Board: [9d 2s Ks 8d Tc]
+Seat 1: RndmWhiner (big blind) showed [8c 4d] and won 1050 with One pair : 8
+Seat 3: Sorcier38 showed [2d Ah] and lost with One pair : 2
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 5 - HandId: #4900269329221681246-63-1785523089 - Holdem no limit (50/200/400) - 2026/07/31 18:38:09 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #6 is the button
+Seat 1: RndmWhiner (140757, 0.41€ bounty)
+Seat 2: JK-Titan996 (112186, 0.40€ bounty)
+Seat 3: Sorcier38 (39095, 0.50€ bounty)
+Seat 4: skynite79 (63959, 0.47€ bounty)
+Seat 5: MyPseudo (65074, 0.37€ bounty)
+Seat 6: flachgordone (20000, 0.25€ bounty)
+*** ANTE/BLINDS ***
+RndmWhiner posts ante 50
+JK-Titan996 posts ante 50
+Sorcier38 posts ante 50
+skynite79 posts ante 50
+MyPseudo posts ante 50
+RndmWhiner posts small blind 200
+JK-Titan996 posts big blind 400
+Dealt to MyPseudo [Kd 6d]
+*** PRE-FLOP *** 
+Sorcier38 calls 400
+skynite79 folds
+MyPseudo raises 1000 to 1400
+RndmWhiner folds
+JK-Titan996 folds
+Sorcier38 calls 1000
+*** FLOP *** [Qc 8d 5c]
+Sorcier38 checks
+MyPseudo bets 1825
+Sorcier38 calls 1825
+*** TURN *** [Qc 8d 5c][6c]
+Sorcier38 checks
+MyPseudo bets 3650
+Sorcier38 raises 32170 to 35820 and is all-in
+MyPseudo folds
+Sorcier38 collected 46770 from pot
+*** SUMMARY ***
+Total pot 46770 | No rake
+Board: [Qc 8d 5c 6c]
+Seat 3: Sorcier38 won 46770
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 6 - HandId: #4900269329221681246-64-1785523148 - Holdem no limit (60/250/500) - 2026/07/31 18:39:08 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #1 is the button
+Seat 1: RndmWhiner (140507, 0.41€ bounty)
+Seat 2: JK-Titan996 (111736, 0.40€ bounty)
+Seat 3: Sorcier38 (46770, 0.50€ bounty)
+Seat 4: skynite79 (63909, 0.47€ bounty)
+Seat 5: MyPseudo (58149, 0.37€ bounty)
+Seat 6: flachgordone (20000, 0.25€ bounty)
+*** ANTE/BLINDS ***
+JK-Titan996 posts ante 60
+Sorcier38 posts ante 60
+RndmWhiner posts ante 60
+skynite79 posts ante 60
+MyPseudo posts ante 60
+flachgordone posts ante 60
+JK-Titan996 posts small blind 250
+Sorcier38 posts big blind 500
+Dealt to MyPseudo [2c Qc]
+*** PRE-FLOP *** 
+skynite79 raises 500 to 1000
+MyPseudo folds
+flachgordone calls 1000
+RndmWhiner folds
+JK-Titan996 folds
+Sorcier38 calls 500
+*** FLOP *** [2s 3s Tc]
+Sorcier38 checks
+skynite79 bets 1264
+flachgordone calls 1264
+Sorcier38 calls 1264
+*** TURN *** [2s 3s Tc][8h]
+Sorcier38 checks
+skynite79 bets 3701
+flachgordone calls 3701
+Sorcier38 folds
+*** RIVER *** [2s 3s Tc 8h][9s]
+skynite79 checks
+flachgordone checks
+*** SHOW DOWN ***
+skynite79 shows [7h 7s] (One pair : 7)
+flachgordone shows [Qh 9h] (One pair : 9)
+flachgordone collected 14804 from pot
+*** SUMMARY ***
+Total pot 14804 | No rake
+Board: [2s 3s Tc 8h 9s]
+Seat 4: skynite79 showed [7h 7s] and lost with One pair : 7
+Seat 6: flachgordone showed [Qh 9h] and won 14804 with One pair : 9
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 6 - HandId: #4900269329221681246-65-1785523208 - Holdem no limit (60/250/500) - 2026/07/31 18:40:08 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #2 is the button
+Seat 1: RndmWhiner (140447, 0.41€ bounty)
+Seat 2: JK-Titan996 (111426, 0.40€ bounty)
+Seat 3: Sorcier38 (44446, 0.50€ bounty)
+Seat 4: skynite79 (57884, 0.47€ bounty)
+Seat 5: MyPseudo (58089, 0.37€ bounty)
+Seat 6: flachgordone (28779, 0.25€ bounty)
+*** ANTE/BLINDS ***
+Sorcier38 posts ante 60
+skynite79 posts ante 60
+RndmWhiner posts ante 60
+JK-Titan996 posts ante 60
+MyPseudo posts ante 60
+flachgordone posts ante 60
+Sorcier38 posts small blind 250
+skynite79 posts big blind 500
+Dealt to MyPseudo [8d 4s]
+*** PRE-FLOP *** 
+MyPseudo folds
+flachgordone folds
+RndmWhiner folds
+JK-Titan996 raises 625 to 1125
+Sorcier38 calls 875
+skynite79 calls 625
+*** FLOP *** [7c 9h 6d]
+Sorcier38 checks
+skynite79 checks
+JK-Titan996 checks
+*** TURN *** [7c 9h 6d][Ad]
+Sorcier38 checks
+skynite79 bets 1868
+JK-Titan996 folds
+Sorcier38 calls 1868
+*** RIVER *** [7c 9h 6d Ad][Ts]
+Sorcier38 bets 4856
+skynite79 raises 9469 to 14325
+Sorcier38 calls 9469
+*** SHOW DOWN ***
+Sorcier38 shows [8s Qs] (Straight Ten high)
+skynite79 shows [Ac 8h] (Straight Ten high)
+skynite79 collected 18061 from pot
+Sorcier38 collected 18060 from pot
+*** SUMMARY ***
+Total pot 36121 | No rake
+Board: [7c 9h 6d Ad Ts]
+Seat 3: Sorcier38 (small blind) showed [8s Qs] and won 18060 with Straight Ten high
+Seat 4: skynite79 (big blind) showed [Ac 8h] and won 18061 with Straight Ten high
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 6 - HandId: #4900269329221681246-66-1785523283 - Holdem no limit (60/250/500) - 2026/07/31 18:41:23 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #3 is the button
+Seat 1: RndmWhiner (140387, 0.41€ bounty)
+Seat 2: JK-Titan996 (110241, 0.40€ bounty)
+Seat 3: Sorcier38 (45128, 0.50€ bounty)
+Seat 4: skynite79 (58567, 0.47€ bounty)
+Seat 5: MyPseudo (58029, 0.37€ bounty)
+Seat 6: flachgordone (28719, 0.25€ bounty)
+*** ANTE/BLINDS ***
+skynite79 posts ante 60
+MyPseudo posts ante 60
+RndmWhiner posts ante 60
+JK-Titan996 posts ante 60
+Sorcier38 posts ante 60
+flachgordone posts ante 60
+skynite79 posts small blind 250
+MyPseudo posts big blind 500
+Dealt to MyPseudo [7h Kd]
+*** PRE-FLOP *** 
+flachgordone calls 500
+RndmWhiner folds
+JK-Titan996 raises 750 to 1250
+Sorcier38 raises 2234 to 3484
+skynite79 folds
+MyPseudo folds
+flachgordone folds
+JK-Titan996 folds
+Sorcier38 collected 6344 from pot
+*** SUMMARY ***
+Total pot 6344 | No rake
+Seat 3: Sorcier38 (button) won 6344
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 6 - HandId: #4900269329221681246-67-1785523330 - Holdem no limit (60/250/500) - 2026/07/31 18:42:10 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #4 is the button
+Seat 1: RndmWhiner (140327, 0.41€ bounty)
+Seat 2: JK-Titan996 (108931, 0.40€ bounty)
+Seat 3: Sorcier38 (47928, 0.50€ bounty)
+Seat 4: skynite79 (58257, 0.47€ bounty)
+Seat 5: MyPseudo (57469, 0.37€ bounty)
+Seat 6: flachgordone (28159, 0.25€ bounty)
+*** ANTE/BLINDS ***
+MyPseudo posts ante 60
+flachgordone posts ante 60
+RndmWhiner posts ante 60
+JK-Titan996 posts ante 60
+Sorcier38 posts ante 60
+skynite79 posts ante 60
+MyPseudo posts small blind 250
+flachgordone posts big blind 500
+Dealt to MyPseudo [8c 4h]
+*** PRE-FLOP *** 
+RndmWhiner raises 750 to 1250
+JK-Titan996 folds
+Sorcier38 calls 1250
+skynite79 calls 1250
+MyPseudo folds
+flachgordone folds
+*** FLOP *** [Ah Jh 5s]
+RndmWhiner bets 1458
+Sorcier38 folds
+skynite79 calls 1458
+*** TURN *** [Ah Jh 5s][Th]
+RndmWhiner checks
+skynite79 bets 3888
+RndmWhiner folds
+skynite79 collected 11664 from pot
+*** SUMMARY ***
+Total pot 11664 | No rake
+Board: [Ah Jh 5s Th]
+Seat 4: skynite79 (button) won 11664
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 6 - HandId: #4900269329221681246-68-1785523376 - Holdem no limit (60/250/500) - 2026/07/31 18:42:56 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #5 is the button
+Seat 1: RndmWhiner (137559, 0.41€ bounty)
+Seat 2: JK-Titan996 (108871, 0.40€ bounty)
+Seat 3: Sorcier38 (46618, 0.50€ bounty)
+Seat 4: skynite79 (63265, 0.47€ bounty)
+Seat 5: MyPseudo (57159, 0.37€ bounty)
+Seat 6: flachgordone (27599, 0.25€ bounty)
+*** ANTE/BLINDS ***
+flachgordone posts ante 60
+RndmWhiner posts ante 60
+JK-Titan996 posts ante 60
+Sorcier38 posts ante 60
+skynite79 posts ante 60
+MyPseudo posts ante 60
+flachgordone posts small blind 250
+RndmWhiner posts big blind 500
+Dealt to MyPseudo [3s Ad]
+*** PRE-FLOP *** 
+JK-Titan996 folds
+Sorcier38 calls 500
+skynite79 folds
+MyPseudo raises 750 to 1250
+flachgordone calls 1000
+RndmWhiner folds
+Sorcier38 calls 750
+*** FLOP *** [8d 2h 2c]
+flachgordone checks
+Sorcier38 checks
+MyPseudo checks
+*** TURN *** [8d 2h 2c][8c]
+flachgordone checks
+Sorcier38 bets 1614
+MyPseudo calls 1614
+flachgordone folds
+*** RIVER *** [8d 2h 2c 8c][6s]
+Sorcier38 bets 7838
+MyPseudo calls 7838
+*** SHOW DOWN ***
+MyPseudo shows [3s Ad] (Two pairs : 8 and 2)
+Sorcier38 shows [Ac 2s] (Full of 2 and 8)
+Sorcier38 collected 23514 from pot
+*** SUMMARY ***
+Total pot 23514 | No rake
+Board: [8d 2h 2c 8c 6s]
+Seat 3: Sorcier38 showed [Ac 2s] and won 23514 with Full of 2 and 8
+Seat 5: MyPseudo (button) showed [3s Ad] and lost with Two pairs : 8 and 2
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 6 - HandId: #4900269329221681246-69-1785523460 - Holdem no limit (60/250/500) - 2026/07/31 18:44:20 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #6 is the button
+Seat 1: RndmWhiner (136999, 0.41€ bounty)
+Seat 2: JK-Titan996 (108811, 0.40€ bounty)
+Seat 3: Sorcier38 (59370, 0.50€ bounty)
+Seat 4: skynite79 (63205, 0.47€ bounty)
+Seat 5: MyPseudo (46397, 0.37€ bounty)
+Seat 6: flachgordone (26289, 0.25€ bounty)
+*** ANTE/BLINDS ***
+RndmWhiner posts ante 60
+JK-Titan996 posts ante 60
+Sorcier38 posts ante 60
+skynite79 posts ante 60
+MyPseudo posts ante 60
+flachgordone posts ante 60
+RndmWhiner posts small blind 250
+JK-Titan996 posts big blind 500
+Dealt to MyPseudo [2c 9d]
+*** PRE-FLOP *** 
+Sorcier38 raises 58810 to 59310 and is all-in
+skynite79 folds
+MyPseudo folds
+flachgordone folds
+RndmWhiner folds
+JK-Titan996 folds
+Sorcier38 collected 60420 from pot
+*** SUMMARY ***
+Total pot 60420 | No rake
+Seat 3: Sorcier38 won 60420
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 6 - HandId: #4900269329221681246-70-1785523477 - Holdem no limit (60/250/500) - 2026/07/31 18:44:37 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #1 is the button
+Seat 1: RndmWhiner (136689, 0.41€ bounty)
+Seat 2: JK-Titan996 (108251, 0.40€ bounty)
+Seat 3: Sorcier38 (60420, 0.50€ bounty)
+Seat 4: skynite79 (63145, 0.47€ bounty)
+Seat 5: MyPseudo (46337, 0.37€ bounty)
+Seat 6: flachgordone (26229, 0.25€ bounty)
+*** ANTE/BLINDS ***
+JK-Titan996 posts ante 60
+Sorcier38 posts ante 60
+RndmWhiner posts ante 60
+skynite79 posts ante 60
+MyPseudo posts ante 60
+flachgordone posts ante 60
+JK-Titan996 posts small blind 250
+Sorcier38 posts big blind 500
+Dealt to MyPseudo [Js 6s]
+*** PRE-FLOP *** 
+skynite79 folds
+MyPseudo folds
+flachgordone calls 500
+RndmWhiner raises 1500 to 2000
+JK-Titan996 folds
+Sorcier38 calls 1500
+flachgordone calls 1500
+*** FLOP *** [Qh 4h Qs]
+Sorcier38 checks
+flachgordone checks
+RndmWhiner checks
+*** TURN *** [Qh 4h Qs][Kd]
+Sorcier38 checks
+flachgordone checks
+RndmWhiner checks
+*** RIVER *** [Qh 4h Qs Kd][Qc]
+Sorcier38 bets 4297
+flachgordone folds
+RndmWhiner folds
+Sorcier38 collected 10907 from pot
+*** SUMMARY ***
+Total pot 10907 | No rake
+Board: [Qh 4h Qs Kd Qc]
+Seat 3: Sorcier38 (big blind) won 10907
+
+
+Winamax Poker - Tournament "SPACE KO" buyIn: 0.45€ + 0.05€ level: 6 - HandId: #4900269329221681246-71-1785523548 - Holdem no limit (60/250/500) - 2026/07/31 18:45:48 UTC
+Table: 'SPACE KO(1140932862)#0093' 6-max (real money) Seat #2 is the button
+Seat 1: RndmWhiner (134629, 0.41€ bounty)
+Seat 2: JK-Titan996 (107941, 0.40€ bounty)
+Seat 3: Sorcier38 (64970, 0.50€ bounty)
+Seat 4: skynite79 (63085, 0.47€ bounty)
+Seat 5: MyPseudo (46277, 0.37€ bounty)
+Seat 6: flachgordone (24169, 0.25€ bounty)
+*** ANTE/BLINDS ***
+Sorcier38 posts ante 60
+skynite79 posts ante 60
+RndmWhiner posts ante 60
+JK-Titan996 posts ante 60
+MyPseudo posts ante 60
+flachgordone posts ante 60
+Sorcier38 posts small blind 250
+skynite79 posts big blind 500
+Dealt to MyPseudo [As Kc]
+*** PRE-FLOP *** 
+MyPseudo raises 1000 to 1500
+flachgordone calls 1500
+RndmWhiner folds
+JK-Titan996 folds
+Sorcier38 raises 63410 to 64910 and is all-in
+skynite79 folds
+MyPseudo calls 44717 and is all-in
+flachgordone folds
+*** FLOP *** [9h Kh Js]
+*** TURN *** [9h Kh Js][4d]
+*** RIVER *** [9h Kh Js 4d][3s]
+*** SHOW DOWN ***
+MyPseudo shows [As Kc] (One pair : Kings)
+Sorcier38 shows [3h 3c] (Trips of 3)
+Sorcier38 collected 113487 from pot
+*** SUMMARY ***
+Total pot 113487 | No rake
+Board: [9h Kh Js 4d 3s]
+Seat 3: Sorcier38 (small blind) showed [3h 3c] and won 113487 with Trips of 3
+Seat 5: MyPseudo showed [As Kc] and lost with One pair : Kings
+
+
