@@ -9,6 +9,8 @@ from ui.chart_math import chart_bounds, scale_x, scale_y
 
 
 class BBChart(ttk.Frame):
+    MAX_RENDERED_POINTS = 1_200
+
     def __init__(
         self,
         master: tk.Misc | None = None,
@@ -57,7 +59,8 @@ class BBChart(ttk.Frame):
             )
             self._visible_points = []
             return
-        self._visible_points = self.points[self._window_start : self._window_end]
+        selected_points = self.points[self._window_start : self._window_end]
+        self._visible_points = self._render_points(selected_points)
         values = [point.balance_bb for point in self._visible_points]
         minimum, maximum = chart_bounds(values)
         left, top, right, bottom = 50, 18, width - 14, height - 30
@@ -154,6 +157,14 @@ class BBChart(ttk.Frame):
             return None
         fraction = min(1.0, max(0.0, (x - left) / (right - left)))
         return round(fraction * (len(self._visible_points) - 1))
+
+    @classmethod
+    def _render_points(cls, points: list[BBHistoryPoint]) -> list[BBHistoryPoint]:
+        if len(points) <= cls.MAX_RENDERED_POINTS:
+            return points
+
+        step = (len(points) - 1) / (cls.MAX_RENDERED_POINTS - 1)
+        return [points[round(index * step)] for index in range(cls.MAX_RENDERED_POINTS)]
 
 
 def _detail_text(point: BBHistoryPoint) -> str:

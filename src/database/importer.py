@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from database.database import Database
-from database.models import Action, Hand, ImportRecord, Player, Tournament
+from database.models import ImportRecord, Tournament
 from game_modes import GameMode
 from logging_system import get_logger
 from parser.hand_parser import parse_hand_history
@@ -93,85 +93,19 @@ class DatabaseImporter:
             self.logger.warning("Hand history parsing returned no hands for %s", path.name)
             return ImportReport(path=path, file_type="hand_history", status="failed")
 
-        imported_players: set[str] = set()
-        action_count = 0
-        tournament_ids_imported: set[str] = set()
-
-        for parsed_hand in parsed_hands:
-            tournament_id = parsed_hand.get("tournament_id")
-            if tournament_id:
-                self._ensure_tournament_exists(parsed_hand)
-                tournament_ids_imported.add(tournament_id)
-
-            hand = Hand(
-                hand_id=parsed_hand["hand_id"],
-                tournament_id=tournament_id,
-                played_at=parsed_hand.get("played_at"),
-                table_name=parsed_hand.get("table_name") or "",
-                hero=parsed_hand.get("hero") or "",
-                hero_cards=parsed_hand.get("hero_cards") or "",
-                board=parsed_hand.get("board") or "",
-                pot=parsed_hand.get("pot") or 0.0,
-                result=parsed_hand.get("result") or 0.0,
-                big_blind=parsed_hand.get("big_blind") or 0.0,
-                game_mode=GameMode(parsed_hand.get("game_mode", GameMode.CASH_GAME)),
-            )
-            hand.session_id = self.database.assign_hand_to_session(hand)
-            self.database.insert_hand(hand)
-
-            for player_data in parsed_hand.get("players", []):
-                player_name = player_data.get("name")
-                if not player_name:
-                    continue
-                self.database.insert_player(Player(name=player_name))
-                imported_players.add(player_name)
-
-            actions = [
-                Action(
-                    hand_id=hand.hand_id,
-                    player=action["player"],
-                    street=action["street"],
-                    action=action["action"],
-                    amount=action.get("amount"),
-                    is_all_in=bool(action.get("is_all_in")),
-                )
-                for action in parsed_hand.get("actions", [])
-            ]
-            self.database.replace_actions_for_hand(hand.hand_id, actions)
-            action_count += len(actions)
+        tournaments_imported, players_imported, actions_imported = (
+            self.database.import_hand_history(parsed_hands)
+        )
 
         self.logger.info("Imported hand history %s", path.name)
         return ImportReport(
             path=path,
             file_type="hand_history",
             status="success",
-            tournaments_imported=len(tournament_ids_imported),
+            tournaments_imported=tournaments_imported,
             hands_imported=len(parsed_hands),
-            players_imported=len(imported_players),
-            actions_imported=action_count,
-        )
-
-    def _ensure_tournament_exists(self, parsed_hand: dict[str, Any]) -> None:
-        tournament_id = parsed_hand.get("tournament_id")
-        if not tournament_id or self.database.get_tournament(tournament_id) is not None:
-            return
-
-        self.database.insert_tournament(
-            Tournament(
-                tournament_id=tournament_id,
-                name=(
-                    parsed_hand.get("tournament_name")
-                    or parsed_hand.get("table_name")
-                    or tournament_id
-                ),
-                buy_in=parsed_hand.get("buy_in") or 0.0,
-                prize_pool=0.0,
-                players_count=0,
-                started_at=None,
-                finished_at=None,
-                position=None,
-                game_mode=GameMode(parsed_hand.get("game_mode", GameMode.TOURNAMENT)),
-            )
+            players_imported=players_imported,
+            actions_imported=actions_imported,
         )
 
     @staticmethod

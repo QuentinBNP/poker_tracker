@@ -4,6 +4,7 @@ import sqlite3
 from dataclasses import asdict
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 from database.filters import HistoryFilter
 from database.models import Action, Hand, ImportRecord, Player, Session, Tournament
@@ -102,50 +103,72 @@ class Database:
         payload["played_at"] = self._serialize_datetime(hand.played_at)
 
         with self._connect() as connection:
-            connection.execute(
-                """
-                INSERT INTO hands (
-                    hand_id,
-                    tournament_id,
-                    played_at,
-                    table_name,
-                    hero,
-                    hero_cards,
-                    board,
-                    pot,
-                    result,
-                    big_blind,
-                    game_mode,
-                    session_id
-                ) VALUES (
-                    :hand_id,
-                    :tournament_id,
-                    :played_at,
-                    :table_name,
-                    :hero,
-                    :hero_cards,
-                    :board,
-                    :pot,
-                    :result,
-                    :big_blind,
-                    :game_mode,
-                    :session_id
+            self._insert_hand(connection, payload)
+
+    def import_hand_history(self, parsed_hands: list[dict[str, Any]]) -> tuple[int, int, int]:
+        """Store one parsed hand-history file atomically and return player/action totals."""
+        imported_players: set[str] = set()
+        action_count = 0
+        tournament_ids_imported: set[str] = set()
+
+        with self._connect() as connection:
+            for parsed_hand in parsed_hands:
+                tournament_id = parsed_hand.get("tournament_id")
+                if tournament_id:
+                    self._ensure_tournament_exists_for_hand(connection, parsed_hand)
+                    tournament_ids_imported.add(str(tournament_id))
+
+                hand = Hand(
+                    hand_id=str(parsed_hand["hand_id"]),
+                    tournament_id=str(tournament_id) if tournament_id else None,
+                    played_at=parsed_hand.get("played_at"),
+                    table_name=str(parsed_hand.get("table_name") or ""),
+                    hero=str(parsed_hand.get("hero") or ""),
+                    hero_cards=str(parsed_hand.get("hero_cards") or ""),
+                    board=str(parsed_hand.get("board") or ""),
+                    pot=float(parsed_hand.get("pot") or 0.0),
+                    result=float(parsed_hand.get("result") or 0.0),
+                    big_blind=float(parsed_hand.get("big_blind") or 0.0),
+                    game_mode=GameMode(parsed_hand.get("game_mode", GameMode.CASH_GAME)),
                 )
-                ON CONFLICT(hand_id) DO UPDATE SET
-                    tournament_id = excluded.tournament_id,
-                    played_at = excluded.played_at,
-                    table_name = excluded.table_name,
-                    hero = excluded.hero,
-                    hero_cards = excluded.hero_cards,
-                    board = excluded.board,
-                    pot = excluded.pot,
-                    result = excluded.result,
-                    big_blind = excluded.big_blind,
-                    game_mode = excluded.game_mode,
-                    session_id = excluded.session_id
-                """,
-                payload,
-            )
+                hand.session_id = self._assign_hand_to_session(connection, hand)
+                payload = asdict(hand)
+                payload["played_at"] = self._serialize_datetime(hand.played_at)
+                self._insert_hand(connection, payload)
+
+                players = {
+                    str(player_name)
+                    for player_data in parsed_hand.get("players", [])
+                    if (player_name := player_data.get("name"))
+                }
+                connection.executemany(
+                    "INSERT OR IGNORE INTO players (name) VALUES (?)",
+                    [(player_name,) for player_name in players],
+                )
+                imported_players.update(players)
+
+                actions = [
+                    (
+                        hand.hand_id,
+                        str(action["player"]),
+                        str(action["street"]),
+                        str(action["action"]),
+                        action.get("amount"),
+                        int(bool(action.get("is_all_in"))),
+                    )
+                    for action in parsed_hand.get("actions", [])
+                ]
+                connection.execute("DELETE FROM actions WHERE hand_id = ?", (hand.hand_id,))
+                connection.executemany(
+                    """
+                    INSERT INTO actions (hand_id, player, street, action, amount, is_all_in)
+                    VALUES (?, ?, ?, ?, ?, ?)
+                    """,
+                    actions,
+                )
+                action_count += len(actions)
+
+        return len(tournament_ids_imported), len(imported_players), action_count
 
     def get_hand(self, hand_id: str) -> Hand | None:
         with self._connect() as connection:
@@ -649,6 +672,7 @@ class Database:
         connection.executescript(
             """
             CREATE INDEX IF NOT EXISTS idx_hands_played_at ON hands (played_at);
+            CREATE INDEX IF NOT EXISTS idx_hands_hero_played_at ON hands (hero, played_at);
             CREATE INDEX IF NOT EXISTS idx_hands_tournament_id ON hands (tournament_id);
             CREATE INDEX IF NOT EXISTS idx_hands_session_id ON hands (session_id);
             CREATE INDEX IF NOT EXISTS idx_hands_game_mode ON hands (game_mode);
@@ -759,31 +783,97 @@ class Database:
             return self._assign_cash_session(hand)
 
         with self._connect() as connection:
-            connection.execute(
-                """
-                INSERT INTO sessions (game_mode, tournament_id, started_at, finished_at)
-                VALUES (?, ?, ?, ?)
-                ON CONFLICT(game_mode, tournament_id) DO UPDATE SET
-                    started_at = MIN(sessions.started_at, excluded.started_at),
-                    finished_at = MAX(sessions.finished_at, excluded.finished_at)
-                """,
-                (
-                    hand.game_mode.value,
-                    hand.tournament_id,
-                    self._serialize_datetime(hand.played_at),
-                    self._serialize_datetime(hand.played_at),
-                ),
-            )
-            return int(
-                connection.execute(
-                    "SELECT id FROM sessions WHERE game_mode = ? AND tournament_id = ?",
-                    (hand.game_mode.value, hand.tournament_id),
-                ).fetchone()[0]
-            )
+            return self._assign_hand_to_session(connection, hand)
 
     def _assign_cash_session(self, hand: Hand) -> int:
         with self._connect() as connection:
             return self._find_or_create_cash_session(connection, hand)
+
+    def _assign_hand_to_session(self, connection: sqlite3.Connection, hand: Hand) -> int:
+        if hand.tournament_id is None:
+            return self._find_or_create_cash_session(connection, hand)
+
+        connection.execute(
+            """
+            INSERT INTO sessions (game_mode, tournament_id, started_at, finished_at)
+            VALUES (?, ?, ?, ?)
+            ON CONFLICT(game_mode, tournament_id) DO UPDATE SET
+                started_at = MIN(sessions.started_at, excluded.started_at),
+                finished_at = MAX(sessions.finished_at, excluded.finished_at)
+            """,
+            (
+                hand.game_mode.value,
+                hand.tournament_id,
+                self._serialize_datetime(hand.played_at),
+                self._serialize_datetime(hand.played_at),
+            ),
+        )
+        row = connection.execute(
+            "SELECT id FROM sessions WHERE game_mode = ? AND tournament_id = ?",
+            (hand.game_mode.value, hand.tournament_id),
+        ).fetchone()
+        if row is None:
+            raise RuntimeError("SQLite did not return a session for the tournament hand")
+        return int(row[0])
+
+    def _ensure_tournament_exists_for_hand(
+        self,
+        connection: sqlite3.Connection,
+        parsed_hand: dict[str, Any],
+    ) -> None:
+        tournament_id = parsed_hand.get("tournament_id")
+        if not tournament_id:
+            return
+        connection.execute(
+            """
+            INSERT OR IGNORE INTO tournaments (
+                tournament_id, name, buy_in, prize_pool, players_count, started_at,
+                finished_at, position, winnings, bounty_winnings, game_mode
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                tournament_id,
+                parsed_hand.get("tournament_name")
+                or parsed_hand.get("table_name")
+                or tournament_id,
+                parsed_hand.get("buy_in") or 0.0,
+                0.0,
+                0,
+                self._serialize_datetime(parsed_hand.get("played_at")),
+                None,
+                None,
+                0.0,
+                0.0,
+                GameMode(parsed_hand.get("game_mode", GameMode.TOURNAMENT)).value,
+            ),
+        )
+
+    @staticmethod
+    def _insert_hand(connection: sqlite3.Connection, payload: dict[str, Any]) -> None:
+        connection.execute(
+            """
+            INSERT INTO hands (
+                hand_id, tournament_id, played_at, table_name, hero, hero_cards, board,
+                pot, result, big_blind, game_mode, session_id
+            ) VALUES (
+                :hand_id, :tournament_id, :played_at, :table_name, :hero, :hero_cards, :board,
+                :pot, :result, :big_blind, :game_mode, :session_id
+            )
+            ON CONFLICT(hand_id) DO UPDATE SET
+                tournament_id = excluded.tournament_id,
+                played_at = excluded.played_at,
+                table_name = excluded.table_name,
+                hero = excluded.hero,
+                hero_cards = excluded.hero_cards,
+                board = excluded.board,
+                pot = excluded.pot,
+                result = excluded.result,
+                big_blind = excluded.big_blind,
+                game_mode = excluded.game_mode,
+                session_id = excluded.session_id
+            """,
+            payload,
+        )
 
     def _find_or_create_cash_session(self, connection: sqlite3.Connection, hand: Hand) -> int:
         played_at = self._serialize_datetime(hand.played_at)
