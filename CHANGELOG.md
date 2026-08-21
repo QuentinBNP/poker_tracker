@@ -8,6 +8,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ### Added
 
+- Replace the dashboard bankroll graph with an interactive cash-game BB graph with range-selection zoom, hover details, and direct hand-detail navigation.
 - Add per-hand BB results derived from each hand's recorded big blind and displayed in hand history, including tournament and Expresso chip-BB results.
 - Add a dedicated advanced Statistics tab with filtered hand-outcome, VPIP, PFR, aggression, sampled preflop 3-Bet/4-Bet and all-in rates, and cash-game BB metrics.
 - Persist Winamax all-in action flags and reimport unchanged hand histories once so all-in metrics can use durable source data.

@@ -8,6 +8,7 @@ from database.filters import HistoryFilter
 from database.models import Action, Hand, Tournament
 from game_modes import GameMode
 from poker_stats.bankroll_service import BankrollService, BankrollSourceType
+from poker_stats.bb_history_service import BBHistoryService
 from poker_stats.calculator import StatisticsCalculator
 from poker_stats.statistics_service import StatisticsService
 
@@ -255,6 +256,35 @@ def test_bankroll_service_returns_chronological_source_linked_points(tmp_path: P
     assert points[0].session_id is None
     assert points[1].tournament_id == "tournament-1"
     assert [point.source_id for point in cash_points] == ["cash-early", "cash-late"]
+
+
+def test_bb_history_uses_chronological_cash_hands_and_per_hand_blinds(tmp_path: Path) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    for hand_id, played_at, result, big_blind in (
+        ("nl2", datetime(2026, 6, 1, 12, tzinfo=timezone.utc), 0.06, 0.02),
+        ("nl10", datetime(2026, 6, 1, 13, tzinfo=timezone.utc), -0.20, 0.10),
+    ):
+        database.insert_hand(
+            Hand(
+                hand_id=hand_id,
+                tournament_id=None,
+                played_at=played_at,
+                table_name="Cash",
+                hero="MyPseudo",
+                hero_cards="Ah Kh",
+                board="",
+                pot=1.0,
+                result=result,
+                big_blind=big_blind,
+            )
+        )
+
+    points = BBHistoryService(database, "MyPseudo").calculate()
+
+    assert [point.hand_id for point in points] == ["nl2", "nl10"]
+    assert [point.result_bb for point in points] == [3.0, -2.0]
+    assert [point.balance_bb for point in points] == [3.0, 1.0]
 
 
 def test_advanced_statistics_show_sampled_preflop_rates_and_cash_metrics(tmp_path: Path) -> None:

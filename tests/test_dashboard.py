@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 
-from ui.bankroll_chart import _chart_bounds, _scale_x, _scale_y
+from ui.chart_math import chart_bounds, scale_x, scale_y
 from ui.dashboard import _resolve_period
 
 
@@ -23,8 +23,8 @@ def test_custom_period_reports_invalid_dates_without_applying_a_filter() -> None
 
 
 def test_bankroll_chart_scaling_keeps_zero_and_single_points_visible() -> None:
-    minimum, maximum = _chart_bounds([0.0])
+    minimum, maximum = chart_bounds([0.0])
 
     assert (minimum, maximum) == (-1.0, 1.0)
-    assert _scale_x(0, 1, 50, 250) == 150.0
-    assert _scale_y(0.0, minimum, maximum, 20, 180) == 100.0
+    assert scale_x(0, 1, 50, 250) == 150.0
+    assert scale_y(0.0, minimum, maximum, 20, 180) == 100.0

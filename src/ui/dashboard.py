@@ -11,8 +11,10 @@ from database.database import Database
 from database.filters import HistoryFilter
 from game_modes import GameMode
 from poker_stats.bankroll_service import BankrollPoint, BankrollService
+from poker_stats.bb_history_service import BBHistoryService
 from poker_stats.statistics_service import StatisticsService
-from ui.bankroll_chart import BankrollChart
+from ui.bb_chart import BBChart
+from ui.hand_detail import HandDetailDialog
 from ui.hands_view import HandsView
 from ui.sessions_view import SessionsView
 from ui.settings import SettingsDialog
@@ -40,6 +42,7 @@ class DashboardView(ttk.Frame):
         self.on_settings_saved = on_settings_saved
         self.statistics_service = StatisticsService(database, self.hero_name)
         self.bankroll_service = BankrollService(database, self.hero_name)
+        self.bb_history_service = BBHistoryService(database, self.hero_name)
         self.all_modes_value = tk.BooleanVar(value=True)
         self.mode_values = {mode: tk.BooleanVar() for mode in GameMode}
         self.period_value = tk.StringVar(value="All time")
@@ -162,8 +165,8 @@ class DashboardView(ttk.Frame):
         self.bankroll_value.grid(row=0, column=1, sticky="w", padx=(12, 0))
         self.bankroll_detail = ttk.Label(bankroll_frame)
         self.bankroll_detail.grid(row=1, column=0, columnspan=2, sticky="w", pady=(4, 0))
-        self.bankroll_chart = BankrollChart(bankroll_frame)
-        self.bankroll_chart.grid(row=2, column=0, columnspan=2, sticky="nsew", pady=(10, 0))
+        self.bb_chart = BBChart(bankroll_frame, self._show_graph_hand)
+        self.bb_chart.grid(row=2, column=0, columnspan=2, sticky="nsew", pady=(10, 0))
 
         recent_hands_frame = ttk.LabelFrame(
             self.overview_tab,
@@ -204,11 +207,13 @@ class DashboardView(ttk.Frame):
         advanced_statistics = self.statistics_service.calculate_advanced(filters)
         bankroll_points = self.bankroll_service.calculate(filters)
         recent_hands = self.database.list_filtered_hands(self.hero_name, filters, limit=50)
+        bb_points = self.bb_history_service.calculate(filters)
         recent_tournaments = self.database.list_filtered_tournaments(filters, limit=50)
         sessions = self.database.list_sessions(self.hero_name, filters, limit=50)
 
         self._refresh_metrics(statistics)
         self._refresh_bankroll(bankroll_points)
+        self.bb_chart.set_points(bb_points)
 
         self.recent_hands_list.delete(0, tk.END)
         for hand in recent_hands[:8]:
@@ -279,7 +284,6 @@ class DashboardView(ttk.Frame):
             value_label.configure(text=value)
 
     def _refresh_bankroll(self, points: list[BankrollPoint]) -> None:
-        self.bankroll_chart.set_points(points)
         if not points:
             self.bankroll_value.configure(text="No settled results")
             self.bankroll_detail.configure(
@@ -302,6 +306,7 @@ class DashboardView(ttk.Frame):
         self.hero_name = config["player_name"]
         self.statistics_service = StatisticsService(self.database, self.hero_name)
         self.bankroll_service = BankrollService(self.database, self.hero_name)
+        self.bb_history_service = BBHistoryService(self.database, self.hero_name)
         self.subtitle.configure(text=f"Hero: {self.hero_name}")
         self.on_settings_saved(config)
         self.refresh()
@@ -323,6 +328,12 @@ class DashboardView(ttk.Frame):
         hands = self.database.list_hands_for_session(self.hero_name, session_id)
         self.hands_view.refresh(hands)
         self.notebook.select(self.hands_view)
+
+    def _show_graph_hand(self, hand_id: str) -> None:
+        hand = self.database.get_hand(hand_id)
+        if hand is None:
+            return
+        HandDetailDialog(self, hand, self.database.list_actions_for_hand(hand_id))
 
 
 def _build_metric(master: ttk.Frame, column: int) -> tuple[ttk.Label, ttk.Label]:
