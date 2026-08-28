@@ -59,7 +59,7 @@ Purpose:
 Monitor Winamax hand history folder:
 
 ```
-C:\Users\Quentin Bonopera\AppData\Roaming\winamax\documents
+C:\Users\YourName\AppData\Roaming\winamax\documents
 ```
 
 Detect new or modified files automatically.

@@ -930,7 +930,7 @@ PRE-FLOP
 PikPoPo folds
 Allan07 calls 200
 Fluo.Tigre27 raises 19,775
-QuentinMtg calls 19,775
+MyPseudo calls 19,775
 WinnerThePoH folds
 ...
 
