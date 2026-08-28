@@ -86,7 +86,7 @@ class DashboardView(ttk.Frame):
         self.hands_view = HandsView(notebook)
         self.sessions_view = SessionsView(notebook, self._show_session_hands)
         self.statistics_view = StatisticsView(notebook)
-        self.tournaments_view = TournamentsView(notebook)
+        self.tournaments_view = TournamentsView(notebook, self._set_tournament_free_entry)
         notebook.add(self.overview_tab, text="Dashboard")
         notebook.add(self.hands_view, text="Hands")
         notebook.add(self.sessions_view, text="Sessions")
@@ -334,6 +334,10 @@ class DashboardView(ttk.Frame):
         if hand is None:
             return
         HandDetailDialog(self, hand, self.database.list_actions_for_hand(hand_id))
+
+    def _set_tournament_free_entry(self, tournament_id: str, is_free: bool) -> None:
+        self.database.set_tournament_entry_free(tournament_id, is_free)
+        self.refresh()
 
 
 def _build_metric(master: ttk.Frame, column: int) -> tuple[ttk.Label, ttk.Label]:

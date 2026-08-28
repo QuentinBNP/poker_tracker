@@ -7,7 +7,16 @@ from pathlib import Path
 from typing import Any
 
 from database.filters import HistoryFilter
-from database.models import Action, Hand, ImportRecord, Player, Session, Tournament
+from database.models import (
+    Action,
+    EntryPaymentMethod,
+    Hand,
+    ImportRecord,
+    Player,
+    Session,
+    Tournament,
+    TournamentEntry,
+)
 from game_modes import GameMode
 
 
@@ -23,6 +32,7 @@ class Database:
             connection.executescript(self._schema())
             self._migrate_schema(connection)
             self._backfill_legacy_game_modes(connection)
+            self._backfill_tournament_entries(connection)
             self._backfill_legacy_sessions(connection)
             connection.commit()
 
@@ -73,6 +83,101 @@ class Database:
                 """,
                 payload,
             )
+            self._upsert_imported_tournament_entry(
+                connection,
+                tournament.tournament_id,
+                tournament.started_at,
+                tournament.buy_in,
+            )
+
+    def list_tournament_entries(self, tournament_id: str) -> list[TournamentEntry]:
+        with self._connect() as connection:
+            rows = connection.execute(
+                """
+                SELECT tournament_id, entry_number, entered_at, nominal_buy_in, cash_cost,
+                       payment_method, source, is_manually_adjusted
+                FROM tournament_entries
+                WHERE tournament_id = ?
+                ORDER BY entry_number
+                """,
+                (tournament_id,),
+            ).fetchall()
+
+        return [self._tournament_entry_from_row(row) for row in rows]
+
+    def add_tournament_reentry(
+        self,
+        tournament_id: str,
+        nominal_buy_in: float,
+        entered_at: datetime | None = None,
+    ) -> TournamentEntry:
+        with self._connect() as connection:
+            next_entry_number = int(
+                connection.execute(
+                    """
+                    SELECT COALESCE(MAX(entry_number), 0) + 1
+                    FROM tournament_entries
+                    WHERE tournament_id = ?
+                    """,
+                    (tournament_id,),
+                ).fetchone()[0]
+            )
+            connection.execute(
+                """
+                INSERT INTO tournament_entries (
+                    tournament_id, entry_number, entered_at, nominal_buy_in, cash_cost,
+                    payment_method, source, is_manually_adjusted
+                ) VALUES (?, ?, ?, ?, ?, ?, 'MANUAL', 1)
+                """,
+                (
+                    tournament_id,
+                    next_entry_number,
+                    self._serialize_datetime(entered_at),
+                    nominal_buy_in,
+                    nominal_buy_in,
+                    EntryPaymentMethod.UNKNOWN.value,
+                ),
+            )
+
+        return TournamentEntry(
+            tournament_id=tournament_id,
+            entry_number=next_entry_number,
+            entered_at=entered_at,
+            nominal_buy_in=nominal_buy_in,
+            cash_cost=nominal_buy_in,
+            source="MANUAL",
+            is_manually_adjusted=True,
+        )
+
+    def set_tournament_entry_free(
+        self,
+        tournament_id: str,
+        is_free: bool,
+        entry_number: int = 1,
+    ) -> None:
+        with self._connect() as connection:
+            cursor = connection.execute(
+                """
+                UPDATE tournament_entries
+                SET cash_cost = CASE WHEN ? THEN 0 ELSE nominal_buy_in END,
+                    payment_method = ?, source = 'MANUAL', is_manually_adjusted = 1
+                WHERE tournament_id = ? AND entry_number = ?
+                """,
+                (
+                    is_free,
+                    (
+                        EntryPaymentMethod.FREE_TICKET.value
+                        if is_free
+                        else EntryPaymentMethod.UNKNOWN.value
+                    ),
+                    tournament_id,
+                    entry_number,
+                ),
+            )
+            if cursor.rowcount == 0:
+                raise ValueError(
+                    f"Tournament entry {tournament_id!r} #{entry_number} does not exist"
+                )
 
     def get_tournament(self, tournament_id: str) -> Tournament | None:
         with self._connect() as connection:
@@ -346,7 +451,16 @@ class Database:
                 (hero_name,),
             ).fetchone()[0]
             tournament_profit = connection.execute(
-                "SELECT COALESCE(SUM(winnings + bounty_winnings - buy_in), 0) FROM tournaments"
+                """
+                SELECT COALESCE(SUM(
+                    t.winnings + t.bounty_winnings - COALESCE(
+                        (SELECT SUM(te.cash_cost) FROM tournament_entries te
+                         WHERE te.tournament_id = t.tournament_id),
+                        t.buy_in
+                    )
+                ), 0)
+                FROM tournaments t
+                """
             ).fetchone()[0]
 
         return {
@@ -425,7 +539,13 @@ class Database:
                 SELECT s.id, s.game_mode, s.table_name, s.tournament_id, s.started_at,
                        s.finished_at, COUNT(h.id) AS hands_played,
                        CASE WHEN s.tournament_id IS NULL THEN SUM(h.result)
-                            ELSE COALESCE(MAX(t.winnings + t.bounty_winnings - t.buy_in), 0)
+                            ELSE COALESCE(MAX(
+                                t.winnings + t.bounty_winnings - COALESCE(
+                                    (SELECT SUM(te.cash_cost) FROM tournament_entries te
+                                     WHERE te.tournament_id = t.tournament_id),
+                                    t.buy_in
+                                )
+                            ), 0)
                        END AS result
                 FROM sessions s
                 INNER JOIN hands h ON h.session_id = s.id
@@ -523,7 +643,23 @@ class Database:
                 f"""
                 SELECT t.tournament_id, t.name, t.game_mode, t.buy_in, t.prize_pool,
                        t.winnings, t.bounty_winnings, t.players_count, t.started_at,
-                       t.finished_at, t.position
+                       t.finished_at, t.position,
+                       COALESCE(
+                           (SELECT SUM(te.cash_cost) FROM tournament_entries te
+                            WHERE te.tournament_id = t.tournament_id),
+                           t.buy_in
+                       ) AS total_entry_cost,
+                       COALESCE(
+                           (SELECT COUNT(*) FROM tournament_entries te
+                            WHERE te.tournament_id = t.tournament_id),
+                           1
+                       ) AS entry_count,
+                       EXISTS(
+                           SELECT 1 FROM tournament_entries te
+                           WHERE te.tournament_id = t.tournament_id
+                             AND te.entry_number = 1
+                             AND te.payment_method = 'FREE_TICKET'
+                       ) AS is_free_entry
                 FROM tournaments t
                 WHERE {where_clause}
                 ORDER BY t.started_at DESC, t.id DESC
@@ -597,6 +733,20 @@ class Database:
             started_at TEXT,
             finished_at TEXT,
             UNIQUE (game_mode, tournament_id),
+            FOREIGN KEY (tournament_id) REFERENCES tournaments (tournament_id)
+        );
+
+        CREATE TABLE IF NOT EXISTS tournament_entries (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            tournament_id TEXT NOT NULL,
+            entry_number INTEGER NOT NULL,
+            entered_at TEXT,
+            nominal_buy_in REAL NOT NULL,
+            cash_cost REAL NOT NULL,
+            payment_method TEXT NOT NULL DEFAULT 'UNKNOWN',
+            source TEXT NOT NULL DEFAULT 'IMPORT',
+            is_manually_adjusted INTEGER NOT NULL DEFAULT 0,
+            UNIQUE (tournament_id, entry_number),
             FOREIGN KEY (tournament_id) REFERENCES tournaments (tournament_id)
         );
 
@@ -680,6 +830,25 @@ class Database:
             CREATE INDEX IF NOT EXISTS idx_sessions_game_mode ON sessions (game_mode);
             CREATE INDEX IF NOT EXISTS idx_sessions_tournament_id ON sessions (tournament_id);
             CREATE INDEX IF NOT EXISTS idx_tournaments_game_mode ON tournaments (game_mode);
+            CREATE INDEX IF NOT EXISTS idx_tournament_entries_tournament_id
+                ON tournament_entries (tournament_id);
+            """
+        )
+
+    @staticmethod
+    def _backfill_tournament_entries(connection: sqlite3.Connection) -> None:
+        connection.execute(
+            """
+            INSERT INTO tournament_entries (
+                tournament_id, entry_number, entered_at, nominal_buy_in, cash_cost,
+                payment_method, source, is_manually_adjusted
+            )
+            SELECT tournament_id, 1, started_at, buy_in, buy_in, 'UNKNOWN', 'BACKFILL', 0
+            FROM tournaments
+            WHERE NOT EXISTS (
+                SELECT 1 FROM tournament_entries
+                WHERE tournament_entries.tournament_id = tournaments.tournament_id
+            )
             """
         )
 
@@ -847,6 +1016,52 @@ class Database:
                 GameMode(parsed_hand.get("game_mode", GameMode.TOURNAMENT)).value,
             ),
         )
+        self._upsert_imported_tournament_entry(
+            connection,
+            str(tournament_id),
+            parsed_hand.get("played_at"),
+            float(parsed_hand.get("buy_in") or 0.0),
+        )
+
+    def _upsert_imported_tournament_entry(
+        self,
+        connection: sqlite3.Connection,
+        tournament_id: str,
+        entered_at: datetime | None,
+        nominal_buy_in: float,
+    ) -> None:
+        connection.execute(
+            """
+            INSERT INTO tournament_entries (
+                tournament_id, entry_number, entered_at, nominal_buy_in, cash_cost,
+                payment_method, source, is_manually_adjusted
+            ) VALUES (?, 1, ?, ?, ?, 'UNKNOWN', 'IMPORT', 0)
+            ON CONFLICT(tournament_id, entry_number) DO UPDATE SET
+                entered_at = excluded.entered_at,
+                nominal_buy_in = excluded.nominal_buy_in,
+                cash_cost = CASE
+                    WHEN tournament_entries.is_manually_adjusted = 1
+                        THEN tournament_entries.cash_cost
+                    ELSE excluded.cash_cost
+                END,
+                payment_method = CASE
+                    WHEN tournament_entries.is_manually_adjusted = 1
+                        THEN tournament_entries.payment_method
+                    ELSE excluded.payment_method
+                END,
+                source = CASE
+                    WHEN tournament_entries.is_manually_adjusted = 1
+                        THEN tournament_entries.source
+                    ELSE excluded.source
+                END
+            """,
+            (
+                tournament_id,
+                self._serialize_datetime(entered_at),
+                nominal_buy_in,
+                nominal_buy_in,
+            ),
+        )
 
     @staticmethod
     def _insert_hand(connection: sqlite3.Connection, payload: dict[str, Any]) -> None:
@@ -950,12 +1165,29 @@ class Database:
             "prize_pool": float(row["prize_pool"]),
             "winnings": float(row["winnings"]),
             "bounty_winnings": float(row["bounty_winnings"]),
-            "profit": float(row["winnings"] + row["bounty_winnings"] - row["buy_in"]),
+            "total_entry_cost": float(row["total_entry_cost"]),
+            "entry_count": int(row["entry_count"]),
+            "is_free_entry": bool(row["is_free_entry"]),
+            "profit": float(
+                row["winnings"] + row["bounty_winnings"] - row["total_entry_cost"]
+            ),
             "players_count": int(row["players_count"]),
             "started_at": self._parse_datetime(row["started_at"]),
             "finished_at": self._parse_datetime(row["finished_at"]),
             "position": row["position"],
         }
+
+    def _tournament_entry_from_row(self, row: sqlite3.Row) -> TournamentEntry:
+        return TournamentEntry(
+            tournament_id=str(row["tournament_id"]),
+            entry_number=int(row["entry_number"]),
+            entered_at=self._parse_datetime(row["entered_at"]),
+            nominal_buy_in=float(row["nominal_buy_in"]),
+            cash_cost=float(row["cash_cost"]),
+            payment_method=EntryPaymentMethod(row["payment_method"]),
+            source=str(row["source"]),
+            is_manually_adjusted=bool(row["is_manually_adjusted"]),
+        )
 
     @staticmethod
     def _add_column_if_missing(

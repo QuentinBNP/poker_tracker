@@ -48,12 +48,12 @@ class StatisticsService:
             if tournament["game_mode"] is GameMode.EXPRESSO
         )
         tournament_buy_ins = sum(
-            _as_float(tournament["buy_in"])
+            _as_float(tournament["total_entry_cost"])
             for tournament in tournaments
             if tournament["game_mode"] is GameMode.TOURNAMENT
         )
         expresso_buy_ins = sum(
-            _as_float(tournament["buy_in"])
+            _as_float(tournament["total_entry_cost"])
             for tournament in tournaments
             if tournament["game_mode"] is GameMode.EXPRESSO
         )

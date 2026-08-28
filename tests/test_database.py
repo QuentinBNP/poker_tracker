@@ -8,7 +8,7 @@ import pytest
 
 from database.database import Database
 from database.filters import HistoryFilter
-from database.models import Action, Hand, ImportRecord, Player, Tournament
+from database.models import Action, EntryPaymentMethod, Hand, ImportRecord, Player, Tournament
 from game_modes import GameMode
 
 
@@ -31,6 +31,64 @@ def test_database_can_store_and_read_tournament(tmp_path: Path) -> None:
     stored_tournament = database.get_tournament("1119027769")
 
     assert stored_tournament == tournament
+
+
+def test_tournament_entry_defaults_to_nominal_cost_and_can_be_marked_free(
+    tmp_path: Path,
+) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    tournament = Tournament(
+        tournament_id="expresso-1",
+        name="Expresso",
+        buy_in=2.0,
+        prize_pool=6.0,
+        players_count=3,
+        started_at=datetime(2026, 6, 28, 16, 30, tzinfo=timezone.utc),
+        finished_at=None,
+        position=1,
+        game_mode=GameMode.EXPRESSO,
+    )
+
+    database.insert_tournament(tournament)
+    imported_entry = database.list_tournament_entries("expresso-1")[0]
+    database.set_tournament_entry_free("expresso-1", True)
+    free_entry = database.list_tournament_entries("expresso-1")[0]
+
+    assert imported_entry.nominal_buy_in == 2.0
+    assert imported_entry.cash_cost == 2.0
+    assert imported_entry.payment_method is EntryPaymentMethod.UNKNOWN
+    assert free_entry.cash_cost == 0.0
+    assert free_entry.payment_method is EntryPaymentMethod.FREE_TICKET
+    assert free_entry.is_manually_adjusted is True
+
+
+def test_tournament_reentry_is_charged_and_free_entry_survives_reimport(
+    tmp_path: Path,
+) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    tournament = Tournament(
+        tournament_id="tournament-1",
+        name="Tournament",
+        buy_in=10.0,
+        prize_pool=100.0,
+        players_count=10,
+        started_at=datetime(2026, 6, 28, tzinfo=timezone.utc),
+        finished_at=None,
+        position=1,
+    )
+    database.insert_tournament(tournament)
+    database.set_tournament_entry_free("tournament-1", True)
+    reentry = database.add_tournament_reentry("tournament-1", 10.0)
+
+    database.insert_tournament(tournament)
+    entries = database.list_tournament_entries("tournament-1")
+
+    assert reentry.entry_number == 2
+    assert reentry.cash_cost == 10.0
+    assert [entry.cash_cost for entry in entries] == [0.0, 10.0]
+    assert entries[0].payment_method is EntryPaymentMethod.FREE_TICKET
 
 
 def test_database_can_store_hand_players_actions_and_import(tmp_path: Path) -> None:

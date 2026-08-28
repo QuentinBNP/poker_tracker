@@ -354,6 +354,63 @@ def test_manually_verified_mixed_mode_calculations(tmp_path: Path) -> None:
     assert [point.balance_bb for point in bb_points] == pytest.approx([3.0, 1.0])
 
 
+def test_free_entry_and_paid_reentry_use_actual_cash_costs(tmp_path: Path) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    database.insert_tournament(
+        Tournament(
+            tournament_id="tournament-entries",
+            name="Tournament",
+            buy_in=10.0,
+            prize_pool=100.0,
+            players_count=10,
+            started_at=datetime(2026, 6, 1, 12, tzinfo=timezone.utc),
+            finished_at=datetime(2026, 6, 1, 14, tzinfo=timezone.utc),
+            position=1,
+            winnings=25.0,
+        )
+    )
+    database.set_tournament_entry_free("tournament-entries", True)
+    database.add_tournament_reentry("tournament-entries", 10.0)
+
+    statistics = StatisticsService(database, "MyPseudo").calculate()
+    bankroll = BankrollService(database, "MyPseudo").calculate()
+    tournament = database.list_filtered_tournaments(HistoryFilter())[0]
+
+    assert tournament["entry_count"] == 2
+    assert tournament["is_free_entry"] is True
+    assert tournament["total_entry_cost"] == 10.0
+    assert tournament["profit"] == 15.0
+    assert statistics["tournament_profit"] == 15.0
+    assert statistics["tournament_roi"] == 150.0
+    assert bankroll[-1].result == 15.0
+
+
+def test_free_entry_has_no_roi_denominator(tmp_path: Path) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    database.insert_tournament(
+        Tournament(
+            tournament_id="free-expresso",
+            name="Expresso",
+            buy_in=2.0,
+            prize_pool=6.0,
+            players_count=3,
+            started_at=datetime(2026, 6, 1, 12, tzinfo=timezone.utc),
+            finished_at=datetime(2026, 6, 1, 12, 10, tzinfo=timezone.utc),
+            position=1,
+            winnings=6.0,
+            game_mode=GameMode.EXPRESSO,
+        )
+    )
+    database.set_tournament_entry_free("free-expresso", True)
+
+    statistics = StatisticsService(database, "MyPseudo").calculate()
+
+    assert statistics["expresso_profit"] == 6.0
+    assert statistics["expresso_roi"] == 0.0
+
+
 def test_advanced_statistics_show_sampled_preflop_rates_and_cash_metrics(tmp_path: Path) -> None:
     database = Database(tmp_path / "data" / "tracker.db")
     database.initialize()

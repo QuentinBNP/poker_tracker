@@ -1,0 +1,95 @@
+{
+  "timestamp_policy": {
+    "source": "Winamax UTC",
+    "parsed": "2026-06-28T16:30:02+00:00",
+    "display": "2026-06-28 16:30 UTC"
+  },
+  "scenarios": [
+    {
+      "id": "cash_entry",
+      "entries": [
+        {
+          "entry_number": 1,
+          "nominal_buy_in_eur": "10.00",
+          "cash_cost_eur": "10.00",
+          "payment_method": "CASH"
+        }
+      ],
+      "events": [
+        {"type": "ENTRY_COST", "amount_eur": "-10.00"},
+        {"type": "TOURNAMENT_SETTLEMENT", "amount_eur": "25.00"}
+      ],
+      "expected_profit_eur": "15.00"
+    },
+    {
+      "id": "purchased_ticket",
+      "entries": [
+        {
+          "entry_number": 1,
+          "nominal_buy_in_eur": "10.00",
+          "cash_cost_eur": "0.00",
+          "payment_method": "TICKET"
+        }
+      ],
+      "events": [
+        {"type": "TICKET_PURCHASE", "amount_eur": "-10.00"},
+        {"type": "TOURNAMENT_SETTLEMENT", "amount_eur": "25.00"}
+      ],
+      "expected_profit_eur": "15.00"
+    },
+    {
+      "id": "free_entry",
+      "entries": [
+        {
+          "entry_number": 1,
+          "nominal_buy_in_eur": "2.00",
+          "cash_cost_eur": "0.00",
+          "payment_method": "FREE_TICKET"
+        }
+      ],
+      "events": [
+        {"type": "TOURNAMENT_SETTLEMENT", "amount_eur": "6.00"}
+      ],
+      "expected_profit_eur": "6.00"
+    },
+    {
+      "id": "cash_reentry",
+      "entries": [
+        {
+          "entry_number": 1,
+          "nominal_buy_in_eur": "10.00",
+          "cash_cost_eur": "10.00",
+          "payment_method": "CASH"
+        },
+        {
+          "entry_number": 2,
+          "nominal_buy_in_eur": "10.00",
+          "cash_cost_eur": "10.00",
+          "payment_method": "CASH"
+        }
+      ],
+      "events": [
+        {"type": "ENTRY_COST", "amount_eur": "-10.00"},
+        {"type": "REENTRY_COST", "amount_eur": "-10.00"},
+        {"type": "TOURNAMENT_SETTLEMENT", "amount_eur": "25.00"}
+      ],
+      "expected_profit_eur": "5.00"
+    },
+    {
+      "id": "unknown_entry_before_manual_correction",
+      "entries": [
+        {
+          "entry_number": 1,
+          "nominal_buy_in_eur": "2.00",
+          "cash_cost_eur": "2.00",
+          "payment_method": "UNKNOWN"
+        }
+      ],
+      "events": [
+        {"type": "ENTRY_COST", "amount_eur": "-2.00"},
+        {"type": "TOURNAMENT_SETTLEMENT", "amount_eur": "6.00"}
+      ],
+      "expected_profit_eur": "4.00"
+    }
+  ]
+}

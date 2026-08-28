@@ -2,8 +2,28 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from datetime import datetime
+from enum import StrEnum
 
 from game_modes import GameMode
+
+
+class EntryPaymentMethod(StrEnum):
+    CASH = "CASH"
+    TICKET = "TICKET"
+    FREE_TICKET = "FREE_TICKET"
+    UNKNOWN = "UNKNOWN"
+
+
+@dataclass(slots=True)
+class TournamentEntry:
+    tournament_id: str
+    entry_number: int
+    entered_at: datetime | None
+    nominal_buy_in: float
+    cash_cost: float
+    payment_method: EntryPaymentMethod = EntryPaymentMethod.UNKNOWN
+    source: str = "IMPORT"
+    is_manually_adjusted: bool = False
 
 
 @dataclass(slots=True)
