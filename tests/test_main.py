@@ -56,13 +56,20 @@ class _FakeWatcher:
     def start(self) -> None:
         self.started = True
 
-    def process_existing_files(self) -> list[DetectedFile]:
-        detected_file = DetectedFile(
-            path=self.watch_path / "existing-summary.txt",
-            file_type="tournament_summary",
-        )
-        self.on_detected(detected_file)
-        return [detected_file]
+    def process_existing_files(self, on_detected: Any | None = None) -> list[DetectedFile]:
+        detected_files = [
+            DetectedFile(
+                path=self.watch_path / "existing-summary.txt",
+                file_type="tournament_summary",
+            ),
+            DetectedFile(
+                path=self.watch_path / "existing-hand.txt",
+                file_type="hand_history",
+            ),
+        ]
+        for detected_file in detected_files:
+            (on_detected or self.on_detected)(detected_file)
+        return detected_files
 
     def stop(self) -> None:
         self.stopped = True
@@ -137,7 +144,8 @@ def test_main_bootstraps_and_starts_ui(monkeypatch: Any) -> None:
     assert fake_watcher.watch_path == fake_watch_path
     assert fake_watcher.started is True
     assert fake_importer.calls == [
-        (fake_watch_path / "existing-summary.txt", "tournament_summary")
+        (fake_watch_path / "existing-summary.txt", "tournament_summary"),
+        (fake_watch_path / "existing-hand.txt", "hand_history"),
     ]
 
     fake_watcher.on_detected(
@@ -149,6 +157,7 @@ def test_main_bootstraps_and_starts_ui(monkeypatch: Any) -> None:
 
     assert fake_importer.calls == [
         (fake_watch_path / "existing-summary.txt", "tournament_summary"),
+        (fake_watch_path / "existing-hand.txt", "hand_history"),
         (Path("/tmp/hand.txt"), "hand_history"),
     ]
     assert fake_root.after_calls == [(0, fake_dashboard.refresh), (0, fake_dashboard.refresh)]

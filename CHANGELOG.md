@@ -4,10 +4,11 @@ All notable changes to MyPokerTracker are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.5.1] - 2026-08-21
+## [0.5.1] - 2026-08-28
 
 ### Fixed
 
+- Fixed an issue where the dashboard would not refresh correctly after importing large hand-history files.
 - Import large hand-history files in a single SQLite transaction to avoid per-hand database commits and improve dashboard load time.
 - Limit BB-chart rendering density for large cash-game histories while retaining the complete calculation history.
 - Bounty winning parsing now correctly handles bounty amounts with a decimal point, e.g., `You won Bounty 0.13€`.

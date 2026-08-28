@@ -58,20 +58,27 @@ class WinamaxFileWatcher:
         self._observer.join(timeout=5)
         self._observer = None
 
-    def process_existing_files(self) -> list[DetectedFile]:
+    def process_existing_files(
+        self,
+        on_detected: WatcherCallback | None = None,
+    ) -> list[DetectedFile]:
         detections: list[DetectedFile] = []
 
         for path in sorted(self.watch_path.glob("*.txt")):
-            detection = self._handle_path(path)
+            detection = self._detect_path(path)
             if detection is not None:
                 detections.append(detection)
+                (on_detected or self.on_detected)(detection)
 
         return detections
 
     def handle_event_path(self, path: Path) -> DetectedFile | None:
-        return self._handle_path(path)
+        detection = self._detect_path(path)
+        if detection is not None:
+            self.on_detected(detection)
+        return detection
 
-    def _handle_path(self, path: Path) -> DetectedFile | None:
+    def _detect_path(self, path: Path) -> DetectedFile | None:
         if not path.exists() or path.suffix.lower() != ".txt":
             return None
 
@@ -86,8 +93,6 @@ class WinamaxFileWatcher:
             path=path,
             file_type=self._classify_file(path),
         )
-
-        self.on_detected(detection)
 
         return detection
 
