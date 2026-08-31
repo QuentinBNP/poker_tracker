@@ -11,11 +11,12 @@ from database.database import Database
 from database.filters import HistoryFilter
 from game_modes import GameMode
 from poker_stats.bankroll_service import BankrollPoint, BankrollService
-from poker_stats.bb_history_service import BBHistoryService
+from poker_stats.bb_history_service import BBHistoryPoint, BBHistoryService
 from poker_stats.statistics_service import StatisticsService
 from ui.bb_chart import BBChart
 from ui.hand_detail import HandDetailDialog
 from ui.hands_view import HandsView
+from ui.result_chart import ResultChart
 from ui.sessions_view import SessionsView
 from ui.settings import SettingsDialog
 from ui.statistics_view import StatisticsView
@@ -49,6 +50,7 @@ class DashboardView(ttk.Frame):
         self.start_date_value = tk.StringVar()
         self.end_date_value = tk.StringVar()
         self.filter_message = tk.StringVar()
+        self.cash_chart_unit = tk.StringVar(value="BB")
 
         self.columnconfigure(0, weight=1)
         self.rowconfigure(3, weight=1)
@@ -165,8 +167,28 @@ class DashboardView(ttk.Frame):
         self.bankroll_value.grid(row=0, column=1, sticky="w", padx=(12, 0))
         self.bankroll_detail = ttk.Label(bankroll_frame)
         self.bankroll_detail.grid(row=1, column=0, columnspan=2, sticky="w", pady=(4, 0))
+        chart_controls = ttk.Frame(bankroll_frame)
+        chart_controls.grid(row=0, column=2, rowspan=2, sticky="e")
+        self.bb_unit_button = ttk.Radiobutton(
+            chart_controls,
+            text="BB",
+            value="BB",
+            variable=self.cash_chart_unit,
+            command=self.refresh,
+        )
+        self.eur_unit_button = ttk.Radiobutton(
+            chart_controls,
+            text="EUR",
+            value="EUR",
+            variable=self.cash_chart_unit,
+            command=self.refresh,
+        )
+        self.bb_unit_button.grid(row=0, column=0)
+        self.eur_unit_button.grid(row=0, column=1)
         self.bb_chart = BBChart(bankroll_frame, self._show_graph_hand)
-        self.bb_chart.grid(row=2, column=0, columnspan=2, sticky="nsew", pady=(10, 0))
+        self.bb_chart.grid(row=2, column=0, columnspan=3, sticky="nsew", pady=(10, 0))
+        self.result_chart = ResultChart(bankroll_frame, self._show_graph_hand)
+        self.result_chart.grid(row=2, column=0, columnspan=3, sticky="nsew", pady=(10, 0))
 
         recent_hands_frame = ttk.LabelFrame(
             self.overview_tab,
@@ -213,7 +235,7 @@ class DashboardView(ttk.Frame):
 
         self._refresh_metrics(statistics)
         self._refresh_bankroll(bankroll_points)
-        self.bb_chart.set_points(bb_points)
+        self._refresh_chart(bankroll_points, bb_points)
 
         self.recent_hands_list.delete(0, tk.END)
         for hand in recent_hands[:8]:
@@ -295,8 +317,28 @@ class DashboardView(ttk.Frame):
         self.bankroll_value.configure(text=_format_money(last_point.balance))
         timestamp = last_point.occurred_at.strftime("%Y-%m-%d %H:%M")
         self.bankroll_detail.configure(
-            text=f"{len(points)} settled results through {timestamp}."
+            text=f"{len(points)} accounting events through {timestamp} UTC."
         )
+
+    def _refresh_chart(
+        self,
+        bankroll_points: list[BankrollPoint],
+        bb_points: list[BBHistoryPoint],
+    ) -> None:
+        selected_modes = [mode for mode, value in self.mode_values.items() if value.get()]
+        cash_only = selected_modes == [GameMode.CASH_GAME]
+        state = ["!disabled"] if cash_only else ["disabled"]
+        self.bb_unit_button.state(state)
+        self.eur_unit_button.state(state)
+
+        if cash_only and self.cash_chart_unit.get() == "BB":
+            self.result_chart.grid_remove()
+            self.bb_chart.grid()
+            self.bb_chart.set_points(bb_points)
+        else:
+            self.bb_chart.grid_remove()
+            self.result_chart.grid()
+            self.result_chart.set_points(bankroll_points)
 
     def _open_settings(self) -> None:
         SettingsDialog(self, self.settings_config, self._save_settings)

@@ -4,11 +4,11 @@ import tkinter as tk
 from collections.abc import Callable
 from tkinter import ttk
 
-from poker_stats.bb_history_service import BBHistoryPoint
+from poker_stats.bankroll_service import BankrollPoint, BankrollSourceType
 from ui.chart_math import chart_bounds, sampled_indices, scale_x, scale_y
 
 
-class BBChart(ttk.Frame):
+class ResultChart(ttk.Frame):
     MAX_RENDERED_POINTS = 1_200
 
     def __init__(
@@ -17,12 +17,12 @@ class BBChart(ttk.Frame):
         on_hand_selected: Callable[[str], None] | None = None,
     ) -> None:
         super().__init__(master)
-        self.points: list[BBHistoryPoint] = []
+        self.points: list[BankrollPoint] = []
         self._window_start = 0
         self._window_end = 0
         self._selection_start: int | None = None
         self._selection_end: int | None = None
-        self._visible_points: list[tuple[int, BBHistoryPoint]] = []
+        self._visible_points: list[tuple[int, BankrollPoint]] = []
         self.on_hand_selected = on_hand_selected
         self.columnconfigure(0, weight=1)
         self.rowconfigure(0, weight=1)
@@ -31,7 +31,7 @@ class BBChart(ttk.Frame):
         ttk.Button(self, text="Reset zoom", command=self._reset_zoom).grid(
             row=1, column=0, sticky="e", pady=(6, 0)
         )
-        self.detail = ttk.Label(self, text="Hover a hand for BB details")
+        self.detail = ttk.Label(self, text="Hover a result for EUR details")
         self.detail.grid(row=2, column=0, sticky="w", pady=(4, 0))
         self.canvas.bind("<Configure>", self._draw)
         self.canvas.bind("<Motion>", self._on_motion)
@@ -41,11 +41,11 @@ class BBChart(ttk.Frame):
         self.canvas.bind("<ButtonRelease-1>", self._on_drag_end)
         self.canvas.bind("<Button-3>", self._reset_zoom)
 
-    def set_points(self, points: list[BBHistoryPoint]) -> None:
+    def set_points(self, points: list[BankrollPoint]) -> None:
         self.points = points
         self._window_start = 0
         self._window_end = len(points)
-        self.detail.configure(text="Hover a hand for BB details")
+        self.detail.configure(text="Hover a result for EUR details")
         self._draw()
 
     def _draw(self, _event: tk.Event[tk.Misc] | None = None) -> None:
@@ -57,65 +57,69 @@ class BBChart(ttk.Frame):
             self.canvas.create_text(
                 width / 2,
                 height / 2,
-                text="No cash hands with blinds in this scope",
+                text="No monetary results in this scope",
                 fill="#666666",
             )
             self._visible_points = []
             return
-        self._visible_points = self._render_points(
-            self.points,
-            self._window_start,
-            self._window_end,
+
+        selected = self.points[self._window_start : self._window_end]
+        indexes = sampled_indices(
+            [point.balance for point in selected], self.MAX_RENDERED_POINTS
         )
-        values = [point.balance_bb for _, point in self._visible_points]
-        minimum, maximum = chart_bounds(values)
-        left, top, right, bottom = 50, 18, width - 14, height - 30
+        self._visible_points = [
+            (self._window_start + index, selected[index]) for index in indexes
+        ]
+        minimum, maximum = chart_bounds(
+            [point.balance for _, point in self._visible_points]
+        )
+        left, top, right, bottom = 58, 18, width - 14, height - 30
         zero_y = scale_y(0.0, minimum, maximum, top, bottom)
         self.canvas.create_line(left, zero_y, right, zero_y, fill="#d8d8d8")
         self.canvas.create_text(
-            left - 6, top, text=f"{maximum:+.1f}", anchor="e", fill="#666666"
+            left - 6, top, text=f"{maximum:+.2f}", anchor="e", fill="#666666"
         )
         self.canvas.create_text(
-            left - 6, bottom, text=f"{minimum:+.1f}", anchor="e", fill="#666666"
+            left - 6, bottom, text=f"{minimum:+.2f}", anchor="e", fill="#666666"
         )
         coordinates = [
             (
                 scale_x(index, len(self._visible_points), left, right),
-                scale_y(point.balance_bb, minimum, maximum, top, bottom),
+                scale_y(point.balance, minimum, maximum, top, bottom),
             )
             for index, (_, point) in enumerate(self._visible_points)
         ]
         if len(coordinates) > 1:
             line_coordinates = [value for coordinate in coordinates for value in coordinate]
-            self.canvas.create_line(*line_coordinates, fill="#a95522", width=2)
+            self.canvas.create_line(*line_coordinates, fill="#176b67", width=2)
         for x, y in coordinates:
-            self.canvas.create_oval(x - 3, y - 3, x + 3, y + 3, fill="#a95522", outline="")
+            self.canvas.create_oval(x - 3, y - 3, x + 3, y + 3, fill="#176b67", outline="")
         if self._selection_start is not None and self._selection_end is not None:
             self.canvas.create_rectangle(
                 self._selection_start,
                 top,
                 self._selection_end,
                 bottom,
-                outline="#a95522",
+                outline="#176b67",
                 dash=(3, 3),
             )
 
     def _on_motion(self, event: tk.Event[tk.Misc]) -> None:
         point = self._point_at(event.x, event.y)
-        self.detail.configure(text=_detail_text(point) if point else "Hover a hand for BB details")
+        text = _detail_text(point) if point else "Hover a result for EUR details"
+        self.detail.configure(text=text)
 
     def _on_leave(self, _event: tk.Event[tk.Misc]) -> None:
-        self.detail.configure(text="Hover a hand for BB details")
+        self.detail.configure(text="Hover a result for EUR details")
 
     def _on_drag_start(self, event: tk.Event[tk.Misc]) -> None:
         self._selection_start = event.x
         self._selection_end = event.x
 
     def _on_drag(self, event: tk.Event[tk.Misc]) -> None:
-        if self._selection_start is None:
-            return
-        self._selection_end = event.x
-        self._draw()
+        if self._selection_start is not None:
+            self._selection_end = event.x
+            self._draw()
 
     def _on_drag_end(self, event: tk.Event[tk.Misc]) -> None:
         if self._selection_start is None:
@@ -125,14 +129,18 @@ class BBChart(ttk.Frame):
         self._selection_end = None
         if end_x - start_x < 8:
             point = self._point_at(event.x, event.y)
-            if point is not None and self.on_hand_selected is not None:
-                self.on_hand_selected(point.hand_id)
+            if (
+                point is not None
+                and point.source_type is BankrollSourceType.HAND
+                and self.on_hand_selected is not None
+            ):
+                self.on_hand_selected(point.source_id)
             return
-        selected_start = self._global_index_at_x(start_x)
-        selected_end = self._global_index_at_x(end_x)
-        if selected_start is not None and selected_end is not None:
-            self._window_start = min(selected_start, selected_end)
-            self._window_end = max(selected_start, selected_end) + 1
+        start_index = self._global_index_at_x(start_x)
+        end_index = self._global_index_at_x(end_x)
+        if start_index is not None and end_index is not None:
+            self._window_start = min(start_index, end_index)
+            self._window_end = max(start_index, end_index) + 1
         self._draw()
 
     def _reset_zoom(self, _event: tk.Event[tk.Misc] | None = None) -> None:
@@ -140,18 +148,18 @@ class BBChart(ttk.Frame):
         self._window_end = len(self.points)
         self._draw()
 
-    def _point_at(self, x: int, y: int) -> BBHistoryPoint | None:
+    def _point_at(self, x: int, y: int) -> BankrollPoint | None:
         if not self._visible_points:
             return None
         width, height = self.canvas.winfo_width(), self.canvas.winfo_height()
         minimum, maximum = chart_bounds(
-            [point.balance_bb for _, point in self._visible_points]
+            [point.balance for _, point in self._visible_points]
         )
-        left, top, right, bottom = 50, 18, width - 14, height - 30
-        closest: tuple[float, BBHistoryPoint] | None = None
+        left, top, right, bottom = 58, 18, width - 14, height - 30
+        closest: tuple[float, BankrollPoint] | None = None
         for index, (_, point) in enumerate(self._visible_points):
             point_x = scale_x(index, len(self._visible_points), left, right)
-            point_y = scale_y(point.balance_bb, minimum, maximum, top, bottom)
+            point_y = scale_y(point.balance, minimum, maximum, top, bottom)
             distance = (point_x - x) ** 2 + (point_y - y) ** 2
             if closest is None or distance < closest[0]:
                 closest = (distance, point)
@@ -160,31 +168,21 @@ class BBChart(ttk.Frame):
     def _global_index_at_x(self, x: int) -> int | None:
         if not self._visible_points:
             return None
-        left, right = 50, self.canvas.winfo_width() - 14
+        left, right = 58, self.canvas.winfo_width() - 14
         if right <= left:
             return None
         fraction = min(1.0, max(0.0, (x - left) / (right - left)))
         rendered_index = round(fraction * (len(self._visible_points) - 1))
         return self._visible_points[rendered_index][0]
 
-    @classmethod
-    def _render_points(
-        cls,
-        points: list[BBHistoryPoint],
-        window_start: int,
-        window_end: int,
-    ) -> list[tuple[int, BBHistoryPoint]]:
-        selected_points = points[window_start:window_end]
-        indexes = sampled_indices(
-            [point.balance_bb for point in selected_points],
-            cls.MAX_RENDERED_POINTS,
-        )
-        return [(window_start + index, selected_points[index]) for index in indexes]
 
-
-def _detail_text(point: BBHistoryPoint) -> str:
+def _detail_text(point: BankrollPoint) -> str:
+    source = {
+        BankrollSourceType.HAND: f"Hand {point.source_id}",
+        BankrollSourceType.TOURNAMENT_ENTRY: f"Entry {point.source_id}",
+        BankrollSourceType.TOURNAMENT: f"Settlement {point.source_id}",
+    }[point.source_type]
     return (
-        f"{point.occurred_at.strftime('%Y-%m-%d %H:%M UTC')}  Hand {point.hand_id}  "
-        f"{point.hero_cards or '--'}  Pot {point.pot:.2f}  "
-        f"{point.result_bb:+.2f} BB  Total {point.balance_bb:+.2f} BB"
+        f"{point.occurred_at.strftime('%Y-%m-%d %H:%M UTC')}  {source}  "
+        f"{point.result:+.2f} EUR  Total {point.balance:+.2f} EUR"
     )

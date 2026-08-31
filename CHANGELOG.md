@@ -11,6 +11,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - Rake calculation for cash-game hands.
 - Ante calculation for tournament hands.
 - Re-entries tracking for tournament hands.
+- Auditable tournament entry costs and settlement reconciliation through a shared accounting service.
+- EUR result charts for All, Tournament, and Expresso scopes, plus a BB/EUR selector for Cash.
+- Visible chart reset controls and UTC-labeled result hover details.
+
+### Fixed
+
+- Preserve original source indexes and important extrema when zooming charts with more than 1,200 points.
+- Include tournament entry and re-entry debits as separate chronological bankroll events.
 
 ## [0.5.1] - 2026-08-28
 
