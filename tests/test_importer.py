@@ -81,6 +81,24 @@ def test_importer_detects_reentries_from_repeated_summary_blocks(tmp_path: Path)
     assert tournament["profit"] == -0.87
 
 
+def test_space_ko_session_result_includes_both_entries(tmp_path: Path) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    importer = DatabaseImporter(database)
+    basename = "20260731_SPACE KO(1140932862)_real_holdem_no-limit"
+
+    hand_report = importer.import_file(SAMPLES_DIR / f"{basename}.txt")
+    summary_report = importer.import_file(SAMPLES_DIR / f"{basename}_summary.txt")
+    sessions = database.list_sessions("MyPseudo", HistoryFilter())
+    space_ko_session = next(
+        session for session in sessions if session["tournament_id"] == "1140932862"
+    )
+
+    assert hand_report.status == "success"
+    assert summary_report.status == "success"
+    assert space_ko_session["result"] == -0.87
+
+
 def test_importer_persists_hand_history_without_existing_tournament_summary(tmp_path: Path) -> None:
     database = Database(tmp_path / "data" / "tracker.db")
     database.initialize()
