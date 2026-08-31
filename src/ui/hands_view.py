@@ -17,7 +17,7 @@ class HandsView(ttk.Frame):
         columns = ("played_at", "table_name", "hero_cards", "board", "pot", "result", "result_bb")
         self.tree = ttk.Treeview(self, columns=columns, show="headings", height=10)
         headings = {
-            "played_at": "Played",
+            "played_at": "Played (UTC)",
             "table_name": "Table",
             "hero_cards": "Cards",
             "board": "Board",
@@ -50,7 +50,9 @@ class HandsView(ttk.Frame):
 
         for hand in hands:
             played_at_value = _as_datetime(hand.get("played_at"))
-            played_at = played_at_value.strftime("%Y-%m-%d %H:%M") if played_at_value else "-"
+            played_at = (
+                played_at_value.strftime("%Y-%m-%d %H:%M UTC") if played_at_value else "-"
+            )
             self.tree.insert(
                 "",
                 "end",

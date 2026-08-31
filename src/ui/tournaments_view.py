@@ -33,7 +33,7 @@ class TournamentsView(ttk.Frame):
         )
         self.tree = ttk.Treeview(self, columns=columns, show="headings", height=10)
         headings = {
-            "started_at": "Started",
+            "started_at": "Started (UTC)",
             "game_mode": "Mode",
             "name": "Tournament",
             "buy_in": "Buy-in",
@@ -79,7 +79,11 @@ class TournamentsView(ttk.Frame):
             tournament_id = str(tournament["tournament_id"])
             self._free_entries[tournament_id] = bool(tournament.get("is_free_entry"))
             started_at_value = _as_datetime(tournament.get("started_at"))
-            started_at = started_at_value.strftime("%Y-%m-%d %H:%M") if started_at_value else "-"
+            started_at = (
+                started_at_value.strftime("%Y-%m-%d %H:%M UTC")
+                if started_at_value
+                else "-"
+            )
             self.tree.insert(
                 "",
                 "end",

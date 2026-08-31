@@ -526,7 +526,10 @@ class Database:
                                     t.buy_in
                                 )
                             ), 0)
-                       END AS result
+                       END AS result,
+                       CASE WHEN s.tournament_id IS NULL THEN SUM(
+                           CASE WHEN h.big_blind > 0 THEN h.result / h.big_blind ELSE 0 END
+                       ) ELSE NULL END AS result_bb
                 FROM sessions s
                 INNER JOIN hands h ON h.session_id = s.id
                 LEFT JOIN tournaments t ON t.tournament_id = s.tournament_id
@@ -548,6 +551,7 @@ class Database:
                 "finished_at": self._parse_datetime(row["finished_at"]),
                 "hands_played": int(row["hands_played"]),
                 "result": float(row["result"]),
+                "result_bb": float(row["result_bb"]) if row["result_bb"] is not None else None,
             }
             for row in rows
         ]
@@ -634,6 +638,16 @@ class Database:
                             WHERE te.tournament_id = t.tournament_id),
                            1
                        ) AS entry_count,
+                       (SELECT COUNT(*) FROM tournament_entries te
+                        WHERE te.tournament_id = t.tournament_id
+                          AND te.payment_method IN ('TICKET', 'FREE_TICKET')
+                       ) AS ticket_entry_count,
+                       COALESCE(
+                           (SELECT te.payment_method FROM tournament_entries te
+                            WHERE te.tournament_id = t.tournament_id
+                              AND te.entry_number = 1),
+                           'UNKNOWN'
+                       ) AS entry_payment_method,
                        EXISTS(
                            SELECT 1 FROM tournament_entries te
                            WHERE te.tournament_id = t.tournament_id
@@ -1153,6 +1167,8 @@ class Database:
             "bounty_winnings": float(row["bounty_winnings"]),
             "total_entry_cost": float(row["total_entry_cost"]),
             "entry_count": int(row["entry_count"]),
+            "ticket_entry_count": int(row["ticket_entry_count"]),
+            "entry_payment_method": str(row["entry_payment_method"]),
             "is_free_entry": bool(row["is_free_entry"]),
             "profit": float(
                 row["winnings"] + row["bounty_winnings"] - row["total_entry_cost"]

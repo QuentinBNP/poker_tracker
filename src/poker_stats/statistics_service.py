@@ -31,6 +31,10 @@ class StatisticsService:
         actions = self.database.list_filtered_hero_actions(self.hero_name, active_filter)
         accounting_events = self.accounting_service.events(active_filter)
         reconciliations = self.accounting_service.reconciliations(active_filter)
+        tournaments = self.database.list_filtered_tournaments(
+            active_filter,
+            limit=1_000_000,
+        )
 
         hands_played = float(len(hands))
         cash_hands = [hand for hand in hands if hand["tournament_id"] is None]
@@ -89,6 +93,13 @@ class StatisticsService:
             ),
             "tournament_profit": tournament_profit,
             "tournament_roi": _percentage(tournament_profit, tournament_buy_ins),
+            "tournament_reentries": float(
+                sum(
+                    max(0, int(_as_float(tournament["entry_count"])) - 1)
+                    for tournament in tournaments
+                    if tournament["game_mode"] is GameMode.TOURNAMENT
+                )
+            ),
             "expressos_played": float(
                 sum(
                     1
@@ -98,6 +109,13 @@ class StatisticsService:
             ),
             "expresso_profit": expresso_profit,
             "expresso_roi": _percentage(expresso_profit, expresso_buy_ins),
+            "expresso_tickets_used": float(
+                sum(
+                    int(_as_float(tournament["ticket_entry_count"]))
+                    for tournament in tournaments
+                    if tournament["game_mode"] is GameMode.EXPRESSO
+                )
+            ),
             "total_profit": cash_result + tournament_profit + expresso_profit,
             **poker_metrics,
         }

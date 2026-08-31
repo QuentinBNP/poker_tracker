@@ -18,7 +18,7 @@ class HandDetailDialog(tk.Toplevel):
 
         result_bb = hand.result / hand.big_blind if hand.big_blind > 0 else None
         details = (
-            f"{hand.played_at.strftime('%Y-%m-%d %H:%M') if hand.played_at else '-'}    "
+            f"{hand.played_at.strftime('%Y-%m-%d %H:%M UTC') if hand.played_at else '-'}    "
             f"{hand.table_name}\n"
             f"Cards: {hand.hero_cards or '-'}    Board: {hand.board or '-'}    "
             f"Pot: {hand.pot:.2f}    Result: {hand.result:+.2f}"

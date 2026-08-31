@@ -192,8 +192,10 @@ def test_statistics_service_calculates_metrics_for_selected_game_mode(tmp_path: 
     assert statistics["total_profit"] == 14.5
     assert statistics["tournament_profit"] == 10.0
     assert statistics["tournament_roi"] == 100.0
+    assert statistics["tournament_reentries"] == 0.0
     assert statistics["expresso_profit"] == 4.0
     assert statistics["expresso_roi"] == 200.0
+    assert statistics["expresso_tickets_used"] == 0.0
     assert cash_statistics["hands_played"] == 2.0
     assert cash_statistics["cash_result"] == 0.5
     assert cash_statistics["cash_rake_observed"] == 0.0
@@ -386,6 +388,7 @@ def test_free_entry_and_paid_reentry_use_actual_cash_costs(tmp_path: Path) -> No
     assert tournament["profit"] == 15.0
     assert statistics["tournament_profit"] == 15.0
     assert statistics["tournament_roi"] == 150.0
+    assert statistics["tournament_reentries"] == 1.0
     assert bankroll[-1].result == 25.0
     assert bankroll[-1].balance == 15.0
 
@@ -413,6 +416,7 @@ def test_free_entry_has_no_roi_denominator(tmp_path: Path) -> None:
 
     assert statistics["expresso_profit"] == 6.0
     assert statistics["expresso_roi"] == 0.0
+    assert statistics["expresso_tickets_used"] == 1.0
 
 
 def test_advanced_statistics_show_sampled_preflop_rates_and_cash_metrics(tmp_path: Path) -> None:

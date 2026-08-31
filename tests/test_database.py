@@ -434,6 +434,7 @@ def test_multi_mode_filter_lists_matching_sessions_and_ordered_hands(tmp_path: P
         board="",
         pot=0.0,
         result=1.0,
+        big_blind=0.5,
     )
     later_hand = Hand(
         hand_id="cash-late",
@@ -445,6 +446,7 @@ def test_multi_mode_filter_lists_matching_sessions_and_ordered_hands(tmp_path: P
         board="",
         pot=0.0,
         result=-0.5,
+        big_blind=0.5,
     )
     for hand in (earlier_hand, later_hand):
         hand.session_id = database.assign_hand_to_session(hand)
@@ -459,6 +461,7 @@ def test_multi_mode_filter_lists_matching_sessions_and_ordered_hands(tmp_path: P
     assert sessions[0]["game_mode"] is GameMode.CASH_GAME
     assert sessions[0]["hands_played"] == 2
     assert sessions[0]["result"] == 0.5
+    assert sessions[0]["result_bb"] == 1.0
     session_id = sessions[0]["session_id"]
     assert isinstance(session_id, int)
     assert [
