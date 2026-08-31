@@ -440,53 +440,16 @@ class Database:
         return row is not None
 
     def get_hero_summary(self, hero_name: str) -> dict[str, float | int]:
-        with self._connect() as connection:
-            hands_played = connection.execute(
-                "SELECT COUNT(*) FROM hands WHERE hero = ?",
-                (hero_name,),
-            ).fetchone()[0]
-            tournaments_played = connection.execute(
-                (
-                    "SELECT COUNT(DISTINCT tournament_id) FROM hands "
-                    "WHERE hero = ? AND tournament_id IS NOT NULL"
-                ),
-                (hero_name,),
-            ).fetchone()[0]
-            total_result = connection.execute(
-                (
-                    "SELECT COALESCE(SUM(result), 0) FROM hands "
-                    "WHERE hero = ? AND tournament_id IS NULL"
-                ),
-                (hero_name,),
-            ).fetchone()[0]
-            chip_result_bb = connection.execute(
-                """
-                SELECT COALESCE(SUM(result / big_blind), 0)
-                FROM hands
-                WHERE hero = ? AND tournament_id IS NOT NULL AND big_blind > 0
-                """,
-                (hero_name,),
-            ).fetchone()[0]
-            tournament_profit = connection.execute(
-                """
-                SELECT COALESCE(SUM(
-                    t.winnings + t.bounty_winnings - COALESCE(
-                        (SELECT SUM(te.cash_cost) FROM tournament_entries te
-                         WHERE te.tournament_id = t.tournament_id),
-                        t.buy_in
-                    )
-                ), 0)
-                FROM tournaments t
-                """
-            ).fetchone()[0]
+        from poker_stats.statistics_service import StatisticsService
 
+        statistics = StatisticsService(self, hero_name).calculate()
         return {
-            "hands_played": int(hands_played),
-            "tournaments_played": int(tournaments_played),
-            "cash_result": float(total_result),
-            "tournament_profit": float(tournament_profit),
-            "money_result": float(total_result + tournament_profit),
-            "chip_result_bb": float(chip_result_bb),
+            "hands_played": int(statistics["hands_played"]),
+            "tournaments_played": int(statistics["tournaments_played"]),
+            "cash_result": statistics["cash_result"],
+            "tournament_profit": statistics["tournament_profit"],
+            "money_result": statistics["total_profit"],
+            "chip_result_bb": statistics["chip_result_bb"],
         }
 
     def list_recent_hands(self, hero_name: str, limit: int = 10) -> list[dict[str, object]]:

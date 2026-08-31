@@ -5,6 +5,7 @@ from dataclasses import dataclass
 from database.database import Database
 from database.filters import HistoryFilter
 from game_modes import GameMode
+from poker_stats.accounting_service import AccountingEventType, AccountingService
 
 MINIMUM_RATE_SAMPLE = 20
 
@@ -22,41 +23,52 @@ class StatisticsService:
     def __init__(self, database: Database, hero_name: str) -> None:
         self.database = database
         self.hero_name = hero_name
+        self.accounting_service = AccountingService(database, hero_name)
 
     def calculate(self, filters: HistoryFilter | None = None) -> dict[str, float]:
         active_filter = filters or HistoryFilter()
         hands = self.database.list_filtered_hands(self.hero_name, active_filter, limit=1_000_000)
         actions = self.database.list_filtered_hero_actions(self.hero_name, active_filter)
-        tournaments = self.database.list_filtered_tournaments(active_filter, limit=1_000_000)
+        accounting_events = self.accounting_service.events(active_filter)
+        reconciliations = self.accounting_service.reconciliations(active_filter)
 
         hands_played = float(len(hands))
-        cash_hands = [hand for hand in hands if hand["game_mode"] is GameMode.CASH_GAME]
-        cash_result = sum(_as_float(hand["result"]) for hand in cash_hands)
+        cash_hands = [hand for hand in hands if hand["tournament_id"] is None]
+        cash_result = sum(
+            event.amount
+            for event in accounting_events
+            if event.event_type is AccountingEventType.CASH_HAND
+        )
         cash_rake_observed = sum(_as_float(hand["rake"]) for hand in cash_hands)
         cash_bb = sum(
             _as_float(hand["result"]) / _as_float(hand["big_blind"])
             for hand in cash_hands
             if _as_float(hand["big_blind"]) > 0
         )
+        tournament_chip_bb = sum(
+            _as_float(hand["result"]) / _as_float(hand["big_blind"])
+            for hand in hands
+            if hand["tournament_id"] is not None and _as_float(hand["big_blind"]) > 0
+        )
         tournament_profit = sum(
-            _as_float(tournament["profit"])
-            for tournament in tournaments
-            if tournament["game_mode"] is GameMode.TOURNAMENT
+            reconciliation.profit
+            for reconciliation in reconciliations
+            if reconciliation.game_mode is GameMode.TOURNAMENT
         )
         expresso_profit = sum(
-            _as_float(tournament["profit"])
-            for tournament in tournaments
-            if tournament["game_mode"] is GameMode.EXPRESSO
+            reconciliation.profit
+            for reconciliation in reconciliations
+            if reconciliation.game_mode is GameMode.EXPRESSO
         )
         tournament_buy_ins = sum(
-            _as_float(tournament["total_entry_cost"])
-            for tournament in tournaments
-            if tournament["game_mode"] is GameMode.TOURNAMENT
+            reconciliation.total_entry_cost
+            for reconciliation in reconciliations
+            if reconciliation.game_mode is GameMode.TOURNAMENT
         )
         expresso_buy_ins = sum(
-            _as_float(tournament["total_entry_cost"])
-            for tournament in tournaments
-            if tournament["game_mode"] is GameMode.EXPRESSO
+            reconciliation.total_entry_cost
+            for reconciliation in reconciliations
+            if reconciliation.game_mode is GameMode.EXPRESSO
         )
         poker_metrics = _calculate_poker_metrics(actions, hands)
 
@@ -67,17 +79,22 @@ class StatisticsService:
             "cash_rake_observed": cash_rake_observed,
             "cash_bb": cash_bb,
             "cash_bb_per_100": (cash_bb / len(cash_hands)) * 100 if cash_hands else 0.0,
+            "chip_result_bb": tournament_chip_bb,
             "tournaments_played": float(
                 sum(
                     1
-                    for tournament in tournaments
-                    if tournament["game_mode"] is GameMode.TOURNAMENT
+                    for reconciliation in reconciliations
+                    if reconciliation.game_mode is GameMode.TOURNAMENT
                 )
             ),
             "tournament_profit": tournament_profit,
             "tournament_roi": _percentage(tournament_profit, tournament_buy_ins),
             "expressos_played": float(
-                sum(1 for tournament in tournaments if tournament["game_mode"] is GameMode.EXPRESSO)
+                sum(
+                    1
+                    for reconciliation in reconciliations
+                    if reconciliation.game_mode is GameMode.EXPRESSO
+                )
             ),
             "expresso_profit": expresso_profit,
             "expresso_roi": _percentage(expresso_profit, expresso_buy_ins),

@@ -250,14 +250,16 @@ def test_bankroll_service_returns_chronological_source_linked_points(tmp_path: P
     )
 
     assert [(point.source_type, point.source_id) for point in points] == [
+        (BankrollSourceType.TOURNAMENT_ENTRY, "tournament-1:1"),
         (BankrollSourceType.HAND, "cash-early"),
         (BankrollSourceType.TOURNAMENT, "tournament-1"),
         (BankrollSourceType.HAND, "cash-late"),
     ]
-    assert [point.result for point in points] == [2.0, 15.0, -1.0]
-    assert [point.balance for point in points] == [2.0, 17.0, 16.0]
-    assert points[0].session_id is None
-    assert points[1].tournament_id == "tournament-1"
+    assert [point.result for point in points] == [-10.0, 2.0, 25.0, -1.0]
+    assert [point.balance for point in points] == [-10.0, -8.0, 17.0, 16.0]
+    assert points[1].session_id is None
+    assert points[0].tournament_id == "tournament-1"
+    assert points[2].tournament_id == "tournament-1"
     assert [point.source_id for point in cash_points] == ["cash-early", "cash-late"]
 
 
@@ -349,7 +351,7 @@ def test_manually_verified_mixed_mode_calculations(tmp_path: Path) -> None:
     assert statistics["expresso_profit"] == pytest.approx(4.0)
     assert statistics["total_profit"] == pytest.approx(18.86)
     assert [point.balance for point in bankroll_points] == pytest.approx(
-        [0.06, 15.06, 19.06, 18.86]
+        [-10.0, -9.94, 15.06, 13.06, 19.06, 18.86]
     )
     assert [point.result_bb for point in bb_points] == pytest.approx([3.0, -2.0])
     assert [point.balance_bb for point in bb_points] == pytest.approx([3.0, 1.0])
@@ -384,7 +386,8 @@ def test_free_entry_and_paid_reentry_use_actual_cash_costs(tmp_path: Path) -> No
     assert tournament["profit"] == 15.0
     assert statistics["tournament_profit"] == 15.0
     assert statistics["tournament_roi"] == 150.0
-    assert bankroll[-1].result == 15.0
+    assert bankroll[-1].result == 25.0
+    assert bankroll[-1].balance == 15.0
 
 
 def test_free_entry_has_no_roi_denominator(tmp_path: Path) -> None:
