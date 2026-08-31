@@ -99,7 +99,7 @@ def test_parse_tournament_hand_history_extracts_core_fields() -> None:
     assert first_hand["hero_cards"] == "8h 2s"
     assert first_hand["board"] == "Kc 7s 3c"
     assert first_hand["pot"] == 20225.0
-    assert first_hand["result"] == 0.0
+    assert first_hand["result"] == -25.0
     assert first_hand["winners"] == ["Nelson71"]
     assert any(action["action"] == "POST_BIG_BLIND" for action in first_hand["actions"]) is False
     assert any(
@@ -131,6 +131,9 @@ def test_parse_cash_game_hand_history_supports_decimal_amounts() -> None:
     assert first_hand["tournament_id"] is None
     assert first_hand["table_name"] == "Nice 23"
     assert first_hand["pot"] == 1.36
+    assert first_hand["rake"] == 0.04
+    assert first_hand["result"] == -0.02
+    assert second_hand["rake"] == 0.02
     assert first_hand["board"] == "Qd Ad 5d 4d"
     assert second_hand["hero"] == "MyPseudo"
     assert second_hand["hero_cards"] == "Ac 8d"

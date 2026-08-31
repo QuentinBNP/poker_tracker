@@ -52,6 +52,7 @@ class Hand:
     board: str
     pot: float
     result: float
+    rake: float = 0.0
     big_blind: float = 0.0
     game_mode: GameMode = GameMode.CASH_GAME
     session_id: int | None = None

@@ -84,6 +84,23 @@ def test_importer_persists_hand_history_without_existing_tournament_summary(tmp_
     assert any(player.name == "MyPseudo" for player in players)
 
 
+def test_importer_persists_observed_cash_rake_without_changing_net_result(
+    tmp_path: Path,
+) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+
+    report = DatabaseImporter(database).import_file(
+        SAMPLES_DIR / "20260628_Nice 23_real_holdem_no-limit.txt"
+    )
+    first_hand = database.get_hand("#22603906-296-1782665521")
+
+    assert report.status == "success"
+    assert first_hand is not None
+    assert first_hand.rake == 0.04
+    assert first_hand.result == -0.02
+
+
 def test_importer_reimport_does_not_duplicate_actions(tmp_path: Path) -> None:
     database = Database(tmp_path / "data" / "tracker.db")
     database.initialize()

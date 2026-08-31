@@ -233,6 +233,7 @@ class Database:
                     board=str(parsed_hand.get("board") or ""),
                     pot=float(parsed_hand.get("pot") or 0.0),
                     result=float(parsed_hand.get("result") or 0.0),
+                    rake=float(parsed_hand.get("rake") or 0.0),
                     big_blind=float(parsed_hand.get("big_blind") or 0.0),
                     game_mode=GameMode(parsed_hand.get("game_mode", GameMode.CASH_GAME)),
                 )
@@ -295,6 +296,7 @@ class Database:
             board=row["board"] or "",
             pot=row["pot"],
             result=row["result"],
+            rake=row["rake"],
             big_blind=row["big_blind"],
             game_mode=GameMode(row["game_mode"]),
             session_id=row["session_id"],
@@ -494,7 +496,7 @@ class Database:
             rows = connection.execute(
                 f"""
                 SELECT h.hand_id, h.tournament_id, h.session_id, h.game_mode, h.played_at,
-                       h.table_name, h.hero_cards, h.board, h.pot, h.result, h.big_blind
+                      h.table_name, h.hero_cards, h.board, h.pot, h.result, h.rake, h.big_blind
                 FROM hands h
                 WHERE {where_clause}
                 ORDER BY h.played_at DESC, h.id DESC
@@ -514,7 +516,7 @@ class Database:
             rows = connection.execute(
                 """
                 SELECT h.hand_id, h.tournament_id, h.session_id, h.game_mode, h.played_at,
-                       h.table_name, h.hero_cards, h.board, h.pot, h.result, h.big_blind
+                      h.table_name, h.hero_cards, h.board, h.pot, h.result, h.rake, h.big_blind
                 FROM hands h
                 WHERE h.hero = ? AND h.session_id = ?
                 ORDER BY h.played_at ASC, h.id ASC
@@ -718,6 +720,7 @@ class Database:
             board TEXT,
             pot REAL NOT NULL DEFAULT 0,
             result REAL NOT NULL DEFAULT 0,
+            rake REAL NOT NULL DEFAULT 0,
             big_blind REAL NOT NULL DEFAULT 0,
             game_mode TEXT NOT NULL DEFAULT 'CASH_GAME',
             session_id INTEGER,
@@ -780,6 +783,7 @@ class Database:
     @staticmethod
     def _migrate_schema(connection: sqlite3.Connection) -> None:
         Database._add_column_if_missing(connection, "hands", "big_blind", "REAL NOT NULL DEFAULT 0")
+        Database._add_column_if_missing(connection, "hands", "rake", "REAL NOT NULL DEFAULT 0")
         Database._add_column_if_missing(
             connection,
             "hands",
@@ -1069,10 +1073,10 @@ class Database:
             """
             INSERT INTO hands (
                 hand_id, tournament_id, played_at, table_name, hero, hero_cards, board,
-                pot, result, big_blind, game_mode, session_id
+                pot, result, rake, big_blind, game_mode, session_id
             ) VALUES (
                 :hand_id, :tournament_id, :played_at, :table_name, :hero, :hero_cards, :board,
-                :pot, :result, :big_blind, :game_mode, :session_id
+                :pot, :result, :rake, :big_blind, :game_mode, :session_id
             )
             ON CONFLICT(hand_id) DO UPDATE SET
                 tournament_id = excluded.tournament_id,
@@ -1083,6 +1087,7 @@ class Database:
                 board = excluded.board,
                 pot = excluded.pot,
                 result = excluded.result,
+                rake = excluded.rake,
                 big_blind = excluded.big_blind,
                 game_mode = excluded.game_mode,
                 session_id = excluded.session_id
@@ -1152,6 +1157,7 @@ class Database:
             "board": row["board"] or "",
             "pot": float(row["pot"]),
             "result": result,
+            "rake": float(row["rake"]),
             "big_blind": big_blind,
             "result_bb": result / big_blind if big_blind > 0 else None,
         }

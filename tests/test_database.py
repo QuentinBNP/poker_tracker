@@ -210,6 +210,7 @@ def test_database_initialization_migrates_existing_result_columns(tmp_path: Path
         import_columns = {row[1] for row in connection.execute("PRAGMA table_info(imports)")}
 
     assert "big_blind" in hand_columns
+    assert "rake" in hand_columns
     assert {"winnings", "bounty_winnings"}.issubset(tournament_columns)
     assert "import_version" in import_columns
 

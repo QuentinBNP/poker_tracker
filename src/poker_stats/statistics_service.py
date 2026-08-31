@@ -32,6 +32,7 @@ class StatisticsService:
         hands_played = float(len(hands))
         cash_hands = [hand for hand in hands if hand["game_mode"] is GameMode.CASH_GAME]
         cash_result = sum(_as_float(hand["result"]) for hand in cash_hands)
+        cash_rake_observed = sum(_as_float(hand["rake"]) for hand in cash_hands)
         cash_bb = sum(
             _as_float(hand["result"]) / _as_float(hand["big_blind"])
             for hand in cash_hands
@@ -63,6 +64,7 @@ class StatisticsService:
             "hands_played": hands_played,
             "cash_hands_played": float(len(cash_hands)),
             "cash_result": cash_result,
+            "cash_rake_observed": cash_rake_observed,
             "cash_bb": cash_bb,
             "cash_bb_per_100": (cash_bb / len(cash_hands)) * 100 if cash_hands else 0.0,
             "tournaments_played": float(
@@ -147,6 +149,11 @@ class StatisticsService:
         if cash_hands:
             metrics.extend(
                 [
+                    AdvancedStatistic(
+                        "cash_rake_observed",
+                        "Observed table rake",
+                        statistics["cash_rake_observed"],
+                    ),
                     AdvancedStatistic("cash_bb", "BB won", statistics["cash_bb"]),
                     AdvancedStatistic(
                         "cash_bb_per_100",

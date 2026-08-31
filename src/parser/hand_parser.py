@@ -66,6 +66,7 @@ def _parse_single_hand(hand_text: str) -> dict[str, Any]:
         "players": players,
         "actions": actions,
         "pot": _parse_total_pot(summary_lines),
+        "rake": _parse_rake(summary_lines),
         "result": hero_result,
         "winners": winners,
     }
@@ -171,7 +172,6 @@ def _parse_players(lines: list[str], table_line: str) -> list[dict[str, Any]]:
 def _parse_actions(lines: list[str]) -> list[dict[str, Any]]:
     actions: list[dict[str, Any]] = []
     street = ""
-    ignored_actions = {"POST_ANTE", "POST_SMALL_BLIND", "POST_BIG_BLIND"}
 
     for line in lines:
         if line.startswith("*** ANTE/BLINDS ***"):
@@ -203,8 +203,6 @@ def _parse_actions(lines: list[str]) -> list[dict[str, Any]]:
 
         parsed_action = _parse_action_line(line, street)
         if parsed_action is not None:
-            if parsed_action["action"] in ignored_actions:
-                continue
             actions.append(parsed_action)
 
     return actions
@@ -282,6 +280,18 @@ def _parse_total_pot(summary_lines: list[str]) -> float:
         if match:
             amount = _parse_amount(match.group("pot"))
             return amount or 0.0
+
+    return 0.0
+
+
+def _parse_rake(summary_lines: list[str]) -> float:
+    for line in summary_lines:
+        match = re.match(r"^Total pot .+? \| Rake (?P<rake>.+)$", line)
+        if match:
+            return _parse_amount(match.group("rake")) or 0.0
+
+        if re.match(r"^Total pot .+? \| No rake$", line):
+            return 0.0
 
     return 0.0
 

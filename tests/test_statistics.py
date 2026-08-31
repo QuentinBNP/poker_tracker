@@ -196,6 +196,7 @@ def test_statistics_service_calculates_metrics_for_selected_game_mode(tmp_path: 
     assert statistics["expresso_roi"] == 200.0
     assert cash_statistics["hands_played"] == 2.0
     assert cash_statistics["cash_result"] == 0.5
+    assert cash_statistics["cash_rake_observed"] == 0.0
     assert cash_statistics["cash_bb"] == 1.0
     assert cash_statistics["cash_bb_per_100"] == 50.0
 

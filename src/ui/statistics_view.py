@@ -55,6 +55,8 @@ class StatisticsView(ttk.Frame):
 def _format_statistic(statistic: AdvancedStatistic) -> str:
     if statistic.percent:
         return f"{statistic.value:.1f}%"
+    if statistic.key == "cash_rake_observed":
+        return f"{statistic.value:.2f} EUR"
     if statistic.key in {"cash_bb", "cash_bb_per_100"}:
         return f"{statistic.value:+.2f}"
     if statistic.key == "aggression_factor":

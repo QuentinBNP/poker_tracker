@@ -25,7 +25,7 @@ class ImportReport:
 
 
 class DatabaseImporter:
-    IMPORT_FORMAT_VERSION = 3
+    IMPORT_FORMAT_VERSION = 4
 
     def __init__(self, database: Database) -> None:
         self.database = database
