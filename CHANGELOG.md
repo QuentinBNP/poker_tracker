@@ -4,7 +4,7 @@ All notable changes to MyPokerTracker are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.6.0] - 2026-08-31
 
 ### Added
 
@@ -106,7 +106,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - Local SQLite storage, dashboard, statistics, and file watching.
 - Windows executable and installer build support.
 
-
+[0.6.0]: https://github.com/QuentinBNP/poker_tracker/releases/tag/v0.6.0
 [0.5.1]: https://github.com/QuentinBNP/poker_tracker/releases/tag/v0.5.1
 [0.5.0]: https://github.com/QuentinBNP/poker_tracker/releases/tag/v0.5.0
 [0.4.0]: https://github.com/QuentinBNP/poker_tracker/releases/tag/v0.4.0
