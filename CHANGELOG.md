@@ -4,6 +4,14 @@ All notable changes to MyPokerTracker are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- Rake calculation for cash-game hands.
+- Ante calculation for tournament hands.
+- Re-entries tracking for tournament hands.
+
 ## [0.5.1] - 2026-08-28
 
 ### Fixed

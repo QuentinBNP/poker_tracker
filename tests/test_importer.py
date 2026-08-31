@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from database.database import Database
+from database.filters import HistoryFilter
 from database.importer import DatabaseImporter
 from database.models import ImportRecord
 from game_modes import GameMode
@@ -56,6 +57,28 @@ You won 3€
     assert report.status == "success"
     assert stored_tournament is not None
     assert stored_tournament.game_mode is GameMode.EXPRESSO
+
+
+def test_importer_detects_reentries_from_repeated_summary_blocks(tmp_path: Path) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    sample_path = (
+        SAMPLES_DIR / "20260731_SPACE KO(1140932862)_real_holdem_no-limit_summary.txt"
+    )
+
+    report = DatabaseImporter(database).import_file(sample_path)
+    entries = database.list_tournament_entries("1140932862")
+    tournament = database.list_filtered_tournaments(HistoryFilter())[0]
+
+    assert report.status == "success"
+    assert report.tournaments_imported == 1
+    assert [entry.entry_number for entry in entries] == [1, 2]
+    assert [entry.nominal_buy_in for entry in entries] == [0.50, 0.50]
+    assert [entry.cash_cost for entry in entries] == [0.50, 0.50]
+    assert tournament["position"] == 701
+    assert tournament["entry_count"] == 2
+    assert tournament["total_entry_cost"] == 1.0
+    assert tournament["profit"] == -0.87
 
 
 def test_importer_persists_hand_history_without_existing_tournament_summary(tmp_path: Path) -> None:

@@ -149,6 +149,21 @@ class Database:
             is_manually_adjusted=True,
         )
 
+    def sync_imported_tournament_entries(
+        self,
+        tournament_id: str,
+        entries: list[tuple[datetime | None, float]],
+    ) -> None:
+        with self._connect() as connection:
+            for entry_number, (entered_at, nominal_buy_in) in enumerate(entries, start=1):
+                self._upsert_imported_tournament_entry(
+                    connection,
+                    tournament_id,
+                    entered_at,
+                    nominal_buy_in,
+                    entry_number,
+                )
+
     def set_tournament_entry_free(
         self,
         tournament_id: str,
@@ -1033,13 +1048,14 @@ class Database:
         tournament_id: str,
         entered_at: datetime | None,
         nominal_buy_in: float,
+        entry_number: int = 1,
     ) -> None:
         connection.execute(
             """
             INSERT INTO tournament_entries (
                 tournament_id, entry_number, entered_at, nominal_buy_in, cash_cost,
                 payment_method, source, is_manually_adjusted
-            ) VALUES (?, 1, ?, ?, ?, 'UNKNOWN', 'IMPORT', 0)
+            ) VALUES (?, ?, ?, ?, ?, 'UNKNOWN', 'IMPORT', 0)
             ON CONFLICT(tournament_id, entry_number) DO UPDATE SET
                 entered_at = excluded.entered_at,
                 nominal_buy_in = excluded.nominal_buy_in,
@@ -1061,6 +1077,7 @@ class Database:
             """,
             (
                 tournament_id,
+                entry_number,
                 self._serialize_datetime(entered_at),
                 nominal_buy_in,
                 nominal_buy_in,

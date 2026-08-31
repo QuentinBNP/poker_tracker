@@ -5,7 +5,7 @@ from pathlib import Path
 
 from game_modes import GameMode
 from parser.hand_parser import parse_hand_history
-from parser.tournament_parser import parse_tournament_summary
+from parser.tournament_parser import parse_tournament_summaries, parse_tournament_summary
 
 SAMPLES_DIR = Path(__file__).resolve().parents[1] / "samples"
 
@@ -59,8 +59,27 @@ def test_parse_knockout_summary_with_bounty_only_winnings() -> None:
 
     assert parsed["tournament_id"] == "1140932862"
     assert parsed["buy_in"] == 0.50
+    assert parsed["position"] == 701
     assert parsed["winnings"] == 0.0
     assert parsed["bounty_winnings"] == 0.13
+
+
+def test_parse_reentry_summary_returns_each_entry_without_mixing_fields() -> None:
+    text = (
+        SAMPLES_DIR / "20260731_SPACE KO(1140932862)_real_holdem_no-limit_summary.txt"
+    ).read_text(encoding="utf-8")
+
+    summaries = parse_tournament_summaries(text)
+
+    assert len(summaries) == 2
+    assert [summary["tournament_id"] for summary in summaries] == [
+        "1140932862",
+        "1140932862",
+    ]
+    assert [summary["buy_in"] for summary in summaries] == [0.50, 0.50]
+    assert [summary["position"] for summary in summaries] == [611, 701]
+    assert [summary["duration_seconds"] for summary in summaries] == [1279, 4600]
+    assert [summary["bounty_winnings"] for summary in summaries] == [0.0, 0.13]
 
 
 def test_parse_expresso_summary_classifies_case_insensitively() -> None:

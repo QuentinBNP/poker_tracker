@@ -17,9 +17,23 @@ BOUNTY_WINNINGS_PATTERN = re.compile(
 
 
 def parse_tournament_summary(text: str) -> dict[str, Any]:
-    if not text.strip():
-        return {}
+    summaries = parse_tournament_summaries(text)
+    return summaries[-1] if summaries else {}
 
+
+def parse_tournament_summaries(text: str) -> list[dict[str, Any]]:
+    if not text.strip():
+        return []
+
+    header_matches = list(SUMMARY_HEADER_PATTERN.finditer(text))
+    summaries: list[dict[str, Any]] = []
+    for index, header_match in enumerate(header_matches):
+        end = header_matches[index + 1].start() if index + 1 < len(header_matches) else len(text)
+        summaries.append(_parse_tournament_summary_block(text[header_match.start() : end]))
+    return summaries
+
+
+def _parse_tournament_summary_block(text: str) -> dict[str, Any]:
     header_match = SUMMARY_HEADER_PATTERN.search(text)
     if header_match is None:
         return {}

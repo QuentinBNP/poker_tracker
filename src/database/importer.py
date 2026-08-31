@@ -10,7 +10,7 @@ from database.models import ImportRecord, Tournament
 from game_modes import GameMode
 from logging_system import get_logger
 from parser.hand_parser import parse_hand_history
-from parser.tournament_parser import parse_tournament_summary
+from parser.tournament_parser import parse_tournament_summaries
 
 
 @dataclass(slots=True)
@@ -25,7 +25,7 @@ class ImportReport:
 
 
 class DatabaseImporter:
-    IMPORT_FORMAT_VERSION = 4
+    IMPORT_FORMAT_VERSION = 5
 
     def __init__(self, database: Database) -> None:
         self.database = database
@@ -60,11 +60,12 @@ class DatabaseImporter:
         return report
 
     def _import_tournament_summary(self, path: Path, text: str) -> ImportReport:
-        parsed = parse_tournament_summary(text)
-        if not parsed:
+        parsed_summaries = parse_tournament_summaries(text)
+        if not parsed_summaries:
             self.logger.warning("Tournament summary parsing returned no data for %s", path.name)
             return ImportReport(path=path, file_type="tournament_summary", status="failed")
 
+        parsed = parsed_summaries[-1]
         tournament = Tournament(
             tournament_id=parsed["tournament_id"],
             name=parsed["name"],
@@ -79,6 +80,13 @@ class DatabaseImporter:
             game_mode=GameMode(parsed["game_mode"]),
         )
         self.database.insert_tournament(tournament)
+        self.database.sync_imported_tournament_entries(
+            tournament.tournament_id,
+            [
+                (summary["started_at"], float(summary["buy_in"] or 0.0))
+                for summary in parsed_summaries
+            ],
+        )
         self.logger.info("Imported tournament summary %s", path.name)
         return ImportReport(
             path=path,

@@ -91,6 +91,33 @@ def test_tournament_reentry_is_charged_and_free_entry_survives_reimport(
     assert entries[0].payment_method is EntryPaymentMethod.FREE_TICKET
 
 
+def test_detected_reentry_preserves_manual_free_entry_correction(tmp_path: Path) -> None:
+    database = Database(tmp_path / "data" / "tracker.db")
+    database.initialize()
+    tournament = Tournament(
+        tournament_id="detected-reentry",
+        name="Tournament",
+        buy_in=0.5,
+        prize_pool=100.0,
+        players_count=100,
+        started_at=datetime(2026, 7, 31, 17, 30, tzinfo=timezone.utc),
+        finished_at=None,
+        position=10,
+    )
+    database.insert_tournament(tournament)
+    database.set_tournament_entry_free("detected-reentry", True)
+
+    database.sync_imported_tournament_entries(
+        "detected-reentry",
+        [(tournament.started_at, 0.5), (tournament.started_at, 0.5)],
+    )
+    entries = database.list_tournament_entries("detected-reentry")
+
+    assert [entry.cash_cost for entry in entries] == [0.0, 0.5]
+    assert entries[0].payment_method is EntryPaymentMethod.FREE_TICKET
+    assert entries[1].payment_method is EntryPaymentMethod.UNKNOWN
+
+
 def test_database_can_store_hand_players_actions_and_import(tmp_path: Path) -> None:
     database = Database(tmp_path / "data" / "tracker.db")
     database.initialize()
