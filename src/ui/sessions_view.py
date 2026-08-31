@@ -10,6 +10,7 @@ from game_modes import GameMode
 
 SourceRow = Mapping[str, object]
 SessionSelectionCallback = Callable[[int], None]
+TournamentSelectionCallback = Callable[[str], None]
 FreeEntryCallback = Callable[[str, bool], None]
 
 
@@ -36,10 +37,12 @@ class SessionsView(ttk.Frame):
         master: tk.Misc | None = None,
         on_session_selected: SessionSelectionCallback | None = None,
         on_free_entry_changed: FreeEntryCallback | None = None,
+        on_tournament_selected: TournamentSelectionCallback | None = None,
     ) -> None:
         super().__init__(master, padding=16)
         self.on_session_selected = on_session_selected
         self.on_free_entry_changed = on_free_entry_changed
+        self.on_tournament_selected = on_tournament_selected
         self.free_entry_value = tk.BooleanVar(value=False)
         self._activities: dict[str, ActivityRow] = {}
         self.columnconfigure(0, weight=1)
@@ -83,6 +86,7 @@ class SessionsView(ttk.Frame):
         scrollbar = ttk.Scrollbar(self, orient="vertical", command=self.tree.yview)
         self.tree.configure(yscrollcommand=scrollbar.set)
         self.tree.bind("<<TreeviewSelect>>", self._on_selection)
+        self.tree.bind("<Double-1>", self._on_open_activity)
         self.tree.grid(row=0, column=0, sticky="nsew")
         scrollbar.grid(row=0, column=1, sticky="ns")
 
@@ -145,12 +149,26 @@ class SessionsView(ttk.Frame):
         else:
             self.free_entry_value.set(False)
             self.free_entry_toggle.state(["disabled"])
-            if activity.session_id is not None and self.on_session_selected is not None:
-                self.on_session_selected(activity.session_id)
+
+    def _on_open_activity(self, _event: tk.Event[tk.Misc]) -> None:
+        activity = self._selected_activity()
+        if activity is None:
+            return
+        target = activity_open_target(activity)
+        if target is None:
+            return
+        target_type, target_id = target
+        if target_type == "session" and self.on_session_selected is not None:
+            self.on_session_selected(int(target_id))
+        elif target_type == "tournament" and self.on_tournament_selected is not None:
+            self.on_tournament_selected(str(target_id))
+
+    def _selected_activity(self) -> ActivityRow | None:
+        selection = self.tree.selection()
+        return self._activities.get(selection[0]) if selection else None
 
     def _on_free_entry_changed(self) -> None:
-        selection = self.tree.selection()
-        activity = self._activities.get(selection[0]) if selection else None
+        activity = self._selected_activity()
         if (
             activity is not None
             and activity.tournament_id is not None
@@ -174,6 +192,14 @@ def build_activity_rows(
         key=lambda activity: activity.started_at.isoformat() if activity.started_at else "",
         reverse=True,
     )
+
+
+def activity_open_target(activity: ActivityRow) -> tuple[str, int | str] | None:
+    if activity.session_id is not None:
+        return "session", activity.session_id
+    if activity.tournament_id is not None:
+        return "tournament", activity.tournament_id
+    return None
 
 
 def _cash_activity(session: SourceRow) -> ActivityRow:

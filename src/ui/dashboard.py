@@ -88,6 +88,7 @@ class DashboardView(ttk.Frame):
             notebook,
             self._show_session_hands,
             self._set_tournament_free_entry,
+            self._show_tournament_hands,
         )
         self.statistics_view = StatisticsView(notebook)
         notebook.add(self.overview_tab, text="Dashboard")
@@ -332,6 +333,15 @@ class DashboardView(ttk.Frame):
 
     def _show_session_hands(self, session_id: int) -> None:
         hands = self.database.list_hands_for_session(self.hero_name, session_id)
+        self.hands_view.refresh(hands)
+        self.notebook.select(self.hands_view)
+
+    def _show_tournament_hands(self, tournament_id: str) -> None:
+        hands = self.database.list_filtered_hands(
+            self.hero_name,
+            HistoryFilter(tournament_id=tournament_id),
+            limit=1_000_000,
+        )
         self.hands_view.refresh(hands)
         self.notebook.select(self.hands_view)
 

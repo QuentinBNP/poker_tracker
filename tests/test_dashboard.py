@@ -10,7 +10,7 @@ from ui.bb_chart import _detail_text as bb_detail_text
 from ui.chart_math import chart_bounds, sampled_indices, scale_x, scale_y
 from ui.dashboard import _dashboard_metrics, _resolve_period
 from ui.result_chart import _detail_text as result_detail_text
-from ui.sessions_view import _format_datetime, build_activity_rows
+from ui.sessions_view import _format_datetime, activity_open_target, build_activity_rows
 
 
 def test_custom_period_uses_inclusive_utc_day_boundaries() -> None:
@@ -147,6 +147,9 @@ def test_activity_rows_merge_cash_sessions_and_summary_tournaments() -> None:
     assert activities[2].result_bb == 3.0
     assert "+3.00 BB" in activities[2].detail
     assert _format_datetime(tournament_time) == "2026-07-02 12:00 UTC"
+
+    assert activity_open_target(activities[1]) == ("tournament", "event-1")
+    assert activity_open_target(activities[2]) == ("session", 1)
 
 
 def test_dashboard_metrics_follow_selected_mode() -> None:

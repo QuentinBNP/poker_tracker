@@ -22,6 +22,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - Include tournament entry and re-entry debits as separate chronological bankroll events.
 - Replace combinable mode checkboxes with a deterministic All, Cash, Tournament, or Expresso selection and mode-specific headline metrics.
 - Label displayed hand, session, tournament, and chart timestamps consistently as UTC.
+- Make one click select any activity for its overview and double-click open its hand list for both cash sessions and tournaments.
 
 ## [0.5.1] - 2026-08-28
 
